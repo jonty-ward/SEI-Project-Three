@@ -1,3 +1,3 @@
 # SEI-Project-Three
 My group project
-, Jonty 
+Mike, Jonty 
