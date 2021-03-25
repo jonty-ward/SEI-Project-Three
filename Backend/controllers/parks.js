@@ -12,7 +12,7 @@ export const getAllParks = async (_req, res) => {
 export const getOnePark = async (req, res) => {
   try {
     const { id } = req.params
-    const singlePark = await Park.findById(id).populate('owner').populate('comments.owner').populate('recommendations.owner')
+    const singlePark = await Park.findById(id)
     if (!singlePark) {
       throw new Error()
     }
