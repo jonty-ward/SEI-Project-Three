@@ -1,17 +1,33 @@
-import React from 'react'
-
-const [formData, setFormData] = useState({
-  text: '',
-  rating: ''
-})
-
-const handleChange = event => {
-  const newFormData = { ...formData, [event.target.name]: event.target.value }
-  setFormData(newFormData)
-}
-
+import React, { useState } from 'react'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
 const ParkCommentForm = () => {
+  const params = useParams()
+
+  const [formData, setFormData] = useState({
+    text: '',
+    rating: ''
+  })
+
+  const handleChange = event => {
+    const newFormData = { ...formData, [event.target.name]: event.target.value }
+    console.log(formData)
+    setFormData(newFormData)
+  }
+
+  const handleSubmit = async event => {
+    event.preventDefault()
+    console.log(event)
+    await axios.put(
+      `/api/parks/comments/${params.id}`,
+      formData,
+      {
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
+      }
+    )
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <div>
