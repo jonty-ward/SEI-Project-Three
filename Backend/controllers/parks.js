@@ -85,8 +85,8 @@ export const editParkComments = async (req, res) =>{
     console.log('req.body', req.body)
     Object.assign(commentToUpdate, req.body)
     await commentToUpdate.save()
-    Object.assign(parkToUpdate.comments, commentToUpdate)
-    await parkToUpdate.save()
+    // Object.assign(parkToUpdate.comments, commentToUpdate)
+    // await parkToUpdate.save()
     console.log('comment to update', commentToUpdate)
     return res.status(202).json(commentToUpdate)
   } catch (err) {
