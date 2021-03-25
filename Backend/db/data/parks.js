@@ -152,7 +152,8 @@ export default [
     longitude: 119.489441,
     region: 'Asia',
     country: 'Indonesia',
-    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
+    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
+      'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
     comments: [],
     recommendations: ['It doesn\'t matter which tour you book, when you reach the island, you will be taken on a tour by the national park rangers.', 'I recommend using the services of Pacebo Tour, their services are very satisfying.'],
     parkUrl: 'https://www.komodonationalpark.org/'
@@ -299,9 +300,81 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.nps.gov/hale/index.html'
+  },
+  {
+    name: 'Cajas National Park',
+    image: '',
+    description: 'El Cajas National Park in the highlands of Southern Ecuador is called ‘the Lake District,’ of the country for good reason-it has the most lakes per square mile of any other place in the world. El Cajas, as it’s also known, only receives an average of 35,000 visitors a year. The park\'s altitude (up to 4450m above sea level) adds to its rugged and remote feeling.',
+    latitude: '-2.846111',
+    longitude: '-79.220278',
+    region: 'South America',
+    country: 'Ecuador',
+    facts: ['Cajas National Park has 152 different species of birds including the Andean condor, violet-throated metaltail, the red-rumped bush-tyrant, the giant conebill, and the tit-like dances-all species that are hard to spot in other parts of the country.', 
+      'The park stretches a whopping 70,000 acres includes approximately 768 lakes.', 
+      'The name "Cajas" is derived from the Quichua word "cassa" meaning "gateway to the snowy mountains" or "caxa" (Quichua:cold).',
+      'The water that comprises the lakes and marshes is freshwater, and is so fresh in fact that it makes up the majority of the drinking water that supplies the city of Cuenca.',
+      'If there’s any plant that El Cajas National Park is famous for it’s the Polylepis tree, or “Paper Tree.”',
+      'One weird and striking mountain plant is the Puya Bromeliads which are a hairy flower that can reach three meters in height and are completely surrounded by wool.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.ambiente.gob.ec/parque-nacional-cajas/'
+  },
+  {
+    name: 'Amboró National Park',
+    image: '',
+    description: 'When it comes to biodiversity, Amboró National Park in Bolivia wins by a long shot. In particular, there are more than 900 species of birds and about 177 species of mammals including the enigmatic spectacled bear. The park is situated at what is called the ‘Elbow of the Andes,’ and there are semi-arid lowlands distinct to this area of the continent.',
+    latitude: '-17.783333',
+    longitude: '-63.983333',
+    region: 'South America',
+    country: 'Bolivia',
+    facts: ['Park Amboro lies in a unique geographical position at the confluence of 3 distinct ecosystems: the Amazon basin, the northern Chaco and the Andes (nowhere else in the world do three such vast environments converge).', 
+      'You can’t enter without a certified guide - it’s the law.',
+      'The current number of documented plant species totals around 3,000.',
+      'A large range of beautiful yet elusive mammals including tapirs, armadillos, spider monkeys, jaguars, giant anteaters, pumas, ocelots and spectacled bears, exist among the jungle\'s dense vegetation.',
+      'It is made up of lowland forests, cloud forests, palm forests, tree-fern forests, cactus forests, tropical yungas forests, montane scrublands, pampas and much, much more.'],
+    comments: [],
+    recommendations: ['Visit the unique and picturesque region of Mataracú where you can try to spot rare animals like the giant sloth.'],
+    parkUrl: ''
+  },
+  {
+    name: 'Cerro Castillo National Park',
+    image: '',
+    description: '',
+    latitude: '',
+    longitude: '',
+    region: 'South America',
+    country: 'Chile',
+    facts: [],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Manú National Park',
+    image: '',
+    description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
+    latitude: '',
+    longitude: '',
+    region: 'South America',
+    country: 'Peru',
+    facts: ['s the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: '',
+    image: '',
+    description: '',
+    latitude: '',
+    longitude: '',
+    region: '',
+    country: '',
+    facts: [],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
   }
-
-
 
 
 ]
