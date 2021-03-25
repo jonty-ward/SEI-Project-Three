@@ -73,6 +73,28 @@ export const addCommentToPark = async (req, res) => {
   }
 }
 
+export const editParkComments = async (req, res) =>{
+
+  try {
+    const { id, commentId } = req.params
+    const parkToUpdate = await Park.findById(id)
+    console.log('park to update ',parkToUpdate.comments)
+    if (!parkToUpdate) throw new Error()
+    const commentToUpdate = parkToUpdate.comments.id(commentId)
+    if (!commentToUpdate) throw new Error('Comment not found')
+    console.log('req.body', req.body)
+    Object.assign(commentToUpdate, req.body)
+    await commentToUpdate.save()
+    Object.assign(parkToUpdate.comments, commentToUpdate)
+    await parkToUpdate.save()
+    console.log('comment to update', commentToUpdate)
+    return res.status(202).json(commentToUpdate)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
+  }
+}
+
 // * Delete a Comment
 export const deleteCommentFromPark = async (req, res) => {
   try {
