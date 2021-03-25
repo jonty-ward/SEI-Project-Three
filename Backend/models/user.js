@@ -10,6 +10,15 @@ const userSchema = new mongoose.Schema({
   wishList: [{ type: String }]
 })
 
+// * Remove password from user when populating
+userSchema.set('toJSON', {
+  virtuals: true,
+  transform(_doc, json) {
+    delete json.password
+    return json
+  }
+})
+
 userSchema 
   .virtual('passwordConfirmation')
   .set(function(passwordConfirmation) {
