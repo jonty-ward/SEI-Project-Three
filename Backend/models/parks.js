@@ -13,7 +13,7 @@ const recommendationsSchema = new mongoose.Schema({
   parkName: { type: String, required: true },
   activity: { type: String, required: true },
   text: { type: String, required: true },
-  image: { type: String, required: true },
+  image: { type: String },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 }, {
   timestamps: true

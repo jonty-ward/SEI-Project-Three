@@ -96,10 +96,10 @@ export const deleteCommentFromPark = async (req, res) => {
 export const addRecommendationToPark = async (req, res) => {
   try {
     const { id } = req.params
-    const park = Park.findById(id)
+    const park = await Park.findById(id)
     if (!park) throw new Error('Cannot find park')
     const newRecommendation = { ...req.body, owner: req.currentUser._id }
-    park.comments.push(newRecommendation)
+    park.recommendations.push(newRecommendation)
     await park.save()
     return res.status(200).json(park)
   } catch (err) {
