@@ -1,5 +1,5 @@
 import express from 'express'
-import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark } from '../controllers/parks'
+import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark } from '../controllers/parks.js'
 
 
 

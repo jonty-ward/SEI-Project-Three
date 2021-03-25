@@ -1,7 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import { port, dbURI } from './config/environments.js'
-
+import router from './config/router.js'
 
 const app =  express()
 
@@ -9,7 +9,7 @@ const startServer = async () =>{
 
   try {
 
-    // * connsecting to mongoDB
+    // * connecting to mongoDB
 
     await mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 
@@ -22,6 +22,8 @@ const startServer = async () =>{
       console.log(`🚨 Incoming request: ${req.method} - ${req.url}`)
       next()
     })
+
+    app.use('/api', router)
 
     // * server
 
