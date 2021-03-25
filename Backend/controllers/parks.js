@@ -12,11 +12,7 @@ export const getAllParks = async (_req, res) => {
 export const getOnePark = async (req, res) => {
   try {
     const { id } = req.params
-<<<<<<< HEAD
-    const singlePark = await Park.findById(id)
-=======
     const singlePark = await Park.findById(id).populate('comments.owner').populate('recommendations.owner')
->>>>>>> development
     if (!singlePark) {
       throw new Error()
     }
