@@ -12,7 +12,7 @@ export const getAllParks = async (_req, res) => {
 export const getOnePark = async (req, res) => {
   try {
     const { id } = req.params
-    const singlePark = await Park.findById(id).populate('owner').populate('comments.owner').populate('recommendations.owner')
+    const singlePark = await Park.findById(id)
     if (!singlePark) {
       throw new Error()
     }
@@ -61,6 +61,7 @@ export const addCommentToPark = async (req, res) => {
   try {
     const { id } = req.params
     const park = await Park.findById(id)
+    console.log('CURRNT USER>>>>>>>>>>>>> 🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘', req.currentUser)
     if (!park) throw new Error('Cannot find park')
     const newComment = { ...req.body, owner: req.currentUser._id }
     park.comments.push(newComment)
