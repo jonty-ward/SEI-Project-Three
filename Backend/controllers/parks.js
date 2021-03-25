@@ -12,7 +12,11 @@ export const getAllParks = async (_req, res) => {
 export const getOnePark = async (req, res) => {
   try {
     const { id } = req.params
+<<<<<<< HEAD
     const singlePark = await Park.findById(id)
+=======
+    const singlePark = await Park.findById(id).populate('comments.owner').populate('recommendations.owner')
+>>>>>>> development
     if (!singlePark) {
       throw new Error()
     }
@@ -61,6 +65,7 @@ export const addCommentToPark = async (req, res) => {
   try {
     const { id } = req.params
     const park = await Park.findById(id)
+    console.log('CURRNT USER>>>>>>>>>>>>> 🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘🆘', req.currentUser)
     if (!park) throw new Error('Cannot find park')
     const newComment = { ...req.body, owner: req.currentUser._id }
     park.comments.push(newComment)
@@ -69,6 +74,28 @@ export const addCommentToPark = async (req, res) => {
   } catch (err) {
     console.log(err)
     return res.status(404).json({ message: err.message })
+  }
+}
+
+export const editParkComments = async (req, res) =>{
+
+  try {
+    const { id, commentId } = req.params
+    const parkToUpdate = await Park.findById(id)
+    console.log('park to update ',parkToUpdate.comments)
+    if (!parkToUpdate) throw new Error()
+    const commentToUpdate = parkToUpdate.comments.id(commentId)
+    if (!commentToUpdate) throw new Error('Comment not found')
+    console.log('req.body', req.body)
+    Object.assign(commentToUpdate, req.body)
+    await commentToUpdate.save()
+    Object.assign(parkToUpdate.comments, commentToUpdate)
+    await parkToUpdate.save()
+    console.log('comment to update', commentToUpdate)
+    return res.status(202).json(commentToUpdate)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
   }
 }
 
@@ -95,10 +122,10 @@ export const deleteCommentFromPark = async (req, res) => {
 export const addRecommendationToPark = async (req, res) => {
   try {
     const { id } = req.params
-    const park = Park.findById(id)
+    const park = await Park.findById(id)
     if (!park) throw new Error('Cannot find park')
     const newRecommendation = { ...req.body, owner: req.currentUser._id }
-    park.comments.push(newRecommendation)
+    park.recommendations.push(newRecommendation)
     await park.save()
     return res.status(200).json(park)
   } catch (err) {
