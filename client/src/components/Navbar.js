@@ -15,6 +15,9 @@ const Navbar = () => {
       <Link to='/login'>
         Login
       </Link>
+      <Link to="/addRecommendation">
+        Add a recommendation
+      </Link>
     </>
   )
 
