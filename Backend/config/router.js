@@ -1,7 +1,7 @@
 import express from 'express'
 import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark } from '../controllers/parks.js'
-
-
+import { loginUser, registerUser } from '../controllers/auth.js' 
+import { secureRoute } from '../config/secureRoute.js'
 
 
 const router = express.Router()
@@ -11,21 +11,25 @@ router.route('/parks')
 
 router.route('/parks/:id')
   .get(getOnePark)
-  .put(updatePark)
-  .delete(deletePark)
+  .put(secureRoute, updatePark)
+  .delete(secureRoute, deletePark)
 
 router.route('/parks/:id/comments')
-  .post(addCommentToPark)
+  .post(secureRoute, addCommentToPark)
 
 router.route('/parks/:id/comments/:commentId')
-  .delete(deleteCommentFromPark)
+  .delete( secureRoute, deleteCommentFromPark)
 
 router.route('/parks/:id/recommendations')
-  .post(addRecommendationToPark)
+  .post(secureRoute, addRecommendationToPark)
 
-router.route('/parks/:id/recommendations/:recommendationsId')
-  .delete(deleteRecommendationToPark)
+router.route('/parks/:id/recommendations/:recommendationId')
+  .delete(secureRoute, deleteRecommendationToPark)
 
+router.route('/register')
+  .post(registerUser)
 
+router.route('/login')
+  .post(loginUser)
   
 export default router
