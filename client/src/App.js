@@ -1,19 +1,28 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-class App extends React.Component {
-  async componentDidMount() {
-    try {
-      const response = await fetch('/api/resource-name')
-      const data = await response.json()
-      console.log(data)
-    } catch (err) {
-      console.log(err)
-    }
-  }
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import Register from './auth/Register'
+import Login from './auth/Login'
 
-  render() {
-    return null
-  }
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+      	  <Home />
+        </Route>
+        <Route exact path="/register">
+      	  <Register />
+        </Route>
+        <Route exact path="/login">
+      	  <Login />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
