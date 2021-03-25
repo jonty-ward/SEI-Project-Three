@@ -155,7 +155,7 @@ export default [
     facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
       'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
     comments: [],
-    recommendations: ['It doesn\'t matter which tour you book, when you reach the island, you will be taken on a tour by the national park rangers.', 'I recommend using the services of Pacebo Tour, their services are very satisfying.'],
+    recommendations: [],
     parkUrl: 'https://www.komodonationalpark.org/'
   },
   {
@@ -168,7 +168,7 @@ export default [
     country: 'Borneo',
     facts: ['The 52,865 ha park contains seventeen vegetation zones, exhibiting some 3,500 species of vascular plants. Its palm species are exceptionally rich, with 109 species in twenty genera recorded, making it one of the world\'s richest sites for palm species.', 'The caves, cliffs, gorges and rock pinnacles are limestone formations dating from between 17 and 40 million years ago.', 'There are 20,000 species of invertebrates, 81 species of mammals, 270 species of birds, 55 species of reptiles, 76 species of amphibians and 48 species of fish.'],
     comments: [],
-    recommendations: ['The best time is July/August. For pinnacle climbing tours take 3D2N.', 'This is a relatively short tour but includes a good introduction to adventure caving. Be prepared to squeeze through tight passages, crawl, jump, and pull yourself up on ropes. Headlights and helmets are provided. Also be prepared to get intimate with hand sized spiders, millipedes, snakes, scorpions and bats.'],
+    recommendations: [],
     parkUrl: 'https://mulupark.com/'
   },
   {
@@ -181,7 +181,7 @@ export default [
     country: 'Vietnam',
     facts: ['There were five stages in the development of the earth\'s crust that led to the creation of Phong Nha-ke Bang National Park. These included the Early Silurian Stage, the Middle-late Devonian Stage, the Carboniferous-Permian Stage, the Mesozoic Orogenic Stage, and the Cenozoic Stage.', 'Humidity is usually at roughly 84% due to the high amount of rainfall in the park. 88% of the rain falls between July and December but it rains every month, for more than 160 days each year.', 'Son Doong, the largest cave in the world, contains 300 caves and grottos. It is significant because it contains evidence of the history of the earth\'s evolution.', 'Wildlife found in Phong Nha-ke Bang National Park includes ten species and subspecies of primates, langurs, mainland serows, Asian black bears, sun bears, Sunda pangolins, striped hares, and many others.', 'There are 59 recorded amphibian and reptile species, 72 species of fish, more than 200 bird species, and 259 species of butterflies in Phong Nha-ke Bang National Park.', 'Visitors to the park are not allowed to hike without the presence of licensed tour guide as there are still unexploded weapons on the ground in certain areas dating back to the Vietnam War.'],
     comments: [],
-    recommendations: ['Oxalis is an outstanding tour operator. I took a two day trip to explore Hang Va, everything was well taken care of. Everybody was amazing.', 'If you are going to travel here by bicycle there\'s a lot of uphill so recommend a moped or a taxi. Good half day activity, very rocky so don\'t wear flip flops!'],
+    recommendations: [],
     parkUrl: 'https://whc.unesco.org/en/list/951/'
   },
   {
@@ -194,7 +194,7 @@ export default [
     country: 'Japan',
     facts: ['This volcanic mountain is actually three separate volcanoes, one on top of the other. The bottom layer is the Komitake volcano, then the Kofuji volcano, then Fuji, which is the youngest of the three.', 'Fuji-Hakone-Izu National Park is the most visited national park in the country.', 'Volcanic activity has shaped the landscape here in a variety of ways. Lava flows blocked rivers across the area, forming five lakes known collectively as Fuji Goko.', 'There are many lava tunnels characteristic of volcanic regions such as wind caves, ice caves, and lava tree molds like wooden casts.'],
     comments: [],
-    recommendations: ['One of the famous things to do is eat the hot spring eggs, which are black in color from the thermal cooking process. There is also a wonderful museum that costs only 100yen, it displays historical and interactive models that teaches you about this area.', 'If the weather is good, I highly recommend the Open Air Museum - it\'s one of my favorite museums in the world! And the volcanic area cable cars, too!'],
+    recommendations: [],
     parkUrl: 'https://www.env.go.jp/en/nature/nps/park/fujihakone/index.html'
   },
   {
@@ -207,7 +207,7 @@ export default [
     country: 'Thailand',
     facts: ['Animals found in Khao Sok include the Asian elephant, Malayan tapirs, marbled cats, wild boars, clouded leopards, Asiatic wild dogs, gibbons, mouse-deer, porcupines, macaques, serows, sun bears, sambar deer, bantengs, guars, and the Asian black bear. Tigers are occasionally seen in the park but none have been spotted for a long time.', 'There are hundreds of bird species found in Khao Sok National Park including the rufous-collared kingfisher, blue-banded kingfisher, white-crowned hornbill, helmeted hornbill, great hornbill, osprey, banded pittas, and brahminy kite.', 'The symbolic flower of Surat Thani province, called the Bua Phut, is found in Khao Sok National Park.', 'One of the Khao Sok residents, the mouse deer, are the smallest hoofed animal known to man.'],
     comments: [],
-    recommendations: ['Chieow Laan Lake is quite breathtaking. For anyone wanting to experience this great location I can highly recommend a local tour company www.limestonelaketours.com', 'I cannot recommend this bamboo rafting or canoeing highly enough, the scenery is stunning...'],
+    recommendations: [],
     parkUrl: 'https://www.khaosok.com/'
   },
 
@@ -303,7 +303,7 @@ export default [
   },
   {
     name: 'Cajas National Park',
-    image: '',
+    image: 'ADD IN IMAGE',
     description: 'El Cajas National Park in the highlands of Southern Ecuador is called ‘the Lake District,’ of the country for good reason-it has the most lakes per square mile of any other place in the world. El Cajas, as it’s also known, only receives an average of 35,000 visitors a year. The park\'s altitude (up to 4450m above sea level) adds to its rugged and remote feeling.',
     latitude: '-2.846111',
     longitude: '-79.220278',
@@ -321,7 +321,7 @@ export default [
   },
   {
     name: 'Amboró National Park',
-    image: '',
+    image: 'ADD IN IMAGE',
     description: 'When it comes to biodiversity, Amboró National Park in Bolivia wins by a long shot. In particular, there are more than 900 species of birds and about 177 species of mammals including the enigmatic spectacled bear. The park is situated at what is called the ‘Elbow of the Andes,’ and there are semi-arid lowlands distinct to this area of the continent.',
     latitude: '-17.783333',
     longitude: '-63.983333',
@@ -333,48 +333,48 @@ export default [
       'A large range of beautiful yet elusive mammals including tapirs, armadillos, spider monkeys, jaguars, giant anteaters, pumas, ocelots and spectacled bears, exist among the jungle\'s dense vegetation.',
       'It is made up of lowland forests, cloud forests, palm forests, tree-fern forests, cactus forests, tropical yungas forests, montane scrublands, pampas and much, much more.'],
     comments: [],
-    recommendations: ['Visit the unique and picturesque region of Mataracú where you can try to spot rare animals like the giant sloth.'],
-    parkUrl: ''
-  },
-  {
-    name: 'Cerro Castillo National Park',
-    image: '',
-    description: '',
-    latitude: '',
-    longitude: '',
-    region: 'South America',
-    country: 'Chile',
-    facts: [],
-    comments: [],
     recommendations: [],
-    parkUrl: ''
-  },
-  {
-    name: 'Manú National Park',
-    image: '',
-    description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
-    latitude: '',
-    longitude: '',
-    region: 'South America',
-    country: 'Peru',
-    facts: ['s the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.'],
-    comments: [],
-    recommendations: [],
-    parkUrl: ''
-  },
-  {
-    name: '',
-    image: '',
-    description: '',
-    latitude: '',
-    longitude: '',
-    region: '',
-    country: '',
-    facts: [],
-    comments: [],
-    recommendations: [],
-    parkUrl: ''
+    parkUrl: 'ADD IN URL'
   }
+  // {
+  //   name: 'Cerro Castillo National Park',
+  //   image: '',
+  //   description: '',
+  //   latitude: '',
+  //   longitude: '',
+  //   region: 'South America',
+  //   country: 'Chile',
+  //   facts: [],
+  //   comments: [],
+  //   recommendations: [],
+  //   parkUrl: ''
+  // },
+  // {
+  //   name: 'Manú National Park',
+  //   image: '',
+  //   description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
+  //   latitude: '',
+  //   longitude: '',
+  //   region: 'South America',
+  //   country: 'Peru',
+  //   facts: ['s the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.'],
+  //   comments: [],
+  //   recommendations: [],
+  //   parkUrl: ''
+  // },
+  // {
+  //   name: '',
+  //   image: '',
+  //   description: '',
+  //   latitude: '',
+  //   longitude: '',
+  //   region: '',
+  //   country: '',
+  //   facts: [],
+  //   comments: [],
+  //   recommendations: [],
+  //   parkUrl: ''
+  // }
 
 
 ]
