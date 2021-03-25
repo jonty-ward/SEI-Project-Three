@@ -1,4 +1,4 @@
-export default[
+export default [
 
   {
     name: 'Nairobi National Park' ,
@@ -119,17 +119,186 @@ export default[
     ],
     parkUrl: 'https://www.ncaa.go.tz/'
   },
-  
+
   {
-    name: 'Nairobi National Park' ,
-    image: '' ,
-    description: '' ,
-    latitude: 0,
-    longitude: 0,
+    name: 'Amboseli National Park' ,
+    image: 'https://theadventurousfeet.com/wp-content/uploads/2020/04/famous-landmarks-in-Africa-1.jpg' ,
+    description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
+    latitude: -2.6527,
+    longitude: 37.2606,
     region: 'Africa' ,
     country: 'Kenya' ,
-    facts: [ 'jdjjsjsj', 'ndfvjwvj' ],
-    parkUrl: ''
+    facts: [ 'The word \'amboseli\' is derived from the Maasai language and it means \'salty dust.\'',
+      'Amboseli National Park is considered to be Africa\'s best spot for viewing free-range elephants.',
+      'The park is considered to be one of the most popular parks in Kenya due to its views of Mount Kilimanjaro and the huge elephant herds that live in its boundaries.',
+      'Amboseli National Park is made up of several distinct habitats. They include savannah, woodlands, wetlands, and the mostly dried up Lake Amboseli. 10,000 years ago the lake was a permanent lake at least 40 meters in depth. It is small and only seasonal today.',
+      'Visitors to Amboseli National Park can enjoy amazing views of the world\'s highest free-standing mountain - Mount Kilimanjaro, which is located in the distance.',
+      'Wildlife that can be seen in Amboseli National Park includes blue wildebeests, plains zebras, Maasai giraffes, elephants, Cape buffalos, Maasai lions, spotted hyenas, cheetahs, impalas, wild dogs, crocodiles, nocturnal porcupines, gazelles, rhinos, hippos, mongooses, hyraxes, dik-diks, lesser kudus, and many others',
+      'Amboseli National Park contains more than 600 bird species. Some of these species include cranes, at least 47 raptor species, water birds, pelicans, hammerkops, Madagascar pong herons, lesser flamingoes, shoebills, lesser kestrels, and kingfishers.',
+      'Temperatures in Amboseli National Park range from 20 to 30 degrees Celsius. Between March and April the region experiences longer rains and between November and December the region experiences shorter rains.',
+      'Amboseli National Park is located over a natural underground water system that filters water in the volcanic rock. This clean water is then fed into springs in the center of the park.',
+      'At times Amboseli National Park can experience drought, or too much water. In the 1990s the park almost became a swamp because of the rain that would not quit.',
+      'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
+      'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
+    ],
+    parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
+  },
+
+  {
+    name: 'Komodo Island ',
+    image: 'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
+    description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
+    latitude: -8.543333,
+    longitude: 119.489441,
+    region: 'Asia',
+    country: 'Indonesia',
+    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
+    comments: [],
+    recommendations: ['It doesn\'t matter which tour you book, when you reach the island, you will be taken on a tour by the national park rangers.', 'I recommend using the services of Pacebo Tour, their services are very satisfying.'],
+    parkUrl: 'https://www.komodonationalpark.org/'
+  },
+  {
+    name: 'Gunung Mulu National Park',
+    image: 'https://w9wkq1hp8o5n.cdn.shift8web.ca/wp-content/uploads/2021/02/mulu-national-park-3.jpg',
+    description: 'Pin-striped cliffs show off their vertical faces, standing so high they make the trees look the size of broccoli. Caves display their entrances on the cliff faces like yawning mouths, allowing neat lines of sunshine to spotlight their mossy openings. Spear-like towers of rock pierce through the top of the jungle canopy, with the mist that gathers and swirls around them only adding to their fascinating strangeness. All of this is surrounded by 85,000 hectares of some of the oldest pristine rainforest in the world. The most famous feature of the site is the 45m high limestone giants – or the Pinnacles as they\'re known.',
+    latitude: 4.132 ,
+    longitude: 114.919,
+    region: 'Asia',
+    country: 'Borneo',
+    facts: ['The 52,865 ha park contains seventeen vegetation zones, exhibiting some 3,500 species of vascular plants. Its palm species are exceptionally rich, with 109 species in twenty genera recorded, making it one of the world\'s richest sites for palm species.', 'The caves, cliffs, gorges and rock pinnacles are limestone formations dating from between 17 and 40 million years ago.', 'There are 20,000 species of invertebrates, 81 species of mammals, 270 species of birds, 55 species of reptiles, 76 species of amphibians and 48 species of fish.'],
+    comments: [],
+    recommendations: ['The best time is July/August. For pinnacle climbing tours take 3D2N.', 'This is a relatively short tour but includes a good introduction to adventure caving. Be prepared to squeeze through tight passages, crawl, jump, and pull yourself up on ropes. Headlights and helmets are provided. Also be prepared to get intimate with hand sized spiders, millipedes, snakes, scorpions and bats.'],
+    parkUrl: 'https://mulupark.com/'
+  },
+  {
+    name: 'Phong Nha Ke Bang National Park',
+    image: 'https://isocms.com/uploads/Blog/du-lich-phong-nha-ke-bang2-857x571.jpg',
+    description: 'The result of earth crust development 464 million years ago it\'s the oldest major karst formation in Asia. Phong Nha-Ke Bang Park features a 2,000 sq km of limestone zone and an impressive grotto and cave system with a total length of 70km. The park is home to the Hang Son Doong Cave, the world\'s largest cave. Its biggest chamber is over five kilometres in length.',
+    latitude: 17.535664524 ,
+    longitude: 106.150749397,
+    region: 'Asia',
+    country: 'Vietnam',
+    facts: ['There were five stages in the development of the earth\'s crust that led to the creation of Phong Nha-ke Bang National Park. These included the Early Silurian Stage, the Middle-late Devonian Stage, the Carboniferous-Permian Stage, the Mesozoic Orogenic Stage, and the Cenozoic Stage.', 'Humidity is usually at roughly 84% due to the high amount of rainfall in the park. 88% of the rain falls between July and December but it rains every month, for more than 160 days each year.', 'Son Doong, the largest cave in the world, contains 300 caves and grottos. It is significant because it contains evidence of the history of the earth\'s evolution.', 'Wildlife found in Phong Nha-ke Bang National Park includes ten species and subspecies of primates, langurs, mainland serows, Asian black bears, sun bears, Sunda pangolins, striped hares, and many others.', 'There are 59 recorded amphibian and reptile species, 72 species of fish, more than 200 bird species, and 259 species of butterflies in Phong Nha-ke Bang National Park.', 'Visitors to the park are not allowed to hike without the presence of licensed tour guide as there are still unexploded weapons on the ground in certain areas dating back to the Vietnam War.'],
+    comments: [],
+    recommendations: ['Oxalis is an outstanding tour operator. I took a two day trip to explore Hang Va, everything was well taken care of. Everybody was amazing.', 'If you are going to travel here by bicycle there\'s a lot of uphill so recommend a moped or a taxi. Good half day activity, very rocky so don\'t wear flip flops!'],
+    parkUrl: 'https://whc.unesco.org/en/list/951/'
+  },
+  {
+    name: 'Fuji-Hakone-Izu National Park',
+    image: 'https://www.bigbreaks.com/images/package/images/Thumbnail/Mt_Fuji_Hakone_Tour_Japan_2_08_29_18_49.jpg',
+    description: 'The crowning jewel of Fuji-Hakone-Izu National Park is hidden in the name: Mt Fuji. Sweeping up from the Pacific to form a nearly perfect symmetrical cone, its majestic peak reaches 12,388 feet (3,776 metres) into the sky, and is snow capped even during the summer months.',
+    latitude: 35,
+    longitude: 138.833333,
+    region: 'Asia',
+    country: 'Japan',
+    facts: ['This volcanic mountain is actually three separate volcanoes, one on top of the other. The bottom layer is the Komitake volcano, then the Kofuji volcano, then Fuji, which is the youngest of the three.', 'Fuji-Hakone-Izu National Park is the most visited national park in the country.', 'Volcanic activity has shaped the landscape here in a variety of ways. Lava flows blocked rivers across the area, forming five lakes known collectively as Fuji Goko.', 'There are many lava tunnels characteristic of volcanic regions such as wind caves, ice caves, and lava tree molds like wooden casts.'],
+    comments: [],
+    recommendations: ['One of the famous things to do is eat the hot spring eggs, which are black in color from the thermal cooking process. There is also a wonderful museum that costs only 100yen, it displays historical and interactive models that teaches you about this area.', 'If the weather is good, I highly recommend the Open Air Museum - it\'s one of my favorite museums in the world! And the volcanic area cable cars, too!'],
+    parkUrl: 'https://www.env.go.jp/en/nature/nps/park/fujihakone/index.html'
+  },
+  {
+    name: 'Khao Sok National Park',
+    image: 'https://images.unsplash.com/photo-1494948949099-1311f3e907a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80',
+    description: 'This 739-square-kilometre national park contains the world\'s oldest evergreen forest throughout deep valleys and amongst limestone mountains, with waterfalls, caves and lakes hidden amongst them; most notably Cheow Lan lake, which stands out for its unique floating raft houses, as well as its sheer beauty. ',
+    latitude: 8.9367,
+    longitude: 98.5303,
+    region: 'Asia',
+    country: 'Thailand',
+    facts: ['Animals found in Khao Sok include the Asian elephant, Malayan tapirs, marbled cats, wild boars, clouded leopards, Asiatic wild dogs, gibbons, mouse-deer, porcupines, macaques, serows, sun bears, sambar deer, bantengs, guars, and the Asian black bear. Tigers are occasionally seen in the park but none have been spotted for a long time.', 'There are hundreds of bird species found in Khao Sok National Park including the rufous-collared kingfisher, blue-banded kingfisher, white-crowned hornbill, helmeted hornbill, great hornbill, osprey, banded pittas, and brahminy kite.', 'The symbolic flower of Surat Thani province, called the Bua Phut, is found in Khao Sok National Park.', 'One of the Khao Sok residents, the mouse deer, are the smallest hoofed animal known to man.'],
+    comments: [],
+    recommendations: ['Chieow Laan Lake is quite breathtaking. For anyone wanting to experience this great location I can highly recommend a local tour company www.limestonelaketours.com', 'I cannot recommend this bamboo rafting or canoeing highly enough, the scenery is stunning...'],
+    parkUrl: 'https://www.khaosok.com/'
+  },
+
+  {
+    name: 'Redwood National and State Parks',
+    image: 'https://i.natgeofe.com/n/08a290b9-36dc-4dee-a75e-a1af937cdf3b/woman-on-sequoia.jpg',
+    description: 'Redwood National Park is an 112,618 acre park in Humboldt County, and Del Norte County, California. It is home to the tallest trees in the world, called coast redwoods. Redwood National Park was established in 1968, at a time when redwood population had decreased by 90%. It was added to the list of three other parks that had been created to save the redwood tree population including Del Norte Coast, Jedediah Smith, and Prairie Creek Redwood parks. Together the four parks make up Redwood National and State Parks, which was established in 1994 to help combine efforts to save the redwood forests. 96% of old redwood growth has been logged.',
+    latitude: '41.2132',
+    longitude: '-124.0046',
+    region: 'North America',
+    country: 'USA',
+    facts: [
+      'The redwood trees here are the tallest, among the oldest and one of the most massive tree species on Earth',
+      'Threatened and endangered species found in Redwood National Park include Chinook salmon, Steller\'s sea lion, northern spotted owl, tidewater goby, and the bald eagle',
+      'Modern day native groups such as the Yurok, Tolowa, Karok, Chilula, and Wiyot all have historical ties to the region, and some Native American groups still live in the park area today',
+      'Prescribed fires are sometimes used to manage the ecosystem in Redwood National Park, which can help to remove exotic and invasive species, as well as eliminate the dead trees and provide more fertile soil for the healthier trees to survive',
+      'There are approximately 200 miles of trails for hikers and bikers to explore Redwood National Park'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.visitredwoods.com/explore-the-redwoods/redwood-national-park/'
+  },
+  {
+    name: 'Banff National Par',
+    image: 'https://wallpaperaccess.com/full/1609680.jpg',
+    description: 'As Canada’s oldest national park, and the world’s third oldest, Banff is one of the continent’s premier destinations, boasting almost unsurpassed levels of natural beauty with its snow-capped peaks, dense coniferous forests, alpine meadows and pristine lakes. Every year, visitors make the journey to witness the majestic mountain scenery and indulge in endless opportunities for outdoor pursuits, from hiking, biking and canoeing to backcountry camping. Visit strings of glaciers and lakes, each one more spectacular than the last, drive the scenic Icefield Parkway, and soak in the lively atmosphere of Banff town with its world-class resorts, boutiques, restaurants and breweries',
+    latitude: '51.4968',
+    longitude: '-115.9281',
+    region: 'North America',
+    country: 'Canada',
+    facts: [
+      'Some of Banff National Park lakes are extremely blue, even emerald sometimes. Lake Louise, Moraine Lake, Peyto Lake, and Bow Lake get their colour from the melting glaciers running into the lake and depositing fine rock ',
+      'Banff park originally started as a 10-square mile reserve around the sulphur mountain hot springs',
+      'Lake louise is the highest permanent settlement in canada and the most photographed lake in the world',
+      'It has the world’s only distillery in a national park',
+      'The Fairmont Banff Springs Golf Course is over a hundred years old and considered one of the most beautiful in the world, according to Golf Advisor'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.pc.gc.ca/en/pn-np/ab/banff'
+  },
+  {
+    name: 'Yellowstone National Park',
+    image: 'https://www.nps.gov/articles/images/DSCF0996.JPG',
+    description: 'Yellowstone National Park is the the oldest, one of the largest, and probably the best-known national park in the United States. It is situated principally in northwestern Wyoming and partly in southern Montana and eastern Idaho and includes the greatest concentration of hydrothermal features in the world. The park was established by the U.S. Congress on March 1, 1872, as the country’s first national park.',
+    latitude: '44.4280',
+    longitude: '-110.5885',
+    region: 'North America',
+    country: 'USA',
+    facts: [
+      'The Yellowstone region is also extremely active seismically and experiences hundreds of small earthquakes each year',
+      'Yellowstone’s relief is the result of tectonic activity (volcanism and earthquakes) combined with the erosional actions of ice and water',
+      'Yellowstone’s principal attractions, however, are its some 10,000 hydrothermal features, which constitute roughly half of all those known in the world',
+      'Of the park’s more than 300 geysers—greater than half of the world’s total—many erupt to heights of 100 feet (30 metres) or more',
+      'Archaeological evidence recovered in Yellowstone indicates that there has been a sustained human presence in the region since sometime after the end of the last glaciation there with the oldest artifacts dating to more than 11,000 years ago'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nps.gov/yell/'
+  },
+  {
+    name: 'Haleakalā National Park',
+    image: 'https://media.cntraveler.com/photos/5894b2d829a6a9db132b077c/master/pass/GettyImages-118998690.jpg',
+    description: 'Haleakalā National Park is an American national park located on the island of Maui in the state of Hawaii. Named after Haleakalā, a dormant volcano within its boundaries, the park covers an area of 33,265 acres. The land was designated a national park in 1976 and its boundaries expanded in 2005.',
+    latitude: '20.7204',
+    longitude: '-156.1552',
+    region: 'North America',
+    country: 'USA',
+    facts: [
+      'The name Haleakalā is Hawaiian for "house of the sun."',
+      'According to a local legend, the demigod Maui imprisoned the sun here in order to lengthen the day.',
+      'The park features the dormant Haleakalā (East Maui) Volcano, which last erupted sometime between 1480 and 1600 AD.',
+      'The park is known for its volcanic features, its long scenic drive with numerous overlooks, and the unusually clear views of the night sky available',
+      'Haleakalā is one of the best places in the United States for amateur astronomy'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nps.gov/hale/index.htm'
+  },
+  {
+    name: 'Grutas de Cacahuamilpa National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Grutas_de_Cacahuamilpa%2C_Guerrero_%2833165502951%29.jpg',
+    description: 'The Grutas de Cacahuamilpa National Park in Guerrero, Mexico, is best known for the Grutas de Cacahuamilpa Caverns, which are one of the largest cave systems in the world. The park is located in the Sierra Madre del Sur, primarily in the northeast part of Guerrero state.',
+    latitude: '18.6697',
+    longitude: '-99.5099',
+    region: 'North America',
+    country: 'Mexico',
+    facts: [
+      'Cacahuamilpa is one of the largest cave systems in the world. It is a "live" cave system, meaning that groundwater still filters down into it',
+      'Inside the cavern system are ninety large "salons" separated by large natural rock walls and connected to one another via a central gallery',
+      'The original name of the caves was “Salachi.” The current name, “Cacahuamilpa,” comes from a location near the cave entrance and means “peanut field.”',
+      'The park has two underground rivers called the Chontalcoatlán, which is eight km long, and the San Jeronimo, which is 12 km long',
+      'Credit for the “discovery” of the caves is given to Manuel Sainz de la Peña Miranda, who used the caves in 1834 to hide from Spanish authorities'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nps.gov/hale/index.html'
   }
 
 
