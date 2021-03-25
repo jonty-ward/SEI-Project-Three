@@ -13,10 +13,8 @@ const startServer = async () =>{
 
     await mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 
-
     // * body parser 
     app.use(express.json())
-
 
     // * logger middlewear 
 
@@ -24,7 +22,6 @@ const startServer = async () =>{
       console.log(`🚨 Incoming request: ${req.method} - ${req.url}`)
       next()
     })
-
 
     // * server
 
