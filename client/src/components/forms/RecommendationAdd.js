@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import RecommendationForm from './RecommendationForm'
+import { getTokenFromLocalStorage } from '../../helpers/auth'
 
 const RecommendationAdd = () => {
 
@@ -40,12 +41,12 @@ const RecommendationAdd = () => {
 
     // * posting to the DB- need to link in the authentication and params
     await axios.post(
-      '/api/parks/605d8d698b68670b48f1a56b/recommendations',
+      '/api/parks/605dcd70b059d51e3916a4e8/recommendations',
       formData,
       {
-        headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVkYzU0ODI2NDYwZDFjMDAzNmYwMDgiLCJpYXQiOjE2MTY3NTgxMDQsImV4cCI6MTYxNzM2MjkwNH0.bbWu4cZnrY9Tw9SBUdMeCktTZSjA9UxVYjKvSPP_Trk'
-        }
+        
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
+      
       }
     )
     history.push('/')
