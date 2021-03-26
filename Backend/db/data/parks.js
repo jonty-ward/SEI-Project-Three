@@ -524,9 +524,9 @@ export default [
     parkUrl: 'http://tanap.sopsr.sk/'
   },
   {
-    mame: 'Gran Paradiso National Park',
+    name: 'Gran Paradiso National Park',
     image: 'https://peakvisor.com/img/news/Gran-Paradiso-National-Park.jpg',
-    description: 'Gran Paradiso National Park was Italy’s first national park. It is a protected area nestled high in the Graian Alps of northern Italy, close to the French border. While the nearby French Alps may be enticing, Gran Paradiso more than holds its own with over 700km² (270 square miles) of relaxing land, ski trails, hiking routes, plentiful flora and, of course, its protected symbol, the Alpine ibex.',
+    description: 'Gran Paradiso National Park was Italy\'s first national park. It is a protected area nestled high in the Graian Alps of northern Italy, close to the French border. While the nearby French Alps may be enticing, Gran Paradiso more than holds its own with over 700km² (270 square miles) of relaxing land, ski trails, hiking routes, plentiful flora and, of course, its protected symbol, the Alpine ibex.',
     latitude: 45.502778,
     longitude: 7.31,
     region: 'Europe',
