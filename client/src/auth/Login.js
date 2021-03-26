@@ -22,6 +22,7 @@ const Login = () => {
  
     window.localStorage.setItem('token', response.data.token)
     history.push('/parks')
+    location.reload()
   }
 
   return (

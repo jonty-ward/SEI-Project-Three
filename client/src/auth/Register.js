@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { ImageUploadField } from '../components/forms/ImageUploadField'
 
-const Register = () => {
+const Register = ({ handleImageUrl }) => {
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -70,12 +71,10 @@ const Register = () => {
               <div className="field">
                 <label className="label">Profile Picture</label>
                 <div className="control">
-                  <input
-                    className="input"
-                    placeholder="Upload a photo"
+                  <ImageUploadField
                     name="profilePic"
                     value={formData.profilePic}
-                    onChange={handleChange}
+                    handleImageUrl={handleImageUrl}
                   />
                 </div>
               </div>

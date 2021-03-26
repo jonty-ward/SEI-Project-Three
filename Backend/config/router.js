@@ -1,5 +1,5 @@
 import express from 'express'
-import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark, editParkComments } from '../controllers/parks.js'
+import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark, editParkComments, editParkRecommendation } from '../controllers/parks.js'
 import { loginUser, registerUser } from '../controllers/auth.js' 
 import { secureRoute } from '../config/secureRoute.js'
 
@@ -26,6 +26,7 @@ router.route('/parks/:id/recommendations')
 
 router.route('/parks/:id/recommendations/:recommendationId')
   .delete(secureRoute, deleteRecommendationToPark)
+  .put(secureRoute, editParkRecommendation)
 
 router.route('/register')
   .post(registerUser)

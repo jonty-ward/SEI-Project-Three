@@ -73,6 +73,7 @@ export const addCommentToPark = async (req, res) => {
   }
 }
 
+// * Edit a comment
 export const editParkComments = async (req, res) =>{
   try {
     const { id, commentId } = req.params
@@ -127,6 +128,25 @@ export const addRecommendationToPark = async (req, res) => {
   }
 }
 
+// * Edit a recommendation
+export const editParkRecommendation = async (req, res) =>{
+  try {
+    const { id, recommendationId } = req.params
+    const parkToUpdate = await Park.findById(id)
+    console.log('park to update ', parkToUpdate.recommendations)
+    if (!parkToUpdate) throw new Error()
+    const recommendationToUpdate = parkToUpdate.recommendations.id(recommendationId)
+    if (!recommendationToUpdate) throw new Error('Recommendation not found')
+    console.log('req.body', req.body)
+    Object.assign(recommendationToUpdate, req.body)
+    await parkToUpdate.save()
+    console.log('recommendation to update', recommendationToUpdate)
+    return res.status(202).json(recommendationToUpdate)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
+  }
+}
 
 // * Delete a recommendation
 export const deleteRecommendationToPark = async (req, res) => {

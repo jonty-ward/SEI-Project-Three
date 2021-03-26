@@ -1,30 +1,68 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { userIsAuthenticated } from '../helpers/auth'
 
 const Navbar = () => {
+  const history = useHistory()
+
+  const handleLogout = () => {
+    window.localStorage.removeItem('token')
+    history.push('/')
+    location.reload()
+  }
 
   return (
-    <>
-      <h1>This is navbar</h1>
-      <Link to='/'>
-        Home
-      </Link>
-      <Link to='/register'>
-        Register
-      </Link>
-      <Link to='/login'>
-        Login
-      </Link>
-      <Link to='/addComments'>
-        Add a comment
-      </Link>
-      <Link to="/addRecommendation">
-        Add a recommendation
-      </Link>
-      <Link to="/regions">
-        Regions
-      </Link>
-    </>
+    <div className="navbar">
+      {/* <h1>This is navbar</h1> */}
+      <div className="navbar-brand navbar-item">
+        <Link to='/'>
+          Home
+        </Link>
+      </div>
+      <div className="navbar-start">
+        <div className="navbar-item">
+          <Link to="/regions">
+            Regions
+          </Link>
+        </div>
+
+        
+        <div className="navbar-item">
+          { userIsAuthenticated() && 
+            <Link to='/addComments'>
+              Add a comment
+            </Link>
+          }
+        </div>
+        <div className="navbar-item">
+          { userIsAuthenticated() && 
+            <Link to="/addRecommendation">
+              Add a recommendation
+            </Link> 
+          }
+        </div>
+          
+      </div>
+      <div className="navbar-end">
+        { !userIsAuthenticated() && 
+        <>
+          <div className="navbar-item">
+            <Link to='/register'>
+              Register
+            </Link>
+          </div>
+          <div className="navbar-item">
+            <Link to='/login'>
+              Login
+            </Link>
+          </div>
+        </>
+        }
+        { userIsAuthenticated() &&
+          <button onClick={handleLogout} className="button">Log out</button>
+        }
+      </div>
+    </div>
   )
 
 }
