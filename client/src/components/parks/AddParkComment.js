@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
-const ParkCommentForm = () => {
+const AddParkCommentForm = () => {
   const params = useParams()
+
+  const getTokenFromLocalStorage = () => {
+    return window.localStorage.getItem('token')
+  }
 
   const [formData, setFormData] = useState({
     text: '',
@@ -23,7 +27,7 @@ const ParkCommentForm = () => {
       `/api/parks/comments/${params.id}`,
       formData,
       {
-        headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
       }
     )
   }
@@ -35,7 +39,7 @@ const ParkCommentForm = () => {
         <div>
           <input
             placeholder="Add your comment here.."
-            name="Comment"
+            name="text"
             value={formData.text}
             onChange={handleChange}
           />
@@ -61,4 +65,4 @@ const ParkCommentForm = () => {
   )
 }
 
-export default ParkCommentForm
+export default AddParkCommentForm

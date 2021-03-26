@@ -335,7 +335,7 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'ADD IN URL'
-  }
+  },
   // {
   //   name: 'Cerro Castillo National Park',
   //   image: '',
@@ -375,6 +375,98 @@ export default [
   //   recommendations: [],
   //   parkUrl: ''
   // }
+  {
+    name: 'Abel Tasman National Park',
+    image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fkayaks-ABEL0217.jpg',
+    description: 'The Abel Tasman Coastal Track follows a pristine coastline of extraordinary beauty. Clear, turquoise bays, abundant bird and sea life, and fresh, clean air surround you as you walk under the shady canopy of lush native forest. Birdsong rings through the treetops above, only interrupted by the call of the occasional small waterfall nestled in the midst of the park.',
+    latitude: '-40.9050',
+    longitude: '172.9671',
+    region: 'Oceania',
+    country: 'New Zealand',
+    facts: [
+      'The Abel Tasman Coast Track is a popular tramping track that follows the coastline and is one of the Department of Conservation\'s Great Walks',
+      'This national park has a free virtual visitor centre for downloading to smartphones or tablets, providing information about the Park\'s history, its flora and fauna, points of interest, weather, walking tracks, and tides',
+      'You can walk into the Park from the seaside village of Marahau, dropped off at various points along the track by sea, paddle in by kayak, or be flown in to the airstrip in Awaroa Bay by plane or helicopter',
+      'Wainui Falls is the tallest waterfall within the park reaching a height of 66 feet (20 m)',
+      'Kayaking is one of the best ways to explore the shoreline and neighboring islands that are part of the national park.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.abeltasman.co.nz/'
+  },
+  {
+    name: 'Bouma National Heritage Park',
+    image: 'https://lp-cms-production.imgix.net/2019-06/b771b7c1a3d444489edf051134463bb5-bouma-national-heritage-park.jpg',
+    description: 'Bouma National Heritage Park is located on Taveuni Island, the third largest island od Fiji. Taveuni is known as “the garden island of Fiji” because of its abundant plant life, which includes several species found only on the island. Bouma National Heritage Park, on the eastern side, contains pristine rainforest and three waterfalls, each some 65 feet (20 metres) high.',
+    latitude: '-16.8532',
+    longitude: '-179.9160',
+    region: 'Oceania',
+    country: 'Fiji',
+    facts: [
+      'There is a mountain ridge that runs through the heart of the island with the highest summit occurring at Uluinggalau with a height of 4,072 feet (1,241 m)',
+      'Fiji is known for islands, beaches and blue waters.  However, Taveuni Island is complemented with rainforest and tropical vegetation',
+      'Bouma National Park accounts for approximately 80% of Taveuni Island',
+      'The three Tavoro Waterfalls can be explored with short hikes with the tallest only requiring a 10-minute hike',
+      'There are four villages known with the park known as Waitabu, Vidawa, Korovou, and Lavena'],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Cradle Mountain-Lake St Clair National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Cradle_Mountain_Behind_Dove_Lake.jpg',
+    description: 'Iconic Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness World Heritage Area. From moss-covered ancient rainforests and deep river gorges to snow-covered mountain peaks, wild alpine moorlands and glacial lakes, the park is revered for its diverse and breath-taking landscapes.',
+    latitude: '-41.8333',
+    longitude: '146.0000',
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The Cradle Mountain-Lake St Clair area was declared a scenic reserve in 1922, a wildlife reserve in 1927, a national park in 1947 and a world heritage area from 1982',
+      'Lake St Clair has an area of approximately 45 square kilometres (17 sq mi), and a maximum depth of 160 metres (520 ft), making it Australia\'s deepest lake',
+      'This area was used to film scenes for the prehistoric life documentaries Walking with Dinosaurs and When Dinosaurs Roamed America',
+      'The park has been identified as an Important Bird Area (IBA) because it provides habitat for 11 of Tasmania\'s endemic bird species',
+      'Aboriginal use of the Cradle Mountain dates back to the last ice age (10,000 years ago) and is believed to have been non-permanent, consisting mostly of seasonal hunting excursions during the summer months'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://parks.tas.gov.au/explore-our-parks/cradle-mountain'
+  },
+  {
+    name: 'Tongariro National Park',
+    image: 'https://cms.lonelyplanet.com/sites/default/files/brightcove/videos/images/posters/5104226627001_5480024787001_5471392086001-vs.jpg',
+    description: 'Home to three active volcanic mountains, and iconic and majestic landscapes, Tongariro National Park has attracted adventurers of all ages since 1887. With wide-open spaces, some of the best hikes in the world and must-see natural wonders, Tongariro National Park is the perfect destination for families, couples and explorers seeking adventure, fun and an escape into nature.',
+    latitude: '-39.1928',
+    longitude: '175.5938',
+    region: 'Oceania',
+    country: 'New Zealand',
+    facts: [
+      'Tongariro\'s dual World Heritage status recognises the park\'s important Maori cultural and spiritual associations as well as its outstanding volcanic features.',
+      'Tongariro National Park was the sixth national park established in the world',
+      'The active volcanic mountains Ruapehu, Ngauruhoe, and Tongariro are located in the centre of the park',
+      'The Tongariro National Park is home to the famed Tongariro Alpine Crossing, widely regarded as one of the world\'s best one-day hikes',
+      'Mount Tongariro and its surroundings are one of the several locations where Peter Jackson shot The Lord of the Rings film trilogy'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/?tab-id=50578'
+  },
+  {
+    name: 'Uluru-Kata Tjuta National Park',
+    image: 'https://i.pinimg.com/originals/01/6f/85/016f858691099f4a431a1636cf75c967.jpg',
+    description: 'Uluru-Kata Tjuta National Park is named after two of Australia’s most spectacular sites: the world-famous sandstone monolith of Uluru and the red domes of Kata Tjuta. As well as its world-famous geological formations and extraordinary Indigenous culture, the park is home to a fascinating array of plants and animals, including many rare species.',
+    latitude: '-25.3438',
+    longitude: '131.0347',
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The sandstone domes of Kata Tjuta are believed to be about 500 million years old',
+      'Kata Tjuta is a Pitjantjatjara Aboriginal word meaning "many heads."',
+      'To Anangu (local indigenous people), Uluru is a place name and this "Rock" has a number of different landmarks where many ancestral beings have interacted with the landscape and/or each other, some even believed to still reside here',
+      'The land is owned by the Anangu people and leased to Parks Australia, who manage the national park in collaboration with the traditional owners',
+      'The Anangu have connected to the area for thousands of years and some records suggested that they may have lived there for more than 10,000 years'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://parksaustralia.gov.au/uluru/'
+  }
 
 
 ]

@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Register from './auth/Register'
 import Login from './auth/Login'
-import ParkComment from './components/parks/ParkComment'
+import AddParkCommentForm from './components/parks/AddParkComment'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       	  <Login />
         </Route>
         <Route exact path="/comments">
-      	  <ParkComment />
+      	  <AddParkCommentForm />
         </Route>
       </Switch>
     </BrowserRouter>
