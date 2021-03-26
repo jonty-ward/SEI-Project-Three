@@ -2,15 +2,14 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import RegionSelect from '../regions/RegionSelect'
-// import ParkCard from './ParkCard'
+// import RegionSelect from '../regions/RegionSelect'
+import ParkCard from './ParkCard'
 
 const ParkIndex = () => {
 
   const params = useParams()
-  console.log(params.region)
-  console.log(window.location.href.split('/')[4])
-  const urlRegion = window.location.href.split('/')[4]
+  console.log('params.region in the index file',params.region)
+  const urlRegion = params.region
 
   const [parks, setParks] = useState([])
 
@@ -21,10 +20,15 @@ const ParkIndex = () => {
     }
     getData()
   }, [])
-  console.log('parks', parks)
+  
+  // const parksJoined = parks.map(join =>{
+  //   return join.region.toString().split(' ').join('')
+  // })
+  // console.log('PARKSJOINED>>>>>>',parksJoined)
 
   const filteredArray = parks.filter(parks => {
-    return parks.region === urlRegion
+    console.log('PARKS.REGION', parks.region)
+    return parks.region.toString().split(' ').join('') === urlRegion
   })
   console.log('filtered array', filteredArray)
 
@@ -35,8 +39,8 @@ const ParkIndex = () => {
         <div className="container">
           { parks &&
           <div className="columns is-multiline">
-            { parks.map( park => (
-              <RegionSelect key={park._id} {...park}
+            { filteredArray.map( park => (
+              <ParkCard key={park._id} {...park}
               />
             ))}
           </div>

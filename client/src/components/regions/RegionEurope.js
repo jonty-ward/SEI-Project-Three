@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import ParkIndex from '../parks/ParkIndex'
 
 const RegionEurope = () => {
 
 
+  const params = useParams()
 
 
 
@@ -12,7 +14,7 @@ const RegionEurope = () => {
   return (
     <>
       <div>
-      Europe
+        {params.region}
       </div>
       <ParkIndex />
     </>
