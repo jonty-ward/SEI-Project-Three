@@ -7,6 +7,8 @@ import Register from './auth/Register'
 import Login from './auth/Login'
 import AddParkCommentForm from './components/parks/AddParkCommentForm'
 import RecommendationAdd from './components/forms/RecommendationAdd'
+import RegionSelect from './components/regions/RegionSelect'
+import RegionEurope from './components/regions/RegionEurope'
 
 const App = () => {
   return (
@@ -27,6 +29,12 @@ const App = () => {
         </Route>
         <Route path="/addRecommendation">
           <RecommendationAdd/>
+        </Route>
+        <Route exact path="/regions">
+          <RegionSelect />
+        </Route>
+        <Route exact path="/regions/:region">
+          <RegionEurope />
         </Route>
       </Switch>
     </BrowserRouter>
