@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Register from './auth/Register'
 import Login from './auth/Login'
+import AddParkCommentForm from './components/parks/AddParkCommentForm'
 import RecommendationAdd from './components/forms/RecommendationAdd'
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
         </Route>
         <Route  path="/login">
       	  <Login />
+        </Route>
+        <Route exact path="/addComments">
+      	  <AddParkCommentForm />
         </Route>
         <Route path="/addRecommendation">
           <RecommendationAdd/>
