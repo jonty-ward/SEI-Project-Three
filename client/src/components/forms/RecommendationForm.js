@@ -5,7 +5,6 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
   return (
     
     <form onSubmit={handleSubmit} className="Form-field">
-
       <div className="field">
         <label className="label">Park Name</label>
         <div className="control">
@@ -15,7 +14,6 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
             name="parkName"
             value={formData.parkName}
             onChange={handleChange}
-
           />
         </div>
         <div className="field">
@@ -59,10 +57,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
         </button>
       </div>
     </form>
-    
-  
   )
 }
 
 export default recommendationForm
-
