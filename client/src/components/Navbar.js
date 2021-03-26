@@ -21,6 +21,9 @@ const Navbar = () => {
       <Link to="/addRecommendation">
         Add a recommendation
       </Link>
+      <Link to="/regions">
+        Regions
+      </Link>
     </>
   )
 
