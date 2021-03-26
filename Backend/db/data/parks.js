@@ -358,8 +358,8 @@ export default [
     region: 'South America',
     country: 'Peru',
     facts: ['It is the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.',
-    'As one of the most biodiverse places on the planet, the Manu National Park in the Amazon is, in the most part, an unexplored paradise with indigenous cultures that haven\'t made contact with modern civilization in the last 150 years.',
-    'Among the mammals are the Giant Otter, 13 different species of primates and eight felids, including Jaguar, Puma and the elusive and endangered Andean Mountain Cat.'],
+      'As one of the most biodiverse places on the planet, the Manu National Park in the Amazon is, in the most part, an unexplored paradise with indigenous cultures that haven\'t made contact with modern civilization in the last 150 years.',
+      'Among the mammals are the Giant Otter, 13 different species of primates and eight felids, including Jaguar, Puma and the elusive and endangered Andean Mountain Cat.'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://whc.unesco.org/en/list/402/'
@@ -378,7 +378,7 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.visitcostarica.com/en/costa-rica/where-to-go/protected-areas/piedras-blancas-national-park'
-  }
+  },
   {
     name: 'Tatra National Park',
     image: 'https://www.telegraph.co.uk/content/dam/travel/Spark/untapped-destinations/Vodafone-Slovakia-main-xlarge.jpg',
@@ -388,10 +388,10 @@ export default [
     region: 'Europe',
     country: 'Slovakia',
     facts: ['There are more than 270 kilometres of hiking trails in Tatra National Park.',
-    'The National Park contains several endemic fauna species, and many endangered and protected ones. Animals include the Tatra chamois and marmot, both protected since the mid-19th century; brown bear, Eurasian lynx, grey wolf, European otter, lesser spotted eagle, and falcon.',
-    'The largest lakes is Morskie Oko with an area of 349,000 m² and the maximum depth of 50.8 metres, Wielki Staw with an area of 344,000 m² and the maximum depth of 79.3 metres.',
-    'The Tatra Mountains form a natural border between Poland to the north and Slovakia to the south, and the two countries have cooperated since the early 20th century on efforts to protect the area.',
-    'The chamois is the symbol of Tatras.'],
+      'The National Park contains several endemic fauna species, and many endangered and protected ones. Animals include the Tatra chamois and marmot, both protected since the mid-19th century; brown bear, Eurasian lynx, grey wolf, European otter, lesser spotted eagle, and falcon.',
+      'The largest lakes is Morskie Oko with an area of 349,000 m² and the maximum depth of 50.8 metres, Wielki Staw with an area of 344,000 m² and the maximum depth of 79.3 metres.',
+      'The Tatra Mountains form a natural border between Poland to the north and Slovakia to the south, and the two countries have cooperated since the early 20th century on efforts to protect the area.',
+      'The chamois is the symbol of Tatras.'],
     comments: [],
     recommendations: [],
     parkUrl: 'http://tanap.sopsr.sk/'
@@ -405,9 +405,9 @@ export default [
     region: 'Europe',
     country: 'Italy',
     facts: ['The fauna has its emblem in the ibex, symbol of the Park and now widespread throughout the park, recovering from near extinction.', 
-    'In September 1860, Englishman John Cowell became the first person to reach the summit of Gran Paradiso.', 
-    'Gran Paradiso National Park is the largest protected alpine area in all of Europe.', 
-    'The park is the descendant of the royal hunting reserve founded by Vittorio Emanuele II of Savoy in 1859.'],
+      'In September 1860, Englishman John Cowell became the first person to reach the summit of Gran Paradiso.', 
+      'Gran Paradiso National Park is the largest protected alpine area in all of Europe.', 
+      'The park is the descendant of the royal hunting reserve founded by Vittorio Emanuele II of Savoy in 1859.'],
     comments: [],
     recommendations: [],
     parkUrl: 'http://www.pngp.it/en/national-park'
@@ -421,8 +421,8 @@ export default [
     region: 'Europe',
     country: 'Greece',
     facts: ['Greece\'s highest mountain, Olympus is also the legendary abode of the gods. The favor of the deities gave the mountain an honored place in Classical Greek culture and that mythical status has been passed down through the centuries, across Western civilization.', 
-    'The mountain\'s highest peak, Mytikas, tops out at 9,573 feet (2,918 meters). The ancients called Mytikas “Pantheon” and believed it was the meeting place of the deities. The 12 gods were believed to have lived in the alpine ravines, which Homer described as the mountain\'s “mysterious folds.”',
-    'More than 1,700 plants are found on Mount Olympus—representing 25 percent of all Greek flora. Diversity is high here because of the mountain\'s different elevation zones and its proximity to the sea.'],
+      'The mountain\'s highest peak, Mytikas, tops out at 9,573 feet (2,918 meters). The ancients called Mytikas “Pantheon” and believed it was the meeting place of the deities. The 12 gods were believed to have lived in the alpine ravines, which Homer described as the mountain\'s “mysterious folds.”',
+      'More than 1,700 plants are found on Mount Olympus—representing 25 percent of all Greek flora. Diversity is high here because of the mountain\'s different elevation zones and its proximity to the sea.'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://olympusfd.gr/en/'
@@ -436,9 +436,9 @@ export default [
     region: 'Europe',
     country: 'Montenegro',
     facts: ['Look for rare Dalmatian pelicans on the lake\'s water – the world\'s heaviest flying bird.', 
-    'Lake Skadar is a key resting place for birds migrating from northern Europe to Africa. It\'s the largest bird reserve in Europe, it\'s on the Ramsar Convention\'s List of Wetlands of International Importance and it has been nominated for UNESCO World Heritage status.', 
-    'The size of the lake varies from 530 to 370 km2 it is 44 km long and 14 km wide. Coast line is very sharp, especially in the north – west side.', 
-    'There used to be around 60 monasteries, fortresses and churches around Lake Skadar. Now there are 20.'],
+      'Lake Skadar is a key resting place for birds migrating from northern Europe to Africa. It\'s the largest bird reserve in Europe, it\'s on the Ramsar Convention\'s List of Wetlands of International Importance and it has been nominated for UNESCO World Heritage status.', 
+      'The size of the lake varies from 530 to 370 km2 it is 44 km long and 14 km wide. Coast line is very sharp, especially in the north – west side.', 
+      'There used to be around 60 monasteries, fortresses and churches around Lake Skadar. Now there are 20.'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://lake-skadar.com/'
@@ -452,13 +452,11 @@ export default [
     region: 'Europe',
     country: 'Slovenia',
     facts: ['Triglav National Park covers a full four percent of Slovenia\'s territory.', 
-    'The majority of Slovenia\'s more than 400 two-thousand metre peaks lie within the boundaries of Triglav National Park.'],
+      'The majority of Slovenia\'s more than 400 two-thousand metre peaks lie within the boundaries of Triglav National Park.'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.mljettravel.com/national-park/'
   }
-
-
 
 ]
 
