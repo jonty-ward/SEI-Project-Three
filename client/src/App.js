@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Register from './auth/Register'
 import Login from './auth/Login'
-import RecommendationForm from './components/forms/RecommendationForm'
+import RecommendationAdd from './components/forms/RecommendationAdd'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       	  <Login />
         </Route>
         <Route path="/addRecommendation">
-          <RecommendationForm/>
+          <RecommendationAdd/>
         </Route>
       </Switch>
     </BrowserRouter>

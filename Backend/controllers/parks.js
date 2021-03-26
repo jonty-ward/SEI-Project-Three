@@ -12,11 +12,7 @@ export const getAllParks = async (_req, res) => {
 export const getOnePark = async (req, res) => {
   try {
     const { id } = req.params
-<<<<<<< HEAD
-    const singlePark = await Park.findById(id)
-=======
     const singlePark = await Park.findById(id).populate('comments.owner').populate('recommendations.owner')
->>>>>>> development
     if (!singlePark) {
       throw new Error()
     }
@@ -78,7 +74,6 @@ export const addCommentToPark = async (req, res) => {
 }
 
 export const editParkComments = async (req, res) =>{
-
   try {
     const { id, commentId } = req.params
     const parkToUpdate = await Park.findById(id)
@@ -88,9 +83,7 @@ export const editParkComments = async (req, res) =>{
     if (!commentToUpdate) throw new Error('Comment not found')
     console.log('req.body', req.body)
     Object.assign(commentToUpdate, req.body)
-    await commentToUpdate.save()
-    // Object.assign(parkToUpdate.comments, commentToUpdate)
-    // await parkToUpdate.save()
+    await parkToUpdate.save()
     console.log('comment to update', commentToUpdate)
     return res.status(202).json(commentToUpdate)
   } catch (err) {

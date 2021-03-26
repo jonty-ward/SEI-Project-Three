@@ -62,6 +62,41 @@ export default [
     parkUrl: 'https://visit.virunga.org/'
   },
   {
+    name: 'Chréa National Park',
+    image: 'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
+    latitude: '36.4268',
+    longitude: '2.8765',
+    region: 'Africa',
+    country: 'Algeria',
+    facts: [
+      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
+      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
+      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
+  ],
+    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
+
+  },
+  {
+    name: 'Namaqua National Park',
+    image: 'https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
+    description: 'The park was proclaimed on 29 June 2002 for the purpose of conserving the rich diversity of succulent plants. NNP is in the process of development, having grown to its current size of 141,000ha (including the coastal contract area between the Groen and Spoeg rivers) in nine years, thus expanding the park to include more succulent habitats and an important coastal section.', 
+    latitude: '30.0167',
+    longitude: '17.5790',
+    region: 'Africa',
+    country: 'South Africa',
+    facts: [
+      'The park is part of the Succulent Karoo biome – one of the world’s 34 biodiversity hotspots. Namaqualand has more than 3000 plant species, and 50% of them occur nowhere else on the planet.',
+      'Camping in the coastal section of the park is a perfect choice for summer. There are 46 rustic camp sites.',
+      'Look out for the Namaqua speckled padloper, the world’s smallest tortoise. A fully grown adult is only about as long as your forefinger and lives here in succulent Karoo and fynbos vegetation.',
+      'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.',
+      
+    ],
+    parkUrl: 'https://www.sanparks.org/parks/namaqua/'
+
+  },
+
+  {
     name: 'Etosha National Park' ,
     image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Dust_Cloud_in_Etosha_National_Park.jpg' ,
     description: 'The Etosha Pan is a vast, bare, open expanse of shimmering green and white that covers around 4,800km², almost a quarter of the beautiful Etosha National Park. At 130 km’s long and up to 50km’s wide in places, it is comfortably the largest salt pan in Africa and is the park’s most distinctive and dramatic feature, visible even from space. The pan was originally a lake but over time the earth’s climate forced the rivers that once fed the lake to change course and flow into the Atlantic Ocean. If one were to try find where the lake once lay today, only the dry baked alkaline clay marks would give you a clue. In the language of the Ovambo tribe, Etosha means ‘great white place’, a name passed on to the first Europeans to come across this “immense hollow”, Sir Francis Galton and Charles Andersson in 1851, with the help of travelling Ovambo traders. The area was originally inhabited by the Heli/ om- people who were well known hunter gatherers and co- existed in harmony with huge herds of wildlife in the area. It was only in 1851 when the huge pan first became known to Europeans. Explorers Charles Andersson and Francis Galton reached a cattle post called Omutjamatunda which is today called Namutoni. The two explorers provided the first written account of the pan. It is believed that this natural mineral pan was first formed over 100 million years ago. About 16,000 years ago, the Kunene River in Angola would have flowed all the way to Etosha, forming, for some time, a huge and deep lake. But the river would later change its course due to tectonic plate movement and head for the Atlantic, causing the lake to slowly dry up and leaving the salt pan behind.',
@@ -336,6 +371,19 @@ export default [
     recommendations: [],
     parkUrl: 'ADD IN URL'
   }
+   
+  
+
+
+
+
+
+
+
+
+
+
+
   // {
   //   name: 'Cerro Castillo National Park',
   //   image: '',
@@ -375,6 +423,20 @@ export default [
   //   recommendations: [],
   //   parkUrl: ''
   // }
+
+  // {
+  //   name: 'Cerro Castillo National Park',
+  //   image: '',
+  //   description: '',
+  //   latitude: '',
+  //   longitude: '',
+  //   region: 'South America',
+  //   country: 'Chile',
+  //   facts: [],
+  //   comments: [],
+  //   recommendations: [],
+  //   parkUrl: ''
+  // },
 
 
 ]
