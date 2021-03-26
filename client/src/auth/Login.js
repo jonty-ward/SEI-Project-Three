@@ -19,6 +19,7 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const response = await axios.post('/api/login', formData)
+ 
     window.localStorage.setItem('token', response.data.token)
     history.push('/parks')
   }

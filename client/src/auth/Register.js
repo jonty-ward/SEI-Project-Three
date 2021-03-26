@@ -21,6 +21,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const response = await axios.post('/api/register', formData)
+
     console.log('RESPONSE', response)
   }
 
@@ -38,6 +39,18 @@ const Register = () => {
                     placeholder="Full Name"
                     name="fullName"
                     value={formData.fullName}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="field">
+                <label className="label">Email Address</label>
+                <div className="control">
+                  <input
+                    className="input"
+                    placeholder="email@example.com"
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
                   />
                 </div>

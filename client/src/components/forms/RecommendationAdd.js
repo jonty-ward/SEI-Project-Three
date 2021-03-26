@@ -21,7 +21,7 @@ const RecommendationAdd = () => {
  
   // * handling the change when imputting data 
   const handleChange = event =>{
-    console.log(event)
+    // console.log(event)
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
     
@@ -44,7 +44,7 @@ const RecommendationAdd = () => {
       formData,
       {
         headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVkOGQ2ODhiNjg2NzBiNDhmMWE1NjAiLCJpYXQiOjE2MTY3NDUzNTQsImV4cCI6MTYxNzM1MDE1NH0.gHLErp49quFzHQyZdc9zK8OcThz48i0uSPaCOzTew5c'
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVkYzU0ODI2NDYwZDFjMDAzNmYwMDgiLCJpYXQiOjE2MTY3NTgxMDQsImV4cCI6MTYxNzM2MjkwNH0.bbWu4cZnrY9Tw9SBUdMeCktTZSjA9UxVYjKvSPP_Trk'
         }
       }
     )

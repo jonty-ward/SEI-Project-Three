@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 
 const AddParkCommentForm = () => {
-  const params = useParams()
+  const params = useParams
+  const history = useHistory()
+  console.log('params', params)
 
-  const getTokenFromLocalStorage = () => {
-    return window.localStorage.getItem('token')
-  }
+  // const getTokenFromLocalStorage = () => {
+  //   return window.localStorage.getItem('token')
+  // }
 
   const [formData, setFormData] = useState({
     text: '',
@@ -15,21 +17,23 @@ const AddParkCommentForm = () => {
   })
 
   const handleChange = event => {
+    console.log(event.target.name)
     const newFormData = { ...formData, [event.target.name]: event.target.value }
-    console.log(formData)
     setFormData(newFormData)
   }
 
   const handleSubmit = async event => {
     event.preventDefault()
+    console.log('FORM DATA>>>', formData)
     console.log(event)
-    await axios.put(
-      `/api/parks/comments/${params.id}`,
+    await axios.post(
+      '/api/parks/605dc54826460d1c0036f013/comments/',
       formData,
       {
-        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
+        headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVkYzU0ODI2NDYwZDFjMDAzNmYwMDgiLCJpYXQiOjE2MTY3NTgxMDQsImV4cCI6MTYxNzM2MjkwNH0.bbWu4cZnrY9Tw9SBUdMeCktTZSjA9UxVYjKvSPP_Trk' }
       }
     )
+    history.push('/')
   }
 
   return (
