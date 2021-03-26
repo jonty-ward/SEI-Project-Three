@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import ReactMapGL from 'react-map-gl'
 
 
@@ -23,9 +23,9 @@ const Home = () => {
   return (
     <>
       <h1>This is the homepage - TITLE TBC</h1>
-      <Link to="/addRecommendation">
+      {/* <Link to="/addRecommendation">
         Add a recommendation
-      </Link>
+      </Link> */}
       <div className="container">
         HERO IMAGE HERE
 
