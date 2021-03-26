@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useParams, useHistory } from 'react-router-dom'
+import { getTokenFromLocalStorage } from '../../helpers/auth'
 
 const AddParkCommentForm = () => {
+  // const token = getTokenFromLocalStorage
   const params = useParams
   const history = useHistory()
   console.log('params', params)
-
-  // const getTokenFromLocalStorage = () => {
-  //   return window.localStorage.getItem('token')
-  // }
+ 
 
   const [formData, setFormData] = useState({
     text: '',
@@ -24,13 +23,12 @@ const AddParkCommentForm = () => {
 
   const handleSubmit = async event => {
     event.preventDefault()
-    console.log('FORM DATA>>>', formData)
-    console.log(event)
+    
     await axios.post(
-      '/api/parks/605dc54826460d1c0036f013/comments/',
+      '/api/parks/605dcd70b059d51e3916a4e8/comments/',
       formData,
       {
-        headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVkYzU0ODI2NDYwZDFjMDAzNmYwMDgiLCJpYXQiOjE2MTY3NTgxMDQsImV4cCI6MTYxNzM2MjkwNH0.bbWu4cZnrY9Tw9SBUdMeCktTZSjA9UxVYjKvSPP_Trk' }
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
       }
     )
     history.push('/')
