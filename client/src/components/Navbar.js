@@ -15,11 +15,14 @@ const Navbar = () => {
       <Link to='/login'>
         Login
       </Link>
-      <Link to='/addComment'>
+      <Link to='/addComments'>
         Add a comment
       </Link>
       <Link to="/addRecommendation">
         Add a recommendation
+      </Link>
+      <Link to="/regions">
+        Regions
       </Link>
     </>
   )
