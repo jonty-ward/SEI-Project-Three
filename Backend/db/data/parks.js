@@ -62,6 +62,41 @@ export default [
     parkUrl: 'https://visit.virunga.org/'
   },
   {
+    name: 'Chréa National Park',
+    image: 'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
+    latitude: '36.4268',
+    longitude: '2.8765',
+    region: 'Africa',
+    country: 'Algeria',
+    facts: [
+      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
+      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
+      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
+  ],
+    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
+
+  },
+  {
+    name: 'Namaqua National Park',
+    image: 'https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
+    description: 'The park was proclaimed on 29 June 2002 for the purpose of conserving the rich diversity of succulent plants. NNP is in the process of development, having grown to its current size of 141,000ha (including the coastal contract area between the Groen and Spoeg rivers) in nine years, thus expanding the park to include more succulent habitats and an important coastal section.', 
+    latitude: '30.0167',
+    longitude: '17.5790',
+    region: 'Africa',
+    country: 'South Africa',
+    facts: [
+      'The park is part of the Succulent Karoo biome – one of the world’s 34 biodiversity hotspots. Namaqualand has more than 3000 plant species, and 50% of them occur nowhere else on the planet.',
+      'Camping in the coastal section of the park is a perfect choice for summer. There are 46 rustic camp sites.',
+      'Look out for the Namaqua speckled padloper, the world’s smallest tortoise. A fully grown adult is only about as long as your forefinger and lives here in succulent Karoo and fynbos vegetation.',
+      'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.',
+      
+    ],
+    parkUrl: 'https://www.sanparks.org/parks/namaqua/'
+
+  },
+
+  {
     name: 'Etosha National Park' ,
     image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Dust_Cloud_in_Etosha_National_Park.jpg' ,
     description: 'The Etosha Pan is a vast, bare, open expanse of shimmering green and white that covers around 4,800km², almost a quarter of the beautiful Etosha National Park. At 130 km’s long and up to 50km’s wide in places, it is comfortably the largest salt pan in Africa and is the park’s most distinctive and dramatic feature, visible even from space. The pan was originally a lake but over time the earth’s climate forced the rivers that once fed the lake to change course and flow into the Atlantic Ocean. If one were to try find where the lake once lay today, only the dry baked alkaline clay marks would give you a clue. In the language of the Ovambo tribe, Etosha means ‘great white place’, a name passed on to the first Europeans to come across this “immense hollow”, Sir Francis Galton and Charles Andersson in 1851, with the help of travelling Ovambo traders. The area was originally inhabited by the Heli/ om- people who were well known hunter gatherers and co- existed in harmony with huge herds of wildlife in the area. It was only in 1851 when the huge pan first became known to Europeans. Explorers Charles Andersson and Francis Galton reached a cattle post called Omutjamatunda which is today called Namutoni. The two explorers provided the first written account of the pan. It is believed that this natural mineral pan was first formed over 100 million years ago. About 16,000 years ago, the Kunene River in Angola would have flowed all the way to Etosha, forming, for some time, a huge and deep lake. But the river would later change its course due to tectonic plate movement and head for the Atlantic, causing the lake to slowly dry up and leaving the salt pan behind.',
@@ -303,7 +338,7 @@ export default [
   },
   {
     name: 'Cajas National Park',
-    image: 'ADD IN IMAGE',
+    image: 'https://hotelterrasurcuenca.com/wp-content/uploads/2018/12/cajas.jpg',
     description: 'El Cajas National Park in the highlands of Southern Ecuador is called ‘the Lake District,’ of the country for good reason-it has the most lakes per square mile of any other place in the world. El Cajas, as it’s also known, only receives an average of 35,000 visitors a year. The park\'s altitude (up to 4450m above sea level) adds to its rugged and remote feeling.',
     latitude: '-2.846111',
     longitude: '-79.220278',
@@ -321,7 +356,7 @@ export default [
   },
   {
     name: 'Amboró National Park',
-    image: 'ADD IN IMAGE',
+    image: 'https://lacgeo.com/sites/default/files/styles/large/public/parque_nacional_amboro_opt%20%281%29.jpg?itok=CBAO9zn4',
     description: 'When it comes to biodiversity, Amboró National Park in Bolivia wins by a long shot. In particular, there are more than 900 species of birds and about 177 species of mammals including the enigmatic spectacled bear. The park is situated at what is called the ‘Elbow of the Andes,’ and there are semi-arid lowlands distinct to this area of the continent.',
     latitude: '-17.783333',
     longitude: '-63.983333',
@@ -336,45 +371,6 @@ export default [
     recommendations: [],
     parkUrl: 'ADD IN URL'
   },
-  // {
-  //   name: 'Cerro Castillo National Park',
-  //   image: '',
-  //   description: '',
-  //   latitude: '',
-  //   longitude: '',
-  //   region: 'South America',
-  //   country: 'Chile',
-  //   facts: [],
-  //   comments: [],
-  //   recommendations: [],
-  //   parkUrl: ''
-  // },
-  // {
-  //   name: 'Manú National Park',
-  //   image: '',
-  //   description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
-  //   latitude: '',
-  //   longitude: '',
-  //   region: 'South America',
-  //   country: 'Peru',
-  //   facts: ['s the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.'],
-  //   comments: [],
-  //   recommendations: [],
-  //   parkUrl: ''
-  // },
-  // {
-  //   name: '',
-  //   image: '',
-  //   description: '',
-  //   latitude: '',
-  //   longitude: '',
-  //   region: '',
-  //   country: '',
-  //   facts: [],
-  //   comments: [],
-  //   recommendations: [],
-  //   parkUrl: ''
-  // }
   {
     name: 'Abel Tasman National Park',
     image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fkayaks-ABEL0217.jpg',
@@ -466,8 +462,128 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://parksaustralia.gov.au/uluru/'
+  },
+  {
+    name: 'Iguazú National Park',
+    image: 'https://theculturetrip.com/wp-content/uploads/2017/10/sf-brit.jpg',
+    description: 'The semicircular waterfall at the heart of this site is some 80 m high and 2,700 m in diameter and is situated on a basaltic line spanning the border between Argentina and Brazil. Made up of many cascades producing vast sprays of water, it is one of the most spectacular waterfalls in the world. The surrounding subtropical rainforest has over 2,000 species of vascular plants and is home to the typical wildlife of the region: tapirs, giant anteaters, howler monkeys, ocelots, jaguars and caymans.',
+    latitude: -25.616667,
+    longitude: -54.333333,
+    region: 'South America',
+    country: 'Argentina',
+    facts: ['Iguazu is the largest waterfall in the world, and a UNESCO World Natural Heritage Site. Created by a volcanic explosion, the waterfall is composed of over 250 smaller falls and is so large it spans two countries, Argentina and Brazil, pouring over a cliff in a huge free-fall the height of a 24-story building.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://iguazuargentina.com/en/parque-nacional-iguazu'
+  },
+  {
+    name: 'Manú National Park',
+    image: 'https://lh3.googleusercontent.com/proxy/QOogFYuhZqNWJb8OLnQ1mJgFh19HlOpBwjuAb0E23TjRYkeQipjq_fj2Ri1Ff63y0rSaaTGiTB8nJfltbb8bCqVWqhuN49crfO5NcsPHUp12lCaBqN4rwWvS',
+    description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
+    latitude: -11.856389,
+    longitude: -71.721389,
+    region: 'South America',
+    country: 'Peru',
+    facts: ['It is the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.',
+      'As one of the most biodiverse places on the planet, the Manu National Park in the Amazon is, in the most part, an unexplored paradise with indigenous cultures that haven\'t made contact with modern civilization in the last 150 years.',
+      'Among the mammals are the Giant Otter, 13 different species of primates and eight felids, including Jaguar, Puma and the elusive and endangered Andean Mountain Cat.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://whc.unesco.org/en/list/402/'
+  },
+  {
+    name: 'Piedras Blancas National Park',
+    image: 'http://www.costaricajourneys.com/wp-content/uploads/2014/01/waterfall.jpg',
+    description: 'Previously part of the country’s most popular national park, Piedras Blancas is a lesser-visited rainforest (fewer than 400 people per year) that has a nearly identical list of species as its more crowded neighbor (Manuel Antonio National Park). Dense evergreen forests create habitat for toucans, macaws, monkeys, wild cats, and countless colorful reptiles. This region is a true rainforest and is one of the wettest regions in the world so check the forecast and pack accordingly.',
+    latitude: 8.7,
+    longitude: -83.261,
+    region: 'South America',
+    country: 'Costa Rica',
+    facts: ['With over 500 centimetres of rain per year, the dense rainforest contains a number of rare trees.',
+      'Giant anteaters were last seen in the area of the soon to be Piedras National Park in the early 1980s by local hunters. They are now extinct, which goes to show the important role these protected areas play.',
+      'Spanning over 14,000 hectares, this national park is among the last remaining homes of the jaguar in Costa Rica.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.visitcostarica.com/en/costa-rica/where-to-go/protected-areas/piedras-blancas-national-park'
+  },
+  {
+    name: 'Tatra National Park',
+    image: 'https://www.telegraph.co.uk/content/dam/travel/Spark/untapped-destinations/Vodafone-Slovakia-main-xlarge.jpg',
+    description: 'On the borders of Southern-Central Poland and Northern-Central Slovakia, is a beautiful park that boasts a mountain range, well over 300 caves and a variety of flora and fauna. The idyllic Tatra is perfect for trekkers, with its 600 kilometres (373 miles) of hiking trails and plenty of tranquil lakes to take in the scenery.',
+    latitude: 49.180278,
+    longitude: 19.919444,
+    region: 'Europe',
+    country: 'Slovakia',
+    facts: ['There are more than 270 kilometres of hiking trails in Tatra National Park.',
+      'The National Park contains several endemic fauna species, and many endangered and protected ones. Animals include the Tatra chamois and marmot, both protected since the mid-19th century; brown bear, Eurasian lynx, grey wolf, European otter, lesser spotted eagle, and falcon.',
+      'The largest lakes is Morskie Oko with an area of 349,000 m² and the maximum depth of 50.8 metres, Wielki Staw with an area of 344,000 m² and the maximum depth of 79.3 metres.',
+      'The Tatra Mountains form a natural border between Poland to the north and Slovakia to the south, and the two countries have cooperated since the early 20th century on efforts to protect the area.',
+      'The chamois is the symbol of Tatras.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://tanap.sopsr.sk/'
+  },
+  {
+    mame: 'Gran Paradiso National Park',
+    image: 'https://peakvisor.com/img/news/Gran-Paradiso-National-Park.jpg',
+    description: 'Gran Paradiso National Park was Italy’s first national park. It is a protected area nestled high in the Graian Alps of northern Italy, close to the French border. While the nearby French Alps may be enticing, Gran Paradiso more than holds its own with over 700km² (270 square miles) of relaxing land, ski trails, hiking routes, plentiful flora and, of course, its protected symbol, the Alpine ibex.',
+    latitude: 45.502778,
+    longitude: 7.31,
+    region: 'Europe',
+    country: 'Italy',
+    facts: ['The fauna has its emblem in the ibex, symbol of the Park and now widespread throughout the park, recovering from near extinction.', 
+      'In September 1860, Englishman John Cowell became the first person to reach the summit of Gran Paradiso.', 
+      'Gran Paradiso National Park is the largest protected alpine area in all of Europe.', 
+      'The park is the descendant of the royal hunting reserve founded by Vittorio Emanuele II of Savoy in 1859.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://www.pngp.it/en/national-park'
+  },
+  {
+    name: 'Mount Olympus National Park',
+    image: 'https://i.natgeofe.com/n/90ddbd94-9f33-40d3-a953-afb049818ba9/30924.jpg',
+    description: 'Home to Greece\'s highest mountain, Olympus National Park is famous in Greek mythology for being the dwelling of the 12 Olympian gods. There are a ton of symbolic sites because of this, but also rocky peaks, deep gorges, lush forests and more. And whatever your skill level, it\'s a wonderful spot for hikes.',
+    latitude: 40.090549,
+    longitude: 22.361469,
+    region: 'Europe',
+    country: 'Greece',
+    facts: ['Greece\'s highest mountain, Olympus is also the legendary abode of the gods. The favor of the deities gave the mountain an honored place in Classical Greek culture and that mythical status has been passed down through the centuries, across Western civilization.', 
+      'The mountain\'s highest peak, Mytikas, tops out at 9,573 feet (2,918 meters). The ancients called Mytikas “Pantheon” and believed it was the meeting place of the deities. The 12 gods were believed to have lived in the alpine ravines, which Homer described as the mountain\'s “mysterious folds.”',
+      'More than 1,700 plants are found on Mount Olympus—representing 25 percent of all Greek flora. Diversity is high here because of the mountain\'s different elevation zones and its proximity to the sea.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://olympusfd.gr/en/'
+  },
+  {
+    name: 'Lake Skadar National Park',
+    image: 'https://lp-cms-production.imgix.net/2019-06/154772332_full.jpg?auto=format&fit=crop&ixlib=react-8.6.4&h=520&w=1312',
+    description: 'One of Europe\'s top bird habitats, Lake Skadar National Park is 400km² (154 square miles) of pure bliss: think rolling hills, crystal clear water and floating meadows of water lilies. This national park has protected the largest lake in southern Europe since 1983, and sits in both Montenegro and Albania.',
+    latitude: 42.166667, 
+    longitude: 19.316667,
+    region: 'Europe',
+    country: 'Montenegro',
+    facts: ['Look for rare Dalmatian pelicans on the lake\'s water – the world\'s heaviest flying bird.', 
+      'Lake Skadar is a key resting place for birds migrating from northern Europe to Africa. It\'s the largest bird reserve in Europe, it\'s on the Ramsar Convention\'s List of Wetlands of International Importance and it has been nominated for UNESCO World Heritage status.', 
+      'The size of the lake varies from 530 to 370 km2 it is 44 km long and 14 km wide. Coast line is very sharp, especially in the north – west side.', 
+      'There used to be around 60 monasteries, fortresses and churches around Lake Skadar. Now there are 20.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://lake-skadar.com/'
+  },
+  {
+    name: 'Triglav National Park',
+    image: 'https://finestayslovenia.com/wp-content/uploads/2019/01/vintgar-gorge.jpg',
+    description: 'Named after the country\'s highest peak, Triglav National Park is a joy to behold. It is also Slovenia\'s only national park and it boasts the largest glacial lake in the country. The park encompasses the majority of the eastern part of the Julian Alps.',
+    latitude: 46.333333,
+    longitude: 13.766667,
+    region: 'Europe',
+    country: 'Slovenia',
+    facts: ['Triglav National Park covers a full four percent of Slovenia\'s territory.', 
+      'The majority of Slovenia\'s more than 400 two-thousand metre peaks lie within the boundaries of Triglav National Park.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.mljettravel.com/national-park/'
   }
-
 
 ]
 
