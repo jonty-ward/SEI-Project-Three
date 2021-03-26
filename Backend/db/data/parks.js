@@ -335,32 +335,34 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.bolivianlife.com/amboro-national-park/'
-  }
+  },
   {
-    name: 'Cerro Castillo National Park',
-    image: '',
-    description: '',
-    latitude: -46.05,
-    longitude: -72.183333,
+    name: 'Iguazú National Park',
+    image: 'https://theculturetrip.com/wp-content/uploads/2017/10/sf-brit.jpg',
+    description: 'The semicircular waterfall at the heart of this site is some 80 m high and 2,700 m in diameter and is situated on a basaltic line spanning the border between Argentina and Brazil. Made up of many cascades producing vast sprays of water, it is one of the most spectacular waterfalls in the world. The surrounding subtropical rainforest has over 2,000 species of vascular plants and is home to the typical wildlife of the region: tapirs, giant anteaters, howler monkeys, ocelots, jaguars and caymans.',
+    latitude: -25.616667,
+    longitude: -54.333333,
     region: 'South America',
-    country: 'Chile',
-    facts: [],
+    country: 'Argentina',
+    facts: ['Iguazu is the largest waterfall in the world, and a UNESCO World Natural Heritage Site. Created by a volcanic explosion, the waterfall is composed of over 250 smaller falls and is so large it spans two countries, Argentina and Brazil, pouring over a cliff in a huge free-fall the height of a 24-story building.'],
     comments: [],
     recommendations: [],
-    parkUrl: ''
+    parkUrl: 'https://iguazuargentina.com/en/parque-nacional-iguazu'
   },
   {
     name: 'Manú National Park',
-    image: '',
+    image: 'https://lh3.googleusercontent.com/proxy/QOogFYuhZqNWJb8OLnQ1mJgFh19HlOpBwjuAb0E23TjRYkeQipjq_fj2Ri1Ff63y0rSaaTGiTB8nJfltbb8bCqVWqhuN49crfO5NcsPHUp12lCaBqN4rwWvS',
     description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
-    latitude: ,
-    longitude: ,
+    latitude: -11.856389,
+    longitude: -71.721389,
     region: 'South America',
     country: 'Peru',
-    facts: ['s the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.'],
+    facts: ['It is the only National Park in Latin America that covers the full range of environments: from low, tropical jungle to cold, high grassland - spanning across 14 different ecosystems.',
+    'As one of the most biodiverse places on the planet, the Manu National Park in the Amazon is, in the most part, an unexplored paradise with indigenous cultures that haven\'t made contact with modern civilization in the last 150 years.',
+    'Among the mammals are the Giant Otter, 13 different species of primates and eight felids, including Jaguar, Puma and the elusive and endangered Andean Mountain Cat.'],
     comments: [],
     recommendations: [],
-    parkUrl: ''
+    parkUrl: 'https://whc.unesco.org/en/list/402/'
   },
   {
     name: 'Piedras Blancas National Park',
