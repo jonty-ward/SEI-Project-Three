@@ -62,6 +62,41 @@ export default [
     parkUrl: 'https://visit.virunga.org/'
   },
   {
+    name: 'Chréa National Park',
+    image: 'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
+    latitude: '36.4268',
+    longitude: '2.8765',
+    region: 'Africa',
+    country: 'Algeria',
+    facts: [
+      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
+      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
+      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
+  ],
+    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
+
+  },
+  {
+    name: 'Namaqua National Park',
+    image: 'https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
+    description: 'The park was proclaimed on 29 June 2002 for the purpose of conserving the rich diversity of succulent plants. NNP is in the process of development, having grown to its current size of 141,000ha (including the coastal contract area between the Groen and Spoeg rivers) in nine years, thus expanding the park to include more succulent habitats and an important coastal section.', 
+    latitude: '30.0167',
+    longitude: '17.5790',
+    region: 'Africa',
+    country: 'South Africa',
+    facts: [
+      'The park is part of the Succulent Karoo biome – one of the world’s 34 biodiversity hotspots. Namaqualand has more than 3000 plant species, and 50% of them occur nowhere else on the planet.',
+      'Camping in the coastal section of the park is a perfect choice for summer. There are 46 rustic camp sites.',
+      'Look out for the Namaqua speckled padloper, the world’s smallest tortoise. A fully grown adult is only about as long as your forefinger and lives here in succulent Karoo and fynbos vegetation.',
+      'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.',
+      
+    ],
+    parkUrl: 'https://www.sanparks.org/parks/namaqua/'
+
+  },
+
+  {
     name: 'Etosha National Park' ,
     image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Dust_Cloud_in_Etosha_National_Park.jpg' ,
     description: 'The Etosha Pan is a vast, bare, open expanse of shimmering green and white that covers around 4,800km², almost a quarter of the beautiful Etosha National Park. At 130 km’s long and up to 50km’s wide in places, it is comfortably the largest salt pan in Africa and is the park’s most distinctive and dramatic feature, visible even from space. The pan was originally a lake but over time the earth’s climate forced the rivers that once fed the lake to change course and flow into the Atlantic Ocean. If one were to try find where the lake once lay today, only the dry baked alkaline clay marks would give you a clue. In the language of the Ovambo tribe, Etosha means ‘great white place’, a name passed on to the first Europeans to come across this “immense hollow”, Sir Francis Galton and Charles Andersson in 1851, with the help of travelling Ovambo traders. The area was originally inhabited by the Heli/ om- people who were well known hunter gatherers and co- existed in harmony with huge herds of wildlife in the area. It was only in 1851 when the huge pan first became known to Europeans. Explorers Charles Andersson and Francis Galton reached a cattle post called Omutjamatunda which is today called Namutoni. The two explorers provided the first written account of the pan. It is believed that this natural mineral pan was first formed over 100 million years ago. About 16,000 years ago, the Kunene River in Angola would have flowed all the way to Etosha, forming, for some time, a huge and deep lake. But the river would later change its course due to tectonic plate movement and head for the Atlantic, causing the lake to slowly dry up and leaving the salt pan behind.',
@@ -334,7 +369,99 @@ export default [
       'It is made up of lowland forests, cloud forests, palm forests, tree-fern forests, cactus forests, tropical yungas forests, montane scrublands, pampas and much, much more.'],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://www.bolivianlife.com/amboro-national-park/'
+    parkUrl: 'ADD IN URL'
+  },
+  {
+    name: 'Abel Tasman National Park',
+    image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fkayaks-ABEL0217.jpg',
+    description: 'The Abel Tasman Coastal Track follows a pristine coastline of extraordinary beauty. Clear, turquoise bays, abundant bird and sea life, and fresh, clean air surround you as you walk under the shady canopy of lush native forest. Birdsong rings through the treetops above, only interrupted by the call of the occasional small waterfall nestled in the midst of the park.',
+    latitude: '-40.9050',
+    longitude: '172.9671',
+    region: 'Oceania',
+    country: 'New Zealand',
+    facts: [
+      'The Abel Tasman Coast Track is a popular tramping track that follows the coastline and is one of the Department of Conservation\'s Great Walks',
+      'This national park has a free virtual visitor centre for downloading to smartphones or tablets, providing information about the Park\'s history, its flora and fauna, points of interest, weather, walking tracks, and tides',
+      'You can walk into the Park from the seaside village of Marahau, dropped off at various points along the track by sea, paddle in by kayak, or be flown in to the airstrip in Awaroa Bay by plane or helicopter',
+      'Wainui Falls is the tallest waterfall within the park reaching a height of 66 feet (20 m)',
+      'Kayaking is one of the best ways to explore the shoreline and neighboring islands that are part of the national park.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.abeltasman.co.nz/'
+  },
+  {
+    name: 'Bouma National Heritage Park',
+    image: 'https://lp-cms-production.imgix.net/2019-06/b771b7c1a3d444489edf051134463bb5-bouma-national-heritage-park.jpg',
+    description: 'Bouma National Heritage Park is located on Taveuni Island, the third largest island od Fiji. Taveuni is known as “the garden island of Fiji” because of its abundant plant life, which includes several species found only on the island. Bouma National Heritage Park, on the eastern side, contains pristine rainforest and three waterfalls, each some 65 feet (20 metres) high.',
+    latitude: '-16.8532',
+    longitude: '-179.9160',
+    region: 'Oceania',
+    country: 'Fiji',
+    facts: [
+      'There is a mountain ridge that runs through the heart of the island with the highest summit occurring at Uluinggalau with a height of 4,072 feet (1,241 m)',
+      'Fiji is known for islands, beaches and blue waters.  However, Taveuni Island is complemented with rainforest and tropical vegetation',
+      'Bouma National Park accounts for approximately 80% of Taveuni Island',
+      'The three Tavoro Waterfalls can be explored with short hikes with the tallest only requiring a 10-minute hike',
+      'There are four villages known with the park known as Waitabu, Vidawa, Korovou, and Lavena'],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Cradle Mountain-Lake St Clair National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Cradle_Mountain_Behind_Dove_Lake.jpg',
+    description: 'Iconic Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness World Heritage Area. From moss-covered ancient rainforests and deep river gorges to snow-covered mountain peaks, wild alpine moorlands and glacial lakes, the park is revered for its diverse and breath-taking landscapes.',
+    latitude: '-41.8333',
+    longitude: '146.0000',
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The Cradle Mountain-Lake St Clair area was declared a scenic reserve in 1922, a wildlife reserve in 1927, a national park in 1947 and a world heritage area from 1982',
+      'Lake St Clair has an area of approximately 45 square kilometres (17 sq mi), and a maximum depth of 160 metres (520 ft), making it Australia\'s deepest lake',
+      'This area was used to film scenes for the prehistoric life documentaries Walking with Dinosaurs and When Dinosaurs Roamed America',
+      'The park has been identified as an Important Bird Area (IBA) because it provides habitat for 11 of Tasmania\'s endemic bird species',
+      'Aboriginal use of the Cradle Mountain dates back to the last ice age (10,000 years ago) and is believed to have been non-permanent, consisting mostly of seasonal hunting excursions during the summer months'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://parks.tas.gov.au/explore-our-parks/cradle-mountain'
+  },
+  {
+    name: 'Tongariro National Park',
+    image: 'https://cms.lonelyplanet.com/sites/default/files/brightcove/videos/images/posters/5104226627001_5480024787001_5471392086001-vs.jpg',
+    description: 'Home to three active volcanic mountains, and iconic and majestic landscapes, Tongariro National Park has attracted adventurers of all ages since 1887. With wide-open spaces, some of the best hikes in the world and must-see natural wonders, Tongariro National Park is the perfect destination for families, couples and explorers seeking adventure, fun and an escape into nature.',
+    latitude: '-39.1928',
+    longitude: '175.5938',
+    region: 'Oceania',
+    country: 'New Zealand',
+    facts: [
+      'Tongariro\'s dual World Heritage status recognises the park\'s important Maori cultural and spiritual associations as well as its outstanding volcanic features.',
+      'Tongariro National Park was the sixth national park established in the world',
+      'The active volcanic mountains Ruapehu, Ngauruhoe, and Tongariro are located in the centre of the park',
+      'The Tongariro National Park is home to the famed Tongariro Alpine Crossing, widely regarded as one of the world\'s best one-day hikes',
+      'Mount Tongariro and its surroundings are one of the several locations where Peter Jackson shot The Lord of the Rings film trilogy'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/?tab-id=50578'
+  },
+  {
+    name: 'Uluru-Kata Tjuta National Park',
+    image: 'https://i.pinimg.com/originals/01/6f/85/016f858691099f4a431a1636cf75c967.jpg',
+    description: 'Uluru-Kata Tjuta National Park is named after two of Australia’s most spectacular sites: the world-famous sandstone monolith of Uluru and the red domes of Kata Tjuta. As well as its world-famous geological formations and extraordinary Indigenous culture, the park is home to a fascinating array of plants and animals, including many rare species.',
+    latitude: '-25.3438',
+    longitude: '131.0347',
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The sandstone domes of Kata Tjuta are believed to be about 500 million years old',
+      'Kata Tjuta is a Pitjantjatjara Aboriginal word meaning "many heads."',
+      'To Anangu (local indigenous people), Uluru is a place name and this "Rock" has a number of different landmarks where many ancestral beings have interacted with the landscape and/or each other, some even believed to still reside here',
+      'The land is owned by the Anangu people and leased to Parks Australia, who manage the national park in collaboration with the traditional owners',
+      'The Anangu have connected to the area for thousands of years and some records suggested that they may have lived there for more than 10,000 years'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://parksaustralia.gov.au/uluru/'
   },
   {
     name: 'Iguazú National Park',
