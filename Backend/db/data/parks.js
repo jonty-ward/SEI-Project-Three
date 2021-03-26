@@ -73,7 +73,7 @@ export default [
       'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
       'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
       'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
-  ],
+    ],
     parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
 
   },
@@ -89,7 +89,7 @@ export default [
       'The park is part of the Succulent Karoo biome – one of the world’s 34 biodiversity hotspots. Namaqualand has more than 3000 plant species, and 50% of them occur nowhere else on the planet.',
       'Camping in the coastal section of the park is a perfect choice for summer. There are 46 rustic camp sites.',
       'Look out for the Namaqua speckled padloper, the world’s smallest tortoise. A fully grown adult is only about as long as your forefinger and lives here in succulent Karoo and fynbos vegetation.',
-      'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.',
+      'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.'
       
     ],
     parkUrl: 'https://www.sanparks.org/parks/namaqua/'
