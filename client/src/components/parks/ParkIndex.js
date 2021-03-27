@@ -8,7 +8,7 @@ import ParkCard from './ParkCard'
 const ParkIndex = () => {
 
   const params = useParams()
-  console.log('params.region in the index file',params.region)
+
   const urlRegion = params.region
 
   const [parks, setParks] = useState([])
@@ -21,16 +21,13 @@ const ParkIndex = () => {
     getData()
   }, [])
   
-  // const parksJoined = parks.map(join =>{
-  //   return join.region.toString().split(' ').join('')
-  // })
-  // console.log('PARKSJOINED>>>>>>',parksJoined)
+
 
   const filteredArray = parks.filter(parks => {
-    console.log('PARKS.REGION', parks.region)
+   
     return parks.region.toString().split(' ').join('') === urlRegion
   })
-  console.log('filtered array', filteredArray)
+ 
 
   if (!parks) return ''
   return (

@@ -5,19 +5,8 @@ import {  useParams, Link } from 'react-router-dom'
 const RegionSelect = ({ region }) => {
 
   console.log(region)
-
-  // const history = useHistory()
   const params = useParams()
   console.log('params', params.region)
-
-  // function handleRegionSelectEurope(event) {
-  //   console.log('event', event.target.value)
-  //   history.push(`/regions/${params.region}`)
-  // }
-
-
-
-
 
   return (
     <>
