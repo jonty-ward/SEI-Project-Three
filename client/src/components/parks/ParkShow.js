@@ -50,10 +50,9 @@ const ParkShow = () => {
       <div className="box">
         { comments.map(comment => (
           <DisplayComments key={comment._id} {...comment}/>
-  
         ))}
+        
       </div>
-
     </div>
   )
 }
