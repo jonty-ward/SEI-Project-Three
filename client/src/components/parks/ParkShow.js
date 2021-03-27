@@ -9,7 +9,8 @@ import { userIsAuthenticated } from '../../helpers/auth'
 const ParkShow = () => {
 
   const [park, setPark] = useState(null)
-  console.log(park, setPark)
+  const [weather, setWeather] = useState(null)
+  console.log(setWeather, weather)
 
   const params = useParams()
 
@@ -21,6 +22,17 @@ const ParkShow = () => {
     }
     getData()
   }, [])
+
+  useEffect(() => {
+
+    const getData = async () =>{
+      const { data } = await axios.get(' http://api.weatherapi.com/v1/forecast.json?key=034aa607c3044e879dd112044212503&q=Birmingham&days=7')
+      setWeather(data)
+    }
+    getData()
+  }, [])
+
+  console.log('WEATHER ====>>>>>', weather)
 
   
 
@@ -49,7 +61,6 @@ const ParkShow = () => {
             <DisplayRecommendations key={recommendation._id} {...recommendation}/>
           </>
         ))}
-        {/* <Link to={`/parks/${_id}`}> */}
         <div className="navbar-item">
           { userIsAuthenticated() && 
             <Link to={`/addRecommendation/${params.id}`}>

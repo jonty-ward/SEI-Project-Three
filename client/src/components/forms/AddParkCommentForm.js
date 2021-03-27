@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useParams, useHistory } from 'react-router-dom'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
+import CommentsForm from './CommentsForm'
 
 const AddParkCommentForm = () => {
   // const token = getTokenFromLocalStorage
@@ -34,35 +35,19 @@ const AddParkCommentForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Comment</label>
-        <div>
-          <input
-            placeholder="Add your comment here.."
-            name="text"
-            value={formData.text}
-            onChange={handleChange}
+   
+
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <CommentsForm
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            formData={formData}
           />
         </div>
       </div>
-      <div>
-        <label>Rating</label>
-        <div>
-          <input
-            placeholder="Rating out of 5"
-            name="rating"
-            value={formData.rating}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-      <div>
-        <button type="submit">
-      Submit
-        </button>
-      </div>
-    </form>
+    </section>
   )
 }
 

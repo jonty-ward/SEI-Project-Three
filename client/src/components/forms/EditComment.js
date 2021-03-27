@@ -2,19 +2,28 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
-// import AddParkCommentForm from '../forms/AddParkCommentForm'
+import CommentsForm from './CommentsForm'
 
 
 const EditComment = () => {
   const history = useHistory()
   const params = useParams()
+  const { id, commentId } = params
 
   const [formData, setFormData] = useState({
     text: '',
     rating: ''
   })
 
-  const { id, commentId } = params
+  const handleDelete = async () => {
+    await axios.delete(`/api/parks/${id}/comments/${commentId}`, {
+      headers: {
+        Authorization: `Bearer ${getTokenFromLocalStorage()}`
+      }
+    })
+    history.push(`/parks/${params.id}`)
+  }
+
 
   useEffect(() => {
     const getData = async () => {
@@ -47,35 +56,24 @@ const EditComment = () => {
   console.log('FORM DATA>>>>>>>', formData)
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Comment</label>
-        <div>
-          <input
-            placeholder="Add your comment here.."
-            name="text"
-            value={formData.text}
-            onChange={handleChange}
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <CommentsForm
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            formData={formData}
           />
+          <hr/>
+          <br/>
+          <div className="buttons">
+            <button onClick={handleDelete} className="button is-danger">Delete</button>
+          </div>
+
+         
         </div>
       </div>
-      <div>
-        <label>Rating</label>
-        <div>
-          <input
-            placeholder="Rating out of 5"
-            name="rating"
-            value={formData.rating}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-      <div>
-        <button type="submit">
-      Submit
-        </button>
-      </div>
-    </form>
+    </section>
   )
 }
 

@@ -16,7 +16,15 @@ const EditRecommendation = () => {
   })
 
   const { id, recommendationId } = params
-  
+
+  const handleDelete = async () => {
+    await axios.delete(`/api/parks/${id}/recommendations/${recommendationId}`, {
+      headers: {
+        Authorization: `Bearer ${getTokenFromLocalStorage()}`
+      }
+    })
+    history.push(`/parks/${params.id}`)
+  }
 
   useEffect(() => {
     const getData = async () => {
@@ -44,7 +52,7 @@ const EditRecommendation = () => {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       }
     )
-    history.push(`/api/parks/${id}`)
+    history.push(`/parks/${params.id}`)
     
   }
 
@@ -60,6 +68,11 @@ const EditRecommendation = () => {
             handleSubmit={handleSubmit}
             formData={formData}
           />
+          <hr/>
+          <br/>
+          <div className="buttons">
+            <button onClick={handleDelete} className="button is-danger">Delete</button>
+          </div>
         </div>
       </div>
     </section>
