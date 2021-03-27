@@ -32,6 +32,7 @@ const ParkIndex = () => {
   if (!parks) return ''
   return (
     <>
+      <h1>{filteredArray.region}</h1>
       <div className="section">
         <div className="container">
           { parks &&

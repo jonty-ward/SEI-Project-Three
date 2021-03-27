@@ -2,13 +2,13 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import ParkIndex from '../parks/ParkIndex'
 
-const RegionEurope = (props) => {
+const RegionEurope = () => {
 
 
   const params = useParams()
 
 
-  console.log('PROPS.REGION>>>>>',props.region)
+ 
 
 
 

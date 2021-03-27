@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ParkCard = ({ _id, name, image }) => {
   return (
     <>
-      
+
       <div className="column is-one-quarter-desktop is-one-third-tablet">
         <Link to={`/parks/${_id}`}>
           <div className="card">

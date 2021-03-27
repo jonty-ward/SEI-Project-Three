@@ -9,6 +9,7 @@ import AddParkCommentForm from './components/forms/AddParkCommentForm'
 import RecommendationAdd from './components/forms/RecommendationAdd'
 import RegionSelect from './components/regions/RegionSelect'
 import RegionEurope from './components/regions/RegionEurope'
+import ParkShow from './components/parks/ParkShow'
 
 const App = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
         </Route>
         <Route exact path="/regions/:region">
           <RegionEurope />
+        </Route>
+        <Route path="/parks/:id">
+          <ParkShow/>
         </Route>
       </Switch>
     </BrowserRouter>
