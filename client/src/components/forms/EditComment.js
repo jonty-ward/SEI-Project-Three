@@ -2,24 +2,23 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
-import RecommendationForm from './RecommendationForm'
+import AddParkCommentForm from '../parks/AddParkCommentForm'
 
-const EditRecommendation = () => {
+
+const EditComment = () => {
   const history = useHistory()
   const params = useParams()
 
   const [formData, setFormData] = useState({
-    parkName: '',
-    activity: '',
     text: '',
-    image: ''
+    rating: ''
   })
 
-  const { id, recommendationId } = params
+  const { id, commentId } = params
 
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get(`/api/parks/${id}/recommendations/${recommendationId}`)
+      const response = await axios.get(`/api/parks/${id}/comments/${commentId}`)
       setFormData(response.data)
     }
     getData()
@@ -33,7 +32,7 @@ const EditRecommendation = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     await axios.put(
-      `/api/parks/605dcd70b059d51e3916a4e8/recommendations/${recommendationId}`,
+      `/api/parks/${id}/comments/${commentId}`,
       formData,
       {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
@@ -46,7 +45,7 @@ const EditRecommendation = () => {
     <section className="section">
       <div className="container">
         <div className="columns">
-          <RecommendationForm
+          <AddParkCommentForm
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             formData={formData}
@@ -57,4 +56,4 @@ const EditRecommendation = () => {
   )
 }
 
-export default EditRecommendation
+export default EditComment
