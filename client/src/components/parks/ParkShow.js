@@ -9,7 +9,7 @@ import { userIsAuthenticated } from '../../helpers/auth'
 const ParkShow = () => {
 
   const [park, setPark] = useState(null)
-  const [weather, setWeather] = useState(null)
+  const [weather, setWeather] = useState([])
   console.log(setWeather, weather)
 
   const params = useParams()
@@ -26,18 +26,24 @@ const ParkShow = () => {
   useEffect(() => {
 
     const getData = async () =>{
-      const { data } = await axios.get(' http://api.weatherapi.com/v1/forecast.json?key=034aa607c3044e879dd112044212503&q=Birmingham&days=7')
+      const { data } = await axios.get('https://api.openweathermap.org/data/2.5/onecall?lat=51.509865&lon=-0.118092&exclude=hourly,minutely&appid=c7b22e378e8404d1ac5d214062e5f766')
       setWeather(data)
     }
     getData()
-  }, [])
+  },[])
 
-  console.log('WEATHER ====>>>>>', weather)
+  
+  
+
+  
 
   
 
 
   if (!park) return ''
+
+  console.log('WEATHER ====>>>>>', weather)
+
   const { name, image, region, description, facts, recommendations, comments } = park
   console.log('reccomendations>>>>>', recommendations)
   return (
