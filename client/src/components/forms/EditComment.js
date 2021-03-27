@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
-import AddParkCommentForm from '../parks/AddParkCommentForm'
+// import AddParkCommentForm from '../forms/AddParkCommentForm'
 
 
 const EditComment = () => {
@@ -26,7 +26,9 @@ const EditComment = () => {
 
   const handleChange = event => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
+    
     setFormData(newFormData)
+    console.log(event.target)
   }
 
   const handleSubmit = async (event) => {
@@ -41,18 +43,39 @@ const EditComment = () => {
     history.push(`/api/parks/${id}`)
   }
 
+  if (!formData) return ''
+  console.log('FORM DATA>>>>>>>', formData)
+
   return (
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <AddParkCommentForm
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formData={formData}
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>Comment</label>
+        <div>
+          <input
+            placeholder="Add your comment here.."
+            name="text"
+            value={formData.text}
+            onChange={handleChange}
           />
         </div>
       </div>
-    </section>
+      <div>
+        <label>Rating</label>
+        <div>
+          <input
+            placeholder="Rating out of 5"
+            name="rating"
+            value={formData.rating}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+      <div>
+        <button type="submit">
+      Submit
+        </button>
+      </div>
+    </form>
   )
 }
 

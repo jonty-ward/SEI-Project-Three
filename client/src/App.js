@@ -12,6 +12,7 @@ import RegionEurope from './components/regions/RegionEurope'
 import ParkShow from './components/parks/ParkShow'
 import MyAccount from './auth/MyAccount'
 import EditRecommendation from './components/forms/EditRecommendation'
+import EditComment from './components/forms/EditComment'
 
 const App = () => {
   return (
@@ -33,7 +34,10 @@ const App = () => {
         <Route exact path="/addComments/:id">
       	  <AddParkCommentForm />
         </Route>
-        <Route path="/parks/:id/recommendations/:recommendationId">
+        <Route exact path="/parks/:id/comments/:commentId">
+          <EditComment/>
+        </Route>
+        <Route exact path="/parks/:id/recommendations/:recommendationId">
           <EditRecommendation/>
         </Route>
         <Route path="/addRecommendation/:id">

@@ -16,6 +16,7 @@ const EditRecommendation = () => {
   })
 
   const { id, recommendationId } = params
+  
 
   useEffect(() => {
     const getData = async () => {
@@ -24,6 +25,10 @@ const EditRecommendation = () => {
     }
     getData()
   }, [])
+
+
+
+
 
   const handleChange = event => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
@@ -40,9 +45,12 @@ const EditRecommendation = () => {
       }
     )
     history.push(`/api/parks/${id}`)
+    
   }
 
   if (!formData) return ''
+
+
   return (
     <section className="section">
       <div className="container">

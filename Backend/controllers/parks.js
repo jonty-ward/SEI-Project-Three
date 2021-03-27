@@ -73,6 +73,24 @@ export const addCommentToPark = async (req, res) => {
   }
 }
 
+// * SHOW ONE comment 
+export const getOneComment = async (req, res) => {
+  try {
+    const { id, commentId } = req.params
+    const singlePark = await Park.findById(id)
+    if (!singlePark) {
+      throw new Error()
+    }
+    const commentToUpdate = singlePark.comments.id(commentId)
+    if (!commentToUpdate) throw new Error('Recommendation not found')
+    return res.status(200).json(commentToUpdate)
+  } catch (err) {
+    console.log('Something went wrong!')
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
+  }
+}
+
 // * Edit a comment
 export const editParkComments = async (req, res) =>{
   try {
@@ -112,6 +130,8 @@ export const deleteCommentFromPark = async (req, res) => {
 }
 
 
+
+
 // * Add a recommendation
 export const addRecommendationToPark = async (req, res) => {
   try {
@@ -125,6 +145,24 @@ export const addRecommendationToPark = async (req, res) => {
   } catch (err) {
     console.log(err)
     return res.status(404).json({ message: err.message })
+  }
+}
+
+// * SHOW ONE Recommendation
+export const getOneRecommendation = async (req, res) => {
+  try {
+    const { id, recommendationId } = req.params
+    const singlePark = await Park.findById(id)
+    if (!singlePark) {
+      throw new Error()
+    }
+    const recommendationToUpdate = singlePark.recommendations.id(recommendationId)
+    if (!recommendationToUpdate) throw new Error('Recommendation not found')
+    return res.status(200).json(recommendationToUpdate)
+  } catch (err) {
+    console.log('Something went wrong!')
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
   }
 }
 

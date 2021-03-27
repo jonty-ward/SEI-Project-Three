@@ -7,7 +7,7 @@ const AddParkCommentForm = () => {
   // const token = getTokenFromLocalStorage
   const params = useParams()
   const history = useHistory()
-  console.log('params', params.id)
+
  
 
   const [formData, setFormData] = useState({
@@ -16,7 +16,6 @@ const AddParkCommentForm = () => {
   })
 
   const handleChange = event => {
-    console.log(event.target.name)
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
   }
