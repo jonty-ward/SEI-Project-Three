@@ -22,8 +22,8 @@ const Register = ({ handleImageUrl }) => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     const response = await axios.post('/api/register', formData)
-
-    console.log('RESPONSE', response)
+    window.localStorage.setItem('token', response.data.token)
+    history.pushState('/parks')
   }
 
   return (

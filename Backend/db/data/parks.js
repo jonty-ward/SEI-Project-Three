@@ -471,7 +471,10 @@ export default [
     longitude: -54.333333,
     region: 'South America',
     country: 'Argentina',
-    facts: ['Iguazu is the largest waterfall in the world, and a UNESCO World Natural Heritage Site. Created by a volcanic explosion, the waterfall is composed of over 250 smaller falls and is so large it spans two countries, Argentina and Brazil, pouring over a cliff in a huge free-fall the height of a 24-story building.'],
+    facts: ['Iguazu is the largest waterfall in the world, and a UNESCO World Natural Heritage Site. Created by a volcanic explosion, the waterfall is composed of over 250 smaller falls and is so large it spans two countries, Argentina and Brazil, pouring over a cliff in a huge free-fall the height of a 24-story building.',
+      'One thing you\'ll notice immediately is the unbelievable rainbows forming all around you at Iguazu Falls. If you\'re lucky enough to have a sunny day you\'re almost guaranteed to see a few. The mixture of mist and sun creates the perfect amount of light to generate the beautiful rainbows.',
+      'There is a legend that explains how the falls were created. A god was to marry Naipi, a beautiful woman. This woman canoed away with her lover, angering the god. The god was enraged and sliced the river, which not only created the falls but condemned the two lovers to fall for eternity.',
+      'First Lady Eleanor Roosevelt, upon seeing the Iguazú Waterfalls felt pity on the American Waterfalls called the Niagara. She said, "Poor Niagara".'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://iguazuargentina.com/en/parque-nacional-iguazu'
@@ -526,7 +529,7 @@ export default [
   {
     name: 'Gran Paradiso National Park',
     image: 'https://peakvisor.com/img/news/Gran-Paradiso-National-Park.jpg',
-    description: 'Gran Paradiso National Park was Italy’s first national park. It is a protected area nestled high in the Graian Alps of northern Italy, close to the French border. While the nearby French Alps may be enticing, Gran Paradiso more than holds its own with over 700km² (270 square miles) of relaxing land, ski trails, hiking routes, plentiful flora and, of course, its protected symbol, the Alpine ibex.',
+    description: 'Gran Paradiso National Park was Italy\'s first national park. It is a protected area nestled high in the Graian Alps of northern Italy, close to the French border. While the nearby French Alps may be enticing, Gran Paradiso more than holds its own with over 700km² (270 square miles) of relaxing land, ski trails, hiking routes, plentiful flora and, of course, its protected symbol, the Alpine ibex.',
     latitude: 45.502778,
     longitude: 7.31,
     region: 'Europe',
