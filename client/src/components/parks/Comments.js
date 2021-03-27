@@ -18,7 +18,8 @@ const Comments = ({ text, rating, createdAt }) => {
 
 export default Comments
 
-{/* <div className="box">
+{/* the below will need to be added into the parks info page and import this component there)
+  <div className="box">
 { comments.map(comment => (
   <Comments key={comment._id} {...comment}/>
   

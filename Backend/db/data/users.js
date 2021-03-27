@@ -16,5 +16,14 @@ export default [
     fullName: 'Jonty Ward',
     profilePic: 'test',
     wishList: 'test'
+  }, 
+  {
+    username: 'han',
+    email: 'han@email',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    fullName: 'Hannah T',
+    profilePic: 'test',
+    wishList: 'test'
   }
 ]
