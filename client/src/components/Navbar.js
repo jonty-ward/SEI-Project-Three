@@ -25,23 +25,6 @@ const Navbar = () => {
             Regions
           </Link>
         </div>
-
-        
-        <div className="navbar-item">
-          { userIsAuthenticated() && 
-            <Link to='/addComments'>
-              Add a comment
-            </Link>
-          }
-        </div>
-        <div className="navbar-item">
-          { userIsAuthenticated() && 
-            <Link to="/addRecommendation">
-              Add a recommendation
-            </Link> 
-          }
-        </div>
-          
       </div>
       <div className="navbar-end">
         { !userIsAuthenticated() && 

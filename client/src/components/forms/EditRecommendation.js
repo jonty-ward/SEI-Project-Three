@@ -33,7 +33,7 @@ const EditRecommendation = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     await axios.put(
-      `/api/parks/605dcd70b059d51e3916a4e8/recommendations/${recommendationId}`,
+      `/api/parks/${id}/recommendations/${recommendationId}`,
       formData,
       {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
@@ -42,6 +42,7 @@ const EditRecommendation = () => {
     history.push(`/api/parks/${id}`)
   }
 
+  if (!formData) return ''
   return (
     <section className="section">
       <div className="container">

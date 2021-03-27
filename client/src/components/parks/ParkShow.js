@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import DisplayRecommendations from '../parks/DisplayRecommendations'
 import DisplayComments from '../parks/DisplayComments'
+import { userIsAuthenticated } from '../../helpers/auth'
 
 
 const ParkShow = () => {
@@ -21,11 +22,12 @@ const ParkShow = () => {
     getData()
   }, [])
 
-  console.log('par data>>>>>', park)
+  
 
 
   if (!park) return ''
   const { name, image, region, description, facts, recommendations, comments } = park
+  console.log('reccomendations>>>>>', recommendations)
   return (
     <div>
       
@@ -43,14 +45,31 @@ const ParkShow = () => {
       <hr/>
       <div className="box">
         { recommendations.map(recommendation => (
-          <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+          <>
+            <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+          </>
         ))}
+        {/* <Link to={`/parks/${_id}`}> */}
+        <div className="navbar-item">
+          { userIsAuthenticated() && 
+            <Link to={`/addRecommendation/${params.id}`}>
+              Add a recommendation
+            </Link> 
+          }
+        </div>
       </div> 
       <hr/>
       <div className="box">
         { comments.map(comment => (
           <DisplayComments key={comment._id} {...comment}/>
         ))}
+        <div className="navbar-item">
+          { userIsAuthenticated() && 
+            <Link to={`/addComments/${params.id}`}>
+              Add a comment
+            </Link>
+          }
+        </div>
         
       </div>
     </div>

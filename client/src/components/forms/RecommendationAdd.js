@@ -15,7 +15,7 @@ const RecommendationAdd = () => {
     image: ''
   })
   // *params will be needeed when we have the park pages up and running 
-  const params = useParams
+  const params = useParams()
 
   // *redirect once submit
   const history = useHistory()
@@ -36,20 +36,20 @@ const RecommendationAdd = () => {
   // * handling the form submit 
   const handleSubmit = async event =>{
     console.log('Form data>>>>>>>>',formData)
-    console.log('params.id', params)
+    console.log('params.id', params.id)
     event.preventDefault()
 
     // * posting to the DB- need to link in the authentication and params
     await axios.post(
-      '/api/parks/605dcd70b059d51e3916a4e8/recommendations',
+      `/api/parks/${params.id}/recommendations`,
       formData,
       {
         
-        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       
       }
     )
-    history.push('/')
+    history.push(`/parks/${params.id}`)
   }
   
   // * this links to the form component page, could make this reusable 

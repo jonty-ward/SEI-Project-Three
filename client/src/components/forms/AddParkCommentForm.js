@@ -5,9 +5,9 @@ import { getTokenFromLocalStorage } from '../../helpers/auth'
 
 const AddParkCommentForm = () => {
   // const token = getTokenFromLocalStorage
-  const params = useParams
+  const params = useParams()
   const history = useHistory()
-  console.log('params', params)
+  console.log('params', params.id)
  
 
   const [formData, setFormData] = useState({
@@ -25,13 +25,13 @@ const AddParkCommentForm = () => {
     event.preventDefault()
     
     await axios.post(
-      '/api/parks/605dcd70b059d51e3916a4e8/comments/',
+      `/api/parks/${params.id}/comments/`,
       formData,
       {
-        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       }
     )
-    history.push('/')
+    history.push(`/parks/${params.id}`)
   }
 
   return (

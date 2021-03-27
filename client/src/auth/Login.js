@@ -21,7 +21,7 @@ const Login = () => {
     const response = await axios.post('/api/login', formData)
  
     window.localStorage.setItem('token', response.data.token)
-    history.push('/parks')
+    history.push('/')
     location.reload()
   }
 
