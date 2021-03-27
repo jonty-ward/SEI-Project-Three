@@ -59,7 +59,7 @@ const Navbar = () => {
         </>
         }
         { userIsAuthenticated() &&
-          <Link to='/myaccount' className="navbar-item">Account</Link>
+          <Link to='/profile' className="navbar-item">Profile</Link>
         }   
         { userIsAuthenticated() &&
           <button onClick={handleLogout} className="button">Log out</button>

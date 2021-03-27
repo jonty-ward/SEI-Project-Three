@@ -1,6 +1,6 @@
 import express from 'express'
 import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark, editParkComments, editParkRecommendation } from '../controllers/parks.js'
-import { loginUser, registerUser } from '../controllers/auth.js' 
+import { loginUser, registerUser, showUserProfile, getAllUsers } from '../controllers/auth.js' 
 import { secureRoute } from '../config/secureRoute.js'
 
 
@@ -33,5 +33,11 @@ router.route('/register')
 
 router.route('/login')
   .post(loginUser)
+
+router.route('/profile')
+  .get(getAllUsers)
+
+router.route('/profile/:id')
+  .get(secureRoute, showUserProfile)
   
 export default router

@@ -26,3 +26,24 @@ export const loginUser = async (req, res) => {
     return res.status(422).json({ message: 'Unauthorized ' })
   }
 } 
+
+// * Show a user's profile
+
+export const showUserProfile = async (req, res) => {
+  try {
+    const { id } = req.params
+    const profile = await User.findById(id).populate('user')
+    console.log(profile)
+    if (!profile) throw new Error()
+    return res.status(200).json(profile)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ message: 'Something went wrong' })
+  }
+}
+
+// * Show all users
+export const getAllUsers = async (_req, res) => {
+  const users = await User.find()
+  return res.status(200).json(users)
+}

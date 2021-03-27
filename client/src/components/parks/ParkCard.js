@@ -14,7 +14,7 @@ const ParkCard = ({ _id, name, image }) => {
             </div>
             <div className="card-image">
               <figure className="image image-is-1by1">
-                <img src={image} alt={`${name} Cheese`} />
+                <img src={image} alt={`${name}`} />
               </figure>
             </div>
           </div>

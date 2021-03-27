@@ -10,7 +10,7 @@ import RecommendationAdd from './components/forms/RecommendationAdd'
 import RegionSelect from './components/regions/RegionSelect'
 import RegionEurope from './components/regions/RegionEurope'
 import ParkShow from './components/parks/ParkShow'
-import MyAccount from './auth/MyAccount'
+import UserProfile from './auth/UserProfile'
 
 const App = () => {
   return (
@@ -26,8 +26,8 @@ const App = () => {
         <Route  path="/login">
       	  <Login />
         </Route>
-        <Route  path="/myaccount">
-      	  <MyAccount />
+        <Route  path="/profile/:id">
+      	  <UserProfile />
         </Route>
         <Route exact path="/addComments">
       	  <AddParkCommentForm />

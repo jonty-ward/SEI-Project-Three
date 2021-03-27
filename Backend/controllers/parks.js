@@ -1,6 +1,5 @@
 import Park from '../models/parks.js'
 
-
 // * INDEX ROUTE
 export const getAllParks = async (_req, res) => {
   const parks = await Park.find()
