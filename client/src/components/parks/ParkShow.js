@@ -26,14 +26,6 @@ const ParkShow = () => {
 
  
 
-  
-  
-
-  
-
-  
-
-
   if (!park) return ''
 
 
@@ -57,20 +49,20 @@ const ParkShow = () => {
       })}
       <hr/>
       <h1> Recommendations</h1>
-      <div className="box">
+      <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
           <>
             <DisplayRecommendations key={recommendation._id} {...recommendation}/>
           </>
         ))}
-        <div className="navbar-item">
-          { userIsAuthenticated() && 
+      </div> 
+      <div className="navbar-item">
+        { userIsAuthenticated() && 
             <Link to={`/addRecommendation/${params.id}`}>
               Add a recommendation
             </Link> 
-          }
-        </div>
-      </div> 
+        }
+      </div>
       <hr/>
       <h1> Comments</h1>
       <div className="box">

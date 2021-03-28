@@ -1,11 +1,27 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import RecommendationForm from './RecommendationForm'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
 
 const RecommendationAdd = () => {
+  // *params will be needeed when we have the park pages up and running 
+  const params = useParams()
+  const [parkData, setParkData] = useState(null)
+  console.log(parkData, setParkData)
 
+  // *redirect once submit
+  const history = useHistory()
+
+  useEffect(() =>{
+    const getData = async () => {
+      const { data } = await axios.get(`/api/parks/${params.id}`)
+      setParkData(data)
+    }
+    getData()
+  }, [])
+
+  
 
   // * setting the information for the request to state 
   const [formData, setFormData] = useState({
@@ -14,11 +30,7 @@ const RecommendationAdd = () => {
     text: '',
     image: ''
   })
-  // *params will be needeed when we have the park pages up and running 
-  const params = useParams()
 
-  // *redirect once submit
-  const history = useHistory()
  
   // * handling the change when imputting data 
   const handleChange = event =>{

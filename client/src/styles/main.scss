@@ -13,9 +13,39 @@
 
 .app{
   display: flex;
+  overflow-x: auto;
+
 }
 
 
-.container-weather{
+.weatherContainer{
 display: flex;
+flex-direction: column;
+overflow-x: auto;
+
 }
+
+.day{
+  display: flex;
+}
+
+.weather-day{
+  border: 1px black solid;
+  margin: 5px;
+  margin-left: 10px;
+  min-width: 33vw;
+}
+
+.reccomendation-box{
+  display: flex;
+  overflow-x: auto;
+
+}
+
+.card-box{
+  display: flex;
+  min-width: 50vw;
+  flex-direction: column;
+  margin-right: 10px;
+}
+

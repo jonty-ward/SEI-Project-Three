@@ -8,18 +8,18 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner })
 
   if (!userIsOwner) return ''
   return (
-    <div className="box">
+    <div className="box card-box">
       <h3>Park: {parkName}</h3>
       <h4>Activity: {activity}</h4>
       <h4>Recommendation: {text}</h4>
+      <div>
+        <img src={image} alt={parkName}/>
+      </div>
       { userIsOwner(owner._id) && 
       <div className="buttons">
         <Link to={`/parks/${params.id}/recommendations/${_id}`}> Edit</Link>
       </div>
       }
-      <div>
-        {image}
-      </div>
     </div>
   )
 }

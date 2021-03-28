@@ -5,43 +5,37 @@ const WeekWeather = ({ weather }) => {
 
   console.log('weekly forecast no map', weather.daily)
 
-  console.log('week forwcast weather mapped', weather.daily.map(daily =>{
-    return daily.temp.max
 
-  }))
 
-const dayTemp = []
-const maxTemp = []
 
- weather.daily.map(daily =>{
-  dayTemp.push(daily.temp.day)
-  maxTemp.push(daily.temp.max)
-  })
-
-  console.log('DAY TEMP . LENGTH ', )
-    
- 
-
-  if (!dayTemp) return ''
+  
    return (
 
-    <div className="container-weather"> 
-        <div className="app"> 
+<div className="weatherContainer">
 
-   { dayTemp.map((item, i)=>(
-    <div key={i}>
-      <p>Day {i}:  { Math.round((item - 273.15) * 10) / 10 } &deg;C </p>
-    </div>
-   ))} 
+      <div className="day"> 
 
-   { maxTemp.map((item, i)=>(
-    <div key={i}>
-      <p>Max {i}:  { Math.round((item - 273.15) * 10) / 10 } &deg;C </p>
-    </div>
-   ))} 
-   </div> 
+        { weather.daily.map((item, i)=>(
 
-   </div>
+
+          <div className="weather-day" key={i}>
+            <p>Day  {i}:  { Math.round((item.temp.day - 273.15) * 10) / 10 } &deg;C, Feels like: { Math.round((item.feels_like.day - 273.15) * 10) / 10 } &deg;C  </p>
+            <p>Evening: { Math.round((item.temp.eve - 273.15) * 10) / 10 } &deg;C, Feels like: { Math.round((item.feels_like.eve - 273.15) * 10) / 10 } &deg;C  </p>
+            <p>Max: { Math.round((item.temp.max - 273.15) * 10) / 10 } &deg;C - Min: { Math.round((item.temp.min - 273.15) * 10) / 10 } &deg;C  </p>
+
+            <p>Humidity: { item.humidity}%</p>
+            <p>Weather: {item.weather[0].description}</p>
+            <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt={item.weather[0].description}/>
+          </div>
+        ))} 
+
+      </div>
+
+  
+</div>
+
+
+
 
   )
 }
