@@ -4,10 +4,11 @@ const CommentsForm = ({ handleChange, handleSubmit, formData }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Comment</label>
-          <div>
+        <div className="field">
+          <label className="label">Comment</label>
+          <div className="control">
             <input
+              className="input"
               placeholder="Add your comment here.."
               name="text"
               value={formData.text}
@@ -15,10 +16,11 @@ const CommentsForm = ({ handleChange, handleSubmit, formData }) => {
             />
           </div>
         </div>
-        <div>
-          <label>Rating</label>
-          <div>
+        <div className="field">
+          <label className="label">Rating</label>
+          <div className="control">
             <input
+              className="input"
               placeholder="Rating out of 5"
               name="rating"
               value={formData.rating}
@@ -26,8 +28,8 @@ const CommentsForm = ({ handleChange, handleSubmit, formData }) => {
             />
           </div>
         </div>
-        <div>
-          <button type="submit">
+        <div className="field">
+          <button className="button is-link is-fullwidth" type="submit">
       Submit
           </button>
         </div>

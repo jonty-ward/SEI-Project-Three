@@ -11,7 +11,7 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner })
     <div className="box">
       <h3>Park: {parkName}</h3>
       <h4>Activity: {activity}</h4>
-      <h4>Comments: {text}</h4>
+      <h4>Recommendation: {text}</h4>
       { userIsOwner(owner._id) && 
       <div className="buttons">
         <Link to={`/parks/${params.id}/recommendations/${_id}`}> Edit</Link>

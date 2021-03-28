@@ -20,8 +20,8 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   return (
     
     <div className="box">
-      <h3>Comment: {text}</h3>
       <h3>Rating: {rating}</h3>
+      <h3>Comment: {text}</h3>
       <h5>Created at: {formattedTime}</h5>
       { userIsOwner(owner._id) && 
       <div className="buttons">

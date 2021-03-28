@@ -32,6 +32,7 @@ const AddParkCommentForm = () => {
       }
     )
     history.push(`/parks/${params.id}`)
+    window.location.reload()
   }
 
   return (
