@@ -38,7 +38,7 @@ const ParkShow = () => {
 
 
   const { name, image, region, description, facts, recommendations, comments } = park
-  console.log('reccomendations>>>>>', recommendations)
+ 
   return (
     <div>
 

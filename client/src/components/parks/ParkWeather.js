@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import CurrentWeather from '../weather/CurrentWeather'
+import WeekWeather from '../weather/WeekWeather'
 
 
 
@@ -9,13 +10,10 @@ import CurrentWeather from '../weather/CurrentWeather'
 const ParkWeather = (props) => {
 
   const [weather, setWeather] = useState(null)
-  console.log(setWeather, weather)
-
+  const [forecast, setForecast] = useState('current')
 
   const { longitude , latitude } = props
-
-  // console.log('LONGITUDE>>>>', longitude)
-  // console.log('LATITUDE>>>>', latitude)
+   
 
 
   useEffect(() => {
@@ -26,17 +24,38 @@ const ParkWeather = (props) => {
     }
     getData()
   },[])
+
+  const handleWeather = (event) => {
+    if ( event.target.value === 'current' ) setForecast('current')
+    if ( event.target.value === 'week' ) setForecast('week')
+  }
+
+  const weatherForecastFunction = () =>{
+    if (forecast === 'week'){
+      return <WeekWeather
+        weather = {weather}
+      />
+    }
+  }
  
 
   if (!weather) return ''
-
-
-  console.log('WEATHER ====>>>>>', weather)
+ 
   return (
-    <CurrentWeather
+    <div>
 
-      weather = {weather}
-    />
+      <button value="current" onClick={handleWeather}>Current Weather</button>
+      <button value="week" onClick={handleWeather}>week forecast</button>
+      
+      {forecast === 'current' ? 
+        <CurrentWeather
+          weather = {weather}
+        />
+        :
+        weatherForecastFunction()
+      }
+    </div>
+
   )
 }
 
