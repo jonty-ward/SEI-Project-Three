@@ -59,6 +59,8 @@ overflow-x: auto;
 .slider {
   position: relative;
   height: 50vh;
+  // opacity: 0;
+  transition: .3s ease;
 }
 
 .slide {
@@ -74,6 +76,7 @@ overflow-x: auto;
 
 .slide.active {
   opacity: 1;
+  transition-duration: .2s;
 }
 
 .slider-image {

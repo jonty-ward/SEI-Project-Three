@@ -24,7 +24,6 @@ const Slider = ({ slides }) => {
           {index === current && (
             <img className="slider-image" src={slides.image} />
           )}
-          
         </div>
       ))}
     </section>
