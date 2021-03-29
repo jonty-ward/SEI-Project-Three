@@ -6,6 +6,7 @@ import DisplayComments from '../parks/DisplayComments'
 import { userIsAuthenticated, userID } from '../../helpers/auth'
 import ParkWeather from './ParkWeather'
 import AddParkCommentForm from '../forms/AddParkCommentForm'
+import ParkWishlist from './ParkWishlist'
 
 
 
@@ -27,22 +28,23 @@ const ParkShow = () => {
   // * pulling in the user data for adding info to wishlist
   useEffect(() =>{
     const getData = async () => {
-      const { data } = await axios.get(`/api/parks/${userID()}`)
-      setPark(data)
+      const { data } = await axios.get(`/api/profile/${userID()}`)
+      setUserData(data)
     }
     getData()
   }, [])
 
-  console.log(userData, setUserData)
+
+
+
+
 
  
 
-  if (!park) return ''
-  const handleWishlist = () =>{
+  if (!park || !userData ) return ''
+  console.log('USER DATA>>>>>>>',userData, setUserData)
 
-  }
-
-  console.log('park.owner', park )
+ 
 
 
   const { name, image, region, description, facts, recommendations, comments } = park
@@ -53,7 +55,11 @@ const ParkShow = () => {
       <ParkWeather key={park.id} {...park}/>
       <hr/>      
       {name}
-      <button onClick={handleWishlist}> Add to wishlist </button>
+      <ParkWishlist 
+        userData = {userData}
+        park = {park}
+      
+      />
       <hr/>
       {region}
       <br/>
@@ -69,7 +75,7 @@ const ParkShow = () => {
       <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
           <>
-            <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+            <DisplayRecommendations key={recommendation.id} {...recommendation}/>
           </>
         ))}
       </div> 

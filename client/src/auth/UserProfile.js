@@ -7,23 +7,39 @@ import { useParams } from 'react-router-dom'
 
 const UserProfile = () => {
 
-  const [userData, setUserData] = useState()
+  const [userData, setUserData] = useState('')
+  const [parksData, setParksData] = useState('')
   const params = useParams()
-  console.log('OARAMS', params)
+
   
   useEffect(() => {
     const userInfo = async () => {
       const response = await axios.get(`/api/profile/${params.id}`)
       setUserData(response)
+      const allParks = await axios.get('/api/parks/') 
+      setParksData(allParks)
     }
     userInfo()
   }, [])
+
   
-  if (!userData) return ''
+  if (!userData || !parksData) return ''
+  console.log('PARKS DATA >>>>>>', parksData.data)
 
-  console.log('DATA>>', userData.data)
+  // console.log('DATA>>', userData.data.wishList)
 
-  const { username, email, fullName, profilePic, wishlist } = userData.data
+  const { username, email, fullName, profilePic, wishList } = userData.data
+  // console.log('wishlist', userData.data)
+
+  // wishList.forEach((wishlist, index)=>{
+    
+  // })
+  const filteredParks = parksData.data.filter((item) =>{
+    return item._id === wishList[0].toString()    
+   
+  })
+  console.log('filteredParks', filteredParks)
+  console.log('wishlist ', wishList)
 
   return (
 
@@ -39,7 +55,12 @@ const UserProfile = () => {
         {email}
         <hr/>
         <hr/>
-        {wishlist}
+        {wishList.map((item, i) =>(
+          <div className="parks-saved " key={i}>
+
+          </div>
+        ))}
+        { filteredParks[0].name}
 
       </div>
     </div>
