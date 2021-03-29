@@ -50,10 +50,17 @@ overflow-x: auto;
   margin-right: 10px;
 }
 
+.region-slider-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
 .region-slider {
   height: 400px;
   width: 400px;
-  
+  margin: 20px;
 }
 
 .slider {

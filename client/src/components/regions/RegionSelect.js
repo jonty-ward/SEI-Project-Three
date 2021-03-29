@@ -18,7 +18,7 @@ const RegionSelect = ({ region }) => {
 
 
   return (
-    <>
+    <div className="region-slider-container">
     
       <Link to='/regions/Europe'>
         <div value='Europe' className="region-slider">
@@ -58,7 +58,7 @@ const RegionSelect = ({ region }) => {
         </div>
       </Link>
       
-    </>
+    </div>
   )
 }
 
