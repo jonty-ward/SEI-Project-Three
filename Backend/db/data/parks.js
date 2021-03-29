@@ -40,21 +40,6 @@ export default [
     parkUrl: ''
 
   },
-  // {
-  //   name: 'Serengetti National Park' ,
-  //   image: '' ,
-  //   description: '' ,
-  //   latitude: '',
-  //   longitude: '',
-  //   region: '' ,
-  //   country: '' ,
-  //   facts: [ '', 
-  //     ''
-      
-  //   ],
-  //   parkUrl: ''
-
-  // },
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
