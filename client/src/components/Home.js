@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>This is the homepage - TITLE TBC</h1>
+      <h1 className="home">This is the homepage - TITLE TBC</h1>
       <div className="container">
         HERO IMAGE HERE
 

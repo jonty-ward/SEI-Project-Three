@@ -836,7 +836,7 @@ export default [
     image: 'https://www.tripsavvy.com/thmb/Ql7MwmrBLZm__mLXTpyBIbOSv8U=/2121x1414/filters:fill(auto,1)/GettyImages-872908506-5b4f66be46e0fb005b462f8a.jpg',
     description: 'Abutting the Atlantic in a wild and remote part of the coast in Maranhão state in the north of Brazil is Lençois Maranhenses National Park. The name means “bedsheets” in Portuguese because of the spectacular landscape that is created by miles of rolling, smooth clean sand dunes.',
     latitude: -2.533333,
-    longitude:  -43.116667,
+    longitude: -43.116667,
     region: 'South America',
     country: 'Brazil',
     facts: [
@@ -857,41 +857,49 @@ export default [
     region: 'South America',
     country: 'Venezuela',
     facts: [
-      ''
+      'Los Roques harbors about 90 bird species, 280 species of fish, 60 species of corals, 200 species of crustaceans, 60 species of sponges, 140 species of mollusks and 45 species of echinoderms. Four endangered sea turtle species nest regularly on the islands.',
+      'Historically, fishing has been the major economic activity in the archipelago but has been strictly regulated since the creation of the national park. About 300 fishermen take up temporary residence on the island during the fishing season.'
     ],
     comments: [],
     recommendations: [],
     parkUrl: 'http://losroques.org/#:~:text=Los%20Roques%20Archipelago%20National%20Park,beautiful%20natural%20areas%20of%20Venezuela.'
   },
   {
-    name: '',
-    image: '',
-    description: '',
-    latitude: ,
-    longitude: ,
+    name: 'Torres del Paine National Park',
+    image: 'https://www.besttimetovisit.co.uk/uploads/2019/07/4044858-640x360.jpg',
+    description: 'Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife such as llama-like guanacos. Some of its most iconic sites are the 3 granite towers from which the park takes its name and the horn-shaped peaks called Cuernos del Paine.',
+    latitude: -51,
+    longitude: -73,
     region: 'South America',
-    country: '',
+    country: 'Chile',
     facts: [
-      ''
+      'Torres del Paine National Park is one of the last remaining places where truly wild guanacos can be found. The guanaco is a wild relative of the domesticated llama and alpaca. When threatened, they have a habit of spitting.',
+      'Grey Glacier is a glacier in the Southern Patagonian Ice Field (world’s second largest contiguous ice field outside of the poles), just west of the Cordillera del Paine. With 19 kilometers (11.8 miles) of extension, Grey Glacier is a massive natural ice construction, of unique beauty.It flows southward into the lake of the same name.',
+      'There are many large lakes lining the park, reaching up to 90 square kilometers (35 square miles)  in surface area. Many are an intense turquoise color as a result of rock flour particles left from glacial erosion, making the water look milky.',
+      'The most highly trekked route in Torres del Paine National Park is called the ‘W’.Total length of the circuit is 4 to 6 days and total distance is approximately 70 kilometers (43 miles).The “W” circuit often gets mentioned among the world’s top trails.',
+      'This national park was declared a world biosphere reserve by UNESCO in 1978.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: ''
+    parkUrl: 'https://torresdelpaine.com/en/'
   },
   {
-    name: '',
-    image: '',
-    description: '',
-    latitude: ,
-    longitude: ,
+    name: 'Tayrona National Natural Park',
+    image: 'https://www.wildlifeworldwide.com/images/galleries/latin_america_colombia_caribbean_beach_tayrona_national_park_gallery.jpg',
+    description: 'Parque Nacional Natural Tayrona is a magical slice of Colombia\'s Caribbean coast, with stunning stretches of golden sandy beach backed by coconut palms and thick rainforest. Behind it all rise the steep hillsides of the Sierra Nevada de Santa Marta, the world\'s highest coastal mountain range. The park stretches along the coast from the Bahía de Taganga near Santa Marta to the mouth of the Río Piedras, 35km east, and covers some 12,000 hectares of land and 3000 hectares of coral-rich sea.',
+    latitude: 11.266667,
+    longitude: -74.05,
     region: 'South America',
-    country: '',
+    country: 'Colombia',
     facts: [
-      ''
+      'Prior to the arrival of the Spanish explorers the region of Tayrona National Park was inhabited by indigenous groups, including the Tayrona people. The Koguis that live in the area now are descendants of the Tayrona people. They still have many of the same traditions that the Tayrona people practiced.',
+      'Tayrona National Park includes two ecosystems. This is because of its location between the Caribbean Sea and the mountains.',
+      'Tayrona National Park is home to a wide variety of plant and animal species including more than 770 plant species and over 100 mammal species. In addition there are more than 300 bird species and more than 1000 marine species found in the area.',
+      'There is a coral reef in Tayrona National Park\'s territory. Only two other national parks in the Columbian Caribbean have coral reefs, including Rosario and San Bernardo Corals National Park, and Old Providence McBean Lagoon National Park. There are 110 coral species in Tayrona National Park\'s waters.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: ''
+    parkUrl: 'https://www.parquesnacionales.gov.co/portal/en/ecotourism/caribbean-region/tayrona-national-natural-park/'
   }
 
 ]

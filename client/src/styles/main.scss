@@ -1,6 +1,14 @@
 @import '~bulma/bulma.sass';
 
+body {
+  height: 100vh;
+  margin: 10px;
+}
 
+h1.home {
+  text-align: center;
+  
+}
 .container {
   height: 50vh;
 }
