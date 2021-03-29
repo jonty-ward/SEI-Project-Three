@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 import { ImageUploadField } from '../components/forms/ImageUploadField'
 
 const Register = ({ handleImageUrl }) => {
@@ -13,6 +14,7 @@ const Register = ({ handleImageUrl }) => {
     password: '',
     passwordConfirmation: ''
   })
+  const history = useHistory()
 
   const handleChange = (event) => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
@@ -23,7 +25,7 @@ const Register = ({ handleImageUrl }) => {
     event.preventDefault()
     const response = await axios.post('/api/register', formData)
     window.localStorage.setItem('token', response.data.token)
-    history.pushState('/parks')
+    history.push('/')
   }
 
   return (

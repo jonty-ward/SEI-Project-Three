@@ -11,6 +11,8 @@ import RegionSelect from './components/regions/RegionSelect'
 import RegionEurope from './components/regions/RegionEurope'
 import ParkShow from './components/parks/ParkShow'
 import UserProfile from './auth/UserProfile'
+import EditRecommendation from './components/forms/EditRecommendation'
+import EditComment from './components/forms/EditComment'
 
 const App = () => {
   return (
@@ -29,10 +31,16 @@ const App = () => {
         <Route  path="/profile/:id">
       	  <UserProfile />
         </Route>
-        <Route exact path="/addComments">
+        <Route exact path="/addComments/:id">
       	  <AddParkCommentForm />
         </Route>
-        <Route path="/addRecommendation">
+        <Route exact path="/parks/:id/comments/:commentId">
+          <EditComment/>
+        </Route>
+        <Route exact path="/parks/:id/recommendations/:recommendationId">
+          <EditRecommendation/>
+        </Route>
+        <Route path="/addRecommendation/:id">
           <RecommendationAdd/>
         </Route>
         <Route exact path="/regions">

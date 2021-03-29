@@ -17,6 +17,15 @@ const EditRecommendation = () => {
 
   const { id, recommendationId } = params
 
+  const handleDelete = async () => {
+    await axios.delete(`/api/parks/${id}/recommendations/${recommendationId}`, {
+      headers: {
+        Authorization: `Bearer ${getTokenFromLocalStorage()}`
+      }
+    })
+    history.push(`/parks/${params.id}`)
+  }
+
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`/api/parks/${id}/recommendations/${recommendationId}`)
@@ -24,6 +33,10 @@ const EditRecommendation = () => {
     }
     getData()
   }, [])
+
+
+
+
 
   const handleChange = event => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
@@ -33,14 +46,18 @@ const EditRecommendation = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     await axios.put(
-      `/api/parks/605dcd70b059d51e3916a4e8/recommendations/${recommendationId}`,
+      `/api/parks/${id}/recommendations/${recommendationId}`,
       formData,
       {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       }
     )
-    history.push(`/api/parks/${id}`)
+    history.push(`/parks/${params.id}`)
+    
   }
+
+  if (!formData) return ''
+
 
   return (
     <section className="section">
@@ -51,6 +68,11 @@ const EditRecommendation = () => {
             handleSubmit={handleSubmit}
             formData={formData}
           />
+          <hr/>
+          <br/>
+          <div className="buttons">
+            <button onClick={handleDelete} className="button is-danger">Delete</button>
+          </div>
         </div>
       </div>
     </section>

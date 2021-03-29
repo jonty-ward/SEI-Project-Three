@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { useParams, useHistory } from 'react-router-dom'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
+import CommentsForm from './CommentsForm'
 
 const AddParkCommentForm = () => {
   // const token = getTokenFromLocalStorage
-  const params = useParams
+  const params = useParams()
   const history = useHistory()
-  console.log('params', params)
+
  
 
   const [formData, setFormData] = useState({
@@ -16,7 +17,6 @@ const AddParkCommentForm = () => {
   })
 
   const handleChange = event => {
-    console.log(event.target.name)
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
   }
@@ -25,45 +25,30 @@ const AddParkCommentForm = () => {
     event.preventDefault()
     
     await axios.post(
-      '/api/parks/605dcd70b059d51e3916a4e8/comments/',
+      `/api/parks/${params.id}/comments/`,
       formData,
       {
-        headers: { Authorization: `Bearer ${getTokenFromLocalStorage}` }
+        headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       }
     )
-    history.push('/')
+    history.push(`/parks/${params.id}`)
+    window.location.reload()
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Comment</label>
-        <div>
-          <input
-            placeholder="Add your comment here.."
-            name="text"
-            value={formData.text}
-            onChange={handleChange}
+   
+
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <CommentsForm
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            formData={formData}
           />
         </div>
       </div>
-      <div>
-        <label>Rating</label>
-        <div>
-          <input
-            placeholder="Rating out of 5"
-            name="rating"
-            value={formData.rating}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-      <div>
-        <button type="submit">
-      Submit
-        </button>
-      </div>
-    </form>
+    </section>
   )
 }
 

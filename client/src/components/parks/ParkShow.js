@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import DisplayRecommendations from '../parks/DisplayRecommendations'
 import DisplayComments from '../parks/DisplayComments'
+import { userIsAuthenticated } from '../../helpers/auth'
+import ParkWeather from './ParkWeather'
+import AddParkCommentForm from '../forms/AddParkCommentForm'
 
 
 const ParkShow = () => {
 
   const [park, setPark] = useState(null)
-  console.log(park, setPark)
+
 
   const params = useParams()
 
@@ -21,14 +24,18 @@ const ParkShow = () => {
     getData()
   }, [])
 
-  console.log('par data>>>>>', park)
-
+ 
 
   if (!park) return ''
+
+
   const { name, image, region, description, facts, recommendations, comments } = park
+ 
   return (
     <div>
-      
+
+      <ParkWeather key={park.id} {...park}/>
+      <hr/>      
       {name}
       <hr/>
       {region}
@@ -41,16 +48,35 @@ const ParkShow = () => {
         return <li key={fact}> {fact} </li>
       })}
       <hr/>
-      <div className="box">
+      <h1> Recommendations</h1>
+      <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
-          <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+          <>
+            <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+          </>
         ))}
       </div> 
+      <div className="navbar-item">
+        { userIsAuthenticated() && 
+            <Link to={`/addRecommendation/${params.id}`}>
+              Add a recommendation
+            </Link> 
+        }
+      </div>
       <hr/>
+      <h1> Comments</h1>
       <div className="box">
         { comments.map(comment => (
           <DisplayComments key={comment._id} {...comment}/>
         ))}
+        <div className="navbar-item">
+          { userIsAuthenticated() && 
+
+            <>
+              <AddParkCommentForm/>
+            </>
+          }
+        </div>
         
       </div>
     </div>

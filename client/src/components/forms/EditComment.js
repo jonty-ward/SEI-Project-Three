@@ -2,19 +2,28 @@ import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import axios from 'axios'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
-import AddParkCommentForm from '../parks/AddParkCommentForm'
+import CommentsForm from './CommentsForm'
 
 
 const EditComment = () => {
   const history = useHistory()
   const params = useParams()
+  const { id, commentId } = params
 
   const [formData, setFormData] = useState({
     text: '',
     rating: ''
   })
 
-  const { id, commentId } = params
+  const handleDelete = async () => {
+    await axios.delete(`/api/parks/${id}/comments/${commentId}`, {
+      headers: {
+        Authorization: `Bearer ${getTokenFromLocalStorage()}`
+      }
+    })
+    history.push(`/parks/${params.id}`)
+  }
+
 
   useEffect(() => {
     const getData = async () => {
@@ -26,7 +35,9 @@ const EditComment = () => {
 
   const handleChange = event => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
+    
     setFormData(newFormData)
+    console.log(event.target)
   }
 
   const handleSubmit = async (event) => {
@@ -41,15 +52,25 @@ const EditComment = () => {
     history.push(`/api/parks/${id}`)
   }
 
+  if (!formData) return ''
+  console.log('FORM DATA>>>>>>>', formData)
+
   return (
     <section className="section">
       <div className="container">
         <div className="columns">
-          <AddParkCommentForm
+          <CommentsForm
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             formData={formData}
           />
+          <hr/>
+          <br/>
+          <div className="buttons">
+            <button onClick={handleDelete} className="button is-danger">Delete</button>
+          </div>
+
+         
         </div>
       </div>
     </section>
