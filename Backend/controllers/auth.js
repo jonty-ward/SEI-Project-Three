@@ -33,7 +33,7 @@ export const showUserProfile = async (req, res) => {
   try {
     const { id } = req.params
     const profile = await User.findById(id).populate('user')
-    console.log(profile)
+    // console.log(profile)
     if (!profile) throw new Error()
     return res.status(200).json(profile)
   } catch (err) {
@@ -47,3 +47,24 @@ export const getAllUsers = async (_req, res) => {
   const users = await User.find()
   return res.status(200).json(users)
 }
+
+
+// * edit a user- for the wishlist, and can change account details etc
+
+// * UPDATE ROUTE
+export const updateUserProfile = async (req, res) => {
+  try {
+    const { id } = req.params
+    const userToUpdate = await User.findById(id)
+    if (!userToUpdate) throw new Error()
+    Object.assign(userToUpdate, req.body)
+    await userToUpdate.save()
+    return res.status(202).json(userToUpdate)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ 'message': 'Not found' })
+  }
+}
+
+
+// * should probs have a delete route too 
