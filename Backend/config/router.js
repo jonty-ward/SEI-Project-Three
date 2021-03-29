@@ -40,6 +40,6 @@ router.route('/profile')
   .get(getAllUsers)
 
 router.route('/profile/:id')
-  .get(secureRoute, showUserProfile)
+  .get(showUserProfile)
   
 export default router

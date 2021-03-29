@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { userIsAuthenticated } from '../helpers/auth'
+import { userIsAuthenticated, userID } from '../helpers/auth'
 
 const Navbar = () => {
   const history = useHistory()
@@ -42,7 +42,7 @@ const Navbar = () => {
         </>
         }
         { userIsAuthenticated() &&
-          <Link to='/profile/:id' className="navbar-item">Profile</Link>
+          <Link to={`/profile/${userID()}`} className="navbar-item">Profile</Link>
         }   
         { userIsAuthenticated() &&
           <button onClick={handleLogout} className="button">Log out</button>

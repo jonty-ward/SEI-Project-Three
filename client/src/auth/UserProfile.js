@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+// import { getTokenFromLocalStorage } from '../helpers/auth'
 
 
 
@@ -8,19 +9,21 @@ const UserProfile = () => {
 
   const [userData, setUserData] = useState()
   const params = useParams()
+  console.log('OARAMS', params)
   
   useEffect(() => {
     const userInfo = async () => {
-      const response = await axios.get(`/api/profile/${params._id}`)
+      const response = await axios.get(`/api/profile/${params.id}`)
       setUserData(response)
     }
     userInfo()
   }, [])
   
+  if (!userData) return ''
 
-  console.log('DATA>>', userData)
+  console.log('DATA>>', userData.data)
 
-  const { username, email, fullName, profilePic, wishlist } = userData
+  const { username, email, fullName, profilePic, wishlist } = userData.data
 
   return (
 

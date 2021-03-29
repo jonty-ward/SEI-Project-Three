@@ -16,6 +16,14 @@ export const userIsOwner = userId => {
   return userId === payload.sub
 }
 
+export const userID = () => {
+  const payload = getPayloadFromToken()
+  if ( !payload ) return false
+  return payload.sub
+}
+
+
+
 
 export const userIsAuthenticated = () => {
   const payload = getPayloadFromToken()
