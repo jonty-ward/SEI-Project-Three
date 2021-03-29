@@ -9,23 +9,39 @@ const Register = ({ handleImageUrl }) => {
     fullName: '',
     username: '',
     profilePic: '',
-    wishlist: '',
     email: '',
     password: '',
     passwordConfirmation: ''
   })
+
+  const [errors, setErrors] = useState({
+    email: '',
+    fullName: '',
+    password: '',
+    username: '',
+    passwordConfirmation: ''
+  })
+  console.log(errors, setErrors)
+
+
   const history = useHistory()
 
   const handleChange = (event) => {
     const newFormData = { ...formData, [event.target.name]: event.target.value }
+    console.log(event.target.value)
     setFormData(newFormData)
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const response = await axios.post('/api/register', formData)
-    window.localStorage.setItem('token', response.data.token)
-    history.push('/')
+    try {
+      const response = await axios.post('/api/register', formData)
+      window.localStorage.setItem('token', response.data.token)
+      history.push('/')
+    } catch (err) {
+      console.log(err.response)
+      setErrors(err.response.data.errors)
+    }
   }
 
   return (
@@ -38,37 +54,40 @@ const Register = ({ handleImageUrl }) => {
                 <label className="label">Full Name</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${errors.fullName ? 'is-danger' : ''}`}
                     placeholder="Full Name"
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
                   />
                 </div>
+                { errors.fullName && <p className="help is-danger">{errors.fullName.message}</p> }
               </div>
               <div className="field">
                 <label className="label">Email Address</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${errors.email ? 'is-danger' : ''}`}
                     placeholder="email@example.com"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                   />
                 </div>
+                { errors.email && <p className="help is-danger">{errors.email.message}</p> }
               </div>
               <div className="field">
                 <label className="label">Username</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${errors.username ? 'is-danger' : ''}`}
                     placeholder="Username (for display)"
                     name="username"
                     value={formData.username}
                     onChange={handleChange}
                   />
                 </div>
+                { errors.username && <p className="help is-danger">{errors.username.message}</p> }
               </div>
               <div className="field">
                 <label className="label">Profile Picture</label>
@@ -80,7 +99,7 @@ const Register = ({ handleImageUrl }) => {
                   />
                 </div>
               </div>
-              <div className="field">
+              {/* <div className="field">
                 <label className="label">Wishlist</label>
                 <div className="control">
                   <input
@@ -91,12 +110,12 @@ const Register = ({ handleImageUrl }) => {
                     onChange={handleChange}
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="field">
                 <label className="label">Password</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${errors.password ? 'is-danger' : ''}`}
                     type="password"
                     placeholder="Password"
                     name="password"
@@ -104,12 +123,13 @@ const Register = ({ handleImageUrl }) => {
                     onChange={handleChange}
                   />
                 </div>
+                { errors.password && <p className="help is-danger">{errors.password.message}</p> }
               </div>
               <div className="field">
                 <label className="label">Password Confirmation</label>
                 <div className="control">
                   <input
-                    className="input"
+                    className={`input ${errors.passwordConfirmation ? 'is-danger' : ''}`}
                     type="password"
                     placeholder="Password Confirmation"
                     name="passwordConfirmation"
@@ -117,6 +137,7 @@ const Register = ({ handleImageUrl }) => {
                     onChange={handleChange}
                   />
                 </div>
+                { errors.passwordConfirmation && <p className="help is-danger">{errors.passwordConfirmation.message}</p> }
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth">Sign Me Up!</button>

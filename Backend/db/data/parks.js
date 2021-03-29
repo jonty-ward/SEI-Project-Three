@@ -40,6 +40,10 @@ export default [
     parkUrl: 'https://www.serengetiparktanzania.com/'
 
   },
+<<<<<<< HEAD
+
+=======
+>>>>>>> 38dbd277b2e782a3c7e88ef77ef8e970399a3378
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
@@ -502,7 +506,7 @@ export default [
   },
   {
     name: 'Manú National Park',
-    image: 'https://lh3.googleusercontent.com/proxy/QOogFYuhZqNWJb8OLnQ1mJgFh19HlOpBwjuAb0E23TjRYkeQipjq_fj2Ri1Ff63y0rSaaTGiTB8nJfltbb8bCqVWqhuN49crfO5NcsPHUp12lCaBqN4rwWvS',
+    image: 'https://cdn2.wanderlust.co.uk/media/1128/jaguar-amazon.jpg?anchor=center&mode=crop&width=650&height=0&rnd=132012007950000000',
     description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
     latitude: -11.856389,
     longitude: -71.721389,
@@ -651,8 +655,12 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
+<<<<<<< HEAD
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
     ],
+=======
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
+>>>>>>> b924f6ac6a13ec296e27f47ff8061a31debac840
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'

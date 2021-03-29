@@ -1,5 +1,5 @@
 import express from 'express'
-import { loginUser, registerUser, showUserProfile, getAllUsers, updateUserProfile } from '../controllers/auth.js' 
+import { loginUser, registerUser, showUserProfile, updateUserProfile } from '../controllers/auth.js' 
 import { addCommentToPark, addRecommendationToPark, deleteCommentFromPark, deletePark, deleteRecommendationToPark, getAllParks, getOnePark, updatePark, editParkComments, editParkRecommendation, getOneRecommendation, getOneComment } from '../controllers/parks.js' 
 import { secureRoute } from '../config/secureRoute.js'
 
@@ -35,9 +35,6 @@ router.route('/register')
 
 router.route('/login')
   .post(loginUser)
-
-router.route('/profile')
-  .get(getAllUsers)
 
 router.route('/profile/:id')
   .get(showUserProfile)
