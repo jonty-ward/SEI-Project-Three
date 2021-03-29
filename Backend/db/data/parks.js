@@ -20,6 +20,42 @@ export default [
 
   },
   {
+    name: 'Serengetti National Park' ,
+    image: 'https://www.michaelbonocore.com/wp-content/uploads/2017/06/DSC09796-Edit-5.jpg' ,
+    description: 'One of the best national parks in Africa, the Serengeti is the jewel of Tanzania. The name conjures romantic images of seemingly endless acacia-dappled plains, golden savanna, and throngs of wildlife, and this World Heritage-listed park, Tanzania\'s oldest and most popular, delivers on all accounts. From December to July, the Great Migration takes place, when more than a million wildebeest, as well as zebra and Thomson\'s gazelle, travel between here and the fabled lands of the Maasai Mara, a time-honored pilgrimage that is one of Africa\'s greatest spectacles.The famed "Big Five" also live within the park\'s borders, and visitors have the chance to see nail-biting predator-versus-prey battles here - especially during the dry season from June through October. Birders can spot some of the 500-plus species, including beauties such as the crowned crane and Fischer\'s lovebird.' ,
+    latitude: -2.333333,
+    longitude: 34.833332,
+    region: 'Africa' ,
+    country: 'Tanzania' ,
+    facts: [ 'The Serengeti is one of the oldest and most scientifically significant ecosystems on the planet. Its weather patterns, fauna and flora are believed to have changed very little over a million years, giving the area a prehistoric feel', 
+      'The greater Serengeti ecosystem includes Serengeti National Park proper; Ngorongoro Conservation Area; Maswa Game Reserve; Loliondo, Grumeti, and Ikorongo Game Controlled Areas; and the Masai Mara National Reserve in Kenya.',
+      'The name, Serengeti, is derived from the Maasai word siringit, meaning “endless plains.” An accurate description considering the whole ecosystem stretches over 12,000 square miles (30,000 square kilometers)!',
+      'The Serengeti is home to the world’s largest movement of animals, often called the “Great Migration.” More than 1.7 million wildebeest, 500,000 zebra, and 200,000 antelope make their way from the Ndutu region of the southern Serengeti northward through the whole length of the “endless plains” to Kenya’s Masai Mara (a total of 500 mi / 800 km).', 
+      'The Great Migration of the Serengeti was selected in 2013 as one of the Seven Natural Wonders of Africa. The others are the Red Sea reef system, Mount Kilimanjaro, Sahara Desert, Ngorongoro Crater, Nile River, and Okavango Delta. (Notice that three of the seven are in Tanzania.)',
+      'The first Brit to see the Serengeti, Stewart Edward White, recorded his explorations in 1913. The first partial game reserve of 800 acres (3.2 sq km) was established in 1921 and a full one in 1929. These reserves became the basis for Serengeti National Park, which was gazetted in 1951.',
+      ' In the 1890s, droughts and a cattle disease wreaked havoc on the Serengeti wildlife population – in particular to wildebeest. It wasn’t until the mid-1970s that the wildebeest and buffalo populations had fully recovered.',
+      'Spread throughout the south central Serengeti, kopjes (pronounced like “copy”) are geologic wonders comprised of exposed gneiss and granite shaped by the wind and temperature fluctuations. With sun-warmed rocks, vegetation for shade, and their elevation several meters above the plains, kopjes are a favorite resting spot for lions. It seems that one particular Serengeti kopje, known as Simba Kopje, was the inspiration for Pride Rock in Disney’s The Lion King.'
+      
+    ],
+    parkUrl: ''
+
+  },
+  {
+    name: 'Serengetti National Park' ,
+    image: '' ,
+    description: '' ,
+    latitude: ,
+    longitude: ,
+    region: '' ,
+    country: '' ,
+    facts: [ '', 
+      '',
+      
+    ],
+    parkUrl: ''
+
+  },
+  {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
     description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
