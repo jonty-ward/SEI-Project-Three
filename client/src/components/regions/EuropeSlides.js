@@ -1,0 +1,22 @@
+export default [
+  {
+    title: 'Image 1',
+    image: 'https://www.telegraph.co.uk/content/dam/travel/Spark/untapped-destinations/Vodafone-Slovakia-main-xlarge.jpg'
+  },
+  {
+    title: 'Image 2',
+    image: 'https://peakvisor.com/img/news/Gran-Paradiso-National-Park.jpg'
+  },
+  {
+    title: 'Image 3',
+    image: 'https://i.natgeofe.com/n/90ddbd94-9f33-40d3-a953-afb049818ba9/30924.jpg'
+  },
+  {
+    title: 'Image 4',
+    image: 'https://lp-cms-production.imgix.net/2019-06/154772332_full.jpg?auto=format&fit=crop&ixlib=react-8.6.4&h=520&w=1312'
+  },
+  {
+    title: 'Image 5',
+    image: 'https://finestayslovenia.com/wp-content/uploads/2019/01/vintgar-gorge.jpg'
+  }
+]

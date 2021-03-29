@@ -517,7 +517,7 @@ export default [
   },
   {
     name: 'Manú National Park',
-    image: 'https://lh3.googleusercontent.com/proxy/QOogFYuhZqNWJb8OLnQ1mJgFh19HlOpBwjuAb0E23TjRYkeQipjq_fj2Ri1Ff63y0rSaaTGiTB8nJfltbb8bCqVWqhuN49crfO5NcsPHUp12lCaBqN4rwWvS',
+    image: 'https://cdn2.wanderlust.co.uk/media/1128/jaguar-amazon.jpg?anchor=center&mode=crop&width=650&height=0&rnd=132012007950000000',
     description: 'Peru’s oldest National Park and one of the continent\'s largest still remains remarkably unexplored by visitors, despite being recognised by UNESCO as a World Biosphere Reserve in 1977, and a Natural Heritage of Humanity in 1987.',
     latitude: -11.856389,
     longitude: -71.721389,
