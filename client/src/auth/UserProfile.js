@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-<<<<<<< HEAD
 import { Link, useParams } from 'react-router-dom'
 // import { getTokenFromLocalStorage } from '../helpers/auth'
-=======
-import { useParams } from 'react-router-dom'
->>>>>>> development
 
 
 
@@ -20,13 +16,12 @@ const UserProfile = () => {
     const userInfo = async () => {
       const response = await axios.get(`/api/profile/${params.id}`)
       setUserData(response)
-      const allParks = await axios.get('/api/parks/') 
+      const allParks = await axios.get('/api/parks') 
       setParksData(allParks)
     }
     userInfo()
   }, [])
 
-<<<<<<< HEAD
   if (!userData || !parksData) return ''
   let arrayOfFilteredPark = []
   const { username, email, fullName, profilePic, wishList } = userData.data
@@ -46,9 +41,6 @@ const UserProfile = () => {
   }
   
 
-=======
-  const { username, email, fullName, profilePic, wishlist } = userData.data
->>>>>>> development
 
   return (
 
