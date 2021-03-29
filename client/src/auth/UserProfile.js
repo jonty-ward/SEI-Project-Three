@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-// import { getTokenFromLocalStorage } from '../helpers/auth'
 
 
 
@@ -20,8 +19,6 @@ const UserProfile = () => {
   }, [])
   
   if (!userData) return ''
-
-  console.log('DATA>>', userData.data)
 
   const { username, email, fullName, profilePic, wishlist } = userData.data
 

@@ -40,21 +40,21 @@ export default [
     parkUrl: ''
 
   },
-  {
-    name: 'Serengetti National Park' ,
-    image: '' ,
-    description: '' ,
-    latitude: ,
-    longitude: ,
-    region: '' ,
-    country: '' ,
-    facts: [ '', 
-      '',
+  // {
+  //   name: 'Serengetti National Park' ,
+  //   image: '' ,
+  //   description: '' ,
+  //   latitude: '',
+  //   longitude: '',
+  //   region: '' ,
+  //   country: '' ,
+  //   facts: [ '', 
+  //     ''
       
-    ],
-    parkUrl: ''
+  //   ],
+  //   parkUrl: ''
 
-  },
+  // },
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
@@ -666,8 +666,7 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
-      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters', 
-      ''],
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'
