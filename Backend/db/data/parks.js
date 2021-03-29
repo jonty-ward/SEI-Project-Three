@@ -623,8 +623,125 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.mljettravel.com/national-park/'
+  },
+  {
+    name: 'Hot Springs National Park',
+    image: 'https://www.lanceview.com/lanceview/post-img/Hot-Springs-National-Park.jpg',
+    description: 'Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of years. Ancient thermal springs, mountain views, incredible geology, forested hikes, and abundant creeks – all in the middle of town – make Hot Springs National Park a unique and beautiful destination. Read More',
+    latitude: 34.5217,
+    longitude: -93.0424,
+    region: 'North America',
+    country: 'USA',
+    facts: [
+      'Established before the concept of a national park existed, it was the first time that land had been set aside by the federal government to preserve its use as an area for recreation',
+      'The spring water flowing from Hot Springs Mountain is quite safe to drink. The National Park Service has several places where visitors can fill their own bottles with the water.', 
+      'Members of many Native American tribes had been gathering in the valley for over 8,000 years to enjoy the healing properties of the thermal springs.',
+      'It is estimated that the water emanating from the hot springs is first heated a mile below the Earth’s surface, and slowly rises through a fault.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nps.gov/hosp/index.htm'
+  },
+  {
+    name: 'Basaseachic Falls National Park',
+    image: 'https://bigseventravel.com/wp-content/uploads/2020/04/arminas-travel.jpg',
+    description: 'Basaseachic Falls National Park is located in northwestern Mexico in the western part of the state of Chihuahua. The Basaseachic Falls, locally known as Cascada de Basaseachic) reaches a height of 853 feet (246 m) making them the second-highest waterfall in Mexico. In addition to Basaseachic Falls, the park is renowned for the scenery particularly from the cliffs overlooking the park from summits around 5,380 feet (1,640 m)',
+    latitude: 28.0285,
+    longitude: -108.2991,
+    region: 'North America',
+    country: 'Mexico',
+    facts: [
+      'The cougar is the main predator of the park with other popular mammalian species including white-tailed deer, collared peccary, skunk, boar, raccoon, Mexican fox squirrel, and the jackrabbit.', 
+      'The dramatic topology was created by deep tectonic plate movements causing large fractures and rising rifts. The violent movement of the terrain resulted in deep canyons and high mountains.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Mingan Archipelago National Park Reserve',
+    image: 'https://i.pinimg.com/originals/8d/8f/95/8d8f95fc99817f571420483dbaf11373.jpg',
+    description: 'Only an artist’s limitless imagination could have conjured up the striking landscapes of the Mingan Archipelago National Park Reserve. The combination of climate, sea, and naturally sculpted rocks have been the subject of countless works of art over the years. As far as the eye can see there are peat polygons, gravel beaches, former sea cliffs, and limestone monoliths with the ocean setting the mood. Its rhythm, salty smell and vibrant blue colour are so idyllic it feels like you’ve walked into a living painting where thousands of seabirds - meeting on the island to nest - swirl across the sky in unison. Atlantic puffins, terns, and Common eiders are just a few winged friends who regularly visit the islands.',
+    latitude: 50.2205,
+    longitude: -63.6242,
+    region: 'North America',
+    country: 'Canada',
+    facts: [
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters', 
+      ''],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'
+  },
+  {
+    name: 'Sierra de San Pedro Mártir National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Devils-Peak_Sierra-SanPedroMartir_BajaCalifornia_Mexico.jpg',
+    description: 'Sierra de San Pedro Mártir National Park is a national park in the Mexican state of Baja California. The park is known for its pine trees and granite rock formations. Sierra de San Pedro Mártir is a mountain range that runs north-south along the middle part of northwestern Baja California, Mexico.',
+    latitude: 30.8669,
+    longitude: -115.5681,
+    region: 'North America',
+    country: 'Mexico',
+    facts: [
+      'Sierra de San Pedro Mártir National Park is one of the few pine forests that exists on the Baja California peninsula that is important habitat for native Bighorn Sheep.', 
+      'In addition the park is home to the California condor through re-introduction program by several international agencies.',
+      'The National Astronomical Observatory, built in 1971 on a neighboring peak, Cerro del la Cúpula, is home to Mexico\'s largest optical telescope, with a diameter of 2.12 meters, and a weight of 40 tons in total.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'El Tepozteco National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Piramidedeltepozteco.jpg',
+    description: 'Featuring stunning Aztec ruins and a rich collection of cultural artefacts, Parque Nacional El Tepozteco is a federally protected area located in both Morelos and Mexico City in Mexico. The park contains 16 named mountains, the highest and most prominent of which is Chichinuatzin (3,460m/11,352ft).',
+    latitude: 19.0355,
+    longitude: -99.0792,
+    region: 'North America',
+    country: 'Mexico',
+    facts: [
+      'El Tepozteco is 24,000 hectares (59,000 acres) in size and it is located just to the south of Mexico City, placing it within driving distance of the largest city in all of North America.', 
+      'Within the park, wildlife is particularly abundant, and visitors have a decent chance of spotting white-tailed deer and lynx.',
+      'There are also hundreds of bird species, as well as a funky mammal known as the coati, which likes to congregate around people and beg for food.',
+      'The park itself is designed to protect the remains of a temple known as El Tepozteco, which is believed to have been built by the Aztecs between 1200 CE and 1300 CE.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Tulum National Park',
+    image: 'https://i0.wp.com/anniewearsit.com/wp-content/uploads/2018/03/IMG_5616.jpg?w=2071&h=1710&ssl=1',
+    description: 'The Tulum National Park is an eco-archaeological site situated on Mexico’s Yucatán Peninsula. The park features a beautifully preserved archaeological compound set amid a stunning landscape that includes cenotes (sinkholes), and some of the Yucatan’s most dramatic coastline.',
+    latitude: 20.2088,
+    longitude: -87.4240,
+    region: 'North America',
+    country: 'Mexico',
+    facts: [
+      'The city of Tulum reached its peak between the 13th and 15th centuries, and was one of the last Mayan cities to fall to the Spanish.', 
+      'The park has numerous cenotes that were of great importance to the Maya, both as a water source and as places of ritual.',
+      'The park also preserves different types of vegetation, such as chit trees, coconut palms, tropical shrubs and creeping plants.',
+      'Look out for anteater, agouti (a large native rodent), and the white turtles, loggerhead sea turtles and leatherbacks that visit once a year to lay their eggs.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: 'Jasper National Park',
+    image: 'https://wallpapercave.com/wp/wp4637626.jpg',
+    description: 'Jasper National Park is a national park in Alberta, Canada. It is the largest national park within Alberta\'s Rocky Mountains spanning 11,000 km2 (4,200 sq mi). Its location is north of Banff National Park and west of Edmonton. The park contains the glaciers of the Columbia Icefield, springs, lakes, waterfalls and mountains.',
+    latitude: 52.8734,
+    longitude: -117.9543,
+    region: 'North America',
+    country: 'Canada',
+    facts: [
+      'The park was established on September 14, 1907, as Jasper Forest Park, and was granted national park status in 1930, with the passing of the National Parks Act.',
+      'Mammalian species found in this park are the elk, caribou, moose,[6] red fox, mule deer, white-tailed deer, porcupine, lynx, beaver, marten, river otter, mink, pika, grizzly bear, coyote, mountain goat, bighorn sheep, black bear, timber wolf,[6] hoary marmot, cougar, and wolverine.',
+      'The park was declared a UNESCO World Heritage Site in 1984'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.pc.gc.ca/en/pn-np/ab/jasper'
   }
-
 ]
 
 
