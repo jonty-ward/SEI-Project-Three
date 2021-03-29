@@ -40,10 +40,6 @@ export default [
     parkUrl: 'https://www.serengetiparktanzania.com/'
 
   },
-<<<<<<< HEAD
-
-=======
->>>>>>> 38dbd277b2e782a3c7e88ef77ef8e970399a3378
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
@@ -655,12 +651,7 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
-<<<<<<< HEAD
-      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
-    ],
-=======
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
->>>>>>> b924f6ac6a13ec296e27f47ff8061a31debac840
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'
