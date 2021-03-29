@@ -40,7 +40,10 @@ export default [
     parkUrl: 'https://www.serengetiparktanzania.com/'
 
   },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 38dbd277b2e782a3c7e88ef77ef8e970399a3378
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
