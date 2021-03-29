@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 // import { getTokenFromLocalStorage } from '../helpers/auth'
 
 
@@ -22,24 +22,25 @@ const UserProfile = () => {
     userInfo()
   }, [])
 
-  
   if (!userData || !parksData) return ''
-  console.log('PARKS DATA >>>>>>', parksData.data)
-
-  // console.log('DATA>>', userData.data.wishList)
-
+  let arrayOfFilteredPark = []
   const { username, email, fullName, profilePic, wishList } = userData.data
-  // console.log('wishlist', userData.data)
 
-  // wishList.forEach((wishlist, index)=>{
-    
-  // })
-  const filteredParks = parksData.data.filter((item) =>{
-    return item._id === wishList[0].toString()    
-   
+  // *for Each lopp to make array of parks in wishlist
+  wishList.forEach((wishlist, index)=>{
+    const filteredParks = parksData.data.filter((item) =>{
+      return item._id === wishList[index].toString()    
+    }) 
+    arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
   })
-  console.log('filteredParks', filteredParks)
-  console.log('wishlist ', wishList)
+
+  // * function to remove the item from the wishlist 
+  const removeFromWishlist = (event)=>{
+    console.log(event.target.value)
+    console.log(wishList)
+  }
+  
+
 
   return (
 
@@ -55,12 +56,20 @@ const UserProfile = () => {
         {email}
         <hr/>
         <hr/>
-        {wishList.map((item, i) =>(
-          <div className="parks-saved " key={i}>
-
-          </div>
-        ))}
-        { filteredParks[0].name}
+        <div className="wishlist-items">
+          
+          {arrayOfFilteredPark.map((item, i) =>(
+            
+            <div className="parks-saved" key={i}>
+              <Link to={`/parks/${item[0]._id}`}>
+                <p>{item[0].name}</p>
+                <img src={item[0].image} alt={item[0].name} />
+              </Link>
+              <button value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from wishlist </button>
+            </div>
+            
+          ))}
+        </div>
 
       </div>
     </div>

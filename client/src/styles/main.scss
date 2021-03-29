@@ -24,6 +24,17 @@ flex-direction: column;
 overflow-x: auto;
 
 }
+.wishlist-items{
+  display: flex;
+  overflow-x: auto;
+}
+
+.parks-saved{
+  margin: 10px;
+  min-width: 50vw;
+
+}
+
 
 .day{
   display: flex;

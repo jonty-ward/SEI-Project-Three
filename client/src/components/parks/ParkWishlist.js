@@ -12,16 +12,11 @@ const parkWishlist = ({ userData, park }) => {
   })
 
   if (!wishlist) return ''
-
   const handleWishlist = async () =>{
- 
-
     await axios.put(
       `/api/profile/${userData.id}`,
       wishlist
     )
-
-
   }
 
   return (
