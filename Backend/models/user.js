@@ -2,13 +2,22 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 
 const userSchema = new mongoose.Schema({
-  username: { type: String, required: true, unique: true, maxlength: 40 },
-  email: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  fullName: { type: String, required: true },
+  username: { type: String, required: [true, 'Please enter a Username'], unique: true, maxlength: 40 },
+  email: { type: String, required: [true, 'Please enter an email'], unique: true },
+  password: { type: String, required: [true, 'Please enter a password'] },
+  fullName: { type: String, required: [true, 'Please enter your full name'] },
   profilePic: { type: String },
   wishList: [{ type: String }]
 })
+
+userSchema.path('email').validate(async (value) => {
+  const emailCount = await mongoose.models.User.countDocuments({ email: value })
+  return !emailCount
+}, 'Email already exists')
+userSchema.path('username').validate(async (value) => {
+  const username = await mongoose.models.User.countDocuments({ username: value })
+  return !username
+}, 'Username taken. Please try another!')
 
 // * Remove password from user when populating
 userSchema.set('toJSON', {
@@ -28,7 +37,7 @@ userSchema
 userSchema
   .pre('validate', function(next) {
     if (this.isModified('password') && this.password !== this._passwordConfirmation) {
-      this.validate('passwordConfirmation', 'Passwords do not match')
+      this.invalidate('passwordConfirmation', 'Passwords do not match')
     }
     next()
   })

@@ -1,26 +1,54 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+<<<<<<< HEAD
+import { Link, useParams } from 'react-router-dom'
+// import { getTokenFromLocalStorage } from '../helpers/auth'
+=======
 import { useParams } from 'react-router-dom'
+>>>>>>> development
 
 
 
 const UserProfile = () => {
 
-  const [userData, setUserData] = useState()
+  const [userData, setUserData] = useState('')
+  const [parksData, setParksData] = useState('')
   const params = useParams()
-  console.log('OARAMS', params)
+
   
   useEffect(() => {
     const userInfo = async () => {
       const response = await axios.get(`/api/profile/${params.id}`)
       setUserData(response)
+      const allParks = await axios.get('/api/parks/') 
+      setParksData(allParks)
     }
     userInfo()
   }, [])
-  
-  if (!userData) return ''
 
+<<<<<<< HEAD
+  if (!userData || !parksData) return ''
+  let arrayOfFilteredPark = []
+  const { username, email, fullName, profilePic, wishList } = userData.data
+
+  // *for Each lopp to make array of parks in wishlist
+  wishList.forEach((wishlist, index)=>{
+    const filteredParks = parksData.data.filter((item) =>{
+      return item._id === wishList[index].toString()    
+    }) 
+    arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
+  })
+
+  // * function to remove the item from the wishlist 
+  const removeFromWishlist = (event)=>{
+    console.log(event.target.value)
+    console.log(wishList)
+  }
+  
+
+=======
   const { username, email, fullName, profilePic, wishlist } = userData.data
+>>>>>>> development
 
   return (
 
@@ -36,7 +64,20 @@ const UserProfile = () => {
         {email}
         <hr/>
         <hr/>
-        {wishlist}
+        <div className="wishlist-items">
+          
+          {arrayOfFilteredPark.map((item, i) =>(
+            
+            <div className="parks-saved" key={i}>
+              <Link to={`/parks/${item[0]._id}`}>
+                <p>{item[0].name}</p>
+                <img src={item[0].image} alt={item[0].name} />
+              </Link>
+              <button value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from wishlist </button>
+            </div>
+            
+          ))}
+        </div>
 
       </div>
     </div>

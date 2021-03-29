@@ -37,24 +37,13 @@ export default [
       'Spread throughout the south central Serengeti, kopjes (pronounced like “copy”) are geologic wonders comprised of exposed gneiss and granite shaped by the wind and temperature fluctuations. With sun-warmed rocks, vegetation for shade, and their elevation several meters above the plains, kopjes are a favorite resting spot for lions. It seems that one particular Serengeti kopje, known as Simba Kopje, was the inspiration for Pride Rock in Disney’s The Lion King.'
       
     ],
-    parkUrl: ''
+    parkUrl: 'https://www.serengetiparktanzania.com/'
 
   },
-  // {
-  //   name: 'Serengetti National Park' ,
-  //   image: '' ,
-  //   description: '' ,
-  //   latitude: '',
-  //   longitude: '',
-  //   region: '' ,
-  //   country: '' ,
-  //   facts: [ '', 
-  //     ''
-      
-  //   ],
-  //   parkUrl: ''
+<<<<<<< HEAD
 
-  // },
+=======
+>>>>>>> 38dbd277b2e782a3c7e88ef77ef8e970399a3378
   {
     name: 'Maasai Mara' ,
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
@@ -666,7 +655,12 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
+<<<<<<< HEAD
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
+    ],
+=======
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
+>>>>>>> b924f6ac6a13ec296e27f47ff8061a31debac840
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'

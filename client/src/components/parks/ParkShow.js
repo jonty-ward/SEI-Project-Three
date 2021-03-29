@@ -3,19 +3,20 @@ import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import DisplayRecommendations from '../parks/DisplayRecommendations'
 import DisplayComments from '../parks/DisplayComments'
-import { userIsAuthenticated } from '../../helpers/auth'
+import { userIsAuthenticated, userID } from '../../helpers/auth'
 import ParkWeather from './ParkWeather'
 import AddParkCommentForm from '../forms/AddParkCommentForm'
+import ParkWishlist from './ParkWishlist'
+
 
 
 const ParkShow = () => {
 
   const [park, setPark] = useState(null)
-
-
+  const [userData, setUserData] = useState(null)
   const params = useParams()
 
- 
+  // *pulling in the parks data
   useEffect(() =>{
     const getData = async () => {
       const { data } = await axios.get(`/api/parks/${params.id}`)
@@ -24,9 +25,26 @@ const ParkShow = () => {
     getData()
   }, [])
 
+  // * pulling in the user data for adding info to wishlist
+  useEffect(() =>{
+    const getData = async () => {
+      const { data } = await axios.get(`/api/profile/${userID()}`)
+      setUserData(data)
+    }
+    getData()
+  }, [])
+
+
+
+
+
+
  
 
-  if (!park) return ''
+  if (!park || !userData ) return ''
+  console.log('USER DATA>>>>>>>',userData, setUserData)
+
+ 
 
 
   const { name, image, region, description, facts, recommendations, comments } = park
@@ -37,6 +55,11 @@ const ParkShow = () => {
       <ParkWeather key={park.id} {...park}/>
       <hr/>      
       {name}
+      <ParkWishlist 
+        userData = {userData}
+        park = {park}
+      
+      />
       <hr/>
       {region}
       <br/>
@@ -52,7 +75,7 @@ const ParkShow = () => {
       <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
           <>
-            <DisplayRecommendations key={recommendation._id} {...recommendation}/>
+            <DisplayRecommendations key={recommendation.id} {...recommendation}/>
           </>
         ))}
       </div> 

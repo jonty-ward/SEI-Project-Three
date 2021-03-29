@@ -8,6 +8,7 @@ const Login = () => {
     email: '',
     password: ''
   })
+  const [errors, setErrors] = useState()
 
   const history = useHistory()
 
@@ -18,11 +19,15 @@ const Login = () => {
   
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const response = await axios.post('/api/login', formData)
+    try {
+      const response = await axios.post('/api/login', formData)
  
-    window.localStorage.setItem('token', response.data.token)
-    history.push('/')
-    location.reload()
+      window.localStorage.setItem('token', response.data.token)
+      history.push('/')
+      location.reload()
+    } catch (err) {
+      setErrors('Unauthorised')
+    }
   }
 
   return (
@@ -55,6 +60,11 @@ const Login = () => {
                     value={formData.password}
                   />
                 </div>
+              </div>
+              <div className="field">
+                { errors && 
+                <div className="subtitle is-6">Access Unauthorised. Please try re-rentering your credentials.</div>
+                }
               </div>
               <div className="field">
                 <button type="submit" className="button is-fullwidth">Login</button>
