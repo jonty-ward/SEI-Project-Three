@@ -725,7 +725,175 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/ab/jasper'
+  },
+  {
+    name: 'The Black Forest National Park',
+    image: 'https://img.theculturetrip.com/450x/smart/wp-content/uploads/2018/03/2025020.jpg',
+    description: 'The Black Forest National Park is the country\'s largest national park. It gets its namefrom the general dark colour of the numerous pine trees that grow in this region. The Romans were the first to use the name “Black Forest.” The Roman soldiers were walking through Germany and their path was blocked by a dark, dense forest. They called it “Silva Nigra”, which means “Black Forest” in their Latin language.',
+    latitude: 48.561111,
+    longitude: 8.221389,
+    region: 'Europe',
+    country: 'Germany',
+    facts: [
+      'Blessed with a wonderfully mild climate and numerous hot springs, Baden-Baden has for centuries been one of the world’s most popular spa destinations.',
+      'Wood-carving is a traditional cottage industry in the region and carved ornaments now are produced in substantial numbers as souvenirs for tourists. Cuckoo clocks are a popular example; they have been made in the region since the mid-18th century and much of their development occurred there.',
+      'The rare breed of Black Forest Horses and Hinter Wald cattle originate from there.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nationalpark-schwarzwald.de/en'
+  },
+  {
+    name: 'Oulanka National Park',
+    image: 'https://d2ue5ppt0wsjaa.cloudfront.net/gofinlandwebmedia/img/articles/Finland_Oulanka_national_park_autumn-1519207037898.jpg',
+    description: 'No matter what time of year you visit Oulanka, you’re sure to find some incredible scenery there to greet you. The most popular trekking route in Finland (the 80-kilometer Karhunkierros Trail) lies within Oulanka’s borders, as do many other shorter routes, and if you’re lucky, you may even catch a glimpse of reindeer!',
+    latitude: 66.375556,
+    longitude: 29.338611,
+    region: 'Europe',
+    country: 'Finland',
+    facts: [
+      'The difference in temperature between the high rising fells and low river valleys make an ideal environment for several rare plants like the park\'s emblem: the calypso.',
+      'Two magnificent orchids can be found here near the Arctic Circle. The lady\'s slipper grows in the marshlands, and the calypso serves as the symbol of the park itself. Calypso is in bloom from the end of May to mid-June.',
+      'Riverbeds and alluvial meadows are home to rare butterflies and 100 bird species nest in the park. Rare birds like the Siberian Jay and the Capercaillie also take refuge in these herb-rich forests.',
+      'The secret to Oulanka\'s rich growth is its soil, but the soil\'s secret is the limestone beneath. This rock, rather unusual in Scandinavia, neutralises acids in local soils and helps provides nutrients that boost plant growth.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nationalparks.fi/oulankanp'
+  },
+  {
+    name: 'Jostedalsbreen National Park',
+    image: 'https://www.hollandamerica.com/content/dam/hal/inventory-assets/excursions/europe/jostedal-glacier-national-park-121218-93512-c037.jpg.image.750.563.low.jpg',
+    description: 'Jostedalsbreen National Park covers an 1315 square kilometres, nestled between two of the world\'s longest fjords, Sognefjorden and Nordfjord. The actual glacier is the largest glacier on the European mainland. The glaciers in the park are "natural laboratories" and can teach us many things about climate, geology and vegetation. The landscape is ever changing, and one of the most eye-catching qualities about Jostedalsbreen National Park are the green, almost turquoise rivers and lakes from the melting glacier ice.',
+    latitude: 61.683333,
+    longitude: 6.983333,
+    region: 'Europe',
+    country: 'Norway',
+    facts: [
+      'The Jostedalsbreen glacier is huge. So huge that, were it to melt, the whole country of Norway would have enough water to last for a century. At 80 kilometres long, the glacier covers a total area of 487 square kilometres with the ice being as thick as 500 metres in some places.',
+      'The whiteness is vast, yes, but it is not unchanging. Within the National Park, you\'ll have the chance to explore a wide variety of natural terrains: from fjords (as the park is between two of the longest fjords in the world, Sognefjorden and Nordfjord) and farmland, to mountains with cascading waterfalls and creeks.',
+      'One of Jostedalsbreen\' arm, the Haugabreen glacier, has been found to have retreated about 130 metres within the last decade or so.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.jostedalsbreen.org/english'
+  },
+  {
+    name: 'The Lake District National Park',
+    image: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F11a5c314-0300-11ea-95be-9565f1401aa3.jpg?crop=2667%2C1500%2C0%2C0&resize=1180',
+    description: 'The area was designated a national park on 9 May 1951 (less than a month after the first UK national park designation — the Peak District). It is the most visited national park in the United Kingdom with 16.4 million visitors per year and more than 24 million visitor-days per year, the largest of the thirteen national parks in England and Wales, and the second largest in the UK after the Cairngorms National Park.',
+    latitude: 54.45,
+    longitude: -3.1,
+    region: 'Europe',
+    country: 'England',
+    facts: [
+      'England\'s deepest lake is in The Lake District. Although there are 8 bigger lakes in the Lake District in terms of square kilometres, Wastwater is the deepest lake in England with a staggering depth of 243 feet.',
+      'Although there are 16 listed names of bodies of water in the Lake District, only one could be technically classed as a lake. Bassenthwaite Lake, situated in the north of the region near Keswick, is the only one that is actually a lake.',
+      'There are four Michelin-starred restaurants in The Lake District',
+      'The graphite mine at Seathwaite, first discovered in the 1550s, provided the natural resource required to make the very first pencil and the history of this humble item of stationery is charted at the Pencil Museum in Keswick.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.lakedistrict.gov.uk/'
+  },
+  {
+    name: 'Valbonë Valley National Park',
+    image: 'https://i.pinimg.com/originals/9c/20/18/9c201820b57ab859fd697dd30c668b69.jpg',
+    description: 'The Valbonë Valley National Park is a national park inside the Albanian Alps in northern Albania. It is characterised by its very remote areas which have a large preserved ecosystem all of which is primarily untouched with pristine quality. This vast pristine ecosystem is the centrepiece of what has been referred to as the Albanian Miracle of the Alps.',
+    latitude: 42.453333,
+    longitude: 19.887778,
+    region: 'Europe',
+    country: 'Albania',
+    facts: [
+      'It is the largest river within the Albanian Alps and drains the entire eastern portion of the range.',
+      'Over the past few million years, glaciers have at times covered most of the park. During the Würm period, the glacier of Valbona reached a total length of 9.5 kilometres.',
+      'Most of the park consists of forest, covering 89% of the overall surface area.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://thethi-guide.com/destinations/valbona-valley/'
+  },
+  {
+    name: 'Chapada Diamantina National Park',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Parque_Nacional_da_Chapada_Diamantina_-_Bahia_-_Brasil%284%29.jpg/1024px-Parque_Nacional_da_Chapada_Diamantina_-_Bahia_-_Brasil%284%29.jpg',
+    description: 'The landscapes housed within the confines of Brazil\'s Chapada Diamantina National Park are some of the most majestic on the planet. Its most distinct geographic features include a set of graceful monoliths, waterfalls, limestone caves, and vibrant blue underground rivers, particularly in Poço Encantado. The park itself is huge. It has a larger surface area than Belgium or the Netherlands as a whole, and the name ‘Chapada Diamantina’ translates to Diamond Highlands.',
+    latitude: -12.880278,
+    longitude: -41.372222,
+    region: 'South America',
+    country: 'Brazil',
+    facts: [
+      'Gold and diamonds have been found in Chapada Diamantina National Park\' region which was a main reason for the park\'s creation as mining was destroying the environment and destroying the wildlife population.',
+      'In Chapada Diamantina National Park there is a flooded cave called Poco Azul (or Blue Well). When explorers ventured into the cave they made a discovery of roughly 40 different animal species\' bones. Many of the bones were from species that are now extinct.',
+      'One of the species of animals discovered in Poco Azul was a creature roughly the size of an elephant, called a Megatherium.',
+      'The hummingbird known as the hooded visorbearer is endemic to Chapada Diamantina National Park.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://www.infochapada.com.br/en/'
+  },
+  {
+    name: 'Lençóis Maranhenses National Park',
+    image: 'https://www.tripsavvy.com/thmb/Ql7MwmrBLZm__mLXTpyBIbOSv8U=/2121x1414/filters:fill(auto,1)/GettyImages-872908506-5b4f66be46e0fb005b462f8a.jpg',
+    description: 'Abutting the Atlantic in a wild and remote part of the coast in Maranhão state in the north of Brazil is Lençois Maranhenses National Park. The name means “bedsheets” in Portuguese because of the spectacular landscape that is created by miles of rolling, smooth clean sand dunes.',
+    latitude: -2.533333,
+    longitude:  -43.116667,
+    region: 'South America',
+    country: 'Brazil',
+    facts: [
+      'For all its beauty the park is a pretty harsh environment. The dunes form because of the strong winds that whip up out to sea in October and November and it blows fairly constantly year round.',
+      'Lying just outside the Amazon Basin, the region is subject to a regular rain season during the beginning of the year. The rains cause a peculiar phenomenon: fresh water is collected in the valleys between sand dunes and is prevented from percolating down by a layer of impermeable rock which lies underneath the sand. The resulting blue, green and black "lagoons" are surrounded by the desert-like sand, and reach their fullest between July and September.',
+      'Lençóis Maranhenses National Park sand dunes can reach heights of 40 metres (131 feet), and there are no public facilities like toilets and food outlets in the park.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://whc.unesco.org/en/tentativelists/6261/'
+  },
+  {
+    name: 'Los Roques National Park',
+    image: 'https://repeatingislands.files.wordpress.com/2011/05/los_roques_09.jpg?w=640',
+    description: 'Los Roques Archipelago National Park was created in 1972 to protect a marine ecosystem of exceptional beauty and ecological value dominated by coral reefs, mangroves, and seagrass beds. It is without a doubt one of the most beautiful natural areas of Venezuela. The park, located about 80 miles (128 km) north of the port of "La Guaira" in Caracas, covers 221,120 hectares (546 acres), making it the largest marine park in the Caribbean Sea.',
+    latitude: 11.8575,
+    longitude: -66.7575,
+    region: 'South America',
+    country: 'Venezuela',
+    facts: [
+      ''
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://losroques.org/#:~:text=Los%20Roques%20Archipelago%20National%20Park,beautiful%20natural%20areas%20of%20Venezuela.'
+  },
+  {
+    name: '',
+    image: '',
+    description: '',
+    latitude: ,
+    longitude: ,
+    region: 'South America',
+    country: '',
+    facts: [
+      ''
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
+  },
+  {
+    name: '',
+    image: '',
+    description: '',
+    latitude: ,
+    longitude: ,
+    region: 'South America',
+    country: '',
+    facts: [
+      ''
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: ''
   }
+
 ]
 
 
