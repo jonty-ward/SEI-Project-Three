@@ -486,8 +486,8 @@ export default [
   {
     name: 'Uluru-Kata Tjuta National Park',
     image: ['https://i.pinimg.com/originals/01/6f/85/016f858691099f4a431a1636cf75c967.jpg',
-  'https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1586346482415-F2MFG08QPZ7CGNS0VE83/ke17ZwdGBToddI8pDm48kHJjM-Evnp5g-1kf5Yv15cUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcpWKe3KzaCrFDKPR1a1Ob8xobjReaxMuaKtrvUDoDmPO9EsdBHei1w8jR6w0UZiby/ayers-rock-travel-guide.jpg?format=1500w',
-'https://www.ausleisure.com.au/images/ausleisure/files/UKTNP-Uluru-Segway-creditParksAustralia_.jpg'],
+      'https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1586346482415-F2MFG08QPZ7CGNS0VE83/ke17ZwdGBToddI8pDm48kHJjM-Evnp5g-1kf5Yv15cUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcpWKe3KzaCrFDKPR1a1Ob8xobjReaxMuaKtrvUDoDmPO9EsdBHei1w8jR6w0UZiby/ayers-rock-travel-guide.jpg?format=1500w',
+      'https://www.ausleisure.com.au/images/ausleisure/files/UKTNP-Uluru-Segway-creditParksAustralia_.jpg'],
     description: 'Uluru-Kata Tjuta National Park is named after two of Australia’s most spectacular sites: the world-famous sandstone monolith of Uluru and the red domes of Kata Tjuta. As well as its world-famous geological formations and extraordinary Indigenous culture, the park is home to a fascinating array of plants and animals, including many rare species.',
     latitude: '-25.3438',
     longitude: '131.0347',
@@ -677,12 +677,8 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
-<<<<<<< HEAD
-      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
-=======
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
     ],
->>>>>>> development
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'

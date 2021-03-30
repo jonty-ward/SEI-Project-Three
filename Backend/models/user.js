@@ -10,18 +10,6 @@ const userSchema = new mongoose.Schema({
   wishList: [{ type: String }]
 })
 
-<<<<<<< HEAD
-// userSchema.path('email').validate(async (value) => {
-//   const emailCount = await mongoose.models.User.countDocuments({ email: value })
-//   return !emailCount
-// }, 'Email already exists')
-// userSchema.path('username').validate(async (value) => {
-//   const username = await mongoose.models.User.countDocuments({ username: value })
-//   return !username
-// }, 'Username taken. Please try another!')
-=======
-
->>>>>>> development
 
 // * Remove password from user when populating
 userSchema.set('toJSON', {
