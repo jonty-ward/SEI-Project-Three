@@ -19,7 +19,7 @@ const ParkShow = ( { userData } ) => {
 
   const [park, setPark] = useState(null)
 
-  const dataFromUserData = userData
+
   // const [userData, setUserData] = useState(null)
   const params = useParams()
 
@@ -33,7 +33,6 @@ const ParkShow = ( { userData } ) => {
     getData()
   }, [])
 
-  console.log('USER DATA from userData' , dataFromUserData)
 
 
 
@@ -83,7 +82,10 @@ const ParkShow = ( { userData } ) => {
       })}
       <hr/>
       <ParkMap {...park}/>
+
       <h1> Recommendations</h1>
+
+      
       <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
           <>
