@@ -19,7 +19,7 @@ const UserData = () => {
 
 
   // console.log('userData of userData page', userData)
-  if (!userData) return ''
+  // if (!userData) return ''
 
   
   return (
