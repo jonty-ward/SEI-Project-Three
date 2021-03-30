@@ -32,7 +32,7 @@ const UserData = () => {
       />
       
 
-      <p>This page is rendering </p>
+      
 
 
       
