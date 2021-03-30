@@ -19,6 +19,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
   
 
   if (!parkData) return null
+  console.log(formData)
   return (
     
     <form onSubmit={handleSubmit} className="Form-field">
@@ -28,13 +29,16 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
         <div className="field">
           <label className="label"> Activity </label>
           <div className="control">
-            <input
-              className="input"
-              placeholder="Add your activity reccomendation here ... "
-              name="activity"
-              value={formData.activity}
-              onChange={handleChange}
-            />
+            <select onSelect={handleChange} id="activity" name="activity">
+              <option value="hiking">Hiking</option>
+              <option value="swimming">Swimming</option>
+              <option value="climbing">Climbing/Mountaineering/Orienteering</option>
+              <option value="birdwatching">Birdwatching</option>
+              <option value="rafting">Rafting/Paddling/Canoeing</option>
+              <option value="snorkeling">Snorkeling</option>
+              <option value="camping">Camping</option>
+              
+            </select>
           </div>
         </div>
       </div>
@@ -70,3 +74,8 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
 }
 
 export default recommendationForm
+
+// className="input"
+// placeholder="Add your activity reccomendation here ... "
+// name="activity"
+// value={formData.activity}

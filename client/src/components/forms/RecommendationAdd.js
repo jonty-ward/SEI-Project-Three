@@ -20,7 +20,7 @@ const RecommendationAdd = () => {
     }
     getData()
   }, [])
-  console.log('PARK DATA', parkData)
+  
   
 
   // * setting the information for the request to state 
