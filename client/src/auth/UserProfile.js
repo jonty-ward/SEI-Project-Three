@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
+import Popup from 'reactjs-popup'
+
 // import { getTokenFromLocalStorage } from '../helpers/auth'
 
 
@@ -10,6 +12,10 @@ const UserProfile = () => {
   const [userData, setUserData] = useState('')
   const [parksData, setParksData] = useState('')
   const params = useParams()
+  const [wishlist, setUpdateWishlist] =  useState({
+    wishList: []
+  })
+  const [confirm, setConfirm] = useState(null)
 
   
   useEffect(() => {
@@ -20,7 +26,7 @@ const UserProfile = () => {
       setParksData(allParks)
     }
     userInfo()
-  }, [])
+  }, [confirm])
 
   if (!userData || !parksData) return ''
   let arrayOfFilteredPark = []
@@ -34,13 +40,51 @@ const UserProfile = () => {
     arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
   })
 
+
+  
   // * function to remove the item from the wishlist 
   const removeFromWishlist = (event)=>{
-    console.log(event.target.value)
-    console.log(wishList)
+    console.log('event.target.value', event.target.value)
+    setConfirm('confirm')
+    const filteredWishlistConst = wishList.filter(filter => {
+      return filter !== event.target.value
+    })
+    const newWishList = { [event.target.name]: filteredWishlistConst }
+    setUpdateWishlist(newWishList)
+    
   }
   
 
+
+  
+  const handleConfirm = async () =>{
+    console.log('updated wish list', wishlist)
+    setConfirm('')
+    await axios.put(
+      `/api/profile/${userData.data.id}`,
+      wishlist
+    )
+  }
+
+  const handleCancel = () =>{
+    setConfirm('')
+  }
+
+
+
+
+  const PopupExample = () => (
+    <Popup trigger={<button> Trigger</button>} position="right center">
+      <div>Popup content here !!</div>
+    </Popup>
+  )
+  PopupExample()
+
+
+  
+  
+
+  
 
   return (
 
@@ -65,8 +109,24 @@ const UserProfile = () => {
                 <p>{item[0].name}</p>
                 <img src={item[0].image} alt={item[0].name} />
               </Link>
-              <button value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from wishlist </button>
+              {!confirm ?
+                <button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from wishlist </button>
+                :
+                <>
+                  <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                  <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
+                </>
+              }
+
+              {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">
+                <div>
+                  <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                  <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
+                </div>
+              </Popup> */}
+
             </div>
+             
             
           ))}
         </div>
