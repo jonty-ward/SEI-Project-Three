@@ -677,7 +677,12 @@ export default [
     region: 'North America',
     country: 'Canada',
     facts: [
+<<<<<<< HEAD
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
+=======
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
+    ],
+>>>>>>> development
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'
