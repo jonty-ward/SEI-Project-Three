@@ -6,13 +6,13 @@ body {
   margin: 10px;
 }
 
+
 h1.home {
   text-align: center;
   
 }
-.container {
-  height: 50vh;
-}
+
+
 
 
 .map-container {
@@ -72,21 +72,25 @@ overflow-x: auto;
 }
 
 .region-slider-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 20px;
+  align-content: center;
+
+  // margin: 20px;
 }
 
 .region-slider {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   margin: 20px;
 }
 
 .slider {
   position: relative;
-  height: 50vh;
+  height: 100%;
   
 }
 
@@ -100,12 +104,22 @@ overflow-x: auto;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: .4s ease;
+  transition: .3s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: .3s;
+  transition-duration: .2s;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .slider-image {
@@ -114,6 +128,23 @@ overflow-x: auto;
   // left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   z-index: -1;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+}
+
+h1.profile-title {
+  text-align: center;
 }

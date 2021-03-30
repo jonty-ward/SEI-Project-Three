@@ -1,14 +1,11 @@
 export default [
   {
-    title: 'Image 1',
     image: 'https://theculturetrip.com/wp-content/uploads/2017/10/sf-brit.jpg'
   },
   {
-    title: 'Image 2',
     image: 'https://cdn2.wanderlust.co.uk/media/1128/jaguar-amazon.jpg?anchor=center&mode=crop&width=650&height=0&rnd=132012007950000000'
   },
   {
-    title: 'Image 3',
     image: 'http://www.costaricajourneys.com/wp-content/uploads/2014/01/waterfall.jpg'
   }
   // {

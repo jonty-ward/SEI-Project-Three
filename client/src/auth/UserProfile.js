@@ -27,7 +27,8 @@ const UserProfile = () => {
   if (!userData || !parksData) return ''
   let arrayOfFilteredPark = []
   const { username, email, fullName, profilePic, wishList } = userData.data
-  // *for Each lopp to make array of parks in wishlist
+
+  // * for Each lopp to make array of parks in wishlist
   wishList.forEach((wishlist, index)=>{
     const filteredParks = parksData.data.filter((item) =>{
       return item._id === wishList[index].toString()    
@@ -46,9 +47,6 @@ const UserProfile = () => {
     setUpdateWishlist(newWishList)
     
   }
-  
-
-
   
   const handleConfirm = async () =>{
     console.log('updated wish list', wishlist)
@@ -71,24 +69,25 @@ const UserProfile = () => {
   )
   PopupExample()
 
-
-  
-  
-
-  
-
   return (
     <div className="section">
       <div className="container">
-        <h1>MY PROFILE</h1>
-        {profilePic}
-        <hr/>
-        {fullName}
-        <hr/>
-        {username}
-        <hr/>
-        {email}
-        <hr/>
+        <h1 className="profile-title">{`${username}'s Profile`}</h1>
+
+        <div className="user-info-container">
+          <div className="profile-image-container">
+            <img src={profilePic} className="ui medium circular image ui medium bordered image"/>
+          </div>
+          
+          <div className="text-container">
+            <h2>Full Name: {fullName}</h2>
+            <hr/>
+            <h2>Username (for display): {username}</h2>
+            <hr/>
+            <h2>Email: {email}</h2>
+          </div>
+        </div>
+
         <hr/>
         <div className="wishlist-items">
           {arrayOfFilteredPark.map((item, i) =>(
