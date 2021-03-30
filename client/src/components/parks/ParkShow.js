@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import DisplayRecommendations from '../parks/DisplayRecommendations'
 import DisplayComments from '../parks/DisplayComments'
-import { userIsAuthenticated, userID } from '../../helpers/auth'
+import { userIsAuthenticated } from '../../helpers/auth'
 import ParkWeather from './ParkWeather'
 import AddParkCommentForm from '../forms/AddParkCommentForm'
 import ParkWishlist from './ParkWishlist'
@@ -11,10 +11,16 @@ import ParkMap from './ParkMap'
 
 
 
-const ParkShow = () => {
+
+
+const ParkShow = ( { userData } ) => {
+
+ 
 
   const [park, setPark] = useState(null)
-  const [userData, setUserData] = useState(null)
+
+  const dataFromUserData = userData
+  // const [userData, setUserData] = useState(null)
   const params = useParams()
 
   // *pulling in the parks data
@@ -23,27 +29,19 @@ const ParkShow = () => {
       const { data } = await axios.get(`/api/parks/${params.id}`)
       setPark(data)
     }
+    
     getData()
   }, [])
 
-  // * pulling in the user data for adding info to wishlist
-  useEffect(() =>{
-    const getData = async () => {
-      const { data } = await axios.get(`/api/profile/${userID()}`)
-      setUserData(data)
-    }
-    getData()
-  }, [])
+  console.log('USER DATA from userData' , dataFromUserData)
 
 
 
 
 
 
- 
-
-  if (!park || !userData ) return ''
-  console.log('USER DATA>>>>>>>',userData, setUserData)
+  if (!park ) return ''
+  // console.log('USER DATA>>>>>>>',userData, setUserData)
 
  
 
@@ -53,14 +51,24 @@ const ParkShow = () => {
   return (
     <div>
 
+   
+
+     
+
       <ParkWeather key={park.id} {...park}/>
       <hr/>      
       {name}
-      <ParkWishlist 
-        userData = {userData}
-        park = {park}
-      
-      />
+
+      {userIsAuthenticated 
+        ?
+        <ParkWishlist 
+          userData = {userData}
+          park = {park}
+        />
+        :
+        <p>Login to save</p>
+      }
+
       <hr/>
       {region}
       <hr/>
