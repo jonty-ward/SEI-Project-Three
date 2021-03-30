@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // import { Link } from 'react-router-dom'
-import ReactMapGL from 'react-map-gl'
+// import ReactMapGL from 'react-map-gl'
+import axios from 'axios'
 
 
 const Home = () => {
@@ -14,19 +15,49 @@ const Home = () => {
   //   })
   // }, [])
 
-  const [viewport, setViewport] = useState({
-    latitude: 49.180278,
-    longitude: 19.919444,
-    zoom: 1
+  const [park, setPark] = useState(null)
+
+
+
+  // *pulling in the parks data
+  useEffect(() =>{
+    const getData = async () => {
+      const { data } = await axios.get('/api/parks')
+      setPark(data)
+    }
+      
+    getData()
+  }, [])
+
+
+
+  
+  // const [viewport, setViewport] = useState({
+  //   latitude: 49.180278,
+  //   longitude: 19.919444,
+  //   zoom: 1
+  // })
+
+  console.log('PARK DATA', park )
+
+  if (!park) return ''
+  const mappedImages = park.map(item =>{
+  
+    return item.image
   })
+
+  const randomImage =  mappedImages[Math.floor(Math.random() * mappedImages.length)][0]
+
 
   return (
     <>
       <h1 className="home">This is the homepage - TITLE TBC</h1>
       <div className="container">
-        HERO IMAGE HERE
-
+        <img src ={randomImage} alt = "homepage image"/>
       </div>
+      <br/>
+
+      {/*       
       <div className="map-container"> 
       
         <h2>Select a region</h2>
@@ -44,7 +75,7 @@ const Home = () => {
           :
           <h1>Loading your location...</h1>
         }
-      </div>
+      </div> */}
     </>
   )
 }
