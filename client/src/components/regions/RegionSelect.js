@@ -20,43 +20,59 @@ const RegionSelect = ({ region }) => {
   return (
     <div className="region-slider-container">
     
-      <Link to='/regions/Europe'>
-        <div value='Europe' className="region-slider">
+      <div value='Europe' className="region-slider">
+        <Link to='/regions/Europe'>
+        
           <h1>Europe</h1>
           <Slider slides={EuropeSlides}/>
-        </div>
-      </Link>
+        
+        </Link>
+      </div>
       
-      <Link to="/regions/Africa">
-        <div value='Africa' className="region-slider">
+      <div value='Africa' className="region-slider">
+        <Link to="/regions/Africa">
+          
           <h1>Africa</h1>
           <Slider slides={AfricaSlides}/>
-        </div>
-      </Link>
-      <Link to="/regions/Asia">
-        <div  value='Asia' className="region-slider">
+          
+        </Link>
+      </div>
+      
+      <div  value='Asia' className="region-slider">
+        <Link to="/regions/Asia">
+        
           <h1>Asia</h1>
           <Slider slides={AsiaSlides}/>
-        </div>
-      </Link>
-      <Link to="/regions/NorthAmerica">
-        <div  value='NorthAmerica' className="region-slider">
+        
+        </Link>
+      </div>
+
+      <div  value='NorthAmerica' className="region-slider">
+        <Link to="/regions/NorthAmerica">
+        
           <h1>North America</h1>
           <Slider slides={NorthAmericaSlides}/>
-        </div>
-      </Link>
-      <Link to="/regions/Oceania">
-        <div  value='Oceania' className="region-slider">
+        
+        </Link>
+      </div>
+
+      <div  value='Oceania' className="region-slider">
+        <Link to="/regions/Oceania">
+        
           <h1>Oceania</h1>
           <Slider slides={OceaniaSlides}/>
-        </div>
-      </Link>
-      <Link to="/regions/SouthAmerica">
-        <div  value='SouthAmerica' className="region-slider">
+        
+        </Link>
+      </div>
+
+      <div  value='SouthAmerica' className="region-slider">
+        <Link to="/regions/SouthAmerica">
+        
           <h1>South America</h1>
           <Slider slides={SouthAmericaSlides}/>
-        </div>
-      </Link>
+        
+        </Link>
+      </div>
       
     </div>
   )
