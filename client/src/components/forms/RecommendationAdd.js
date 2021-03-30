@@ -34,7 +34,7 @@ const RecommendationAdd = () => {
  
   // * handling the change when imputting data 
   const handleChange = event =>{
-    // console.log(event)
+    // console.log('EVENT>>', event.target.value)
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
     
