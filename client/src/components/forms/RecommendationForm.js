@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ImageUploadField } from './ImageUploadField'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
+
 const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formData }) => {
 
+  const [parkData, setParkData] = useState(null)
+  const params = useParams()
+  
+
+  useEffect(() =>{
+    const getData = async () => {
+      const { data } = await axios.get(`/api/parks/${params.id}`)
+      setParkData(data)
+    }
+    getData()
+  }, [])
+  
+
+  if (!parkData) return null
   return (
     
     <form onSubmit={handleSubmit} className="Form-field">
@@ -10,10 +27,8 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
         <div className="control">
           <input
             className="input"
-            placeholder="Add park name here ... "
             name="parkName"
-            value={formData.parkName}
-            onChange={handleChange}
+            value={parkData.name}
           />
         </div>
         <div className="field">

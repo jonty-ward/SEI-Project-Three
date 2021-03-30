@@ -20,12 +20,12 @@ const RecommendationAdd = () => {
     }
     getData()
   }, [])
-
+  console.log('PARK DATA', parkData)
   
 
   // * setting the information for the request to state 
   const [formData, setFormData] = useState({
-    parkName: '',
+    // parkName: '',
     activity: '',
     text: '',
     image: ''
