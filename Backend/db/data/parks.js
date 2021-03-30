@@ -269,7 +269,9 @@ export default [
 
   {
     name: 'Redwood National and State Parks',
-    image: 'https://i.natgeofe.com/n/08a290b9-36dc-4dee-a75e-a1af937cdf3b/woman-on-sequoia.jpg',
+    image: ['https://i.natgeofe.com/n/08a290b9-36dc-4dee-a75e-a1af937cdf3b/woman-on-sequoia.jpg', 
+      'https://www.themandagies.com/wp-content/uploads/2017/07/Things-To-Do-In-Redwood-National-Park-The-Mandagies-scaled.jpg',
+      'https://static.rootsrated.com/image/upload/s--Uj2KPwfX--/t_rr_large_traditional/dylsoyghcwjpmtngxh9y.jpg'],
     description: 'Redwood National Park is an 112,618 acre park in Humboldt County, and Del Norte County, California. It is home to the tallest trees in the world, called coast redwoods. Redwood National Park was established in 1968, at a time when redwood population had decreased by 90%. It was added to the list of three other parks that had been created to save the redwood tree population including Del Norte Coast, Jedediah Smith, and Prairie Creek Redwood parks. Together the four parks make up Redwood National and State Parks, which was established in 1994 to help combine efforts to save the redwood forests. 96% of old redwood growth has been logged.',
     latitude: '41.2132',
     longitude: '-124.0046',
@@ -287,7 +289,9 @@ export default [
   },
   {
     name: 'Banff National Par',
-    image: 'https://wallpaperaccess.com/full/1609680.jpg',
+    image: ['https://wallpaperaccess.com/full/1609680.jpg',
+      'https://i0.wp.com/banffnationalpark.com/wp-content/uploads/2019/11/banff-national-park.jpg?fit=1152%2C698&ssl=1',
+      'https://www.planetware.com/wpimages/2020/10/canada-alberta-banff-national-park-best-campgrounds-waterfowl-lakes-kayakers.jpg'],
     description: 'As Canada’s oldest national park, and the world’s third oldest, Banff is one of the continent’s premier destinations, boasting almost unsurpassed levels of natural beauty with its snow-capped peaks, dense coniferous forests, alpine meadows and pristine lakes. Every year, visitors make the journey to witness the majestic mountain scenery and indulge in endless opportunities for outdoor pursuits, from hiking, biking and canoeing to backcountry camping. Visit strings of glaciers and lakes, each one more spectacular than the last, drive the scenic Icefield Parkway, and soak in the lively atmosphere of Banff town with its world-class resorts, boutiques, restaurants and breweries',
     latitude: '51.4968',
     longitude: '-115.9281',
@@ -305,7 +309,9 @@ export default [
   },
   {
     name: 'Yellowstone National Park',
-    image: 'https://www.nps.gov/articles/images/DSCF0996.JPG',
+    image: ['https://www.nps.gov/articles/images/DSCF0996.JPG',
+      'https://cdn.getyourguide.com/img/location/5c6a642fa076b.jpeg/88.jpg',
+      'https://lp-cms-production.imgix.net/features/2016/01/Bison-crossing-river-in-Yellowstone.-Image-courtesy-of-Wyoming-Office-of-Tourism.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850'],
     description: 'Yellowstone National Park is the the oldest, one of the largest, and probably the best-known national park in the United States. It is situated principally in northwestern Wyoming and partly in southern Montana and eastern Idaho and includes the greatest concentration of hydrothermal features in the world. The park was established by the U.S. Congress on March 1, 1872, as the country’s first national park.',
     latitude: '44.4280',
     longitude: '-110.5885',
@@ -323,7 +329,9 @@ export default [
   },
   {
     name: 'Haleakalā National Park',
-    image: 'https://media.cntraveler.com/photos/5894b2d829a6a9db132b077c/master/pass/GettyImages-118998690.jpg',
+    image: ['https://media.cntraveler.com/photos/5894b2d829a6a9db132b077c/master/pass/GettyImages-118998690.jpg',
+      'https://www.tripsavvy.com/thmb/YmnUZ7g8bG6keAC60Q1y1rqON_E=/2123x1412/filters:fill(auto,1)/GettyImages-175345970-595fd2e45f9b583f180a43d3.jpg',
+      'https://static.thousandwonders.net/Haleakal%C4%81.National.Park.original.15148.jpg'],
     description: 'Haleakalā National Park is an American national park located on the island of Maui in the state of Hawaii. Named after Haleakalā, a dormant volcano within its boundaries, the park covers an area of 33,265 acres. The land was designated a national park in 1976 and its boundaries expanded in 2005.',
     latitude: '20.7204',
     longitude: '-156.1552',
@@ -341,7 +349,9 @@ export default [
   },
   {
     name: 'Grutas de Cacahuamilpa National Park',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Grutas_de_Cacahuamilpa%2C_Guerrero_%2833165502951%29.jpg',
+    image: ['https://upload.wikimedia.org/wikipedia/commons/0/0b/Grutas_de_Cacahuamilpa%2C_Guerrero_%2833165502951%29.jpg',
+      'https://diytravelhq.com/wp-content/uploads/2016/03/grutas-de-cacahuamilpa-national-park-864x1296.jpg',
+      'https://m.psecn.photoshelter.com/img-get/I00006.o7CwNsYgc/s/650/650/Mexico-central-highland-1712.jpg'],
     description: 'The Grutas de Cacahuamilpa National Park in Guerrero, Mexico, is best known for the Grutas de Cacahuamilpa Caverns, which are one of the largest cave systems in the world. The park is located in the Sierra Madre del Sur, primarily in the northeast part of Guerrero state.',
     latitude: '18.6697',
     longitude: '-99.5099',
@@ -394,7 +404,9 @@ export default [
   },
   {
     name: 'Abel Tasman National Park',
-    image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fkayaks-ABEL0217.jpg',
+    image: ['https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fkayaks-ABEL0217.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F02%2Fscenic-ABEL0217.jpg',
+      'https://www.newzealand.com/assets/Tourism-NZ/Nelson/e4e5325d05/img-1536988589-7965-4682-BA963E64-0277-9F01-148FCD0F9B8DFE49__aWxvdmVrZWxseQo_CropResizeWzUwMCwzNzUsODAsImpwZyJd.jpg'],
     description: 'The Abel Tasman Coastal Track follows a pristine coastline of extraordinary beauty. Clear, turquoise bays, abundant bird and sea life, and fresh, clean air surround you as you walk under the shady canopy of lush native forest. Birdsong rings through the treetops above, only interrupted by the call of the occasional small waterfall nestled in the midst of the park.',
     latitude: '-40.9050',
     longitude: '172.9671',
@@ -412,7 +424,9 @@ export default [
   },
   {
     name: 'Bouma National Heritage Park',
-    image: 'https://lp-cms-production.imgix.net/2019-06/b771b7c1a3d444489edf051134463bb5-bouma-national-heritage-park.jpg',
+    image: ['https://lp-cms-production.imgix.net/2019-06/b771b7c1a3d444489edf051134463bb5-bouma-national-heritage-park.jpg',
+      'https://live.staticflickr.com/1864/44696347531_6f3b2526e6_b.jpg',
+      'http://www.alluringworld.com/wp-content/uploads/2017/12/1-Bouma-Fiji.jpg'],
     description: 'Bouma National Heritage Park is located on Taveuni Island, the third largest island od Fiji. Taveuni is known as “the garden island of Fiji” because of its abundant plant life, which includes several species found only on the island. Bouma National Heritage Park, on the eastern side, contains pristine rainforest and three waterfalls, each some 65 feet (20 metres) high.',
     latitude: '-16.8532',
     longitude: '-179.9160',
@@ -430,7 +444,9 @@ export default [
   },
   {
     name: 'Cradle Mountain-Lake St Clair National Park',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Cradle_Mountain_Behind_Dove_Lake.jpg',
+    image: ['https://upload.wikimedia.org/wikipedia/commons/8/88/Cradle_Mountain_Behind_Dove_Lake.jpg',
+      'https://i.pinimg.com/originals/86/5f/e9/865fe9bd644acb680be7955b3c852c04.jpg',
+      'https://cdn.audleytravel.com/1050/750/79/495395-cradle-mountain--lake-st-clair-national-park.webp'],
     description: 'Iconic Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness World Heritage Area. From moss-covered ancient rainforests and deep river gorges to snow-covered mountain peaks, wild alpine moorlands and glacial lakes, the park is revered for its diverse and breath-taking landscapes.',
     latitude: '-41.8333',
     longitude: '146.0000',
@@ -448,7 +464,9 @@ export default [
   },
   {
     name: 'Tongariro National Park',
-    image: 'https://cms.lonelyplanet.com/sites/default/files/brightcove/videos/images/posters/5104226627001_5480024787001_5471392086001-vs.jpg',
+    image: ['https://cms.lonelyplanet.com/sites/default/files/brightcove/videos/images/posters/5104226627001_5480024787001_5471392086001-vs.jpg',
+      'https://d3ngrkosxxbdp2.cloudfront.net/wp-content/uploads/2018/11/stray_activities_tongariro1.jpg',
+      'https://media.tacdn.com/media/attractions-content--1x-1/0b/18/8e/e7.jpg'],
     description: 'Home to three active volcanic mountains, and iconic and majestic landscapes, Tongariro National Park has attracted adventurers of all ages since 1887. With wide-open spaces, some of the best hikes in the world and must-see natural wonders, Tongariro National Park is the perfect destination for families, couples and explorers seeking adventure, fun and an escape into nature.',
     latitude: '-39.1928',
     longitude: '175.5938',
@@ -467,7 +485,9 @@ export default [
   },
   {
     name: 'Uluru-Kata Tjuta National Park',
-    image: 'https://i.pinimg.com/originals/01/6f/85/016f858691099f4a431a1636cf75c967.jpg',
+    image: ['https://i.pinimg.com/originals/01/6f/85/016f858691099f4a431a1636cf75c967.jpg',
+  'https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1586346482415-F2MFG08QPZ7CGNS0VE83/ke17ZwdGBToddI8pDm48kHJjM-Evnp5g-1kf5Yv15cUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcpWKe3KzaCrFDKPR1a1Ob8xobjReaxMuaKtrvUDoDmPO9EsdBHei1w8jR6w0UZiby/ayers-rock-travel-guide.jpg?format=1500w',
+'https://www.ausleisure.com.au/images/ausleisure/files/UKTNP-Uluru-Segway-creditParksAustralia_.jpg'],
     description: 'Uluru-Kata Tjuta National Park is named after two of Australia’s most spectacular sites: the world-famous sandstone monolith of Uluru and the red domes of Kata Tjuta. As well as its world-famous geological formations and extraordinary Indigenous culture, the park is home to a fascinating array of plants and animals, including many rare species.',
     latitude: '-25.3438',
     longitude: '131.0347',
@@ -611,7 +631,9 @@ export default [
   },
   {
     name: 'Hot Springs National Park',
-    image: 'https://www.lanceview.com/lanceview/post-img/Hot-Springs-National-Park.jpg',
+    image: ['https://www.lanceview.com/lanceview/post-img/Hot-Springs-National-Park.jpg',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2017%2F01%2Fwaterfall-HOTSPRINGS0117.jpg&q=85',
+      'https://www.pewtrusts.org/-/media/post-launch-images/2018/02/hotspring_1/hotspring_1_16x9.jpg'],
     description: 'Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of years. Ancient thermal springs, mountain views, incredible geology, forested hikes, and abundant creeks – all in the middle of town – make Hot Springs National Park a unique and beautiful destination. Read More',
     latitude: 34.5217,
     longitude: -93.0424,
@@ -629,7 +651,9 @@ export default [
   },
   {
     name: 'Basaseachic Falls National Park',
-    image: 'https://bigseventravel.com/wp-content/uploads/2020/04/arminas-travel.jpg',
+    image: ['https://bigseventravel.com/wp-content/uploads/2020/04/arminas-travel.jpg',
+      'https://peakvisor.com/img/news/Sierra-Madre-Occidental-Basaseachic-National-Park.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Basaseachic_Falls_National_Park_in_the_winter.jpg/1280px-Basaseachic_Falls_National_Park_in_the_winter.jpg'],
     description: 'Basaseachic Falls National Park is located in northwestern Mexico in the western part of the state of Chihuahua. The Basaseachic Falls, locally known as Cascada de Basaseachic) reaches a height of 853 feet (246 m) making them the second-highest waterfall in Mexico. In addition to Basaseachic Falls, the park is renowned for the scenery particularly from the cliffs overlooking the park from summits around 5,380 feet (1,640 m)',
     latitude: 28.0285,
     longitude: -108.2991,
@@ -644,22 +668,30 @@ export default [
   },
   {
     name: 'Mingan Archipelago National Park Reserve',
-    image: 'https://i.pinimg.com/originals/8d/8f/95/8d8f95fc99817f571420483dbaf11373.jpg',
+    image: ['https://i.pinimg.com/originals/8d/8f/95/8d8f95fc99817f571420483dbaf11373.jpg',
+      'https://i.natgeofe.com/n/38d5de6e-2c9c-4c1f-bad5-83e6a28f3035/36738.jpg?w=1200',
+      'https://hikebiketravel.com/wp-content/uploads/2019/09/Puffins-and-razorbills-1.jpg'],
     description: 'Only an artist’s limitless imagination could have conjured up the striking landscapes of the Mingan Archipelago National Park Reserve. The combination of climate, sea, and naturally sculpted rocks have been the subject of countless works of art over the years. As far as the eye can see there are peat polygons, gravel beaches, former sea cliffs, and limestone monoliths with the ocean setting the mood. Its rhythm, salty smell and vibrant blue colour are so idyllic it feels like you’ve walked into a living painting where thousands of seabirds - meeting on the island to nest - swirl across the sky in unison. Atlantic puffins, terns, and Common eiders are just a few winged friends who regularly visit the islands.',
     latitude: 50.2205,
     longitude: -63.6242,
     region: 'North America',
     country: 'Canada',
     facts: [
+<<<<<<< HEAD
+      'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'],
+=======
       'In springtime, marine birds—including puffins, razorbills, guillemots, terns, and kittiwakes—congregate on certain islands to form important nesting colonies, taking advantage of both island safety and a bountiful supply of food in surrounding waters'
     ],
+>>>>>>> development
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/qc/mingan'
   },
   {
     name: 'Sierra de San Pedro Mártir National Park',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Devils-Peak_Sierra-SanPedroMartir_BajaCalifornia_Mexico.jpg',
+    image: ['https://upload.wikimedia.org/wikipedia/commons/6/61/Devils-Peak_Sierra-SanPedroMartir_BajaCalifornia_Mexico.jpg',
+      'https://i0.wp.com/www.hachettebookgroup.com/wp-content/uploads/2019/01/Baja_SanPedroMartirMt_CarolKramer.jpg?resize=1024%2C768&ssl=1',
+      'https://www.mensjournal.com/wp-content/uploads/2018/09/iuytfgyuikm.jpg?quality=86&strip=all'],
     description: 'Sierra de San Pedro Mártir National Park is a national park in the Mexican state of Baja California. The park is known for its pine trees and granite rock formations. Sierra de San Pedro Mártir is a mountain range that runs north-south along the middle part of northwestern Baja California, Mexico.',
     latitude: 30.8669,
     longitude: -115.5681,
@@ -676,7 +708,9 @@ export default [
   },
   {
     name: 'El Tepozteco National Park',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Piramidedeltepozteco.jpg',
+    image: ['https://upload.wikimedia.org/wikipedia/commons/d/d8/Piramidedeltepozteco.jpg',
+      'https://peakvisor.com/photo/Parque-Nacional-El-Tepozteco-forest.jpg',
+      'https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2Y4YTZjNDU2MGQyOGY4ZjIwM19fRFNDMDg2MC5qcGciXSxbInAiLCJ0aHVtYiIsIngzOTA-Il0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdXQ'],
     description: 'Featuring stunning Aztec ruins and a rich collection of cultural artefacts, Parque Nacional El Tepozteco is a federally protected area located in both Morelos and Mexico City in Mexico. The park contains 16 named mountains, the highest and most prominent of which is Chichinuatzin (3,460m/11,352ft).',
     latitude: 19.0355,
     longitude: -99.0792,
@@ -694,7 +728,9 @@ export default [
   },
   {
     name: 'Tulum National Park',
-    image: 'https://i0.wp.com/anniewearsit.com/wp-content/uploads/2018/03/IMG_5616.jpg?w=2071&h=1710&ssl=1',
+    image: ['https://i0.wp.com/anniewearsit.com/wp-content/uploads/2018/03/IMG_5616.jpg?w=2071&h=1710&ssl=1',
+      'https://i.dailymail.co.uk/i/pix/2016/01/28/13/30A9C15400000578-0-image-a-7_1453987860948.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/36/37/eb/caption.jpg?w=1100&h=600&s=1'],
     description: 'The Tulum National Park is an eco-archaeological site situated on Mexico’s Yucatán Peninsula. The park features a beautifully preserved archaeological compound set amid a stunning landscape that includes cenotes (sinkholes), and some of the Yucatan’s most dramatic coastline.',
     latitude: 20.2088,
     longitude: -87.4240,
@@ -712,7 +748,9 @@ export default [
   },
   {
     name: 'Jasper National Park',
-    image: 'https://wallpapercave.com/wp/wp4637626.jpg',
+    image: ['https://wallpapercave.com/wp/wp4637626.jpg',
+      'https://i.natgeofe.com/n/27b589df-d149-4101-bd63-4c35bb4467d3/36744.jpg?w=636&h=477',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3tLQbJB9dOg8e-7nt1xhwl0BZh2awQxPvQ&usqp=CAU'],
     description: 'Jasper National Park is a national park in Alberta, Canada. It is the largest national park within Alberta\'s Rocky Mountains spanning 11,000 km2 (4,200 sq mi). Its location is north of Banff National Park and west of Edmonton. The park contains the glaciers of the Columbia Icefield, springs, lakes, waterfalls and mountains.',
     latitude: 52.8734,
     longitude: -117.9543,
@@ -726,8 +764,64 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.pc.gc.ca/en/pn-np/ab/jasper'
+  },  
+  {
+    name: 'Aoraki / Mount Cook National Park',
+    image: ['https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/86/Tramping_or_hiking_in_Aoraki_Mount_Cook_National_Park..jpg',
+      'https://afar-production.imgix.net/uploads/images/post_images/images/KAfHCadG7d/original_open-uri20131111-13120-1p0tl5b?1384177231?ixlib=rails-0.3.0&auto=format%2Ccompress&crop=entropy&fit=crop&h=719&q=80&w=954'],
+    description: 'Aoraki/Mount Cook National Park is in the South Island of New Zealand, near the town of Twizel. Aoraki / Mount Cook, New Zealand\'s highest mountain, and Aoraki/Mount Cook Village lie within the park. The area was gazetted as a national park in October 1953 and consists of reserves that were established as early as 1887 to protect the area\'s significant vegetation and landscape.',
+    latitude: -43.5947,
+    longitude: 170.2624,
+    region: 'Oceania',
+    country: 'New Zealand',
+    facts: [
+      'Aoraki / Mount Cook is the highest mountain in New Zealand. Its height since 2014 is listed as 3,724 metres (12,218 feet)', 
+      'Sighted in 1642 by the Dutch navigator Abel Tasman, it was known as Aoraki (also spelled Aorangi; from the Maori for “cloud piercer”) before being renamed for Captain James Cook (1851).',
+      'A popular tourist destination, it is also a favourite challenge for mountain climbers.',
+      'First climbed in 1894, the mountain is the central feature of Aoraki/Mount Cook National Park, 210 miles (338 km) southwest of Christchurch.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.newzealand.com/uk/feature/national-parks-aoraki-mount-cook/'
+  },
+  {
+    name: 'Coffin Bay National Park',
+    image: ['https://upload.wikimedia.org/wikipedia/commons/f/f8/Coffin_Bay_National_Park_limestone_cliffs.jpg',
+      'https://live.staticflickr.com/8066/8256068798_2d922bb80d_b.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/10/f6/7f/45/coffin-bay-national-park.jpg'],
+    description: 'Coffin Bay National Park is on a peninsula located on the larger Fyre Peninsula in South Australia.  The national park encompasses an area of 119.6 square miles (309.76 sq km). The Coffin Bay Peninsula accounts for the majority of the national park boundaries.  The park features limestone cliffs, white sandy beaches, coral reefs, islands in the bay, sand dunes, and even some swampland.  The park provides picturesque coastal landscapes that might be expected as well as rugged scenes that invite exploration.',
+    latitude: -34.6327,
+    longitude: 135.4504,
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The pristine northern beaches of Coffin Bay National Park are only accessible by high-clearance 4WD. A favourite destination for anglers, birdwatchers and surfers, this remote and beautiful area offers several secluded camping areas with easy beach access.', 
+      'The national park occupies the Coffin Bay Peninsula - a long peninsula with a sheltered bay to its north, coastal dunes, swamps and a coastline which overlooks islands, reefs, limestone cliffs and white surf beaches.',
+      'Wildlife includes some typical Australian species such as the kangaroos, joeys, emus, and goannas.',
+      'Seagulls, pelicans, ospreys, albatrosses, and the white-bellied sea eagle are some of the bird species that birdwatchers can hope to see.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.parks.sa.gov.au/parks/coffin-bay-national-park'
+  },
+  {
+    name: 'Sydney Harbour National Park',
+    image: ['https://i.pinimg.com/originals/aa/06/3b/aa063b1efeab0e8e255146d4c7a5bbd8.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Headlands_%284603872649%29.jpg/1200px-Headlands_%284603872649%29.jpg',
+      'https://www.nationalparks.nsw.gov.au/-/media/npws/images/parks/sydney-harbour-national-park/background/south-head-sydney.jpg'],
+    description: 'Sydney Harbour National Park, as the name suggests, protects part of Sydney Harbor, foreshores, islands, and ocean waters. The best way to explore the parc is on a coastal hike, walk or boat tour. The panoramic views over the city and the bay are beautiful, and you may also spot some wildlife on your visit.',
+    latitude: -33.8429,
+    longitude: 151.2453,
+    region: 'Oceania',
+    country: 'Australia',
+    facts: [
+      'The Guringai Resting Places, at both Reef Beach and Quarantine Station, are Aboriginal reburial sites where ancestral remains have been returned to Country. Access to the Aboriginal burial sites is restricted at the request of the Aboriginal community.', 
+      'The 392-hectare (970-acre) national park lies in New South Wales and was created progressively, from 1975.',
+      'If you\'re near Manly, you may be lucky enough to glimpse an endangered little penguin as it is the state\'s only known mainland colony.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sydney-harbour-national-park'
   }
 ]
-
-
-  
