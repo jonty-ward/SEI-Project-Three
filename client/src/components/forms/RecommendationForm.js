@@ -1,31 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ImageUploadField } from './ImageUploadField'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
+
 const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formData }) => {
 
+  const [parkData, setParkData] = useState(null)
+  const params = useParams()
+  
+
+  useEffect(() =>{
+    const getData = async () => {
+      const { data } = await axios.get(`/api/parks/${params.id}`)
+      setParkData(data)
+    }
+    getData()
+  }, [])
+  
+
+  if (!parkData) return null
+  console.log(formData)
   return (
     
     <form onSubmit={handleSubmit} className="Form-field">
       <div className="field">
-        <label className="label">Park Name</label>
-        <div className="control">
-          <input
-            className="input"
-            placeholder="Add park name here ... "
-            name="parkName"
-            value={formData.parkName}
-            onChange={handleChange}
-          />
-        </div>
+        <label className="label">{parkData.name}</label>
+      
         <div className="field">
           <label className="label"> Activity </label>
           <div className="control">
-            <input
-              className="input"
-              placeholder="Add your activity reccomendation here ... "
-              name="activity"
-              value={formData.activity}
-              onChange={handleChange}
-            />
+            <select onSelect={handleChange} id="activity" name="activity">
+              <option value="hiking">Hiking</option>
+              <option value="swimming">Swimming</option>
+              <option value="climbing">Climbing/Mountaineering/Orienteering</option>
+              <option value="birdwatching">Birdwatching</option>
+              <option value="rafting">Rafting/Paddling/Canoeing</option>
+              <option value="snorkeling">Snorkeling</option>
+              <option value="camping">Camping</option>
+              
+            </select>
           </div>
         </div>
       </div>
@@ -61,3 +74,8 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
 }
 
 export default recommendationForm
+
+// className="input"
+// placeholder="Add your activity reccomendation here ... "
+// name="activity"
+// value={formData.activity}

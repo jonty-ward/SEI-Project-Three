@@ -4,11 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import Popup from 'reactjs-popup'
 
 // import { getTokenFromLocalStorage } from '../helpers/auth'
-
-
-
 const UserProfile = () => {
-
   const [userData, setUserData] = useState('')
   const [parksData, setParksData] = useState('')
   const params = useParams()
@@ -31,7 +27,6 @@ const UserProfile = () => {
   if (!userData || !parksData) return ''
   let arrayOfFilteredPark = []
   const { username, email, fullName, profilePic, wishList } = userData.data
-
   // *for Each lopp to make array of parks in wishlist
   wishList.forEach((wishlist, index)=>{
     const filteredParks = parksData.data.filter((item) =>{
@@ -40,8 +35,6 @@ const UserProfile = () => {
     arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
   })
 
-
-  
   // * function to remove the item from the wishlist 
   const removeFromWishlist = (event)=>{
     console.log('event.target.value', event.target.value)
@@ -71,8 +64,6 @@ const UserProfile = () => {
   }
 
 
-
-
   const PopupExample = () => (
     <Popup trigger={<button> Trigger</button>} position="right center">
       <div>Popup content here !!</div>
@@ -87,7 +78,6 @@ const UserProfile = () => {
   
 
   return (
-
     <div className="section">
       <div className="container">
         <h1>MY PROFILE</h1>
@@ -101,9 +91,7 @@ const UserProfile = () => {
         <hr/>
         <hr/>
         <div className="wishlist-items">
-          
           {arrayOfFilteredPark.map((item, i) =>(
-            
             <div className="parks-saved" key={i}>
               <Link to={`/parks/${item[0]._id}`}>
                 <p>{item[0].name}</p>
@@ -126,15 +114,12 @@ const UserProfile = () => {
               </Popup> */}
 
             </div>
-             
+            
             
           ))}
         </div>
-
       </div>
     </div>
   )
-
 }
-
 export default UserProfile

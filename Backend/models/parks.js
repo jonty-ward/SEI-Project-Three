@@ -10,7 +10,7 @@ const commentSchema = new mongoose.Schema({
 
 
 const recommendationsSchema = new mongoose.Schema({
-  parkName: { type: String, required: true },
+  parkName: { type: String },
   activity: { type: String, required: true },
   text: { type: String, required: true },
   image: { type: String },
