@@ -11,6 +11,8 @@ const parkWishlist = ({ userData, park }) => {
     wishList: [...userData.wishList, park._id]
   })
 
+  console.log('wishlist+++++++>>>>>>', wishlist)
+
   if (!wishlist) return ''
   const handleWishlist = async () =>{
     await axios.put(

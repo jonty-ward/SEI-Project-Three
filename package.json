@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-confirm-alert": "^2.7.0",
+    "reactjs-popup": "^2.0.4",
+    "save": "^2.4.0"
+  }
+}
