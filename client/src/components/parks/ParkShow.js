@@ -7,6 +7,7 @@ import { userIsAuthenticated, userID } from '../../helpers/auth'
 import ParkWeather from './ParkWeather'
 import AddParkCommentForm from '../forms/AddParkCommentForm'
 import ParkWishlist from './ParkWishlist'
+import ParkMap from './ParkMap'
 
 
 
@@ -47,7 +48,7 @@ const ParkShow = () => {
  
 
 
-  const { name, image, region, description, facts, recommendations, comments } = park
+  const { name, image, region, description, facts, recommendations, comments, country } = park
  
   return (
     <div>
@@ -62,6 +63,8 @@ const ParkShow = () => {
       />
       <hr/>
       {region}
+      <hr/>
+      {country}
       <br/>
       <img src={image} alt={name}/>
       <hr/>
@@ -71,6 +74,7 @@ const ParkShow = () => {
         return <li key={fact}> {fact} </li>
       })}
       <hr/>
+      <ParkMap {...park}/>
       <h1> Recommendations</h1>
       <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
