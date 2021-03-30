@@ -23,14 +23,8 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
     
     <form onSubmit={handleSubmit} className="Form-field">
       <div className="field">
-        <label className="label">Park Name</label>
-        <div className="control">
-          <input
-            className="input"
-            name="parkName"
-            value={parkData.name}
-          />
-        </div>
+        <label className="label">{parkData.name}</label>
+      
         <div className="field">
           <label className="label"> Activity </label>
           <div className="control">

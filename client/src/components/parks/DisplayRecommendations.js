@@ -9,7 +9,6 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner })
   if (!userIsOwner) return ''
   return (
     <div className="box card-box">
-      <h3>Park: {parkName}</h3>
       <h4>Activity: {activity}</h4>
       <h4>Recommendation: {text}</h4>
       <div>
