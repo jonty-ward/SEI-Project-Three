@@ -29,10 +29,10 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
         <div className="field">
           <label className="label"> Activity </label>
           <div className="control">
-            <select onSelect={handleChange} id="activity" name="activity">
+            <select onChange={handleChange} id="activity" name="activity">
               <option value="hiking">Hiking</option>
               <option value="swimming">Swimming</option>
-              <option value="climbing">Climbing/Mountaineering/Orienteering</option>
+              <option onSelect={handleChange} value="climbing">Climbing/Mountaineering/Orienteering</option>
               <option value="birdwatching">Birdwatching</option>
               <option value="rafting">Rafting/Paddling/Canoeing</option>
               <option value="snorkeling">Snorkeling</option>
