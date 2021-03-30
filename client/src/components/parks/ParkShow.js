@@ -49,15 +49,20 @@ const ParkShow = ( { userData } ) => {
  
   return (
     <div>
-
-   
-
+     
+  
      
 
-      <ParkWeather key={park.id} {...park}/>
       <hr/>      
       {name}
 
+      <hr/>
+      {region}
+      <hr/>
+      {country}
+      <br/>
+      <img src={image[0]} alt={name}/>
+      
       {userIsAuthenticated 
         ?
         <ParkWishlist 
@@ -67,21 +72,23 @@ const ParkShow = ( { userData } ) => {
         :
         <p>Login to save</p>
       }
+      <hr/>
+      <div className="ui container">{description}</div>
 
-      <hr/>
-      {region}
-      <hr/>
-      {country}
-      <br/>
-      <img src={image} alt={name}/>
-      <hr/>
-      {description}
-      <hr/>
-      {facts.map(fact=>{
-        return <li key={fact}> {fact} </li>
-      })}
-      <hr/>
+      <div className="ui grid">
+        <div className="two wide column">
+          {facts.map(fact=>{
+            return <li className="ui list" key={fact}> {fact} </li>
+          })}
+        </div>
+        <div className="two wide column">
+          <img src={image[1]} alt={name}/>
+          <img src={image[2]} alt={name}/>
+        </div>
+      </div>
       <ParkMap {...park}/>
+      <ParkWeather key={park.id} {...park}/>
+
 
       <h1> Recommendations</h1>
 
@@ -101,8 +108,9 @@ const ParkShow = ( { userData } ) => {
         }
       </div>
       <hr/>
-      <h1> Comments</h1>
-      <div className="box">
+      
+      <div className="ui comments">
+        <h1 className="ui dividing header">Comments</h1>
         { comments.map(comment => (
           <DisplayComments key={comment._id} {...comment}/>
         ))}

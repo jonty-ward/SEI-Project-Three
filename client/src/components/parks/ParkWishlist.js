@@ -43,7 +43,7 @@ const parkWishlist = ({  park, userData }) => {
 
   return (
     <div>
-      <button onClick={handleWishlist}> Add to wishlist </button>
+      <button className="ui primary button" onClick={handleWishlist}> Add to wishlist </button>
     </div>
   )
 }
