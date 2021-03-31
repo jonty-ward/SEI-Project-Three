@@ -73,6 +73,10 @@ overflow-x: auto;
   margin-right: 10px;
 }
 
+h1.regions-title {
+  text-align: center;
+}
+
 .region-slider-container {
   display: flex;
   flex-direction: row;
@@ -83,7 +87,6 @@ overflow-x: auto;
   margin: 50px;
   padding: 50px;
   
-  
 }
 
 .region-slider {
@@ -91,7 +94,21 @@ overflow-x: auto;
   flex-direction: column;
   margin: 30px;
   text-align: center;
+    h1 {
+      text-align:center;
+    position:absolute;
+    top:50%;
+    width:100%;
+    transform:translate(0%,-50%);
+    -webkit-transform:translate(0%,-50%);
+    color:#FFFFFF;
+    font-family:Arial;
+    text-transform:uppercase;
+    display:none;
+    }
 }
+
+
 
 .slider {
   position: relative;
@@ -99,6 +116,16 @@ overflow-x: auto;
   width: 33vw;
   
 }
+.slider:hover img {
+  filter: brightness(0.3);
+    -webkit-filter:brightness(0.3);
+    -moz-filter:brightness(0.3);
+}
+
+.slider:hover h1 {
+  display: block;
+}
+
 
 .slide {
   position: absolute;

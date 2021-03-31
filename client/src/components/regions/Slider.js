@@ -18,6 +18,7 @@ const Slider = ({ slides }) => {
 
   return (
     <section className="slider">
+      <h1>Europe</h1>
       {slides.map((slides, index) => (
         <div className={index === current ? 'slide active' : 'slide'} key={slides.title}>
           {index === current && (
