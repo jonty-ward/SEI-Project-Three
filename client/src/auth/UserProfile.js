@@ -106,12 +106,12 @@ const UserProfile = () => {
                     <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
                   </Link>
                   {!confirm ?
-                    <button className="ui red basic button" size='small' name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
+                    <button className="ui red basic button remove-park" name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
                     :
-                    <>
+                    <div className="park-buttons">
                       <button className="ui green basic left floated button"  value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
                       <button className="ui red basic right floated button" value={item[0]._id} onClick={handleCancel} > Cancel </button>
-                    </>
+                    </div>
                   }
 
                   {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">

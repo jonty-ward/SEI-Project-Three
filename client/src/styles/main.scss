@@ -241,6 +241,8 @@ h2.user-info-title, h3.user-info-title {
   justify-content: center;
 }
 
+
+
 .wishlist-items{
   display: flex;
   overflow-x: auto;
@@ -254,12 +256,14 @@ h2.user-info-title, h3.user-info-title {
 .parks-saved{
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
   margin: 10px;
   min-width: 40vw;
   text-align: center;
-  
 
+}
+.remove-park {
+  width: 250px;
 }
 
 .wishlist-img {
