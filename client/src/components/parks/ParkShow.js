@@ -82,7 +82,7 @@ const ParkShow = ( { userData } ) => {
 
 
       <div className="ui vertically divided horizontally padded grid">
-        <div className="two column  row">
+        <div className="two column row">
           <div className="column">
             <div className="ui segment">
               <h3>{name} Facts</h3>
@@ -142,15 +142,16 @@ const ParkShow = ( { userData } ) => {
       <br/>
 
 
-
-      <h1> Recommendations</h1>
-      <div className="box reccomendation-box">
-        { recommendations.map(recommendation => (
-          <>
-            <DisplayRecommendations key={recommendation.id} {...recommendation}/>
-          </>
-        ))}
-      </div> 
+      <div className="ui segment very padded">
+        <h1> Recommendations</h1>
+        <div className="box reccomendation-box">
+          { recommendations.map(recommendation => (
+            <>
+              <DisplayRecommendations key={recommendation.id} {...recommendation}/>
+            </>
+          ))}
+        </div>
+      </div>
       <div className="navbar-item">
         { userIsAuthenticated() && 
           <Link to={`/addRecommendation/${params.id}`}>
@@ -158,9 +159,15 @@ const ParkShow = ( { userData } ) => {
           </Link> 
         }
       </div>
-      <hr/>
+      { !userIsAuthenticated() && 
+          <Link to={'/login'}>
+            <h4>Want to add a recommendation? Log in first!</h4>
+          </Link> 
+      }
+      <br/>
+      <br/>
     
-      <div className="container">
+      <div className="ui container">
         <div className="ui large comments">
           <h1 className="ui dividing header">Comments</h1>
           { comments.map(comment => (

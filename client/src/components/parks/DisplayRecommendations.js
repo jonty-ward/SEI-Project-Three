@@ -21,7 +21,7 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner, c
       </div>
       <h4>Activity: {activity}</h4>
       <h4>Recommendation: {text}</h4>
-      <img src={image} alt={parkName} width="85%" height="70%"/>
+      <img src={image} alt={parkName} width="75%" height="60%"/>
       { userIsOwner(owner._id) && 
       <div className="buttons">
         <Link to={`/parks/${params.id}/recommendations/${_id}`}> Edit</Link>
