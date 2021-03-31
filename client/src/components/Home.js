@@ -133,13 +133,13 @@ const Home = () => {
       <div className="ui grid">
         <div className="three column row">
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
           </div>
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
           </div>
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
           </div>
         </div>
       </div>
