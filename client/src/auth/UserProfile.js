@@ -81,7 +81,7 @@ const UserProfile = () => {
     <div className="section">
       <div className="container">
         <h1>MY PROFILE</h1>
-        {profilePic}
+        < img src={profilePic} alt="profile pic"/>
         <hr/>
         {fullName}
         <hr/>
