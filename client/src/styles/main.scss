@@ -273,9 +273,65 @@ h2.user-info-title, h3.user-info-title {
   margin-bottom: 40px;
 }
 
+
 .home-background{
   background-image: url("https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg") ;
   background-size:cover;
   background-repeat: no-repeat;
 } 
+
+// styling for the register form
+.register-component{
+  padding: 15px;
+//  border: 1px solid grey ;
+}
+  div.container.registerFrom {
+    min-height: 70vh;
+}
+.container.registerFrom {
+  height: 60vh !important;
+  width: 45vw !important;
+  margin-top: 10vh !important;
+}
+
+//styling for loging form 
+
+.container.loginForm{
+  height: 30vh;
+  width: 70vw !important;
+  margin-top: 25vh !important;
+}
+
+.register-form-header{
+  text-align: center;
+  margin-bottom: -5vh;
+  margin-top: 7vh;
+}
+
+.header-recc{
+  text-align: center;
+}
+.header-recc-top{
+  text-align: center;
+  margin-top: 7vh !important;
+  margin-bottom: -7vh !important;
+}
+
+a.delete{
+  color: red;
+}
+a.delete:hover{
+  text-decoration: underline;
+}
+
+.image-upload-image{
+  width: 150px;
+}
+
+// /navbar
+.navbar-menu{
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  background-color: rgb(152, 172, 143) !important;
+}
 
