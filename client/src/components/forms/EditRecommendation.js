@@ -60,22 +60,26 @@ const EditRecommendation = () => {
 
 
   return (
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <RecommendationForm
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formData={formData}
-          />
-          <hr/>
-          <br/>
-          <div className="buttons">
-            <button onClick={handleDelete} className="button is-danger">Delete</button>
-          </div>
+    
+  
+  
+    <>
+      <div className="ui container">
+        <RecommendationForm
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          formData={formData}
+        />
+        <div className="buttons">
+          <button onClick={handleDelete} className="ui button">Delete</button>
         </div>
+  
+
       </div>
-    </section>
+    </>
+
+
+
   )
 }
 

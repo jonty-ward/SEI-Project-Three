@@ -241,3 +241,34 @@ h1.profile-title {
   background-repeat: no-repeat;
 } 
 
+// styling for the register form
+.register-component{
+  padding: 15px;
+//  border: 1px solid grey ;
+}
+  div.container.registerFrom {
+    min-height: 63vh;
+}
+.container.registerFrom {
+  height: 60vh !important;
+  width: 45vw !important;
+  margin-top: 10vh !important;
+}
+
+//styling for loging form 
+
+.container.loginForm{
+  height: 30vh;
+  width: 70vw !important;
+  // margin-top: 5vh !important;
+}
+
+.register-form-header{
+  text-align: center;
+  margin-bottom: -5vh;
+  margin-top: 7vh;
+}
+
+
+
+
