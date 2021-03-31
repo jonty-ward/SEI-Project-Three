@@ -36,19 +36,16 @@ const AddParkCommentForm = () => {
   }
 
   return (
-   
-
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <CommentsForm
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formData={formData}
-          />
-        </div>
-      </div>
-    </section>
+    <>
+      <CommentsForm
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        formData={formData}
+      />
+      <br/>
+      <br/>
+      <br/>
+    </>
   )
 }
 

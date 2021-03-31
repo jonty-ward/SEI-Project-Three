@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+
+
 
 const Login = () => {
 
@@ -31,26 +33,32 @@ const Login = () => {
   }
 
   return (
-    <div className="background-color">
-      <section className="section">
-        <div className="container">
-          <div className="columns">
-            <form onSubmit={handleSubmit} className="box column is-half is-offset-one-quarter" >
+
+
+
+    <>
+
+
+      <div className="ui placeholder segment">
+        <div className="ui two column very relaxed stackable grid">
+          <div className="column">
+            <form onSubmit={handleSubmit} className="ui form">
               <div className="field">
-                <label className="label">Email</label>
-                <div className="control">
+                <label>Username</label>
+                <div className="ui left icon input">
                   <input
-                    className="input"
+                    className="input "
                     placeholder="Email"
                     name="email"
                     onChange={handleChange}
                     value={formData.email}
                   />
+                  < i className="user icon"></i>
                 </div>
               </div>
               <div className="field">
-                <label className="label">Password</label>
-                <div className="control">
+                <label>Password</label>
+                <div className="ui left icon input">
                   <input
                     className="input"
                     type="password"
@@ -59,21 +67,38 @@ const Login = () => {
                     onChange={handleChange}
                     value={formData.password}
                   />
+                  <i className="lock icon"></i>
                 </div>
               </div>
+              <button type="submit" className="ui blue submit button">Login</button>
               <div className="field">
                 { errors && 
                 <div className="subtitle is-6">Access Unauthorised. Please try re-rentering your credentials.</div>
                 }
               </div>
               <div className="field">
-                <button type="submit" className="button is-fullwidth">Login</button>
+                {/* <button type="submit" className="button is-fullwidth">Login</button> */}
               </div>
             </form>
           </div>
+          <div className="middle aligned column">
+            <Link to='/register' className="ui big button">
+              <i className="signup icon"></i>
+        Register
+            </Link>
+          </div>
         </div>
-      </section>
-    </div>
+        <div className="ui vertical divider">
+    Or
+        </div>
+
+      </div>
+        
+      
+ 
+    </>
+
+    
   )
 }
 

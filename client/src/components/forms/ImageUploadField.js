@@ -11,7 +11,9 @@ export const ImageUploadField = ({ handleImageUrl, value }) => {
     const data = new FormData()
     data.append('file', event.target.files[0])
     data.append('upload_preset', uploadPreset)
+    console.log('data', data)
     const res = await axios.post(uploadURL, data)
+    console.log(res)
     handleImageUrl(res.data.url)
   }
   
