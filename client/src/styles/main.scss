@@ -1,6 +1,7 @@
 @import '~bulma/bulma.sass';
 
 
+
 body {
   height: 100vh;
   margin: 10px;
@@ -20,10 +21,19 @@ h1.home {
   margin: 30px;
 }
 
+div.container{
+  min-height: 95vh;
+  background-position-y: bottom;
+}
+
 .app{
   display: flex;
   overflow-x: auto;
 
+}
+
+.ui.menu.ui-menu-margin{
+  margin-bottom: 0 ;
 }
 
 
@@ -117,3 +127,11 @@ overflow-x: auto;
   object-fit: contain;
   z-index: -1;
 }
+
+.home-background{
+  background-image: url("https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg") ;
+  background-size:cover;
+  background-repeat: no-repeat;
+} 
+
+

@@ -3,7 +3,9 @@ import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 import { ImageUploadField } from '../components/forms/ImageUploadField'
 
-const Register = ({ handleImageUrl }) => {
+const Register = () => {
+
+ 
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -23,7 +25,9 @@ const Register = ({ handleImageUrl }) => {
   })
   console.log(errors, setErrors)
 
-
+  const handleImageUrl = url =>{
+    setFormData({ ...formData, profilePic: url })
+  }
   const history = useHistory()
 
   const handleChange = (event) => {
@@ -45,6 +49,12 @@ const Register = ({ handleImageUrl }) => {
   }
 
   return (
+
+
+    
+
+
+
     <div className="background-color">
       <section className="section">
         <div className="container">

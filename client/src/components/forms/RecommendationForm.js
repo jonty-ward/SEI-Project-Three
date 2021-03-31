@@ -25,19 +25,19 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
     <form onSubmit={handleSubmit} className="Form-field">
       <div className="field">
         <label className="label">{parkData.name}</label>
-      
         <div className="field">
           <label className="label"> Activity </label>
           <div className="control">
             <select onChange={handleChange} id="activity" name="activity">
-              <option value="hiking">Hiking</option>
-              <option value="swimming">Swimming</option>
+              <option value="Choose">Choose an activity</option>
+              <option value="Hiking">Hiking</option>
+              <option value="Swimming">Swimming</option>
               <option onSelect={handleChange} value="climbing">Climbing/Mountaineering/Orienteering</option>
-              <option value="birdwatching">Birdwatching</option>
-              <option value="rafting">Rafting/Paddling/Canoeing</option>
-              <option value="snorkeling">Snorkeling</option>
-              <option value="camping">Camping</option>
-              
+              <option value="Birdwatching">Birdwatching</option>
+              <option value="Rafting">Rafting/Paddling/Canoeing</option>
+              <option value="Snorkeling">Snorkeling</option>
+              <option value="Camping">Camping</option>
+              <option value="Food and Drink">Food and Drink</option>
             </select>
           </div>
         </div>
