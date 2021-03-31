@@ -103,6 +103,7 @@ overflow-x: auto;
 
 h1.regions-title {
   text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .region-slider-container {
@@ -114,50 +115,59 @@ h1.regions-title {
   width: 100vw;
   margin: 50px;
   padding: 50px;
-  
 }
 
 .region-slider {
   display: flex;
   flex-direction: column;
   margin: 30px;
+  align-content: center;
   text-align: center;
-    
 }
 
+// .a-regions {
+//   height: 400px;
+// }
 
+h1.slider-h1 {
+    text-align:center;
+    vertical-align: middle;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform:translate(0%,-50%);
+    -webkit-transform:translate(0%,-50%);
+    color:#FFFFFF;
+    font-family:Arial;
+    text-transform:uppercase;
+    visibility:hidden;
+    opacity: 0;
+  
+}
 
 .slider {
   position: relative;
   height: 33vh;
   width: 33vw;
-  
 }
 
-.slider h1 {
-  
-  text-align:center;
-  position:absolute;
-  top:50%;
-  width:100%;
-  transform:translate(0%,-50%);
-  -webkit-transform:translate(0%,-50%);
-  color:#FFFFFF;
-  font-family:Arial;
-  text-transform:uppercase;
-  display:none;
-  
+.slider-h1:hover {
+  visibility: visible;
+  opacity: 1;
 }
-.slider:hover img {
+
+.region-slider:hover img {
   filter: brightness(0.5);
     -webkit-filter:brightness(0.5);
     -moz-filter:brightness(0.5);
 }
 
 
-.slider:hover h1 {
-  display: block;
-}
+// .region-slider:hover p {
+  
+// }
 
 
 .slide {

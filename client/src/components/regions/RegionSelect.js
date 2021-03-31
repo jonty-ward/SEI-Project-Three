@@ -23,8 +23,9 @@ const RegionSelect = ({ region }) => {
       <div className="region-slider-container">
         
         <div value='Europe' className="region-slider">
-          <Link to='/regions/Europe'>
           
+          <Link to='/regions/Europe'>
+            
             
             <Slider slides={EuropeSlides}/>
           
@@ -34,7 +35,7 @@ const RegionSelect = ({ region }) => {
         <div value='Africa' className="region-slider">
           <Link to="/regions/Africa">
             
-            <h1>Africa</h1>
+            {/* <h1>Africa</h1> */}
             <Slider slides={AfricaSlides}/>
             
           </Link>
@@ -43,7 +44,7 @@ const RegionSelect = ({ region }) => {
         <div  value='Asia' className="region-slider">
           <Link to="/regions/Asia">
           
-            <h1>Asia</h1>
+            {/* <h1>Asia</h1> */}
             <Slider slides={AsiaSlides}/>
           
           </Link>
@@ -52,7 +53,7 @@ const RegionSelect = ({ region }) => {
         <div  value='NorthAmerica' className="region-slider">
           <Link to="/regions/NorthAmerica">
           
-            <h1>North America</h1>
+            {/* <h1>North America</h1> */}
             <Slider slides={NorthAmericaSlides}/>
           
           </Link>
@@ -61,7 +62,7 @@ const RegionSelect = ({ region }) => {
         <div  value='Oceania' className="region-slider">
           <Link to="/regions/Oceania">
           
-            <h1>Oceania</h1>
+            {/* <h1>Oceania</h1> */}
             <Slider slides={OceaniaSlides}/>
           
           </Link>
@@ -70,7 +71,7 @@ const RegionSelect = ({ region }) => {
         <div  value='SouthAmerica' className="region-slider">
           <Link to="/regions/SouthAmerica">
           
-            <h1>South America</h1>
+            {/* <h1>South America</h1> */}
             <Slider slides={SouthAmericaSlides}/>
           
           </Link>
