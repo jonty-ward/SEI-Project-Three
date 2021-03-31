@@ -16,6 +16,7 @@ import EditComment from './components/forms/EditComment'
 import UserData from './components/parks/UserData'
 import EditUserProfile from './components/forms/EditUserProfile'
 import Footer from './components/Footer'
+import DonationForm from './components/forms/DonationForm'
 
 const App = () => {
   return (
@@ -57,6 +58,9 @@ const App = () => {
         </Route>
         <Route path="/parks/:id">
           <UserData/>
+        </Route>
+        <Route path="/donate">
+          <DonationForm />
         </Route>
       </Switch>
       <Footer />
