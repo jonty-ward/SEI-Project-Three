@@ -1,12 +1,10 @@
 // @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 // @import '~bulma/bulma.sass';
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-
 
 
 body {
-  height: 100vh;
+  // height: 100vh;
   margin: 10px;
   font-family: 'Caveat', cursive;
   background: #348F50;  /* fallback for old browsers */
@@ -352,3 +350,11 @@ a.delete:hover{
   background-color: rgb(152, 172, 143) !important;
 }
 
+.footer {
+  // position: fixed;
+  // bottom: 0;
+  text-align: center;
+  padding: 70px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+}

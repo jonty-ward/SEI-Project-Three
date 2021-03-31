@@ -15,6 +15,7 @@ import EditRecommendation from './components/forms/EditRecommendation'
 import EditComment from './components/forms/EditComment'
 import UserData from './components/parks/UserData'
 import EditUserProfile from './components/forms/EditUserProfile'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -58,6 +59,7 @@ const App = () => {
           <UserData/>
         </Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }
