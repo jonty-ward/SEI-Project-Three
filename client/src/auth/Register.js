@@ -125,7 +125,7 @@ const Register = () => {
             </div>
             <div className="field">
             </div>
-            <button className="ui button" type="submit">Submit</button>
+            <button className="ui button" type="submit"> <i className="paper plane outline icon"/>Submit</button>
           </form>
         </div>
       </div>

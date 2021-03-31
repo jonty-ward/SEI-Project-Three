@@ -65,13 +65,15 @@ const EditRecommendation = () => {
   
     <>
       <div className="ui container">
+        <h1 className="header-recc-top">Edit your Recommendation</h1>
         <RecommendationForm
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           formData={formData}
         />
+        <p className="header-recc">  <button onClick={handleDelete} className="ui red button"> <i className="trash alternate icon"/>Delete Your Reccomendation</button> </p>
         <div className="buttons">
-          <button onClick={handleDelete} className="ui button">Delete</button>
+          
         </div>
   
 

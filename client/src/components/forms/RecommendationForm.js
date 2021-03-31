@@ -16,6 +16,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
     }
     getData()
   }, [])
+
   
 
   if (!parkData) return null
@@ -24,7 +25,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
     <>
       <div className="ui container raised  segment registerFrom">
         <form onSubmit={handleSubmit} className="ui form">
-          <h1 className="label">{parkData.name}</h1>
+          <h2 className="label">{parkData.name}</h2>
           <div className="field">
             <label className="label"> Activity </label>
             <select onChange={handleChange} id="activity" name="activity">
@@ -61,7 +62,9 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
           </div>
           <div className="field">
           </div>
-          <button className="ui button" type="submit">Submit</button>
+
+          
+          <button className="ui blue button" type="submit">  <i className="paper plane outline icon"/> Submit</button>
         </form>
       </div>
     </>

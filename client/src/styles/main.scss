@@ -247,7 +247,7 @@ h1.profile-title {
 //  border: 1px solid grey ;
 }
   div.container.registerFrom {
-    min-height: 63vh;
+    min-height: 70vh;
 }
 .container.registerFrom {
   height: 60vh !important;
@@ -260,7 +260,7 @@ h1.profile-title {
 .container.loginForm{
   height: 30vh;
   width: 70vw !important;
-  // margin-top: 5vh !important;
+  margin-top: 25vh !important;
 }
 
 .register-form-header{
@@ -269,6 +269,30 @@ h1.profile-title {
   margin-top: 7vh;
 }
 
+.header-recc{
+  text-align: center;
+}
+.header-recc-top{
+  text-align: center;
+  margin-top: 7vh !important;
+  margin-bottom: -7vh !important;
+}
 
+a.delete{
+  color: red;
+}
+a.delete:hover{
+  text-decoration: underline;
+}
 
+.image-upload-image{
+  width: 150px;
+}
+
+// /navbar
+.navbar-menu{
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  background-color: rgb(152, 172, 143) !important;
+}
 
