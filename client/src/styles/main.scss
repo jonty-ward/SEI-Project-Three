@@ -107,6 +107,12 @@ h1.regions-title {
   font-size: 40px;
 }
 
+p.single-region-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .region-slider-container {
   display: flex;
   flex-direction: row;
@@ -126,38 +132,33 @@ h1.regions-title {
   text-align: center;
 }
 
-// .a-regions {
-//   height: 400px;
-// }
-
-h1.slider-h1 {
-    text-align:center;
-    vertical-align: middle;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform:translate(0%,-50%);
-    -webkit-transform:translate(0%,-50%);
-    color:#FFFFFF;
-    font-family:Arial;
-    text-transform:uppercase;
-    visibility:hidden;
-    opacity: 0;
-  
-}
-
 .slider {
   position: relative;
   height: 33vh;
   width: 33vw;
 }
+// .slider p {
+//   text-align:center;
+//   vertical-align: middle;
+//   position:absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   transform:translate(0%,-50%);
+//   -webkit-transform:translate(0%,-50%);
+//   color:#FFFFFF;
+//   font-family:Arial;
+//   text-transform:uppercase;
+//   visibility:hidden;
+//   opacity: 0;
 
-h1.slider-h1:hover {
-  visibility: visible;
-  opacity: 1;
-}
+// }
+
+// .slider p:hover {
+//   visibility: visible;
+//   opacity: 1;
+// }
 
 .region-slider:hover img {
   filter: brightness(0.5);

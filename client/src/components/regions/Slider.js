@@ -18,9 +18,9 @@ const Slider = ({ slides }) => {
 
   return (
     <section className="slider">
+      
       {slides.map((slides, index) => (
-        <div className={index === current ? 'slide active' : 'slide'} key={slides.title}>
-          <h1 className="slider-h1">{slides.title}</h1>
+        <div className={index === current ? 'slide active' : 'slide'} key={index}>
           {index === current && (
             <img className="slider-image" src={slides.image} />
           )}

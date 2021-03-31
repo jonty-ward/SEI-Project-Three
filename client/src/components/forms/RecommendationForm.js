@@ -32,7 +32,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
               <option value="Choose">Choose an activity</option>
               <option value="Hiking">Hiking</option>
               <option value="Swimming">Swimming</option>
-              <option onSelect={handleChange} value="climbing">Climbing/Mountaineering/Orienteering</option>
+              <option value="climbing">Climbing/Mountaineering/Orienteering</option>
               <option value="Birdwatching">Birdwatching</option>
               <option value="Rafting">Rafting/Paddling/Canoeing</option>
               <option value="Snorkeling">Snorkeling</option>

@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
 import Popup from 'reactjs-popup'
 
+
 // import { getTokenFromLocalStorage } from '../helpers/auth'
 const UserProfile = () => {
   const [userData, setUserData] = useState('')
@@ -35,7 +36,7 @@ const UserProfile = () => {
     }) 
     arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
   })
-  console.log('WISHLIST', wishList.length)
+  
 
   // * function to remove the item from the wishlist 
   const removeFromWishlist = (event)=>{
@@ -87,7 +88,9 @@ const UserProfile = () => {
             <hr/>
             <h2 className="user-info-title">Email: {email}</h2>
             <div className="profile-edit-button">
-              <button className="ui icon left labeled standard basic button"><i aria-hidden="true" className="edit icon"></i>Edit details</button>
+              <Link to={ `/profile/${params.id}/${username} ` }>
+                <button className="ui icon left labeled standard basic button"><i aria-hidden="true" className="edit icon"></i>Edit details</button>
+              </Link>
             </div>
           </div>
         </div>

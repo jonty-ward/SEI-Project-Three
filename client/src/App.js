@@ -14,6 +14,7 @@ import UserProfile from './auth/UserProfile'
 import EditRecommendation from './components/forms/EditRecommendation'
 import EditComment from './components/forms/EditComment'
 import UserData from './components/parks/UserData'
+import EditUserProfile from './components/forms/EditUserProfile'
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route  path="/profile/:id">
       	  <UserProfile />
+        </Route>
+        <Route  path="/profile/:id/:username">
+      	  <EditUserProfile />
         </Route>
         <Route exact path="/addComments/:id">
       	  <AddParkCommentForm />
