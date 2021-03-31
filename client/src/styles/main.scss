@@ -42,10 +42,18 @@ h2.home {
 }
 
 .scroll-down {
-    color: white;
-    padding-left: 50vw;
-    padding-top: 40vh
+  color: white;
+  padding-left: 50vw;
+  padding-top: 40vh
 }
+
+.down-link {
+  color: inherit;
+  :hover {
+    color: white;
+  }
+}
+
 
 .ui.grid.home {
   padding: 20px;
@@ -59,12 +67,42 @@ h2.home {
   padding-bottom: 40px;
 }
 
+//  Donation section on homepage
+
 .donation-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40vw;
+  h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+  }
+  p {
+    font-size: 17px;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+  }
+  button {
+    text-align: center;
+  }
 }
+
+.donation-buttons-group {
+  margin-bottom: 20px;
+  
+}
+
+.donation-confirmation-buttons {
+  margin-bottom: 20px;
+}
+
+
 
 .map-container {
   margin: 30px;
@@ -132,6 +170,8 @@ overflow-x: auto;
   flex-direction: column;
   margin-right: 10px;
 }
+
+// Regions select page
 
 h1.regions-title {
   text-align: center;
@@ -241,6 +281,7 @@ p.single-region-title {
   z-index: -1;
 }
 
+//  User profile
 
 h1.profile-title {
   text-align: center;
@@ -376,6 +417,29 @@ a.delete:hover{
   width: 150px;
 }
 
+// Park Card for each region page
+
+.content-height {
+  height: 70px;
+  h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: black;
+    padding-top: 5px;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+
+// .image-index-container {
+//   height: 400px;
+//   img {
+//     height: 400px;
+//   }
+// }
+
 // /navbar
 .navbar-menu{
   margin-bottom: 0px !important;
@@ -383,6 +447,8 @@ a.delete:hover{
   background-color: rgb(152, 172, 143) !important;
   
 }
+
+// footer
 
 .footer {
   display: flex;
