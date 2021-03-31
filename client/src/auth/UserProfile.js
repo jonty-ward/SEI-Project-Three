@@ -35,6 +35,7 @@ const UserProfile = () => {
     }) 
     arrayOfFilteredPark = [...arrayOfFilteredPark, filteredParks]
   })
+  console.log('WISHLIST', wishList.length)
 
   // * function to remove the item from the wishlist 
   const removeFromWishlist = (event)=>{
@@ -90,31 +91,38 @@ const UserProfile = () => {
 
         <h2 className="user-info-title">SAVED PARKS</h2>
         <div className="wishlist-items">
-          {arrayOfFilteredPark.map((item, i) =>(
-            <div className="parks-saved" key={i}>
-              <Link to={`/parks/${item[0]._id}`}>
-                <h3>{item[0].name}</h3>
-                <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
-              </Link>
-              {!confirm ?
-                <button className="ui red basic button" name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
-                :
-                <>
-                  <button className="ui green basic left floated button" value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
-                  <button className="ui red basic right floated button" value={item[0]._id} onClick={handleCancel} > Cancel </button>
-                </>
-              }
+          {wishList.length === 0 
+            ?
+            <h3 className="user-info-title">You have not saved any parks yet!</h3> 
+            :
+            <>
+              { arrayOfFilteredPark.map((item, i) =>(
+                <div className="parks-saved" key={i}>
+                  <Link to={`/parks/${item[0]._id}`}>
+                    <h3>{item[0].name}</h3>
+                    <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
+                  </Link>
+                  {!confirm ?
+                    <button className="ui red basic button" size='small' name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
+                    :
+                    <>
+                      <button className="ui green basic left floated button"  value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                      <button className="ui red basic right floated button" value={item[0]._id} onClick={handleCancel} > Cancel </button>
+                    </>
+                  }
 
-              {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">
-                <div>
-                  <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
-                  <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
+                  {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">
+                    <div>
+                      <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                      <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
+                    </div>
+                  </Popup> */}
+
                 </div>
-              </Popup> */}
-
-            </div>
-            
-          ))}
+                
+              ))}
+            </>
+          }
         </div>
       </div>
     </div>

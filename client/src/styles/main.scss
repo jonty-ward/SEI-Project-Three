@@ -205,7 +205,7 @@ h1.profile-title {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-h2.user-info-title {
+h2.user-info-title, h3.user-info-title {
   font-family: 'Julius Sans One', sans-serif;
 }
 .user-info-container {
@@ -226,7 +226,9 @@ h2.user-info-title {
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  
+  min-height: 500px;
+  border: 1px solid darkgray;
+  padding: 20px;
 }
 
 .parks-saved{
