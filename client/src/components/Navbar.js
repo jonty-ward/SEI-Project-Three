@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
 
-      <div className="ui menu">
+      <div className="ui inverted menu">
         <div className="header item">
           <Link to='/'>
           Home
@@ -59,43 +59,6 @@ const Navbar = () => {
 
   
 
-      <div className="navbar">
-        {/* <h1>This is navbar</h1> */}
-        <div className="navbar-brand navbar-item">
-          <Link to='/'>
-          Home
-          </Link>
-        </div>
-        <div className="navbar-start">
-          <div className="navbar-item">
-            <Link to="/regions">
-            Regions
-            </Link>
-          </div>
-        </div>
-        <div className="navbar-end">
-          { !userIsAuthenticated() && 
-        <>
-          {/* <div className="navbar-item">
-            <Link to='/register'>
-              Register
-            </Link>
-          </div> */}
-          <div className="navbar-item">
-            <Link to='/login'>
-              Login or Register
-            </Link>
-          </div>
-        </>
-          }
-          { userIsAuthenticated() &&
-          <Link to={`/profile/${userID()}`} className="navbar-item">Profile</Link>
-          }   
-          { userIsAuthenticated() &&
-          <button onClick={handleLogout} className="button">Log out</button>
-          }
-        </div>
-      </div>
     </>
   )
 

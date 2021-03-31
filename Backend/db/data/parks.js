@@ -2,7 +2,13 @@ export default [
 
   {
     name: 'Nairobi National Park' ,
-    image: 'https://www.tripsavvy.com/thmb/55nYrU88B9wc3jHhxxlON5ylw4A=/1881x1411/smart/filters:no_upscale()/GettyImages-581001645-5bcd85f8c9e77c005172f741.jpg' ,
+    image: ['https://www.tripsavvy.com/thmb/55nYrU88B9wc3jHhxxlON5ylw4A=/1881x1411/smart/filters:no_upscale()/GettyImages-581001645-5bcd85f8c9e77c005172f741.jpg',
+      'https://media.tacdn.com/media/attractions-splice-spp-674x446/07/2c/b0/ff.jpg',
+      'https://cdn.getyourguide.com/img/tour/5e328f7ab4332.jpeg/68.jpg',
+      'https://www.traveller.com.au/content/dam/images/g/j/l/c/w/i/image.related.articleLeadwide.620x349.h0wbrz.png/1519102537715.jpg',
+      'https://www.porini.com/wp-content/uploads/2015/09/nairobi-national-park-gallery-image-9-1438798007.jpg'
+  
+    ] ,
     description: 'A short drive out of Nairobi’s central business district is the Nairobi National Park. Wide open grass plains and backdrop of the city scrapers, scattered acacia bush play host to a wide variety of wildlife including the endangered black rhino, lions, leopards, cheetahs, hyenas, buffaloes, giraffes and diverse birdlife with over 400 species recorded. Visitors can enjoy the park’s picnic sites, three campsites and the walking trails for hikers.' ,
     latitude: -1.362863,
     longitude: 36.834583,
@@ -21,7 +27,14 @@ export default [
   },
   {
     name: 'Serengetti National Park' ,
-    image: 'https://www.michaelbonocore.com/wp-content/uploads/2017/06/DSC09796-Edit-5.jpg' ,
+    image: ['https://www.michaelbonocore.com/wp-content/uploads/2017/06/DSC09796-Edit-5.jpg',
+      'https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/33/1471641800-hbz-jbf-tanzania-00-index.jpg',
+      'https://www.porini.com/wp-content/uploads/2015/09/nairobi-national-park-gallery-image-9-1438798007.jpg',      
+      'https://safariweb.com/wp-content/uploads/2020/09/serengeti-wildebeest-migration.jpg'
+      
+
+
+    ] ,
     description: 'One of the best national parks in Africa, the Serengeti is the jewel of Tanzania. The name conjures romantic images of seemingly endless acacia-dappled plains, golden savanna, and throngs of wildlife, and this World Heritage-listed park, Tanzania\'s oldest and most popular, delivers on all accounts. From December to July, the Great Migration takes place, when more than a million wildebeest, as well as zebra and Thomson\'s gazelle, travel between here and the fabled lands of the Maasai Mara, a time-honored pilgrimage that is one of Africa\'s greatest spectacles.The famed "Big Five" also live within the park\'s borders, and visitors have the chance to see nail-biting predator-versus-prey battles here - especially during the dry season from June through October. Birders can spot some of the 500-plus species, including beauties such as the crowned crane and Fischer\'s lovebird.' ,
     latitude: -2.333333,
     longitude: 34.833332,
@@ -42,7 +55,12 @@ export default [
   },
   {
     name: 'Maasai Mara' ,
-    image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg' ,
+    image: ['https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg',
+      'https://www.discoverafrica.com/images/Cheetah_Masai_Mara_Kenya.jpg',
+      'https://www.shoortravel.com/image/masai-mara-kenya.jpg',
+      'https://www.fodors.com/assets/destinations/686230/masai-warriors-ceremony-masai-mara-national-park-masai-mara-kenya_main.jpg'
+  
+    ],
     description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
     latitude: -1.490000,
     longitude: 35.143890,
@@ -62,7 +80,11 @@ export default [
   },
   {
     name: 'Virunga National Park ' ,
-    image: 'https://grottonetwork.com/wp-content/uploads/2017/11/iStock-604383518-1.jpg' ,
+    image: ['https://grottonetwork.com/wp-content/uploads/2017/11/iStock-604383518-1.jpg',
+      'https://i0.wp.com/www.theplanetedit.com/wp-content/uploads/2020/03/Virunga-National-Park.jpg?fit=1500%2C1000&ssl=1',
+      'https://timbuktutravel.imgix.net/2017/08/nyiragongo-volcano-drc-timbuktu-travel.jpg?w=1420&h=947&auto=format&crop=fit&fit=min&dpr=1&q=50',
+      'https://i1.wp.com/www.kisorotoursuganda.com/wp-content/uploads/2017/02/Rwanda-Uganda-Gorilla-Chimps-Canopy-Walk-Golden-Monkeys-Safari.jpg?fit=640%2C427&ssl=1'
+    ] ,
     description: 'Virunga National Park is a UNESCO World Heritage Site located in the east of the Democratic Republic of Congo. Virunga is the continent’s most biologically diverse protected area and a national park embarking on an ambitious development programme known as the “Virunga Alliance”. Situated in a region which has been deeply impacted by the effects of war and armed conflict for over 20 years, Virunga is currently protected by a dedicated team of 689 Rangers. These local men and women go through intensive training, risking their lives on a daily basis to safeguard the Park’s exceptional wildlife, including the last of the world’s endangered mountain gorillas. Alongside this essential conservation work, the Park is committed to supporting local communities. Virunga has a vision for responsibly harnessing the Park’s natural resources to create new opportunities for the four million people that live within a day’s walk of its borders.',
     latitude: 0.0502,
     longitude: 29.5143,
@@ -84,7 +106,11 @@ export default [
   },
   {
     name: 'Chréa National Park',
-    image: 'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+    image: ['https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+      'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
+      'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
+    ],
     description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
     latitude: '36.4268',
     longitude: '2.8765',
@@ -100,7 +126,11 @@ export default [
   },
   {
     name: 'Namaqua National Park',
-    image: 'https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
+    image: ['https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
+      'https://mybestplace.com/uploads/2020/06/Namaqua-National-Park-Sudafrica-COVER.jpg',
+      'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/blooming-desert-johanna-girard.jpg',
+      'https://i.redd.it/ch119fl6kio41.jpg'  
+    ],
     description: 'The park was proclaimed on 29 June 2002 for the purpose of conserving the rich diversity of succulent plants. NNP is in the process of development, having grown to its current size of 141,000ha (including the coastal contract area between the Groen and Spoeg rivers) in nine years, thus expanding the park to include more succulent habitats and an important coastal section.', 
     latitude: '30.0167',
     longitude: '17.5790',
@@ -119,7 +149,12 @@ export default [
 
   {
     name: 'Etosha National Park' ,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Dust_Cloud_in_Etosha_National_Park.jpg' ,
+    image: ['https://upload.wikimedia.org/wikipedia/commons/5/5a/Dust_Cloud_in_Etosha_National_Park.jpg',
+      'https://i.pinimg.com/originals/f9/d9/d6/f9d9d6fed2ab27ca27c45d8ce1159db9.jpg',
+      'http://www.holidaybug.co.za/wp-content/uploads/2015/11/etosha-national-park-in-namibia.jpg',
+      'https://www.africansky.com/img/category/etosha-honeymoons.jpg'
+
+    ] ,
     description: 'The Etosha Pan is a vast, bare, open expanse of shimmering green and white that covers around 4,800km², almost a quarter of the beautiful Etosha National Park. At 130 km’s long and up to 50km’s wide in places, it is comfortably the largest salt pan in Africa and is the park’s most distinctive and dramatic feature, visible even from space. The pan was originally a lake but over time the earth’s climate forced the rivers that once fed the lake to change course and flow into the Atlantic Ocean. If one were to try find where the lake once lay today, only the dry baked alkaline clay marks would give you a clue. In the language of the Ovambo tribe, Etosha means ‘great white place’, a name passed on to the first Europeans to come across this “immense hollow”, Sir Francis Galton and Charles Andersson in 1851, with the help of travelling Ovambo traders. The area was originally inhabited by the Heli/ om- people who were well known hunter gatherers and co- existed in harmony with huge herds of wildlife in the area. It was only in 1851 when the huge pan first became known to Europeans. Explorers Charles Andersson and Francis Galton reached a cattle post called Omutjamatunda which is today called Namutoni. The two explorers provided the first written account of the pan. It is believed that this natural mineral pan was first formed over 100 million years ago. About 16,000 years ago, the Kunene River in Angola would have flowed all the way to Etosha, forming, for some time, a huge and deep lake. But the river would later change its course due to tectonic plate movement and head for the Atlantic, causing the lake to slowly dry up and leaving the salt pan behind.',
     latitude: -18.855591,
     longitude: 16.32932,
@@ -139,7 +174,11 @@ export default [
   },
   {
     name: 'Kruger National Park' ,
-    image: 'https://e3.365dm.com/19/06/768x432/skynews-lions-lion_4688739.jpg?20190607134111' ,
+    image: ['https://e3.365dm.com/19/06/768x432/skynews-lions-lion_4688739.jpg?20190607134111',
+      'https://www.tripsavvy.com/thmb/WpHoOwTDR4tMd9_ppf37LDqD3bQ=/1885x1414/smart/filters:no_upscale()/GettyImages-104329693-5a27e55e980207003656238e.jpg',
+      'https://cdn.kimkim.com/files/a/content_articles/featured_photos/3e372c762146d6cce993606b7e3eb1b727a82b81/big-9d8ae682213f20283b345b12b553fcee.jpg',
+      'https://oneworldtwofeetdotcom.files.wordpress.com/2016/07/africa.jpg?w=720&h=480'
+    ] ,
     description: 'Kruger National Park in South Africa was established in 1898. The park boasts that it contains African wildlife’s ‘Big Five,’ which includes lions, rhinos, elephants, buffalos, and leopards. Here you can even go on an elephant back safari. Like many of the national parks on our list, Kruger prides itself in its grassroots animal breeding and conservation efforts. There are also unique historical and archaeological sites within the bounds of the park where you can see things like ancient bushman rock paintings. If you aren’t able to make it to the park, you can also keep track of what’s going on through the park’s live webcams.' ,
     latitude: -25.3551,
     longitude: 31.8894,
@@ -155,7 +194,11 @@ export default [
   },
   {
     name: 'Ngorongoro National Park' ,
-    image: 'https://www.africaendeavours.com/wp-content/uploads/2019/01/ngorongoro-900x600-feat-Wildebeest-flamingos-26289422.jpg' ,
+    image: ['https://www.africaendeavours.com/wp-content/uploads/2019/01/ngorongoro-900x600-feat-Wildebeest-flamingos-26289422.jpg',
+      'https://www.moxleyandco.travel/wp-content/uploads/sites/2/2017/04/Tanzania-Ngorongoro-Crater-National-Park-zebra-and-flamingoes-19017395279_4287b2410f_b-1920x800-1493211578.jpg',
+      'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0a/19/b1/4d.jpg',
+      'https://arushatrips.com/wp-content/uploads/2020/08/Zebras-in-Ngorongoro-crater.jpg'
+    ] ,
     description: 'Part of the Serengeti, Ngorongoro National Park is located in Tanzania. It is largely populated by native Maasai pastoralists. Ngorongoro means ‘gift of life’ in Maasai. The park is also the site of the Ngorongoro Crater, which was created after a large volcanic explosion. Today, none of the head administrators for the park are actually Maasai. In fact, those in charge intend to eradicate 40,000 of the 65,000 Maasai people living on this land to make it more suitable for luxury hotels that cater predominantly to foreign tourists. The park, though extremely beautiful in its own right, raises questions about the ethical side of park governance with regard to the locals.' ,
     latitude: -3.23973 ,
     longitude: 35.48747,
@@ -178,7 +221,11 @@ export default [
 
   {
     name: 'Amboseli National Park' ,
-    image: 'https://theadventurousfeet.com/wp-content/uploads/2020/04/famous-landmarks-in-Africa-1.jpg' ,
+    image: ['https://theadventurousfeet.com/wp-content/uploads/2020/04/famous-landmarks-in-Africa-1.jpg',
+      'https://i.pinimg.com/originals/99/fe/8c/99fe8ca6abb56a875a5caa3eec369fd2.jpg',
+      'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/139477_Kenya_Africa_Amboseli%20National%20Park_shutterstock_80475796.jpg',
+      'https://www.journeysdiscoveringafrica.com/wpblog/wp-content/uploads/2019/08/Elewana-2.jpg'
+    ] ,
     description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
     latitude: -2.6527,
     longitude: 37.2606,
@@ -265,6 +312,21 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.khaosok.com/'
+  },
+  {
+    name: 'Danum Valley',
+    image: ['https://www.tripsavvy.com/thmb/vUVGRws-8tDfZqtOaumJOm5UrAM=/4500x3000/filters:fill(auto,1)/national-parks-in-borneo-2407d23348d145828a8391c91f546e3f.jpg','https://www.remotelands.com/remotenew1/dist/images/country/malaysia/city/13041301/b130413001.jpg','https://i0.wp.com/borneoadventure.com/v3/wp-content/uploads/2012/06/sabah-danum-orangutan-01.jpg?quality=60&strip=all&w=640','https://www.naturalworldsafaris.com/media/2081/nws-st-borneo-clouded-leopard.jpg'
+    ],
+    description: 'Originally established to provide the area with protection from logging activities, the Danum Valley Conservation Area is a 438 km2 of lowland dipterocarp forest that provides a pristine sanctuary for a dazzling array of undisturbed wildlife in south-eastern Sabah, and also has a reputation for being one of the world’s best destinations for birding as well as seeing orangutans in the wild. An area that is roughly the same size as Singapore, this ecosystem is said to have the highest concentration of wild orangutans in the world, and whilst such a sighting cannot be guaranteed, the area is well worth being included into your Borneo holiday.',
+    latitude: 4.91666666667,
+    longitude: 117.666666667,
+    region: 'Asia',
+    country: 'Borneo',
+    facts: ['A little piece of paradise on earth, Danum Valley is a conservation area that stretches over 43,800 hectares of immaculate lowland rainforests that is home to a diverse number of wildlife, endemic birds and plants.', 'There are 120 species of mammals, including 10 species of primates, and so far, there have been 300 species of birds recorded in the area.', 'In Malay language the word orangutan translates to person of the forest and when you see one of these red apes effortlessly moving through the forest canopy you will quickly begin to understand why.', 'The Danum Valley Conservation Area provides vital habitat for this critically endangered species and is important for their long-term preservation.', 'The Clouded Leopard is probably one of the most elusive creatures of the forest there is certainly no getting your hopes up to see one in the wild. However there are a few individuals that are known to utilise the forest nearby the field centre with the occasional sighting of a clouded leopard passing through the Field Centre. With healthy populations of primates and deer there is no shortage of food for this species so whilst difficult to spot they are not impossible to see.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.danumvalley.info/'
+
   },
 
   {
