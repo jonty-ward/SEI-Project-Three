@@ -49,9 +49,7 @@ export const getAllUsers = async (_req, res) => {
 }
 
 
-// * edit a user- for the wishlist, and can change account details etc
-
-// * UPDATE ROUTE
+// * EDIT user profile
 export const updateUserProfile = async (req, res) => {
   try {
     const { id } = req.params

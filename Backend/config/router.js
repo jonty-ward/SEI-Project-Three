@@ -39,5 +39,7 @@ router.route('/login')
 router.route('/profile/:id')
   .get(showUserProfile)
   .put(updateUserProfile)
-  
+
+router.route('/profile/:id/:username')
+  .put(updateUserProfile)
 export default router

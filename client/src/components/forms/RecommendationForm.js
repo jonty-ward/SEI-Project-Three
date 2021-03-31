@@ -16,23 +16,23 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
     }
     getData()
   }, [])
+
   
 
   if (!parkData) return null
   console.log(formData)
   return (
-    
-    <form onSubmit={handleSubmit} className="Form-field">
-      <div className="field">
-        <label className="label">{parkData.name}</label>
-        <div className="field">
-          <label className="label"> Activity </label>
-          <div className="control">
+    <>
+      <div className="ui container raised  segment registerFrom">
+        <form onSubmit={handleSubmit} className="ui form">
+          <h2 className="label">{parkData.name}</h2>
+          <div className="field">
+            <label className="label"> Activity </label>
             <select onChange={handleChange} id="activity" name="activity">
               <option value="Choose">Choose an activity</option>
               <option value="Hiking">Hiking</option>
               <option value="Swimming">Swimming</option>
-              <option onSelect={handleChange} value="climbing">Climbing/Mountaineering/Orienteering</option>
+              <option value="climbing">Climbing/Mountaineering/Orienteering</option>
               <option value="Birdwatching">Birdwatching</option>
               <option value="Rafting">Rafting/Paddling/Canoeing</option>
               <option value="Snorkeling">Snorkeling</option>
@@ -40,36 +40,34 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
               <option value="Food and Drink">Food and Drink</option>
             </select>
           </div>
-        </div>
+          <div className="field">
+            <label>Your Recommendation</label>
+            {/* <textarea></textarea> */}
+            <textarea
+              className="input"
+              placeholder="Add your reccomendation here ... "
+              name="text"
+              value={formData.text}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="field">
+            <label>Image</label>
+            <ImageUploadField
+              value={formData.image}
+              name="image"
+              handleImageUrl={handleImageUrl}
+            />
+          </div>
+          <div className="field">
+          </div>
+
+          
+          <button className="ui blue button" type="submit">  <i className="paper plane outline icon"/> Submit</button>
+        </form>
       </div>
-      <div className="field">
-        <label className="label">Your recommendation</label>
-        <div className="control">
-          <input
-            className="input"
-            placeholder="Add your reccomendation here ... "
-            name="text"
-            value={formData.text}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-      <div className="field">
-        <label className="label">Image</label>
-        <div className="control">
-          <ImageUploadField
-            value={formData.image}
-            name="image"
-            handleImageUrl={handleImageUrl}
-          />
-        </div>
-      </div>
-      <div className="field">
-        <button type="submit" className="button is-link  is-fullwidth">
-          Submit
-        </button>
-      </div>
-    </form>
+    </>
   )
 }
 

@@ -6,7 +6,6 @@ export default [
     image: 'https://www.michaelbonocore.com/wp-content/uploads/2017/06/DSC09796-Edit-5.jpg'
   },
   {
-
     image: 'https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg'
   },
   {

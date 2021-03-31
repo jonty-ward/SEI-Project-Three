@@ -4,6 +4,7 @@ import axios from 'axios'
 import { getTokenFromLocalStorage } from '../../helpers/auth'
 import RecommendationForm from './RecommendationForm'
 
+
 const EditRecommendation = () => {
   const history = useHistory()
   const params = useParams()
@@ -60,22 +61,28 @@ const EditRecommendation = () => {
 
 
   return (
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <RecommendationForm
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formData={formData}
-          />
-          <hr/>
-          <br/>
-          <div className="buttons">
-            <button onClick={handleDelete} className="button is-danger">Delete</button>
-          </div>
+    
+  
+  
+    <>
+      <div className="ui container">
+        <h1 className="header-recc-top">Edit your Recommendation</h1>
+        <RecommendationForm
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          formData={formData}
+        />
+        <p className="header-recc">  <button onClick={handleDelete} className="ui red button"> <i className="trash alternate icon"/>Delete Your Reccomendation</button> </p>
+        <div className="buttons">
+          
         </div>
+  
+
       </div>
-    </section>
+    </>
+
+
+
   )
 }
 

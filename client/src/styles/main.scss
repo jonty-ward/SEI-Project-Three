@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// @import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+>>>>>>> development
 // @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
@@ -7,6 +12,9 @@ body {
   height: 100vh;
   margin: 10px;
   font-family: 'Caveat', cursive;
+  background: #348F50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -67,7 +75,7 @@ overflow-x: auto;
 }
 .parks-saved{
   margin: 10px;
-  min-width: 50vw;
+  min-width: 40vw;
 }
 
 
@@ -98,6 +106,14 @@ overflow-x: auto;
 
 h1.regions-title {
   text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 40px;
+}
+
+p.single-region-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .region-slider-container {
@@ -107,47 +123,56 @@ h1.regions-title {
   justify-content: space-around;
   height: 100vh;
   width: 100vw;
-  margin: 50px;
+  margin: 20px;
   padding: 50px;
-  
 }
 
 .region-slider {
   display: flex;
   flex-direction: column;
   margin: 30px;
+  align-content: center;
   text-align: center;
-    h1 {
-      text-align:center;
-    position:absolute;
-    top:50%;
-    width:100%;
-    transform:translate(0%,-50%);
-    -webkit-transform:translate(0%,-50%);
-    color:#FFFFFF;
-    font-family:Arial;
-    text-transform:uppercase;
-    display:none;
-    }
 }
-
-
 
 .slider {
   position: relative;
   height: 33vh;
   width: 33vw;
-  
 }
-.slider:hover img {
-  filter: brightness(0.3);
-    -webkit-filter:brightness(0.3);
-    -moz-filter:brightness(0.3);
+// .slider p {
+//   text-align:center;
+//   vertical-align: middle;
+//   position:absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   transform:translate(0%,-50%);
+//   -webkit-transform:translate(0%,-50%);
+//   color:#FFFFFF;
+//   font-family:Arial;
+//   text-transform:uppercase;
+//   visibility:hidden;
+//   opacity: 0;
+
+// }
+
+// .slider p:hover {
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+.region-slider:hover img {
+  filter: brightness(0.5);
+    -webkit-filter:brightness(0.5);
+    -moz-filter:brightness(0.5);
 }
 
-.slider:hover h1 {
-  display: block;
-}
+
+// .region-slider:hover p {
+  
+// }
 
 
 .slide {
@@ -188,11 +213,21 @@ h1.regions-title {
   z-index: -1;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
 h1.profile-title {
   text-align: center;
   padding-top: 70px;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
+h2.user-info-title, h3.user-info-title {
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: none;
+  color: black;
+}
 .user-info-container {
   display: flex;
   justify-content: space-around;
@@ -203,26 +238,39 @@ h1.profile-title {
 .profile-image-container {
   display: flex;
   justify-content: center;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
+
+.profile-edit-button{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+
 
 .wishlist-items{
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  
+  min-height: 500px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .parks-saved{
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
   margin: 10px;
   min-width: 40vw;
   text-align: center;
-  
 
+}
+.remove-park {
+  width: 250px;
 }
 
 .wishlist-img {
@@ -231,12 +279,14 @@ h1.profile-title {
   margin-bottom: 40px;
 }
 
+
 .home-background{
   background-image: url("https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg") ;
   background-size:cover;
   background-repeat: no-repeat;
 } 
 
+<<<<<<< HEAD
 
 .margin-container {
   margin: 10px 5% 10px 5%;
@@ -254,3 +304,60 @@ h1.profile-title {
 // height: 200px;
 // object-fit: contain;
 // }
+=======
+// styling for the register form
+.register-component{
+  padding: 15px;
+//  border: 1px solid grey ;
+}
+  div.container.registerFrom {
+    min-height: 70vh;
+}
+.container.registerFrom {
+  height: 60vh !important;
+  width: 45vw !important;
+  margin-top: 10vh !important;
+}
+
+//styling for loging form 
+
+.container.loginForm{
+  height: 30vh;
+  width: 70vw !important;
+  margin-top: 25vh !important;
+}
+
+.register-form-header{
+  text-align: center;
+  margin-bottom: -5vh;
+  margin-top: 7vh;
+}
+
+.header-recc{
+  text-align: center;
+}
+.header-recc-top{
+  text-align: center;
+  margin-top: 7vh !important;
+  margin-bottom: -7vh !important;
+}
+
+a.delete{
+  color: red;
+}
+a.delete:hover{
+  text-decoration: underline;
+}
+
+.image-upload-image{
+  width: 150px;
+}
+
+// /navbar
+.navbar-menu{
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  background-color: rgb(152, 172, 143) !important;
+}
+
+>>>>>>> development

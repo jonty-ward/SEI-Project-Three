@@ -39,7 +39,7 @@ const Login = () => {
     <>
 
 
-      <div className="ui placeholder segment">
+      <div className="ui container placeholder segment loginForm">
         <div className="ui two column very relaxed stackable grid">
           <div className="column">
             <form onSubmit={handleSubmit} className="ui form">
