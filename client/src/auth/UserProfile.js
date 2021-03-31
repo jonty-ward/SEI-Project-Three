@@ -86,6 +86,9 @@ const UserProfile = () => {
             <h2 className="user-info-title">Username (for display): {username}</h2>
             <hr/>
             <h2 className="user-info-title">Email: {email}</h2>
+            <div className="profile-edit-button">
+              <button className="ui icon left labeled standard basic button"><i aria-hidden="true" className="edit icon"></i>Edit details</button>
+            </div>
           </div>
         </div>
 
@@ -99,7 +102,7 @@ const UserProfile = () => {
               { arrayOfFilteredPark.map((item, i) =>(
                 <div className="parks-saved" key={i}>
                   <Link to={`/parks/${item[0]._id}`}>
-                    <h3>{item[0].name}</h3>
+                    <h3 className="user-info-title">{item[0].name}</h3>
                     <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
                   </Link>
                   {!confirm ?

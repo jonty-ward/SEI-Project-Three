@@ -71,7 +71,7 @@ overflow-x: auto;
 }
 .parks-saved{
   margin: 10px;
-  min-width: 50vw;
+  min-width: 40vw;
 }
 
 
@@ -104,6 +104,7 @@ overflow-x: auto;
 h1.regions-title {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
+  font-size: 40px;
 }
 
 .region-slider-container {
@@ -113,7 +114,7 @@ h1.regions-title {
   justify-content: space-around;
   height: 100vh;
   width: 100vw;
-  margin: 50px;
+  margin: 20px;
   padding: 50px;
 }
 
@@ -153,7 +154,7 @@ h1.slider-h1 {
   width: 33vw;
 }
 
-.slider-h1:hover {
+h1.slider-h1:hover {
   visibility: visible;
   opacity: 1;
 }
@@ -217,6 +218,8 @@ h1.profile-title {
 
 h2.user-info-title, h3.user-info-title {
   font-family: 'Julius Sans One', sans-serif;
+  text-decoration: none;
+  color: black;
 }
 .user-info-container {
   display: flex;
@@ -232,12 +235,19 @@ h2.user-info-title, h3.user-info-title {
   width: 200px;
 }
 
+.profile-edit-button{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
 .wishlist-items{
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
   min-height: 500px;
   border: 1px solid darkgray;
+  border-radius: 5px;
   padding: 20px;
 }
 
