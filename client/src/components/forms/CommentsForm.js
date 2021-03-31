@@ -24,8 +24,8 @@ const CommentsForm = ({ handleChange, handleSubmit, formData }) => {
             onChange={handleChange}
           />
         </div>
-        <div className="ui blue labeled submit icon button" onClick={handleSubmit}>
-          <i className="icon edit"></i> Submit
+        <div className="ui basic labeled submit icon button" onClick={handleSubmit}>
+          <i className="paper plane outline icon"></i> Submit
         </div>
       </form>
     </div>

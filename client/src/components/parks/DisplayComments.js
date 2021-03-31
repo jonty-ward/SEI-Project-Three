@@ -26,7 +26,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
           <div className="right floated content">
             { userIsOwner(owner._id) && 
       <div className="buttons">
-        <Link to={`/parks/${params.id}/comments/${_id}`} className="ui positive button tiny"> Edit</Link>
+        <Link to={`/parks/${params.id}/comments/${_id}`} className="ui basic olive button tiny"> Edit</Link>
       </div> }          
           </div>
           <a className="ui avatar image">

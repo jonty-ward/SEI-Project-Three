@@ -146,7 +146,7 @@ const ParkShow = ( { userData } ) => {
       <div className="navbar-item">
         { userIsAuthenticated() && 
           <Link to={`/addRecommendation/${params.id}`}>
-            <button className="ui primary button">
+            <button className="ui icon left labeled basic button"><i aria-hidden="true" className="add icon"></i>
             Add a recommendation
             </button>
           </Link> 

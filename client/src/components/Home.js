@@ -22,7 +22,7 @@ const Home = () => {
 
 
 
-  // *pulling in the parks data
+  // * pulling in the parks data
   useEffect(() =>{
     const getData = async () => {
       const { data } = await axios.get('/api/parks')
@@ -54,9 +54,10 @@ const Home = () => {
       <section className="hero is-fullheight-with-navbar home-background">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title is-1 has-text-centered  has-text-white is-family-monospace">
-              <h1 className="home">This is the homepage - TITLE TBC</h1>
-            </h1>
+            <h1 className="home">This is the homepage - TITLE TBC</h1>
+            <div className="scroll-down">
+              <i aria-hidden="true" className="angle double down link huge icon"></i>
+            </div>
           </div>
         </div>
       </section>

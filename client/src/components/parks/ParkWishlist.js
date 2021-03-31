@@ -42,9 +42,24 @@ const parkWishlist = ({  park, userData }) => {
   }
 
   return (
-    <div className="ui labeled button" tabIndex="0">
-      <button className="ui primary button" onClick={handleWishlist}><i className="heart icon"></i>Add to wishlist </button>
-    </div>
+    <>
+      <div className="ui labeled button" tabIndex="0">
+        <button className="ui basic button" onClick={handleWishlist}><i className="heart icon"></i>Add to wishlist 
+          {/* <>
+            { onClick = {handleWishlist} ?
+              <div className="ui success left pointing label">
+                <div className="content">
+                  <p>Added to your profile</p>
+                </div>
+              </div>
+              :
+              ''
+            }
+          </> */}
+        </button>
+      </div>
+      
+    </>
     
   )
 }

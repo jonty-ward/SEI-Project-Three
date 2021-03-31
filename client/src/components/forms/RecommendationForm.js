@@ -20,7 +20,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
   
 
   if (!parkData) return null
-  console.log(formData)
+  
   return (
     <>
       <div className="ui container raised  segment registerFrom">
@@ -64,7 +64,7 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
           </div>
 
           
-          <button className="ui blue button" type="submit">  <i className="paper plane outline icon"/> Submit</button>
+          <button className="ui basic button" type="submit">  <i className="paper plane outline icon"/> Submit</button>
         </form>
       </div>
     </>

@@ -6,7 +6,6 @@
 body {
   // height: 100vh;
   margin: 10px;
-  font-family: 'Caveat', cursive;
   background: #348F50;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -24,13 +23,29 @@ a:hover {
 
 h1.home {
   text-align: center;
-  
+  font-family: 'Julius Sans One', sans-serif;
+  padding-top: 25vh;
+  font-size: 50px;
 }
 
 .container {
   height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
 }
 
+.scroll-down {
+
+    color: white;
+    padding-left: 50vw;
+    padding-top: 40vh
+ 
+}
+
+i.angle.double.down.link.icon {
+  size: 30px;
+}
 
 .map-container {
   margin: 30px;
@@ -116,7 +131,6 @@ p.single-region-title {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100vh;
   width: 100vw;
   margin: 20px;
   padding: 50px;
@@ -348,6 +362,7 @@ a.delete:hover{
   margin-bottom: 0px !important;
   border-radius: 0px !important;
   background-color: rgb(152, 172, 143) !important;
+  
 }
 
 .footer {

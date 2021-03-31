@@ -106,7 +106,7 @@ const UserProfile = () => {
                 <div className="parks-saved" key={i}>
                   <Link to={`/parks/${item[0]._id}`}>
                     <h3 className="user-info-title">{item[0].name}</h3>
-                    <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
+                    <img className="wishlist-img" src={item[0].image[0]} alt={item[0].name} />
                   </Link>
                   {!confirm ?
                     <button className="ui red basic button remove-park" name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
