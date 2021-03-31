@@ -21,23 +21,31 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   return (
     
     <div className="comment">
-      <a className="avatar">
-        <img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" />
-      </a>
-      <div className="content">
-        <a className="author">{owner.username}</a>
-        <div className="metadata">
-          <span className="date">Created at: {formattedTime}</span>
-        </div>
-        <div className="text">
-          {text}
-        </div>
-        <Rating icon='star' rating={rating} maxRating={5} disabled />
-      </div>
-      { userIsOwner(owner._id) && 
+      <div className="ui list">
+        <div className="item">
+          <div className="right floated content">
+            { userIsOwner(owner._id) && 
       <div className="buttons">
         <Link to={`/parks/${params.id}/comments/${_id}`} className="ui positive button tiny"> Edit</Link>
-      </div> }
+      </div> }          
+          </div>
+          <a className="ui avatar image">
+            <img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" />
+          </a>
+          <div className="content">
+            <a className="author">{owner.username}</a>
+            <div className="metadata">
+              <span className="date">Created at: {formattedTime}</span>
+            </div>
+
+            <div className="text">
+              {text}
+            </div>
+          </div>
+          <Rating icon='star' rating={rating} maxRating={5} disabled />
+        </div>
+
+      </div>
     </div>
     
   )

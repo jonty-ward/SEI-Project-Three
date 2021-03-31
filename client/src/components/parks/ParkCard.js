@@ -4,23 +4,19 @@ import { Link } from 'react-router-dom'
 
 const ParkCard = ({ _id, name, image }) => {
   return (
-    <>
 
-      <div className="column is-one-quarter-desktop is-one-third-tablet">
-        <Link to={`/parks/${_id}`}>
-          <div className="card">
-            <div className="card-header">
-              <div className="card-header-title">{name}</div>
-            </div>
-            <div className="card-image">
-              <figure className="image image-is-1by1">
-                <img src={image[0]} alt={`${name}`} />
-              </figure>
-            </div>
+    <div className="column">
+      <Link to={`/parks/${_id}`}>
+        <div className="ui fluid raised link card eq-card">
+          <div className="content content-height">
+            {name}</div>
+          <div className="image image-index-container">
+            <img className="cardImage" src={image[0]} alt={`${name}`} height="100%" />
           </div>
-        </Link>
-      </div>
-    </>
+        </div>
+      </Link>
+    </div>
+
   )
 }
 

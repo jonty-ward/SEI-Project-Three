@@ -43,7 +43,7 @@ const ParkShow = ( { userData } ) => {
 
 
 
-  const { name, image, region, description, facts, recommendations, comments, country } = park
+  const { name, image, region, description, facts, recommendations, comments, country, parkUrl } = park
  
   return (
     <div>
@@ -69,32 +69,26 @@ const ParkShow = ( { userData } ) => {
 
 
       <div className="ui raised very padded text segment">
-        <h2 className="ui header">{country}</h2>
-        <h3 className="ui header">{region}</h3>
+        <h2 className="ui header">{name}</h2>
+        <h3 className="ui header">{region} - {country}</h3>
         <p>{description}</p>
-        <p></p>
+        <br/>
+        <a href={`${parkUrl}`} target="_blank" rel="noreferrer">{parkUrl}</a>
       </div>
       <br/>
       <br/>
 
-
-
-
-      <div className="ui vertically divided horizontally padded grid">
-        <div className="two column row">
-          <div className="column">
-            <div className="ui segment">
+      <div className="ui raised very padded text segment">
+        <div className="ui celled stackable grid">
+          <div className="row">
+            <div className="twelve wide column">
               <h3>{name} Facts</h3>
               {facts.map(fact=>{
                 return <><li className="item" key={fact}> {fact} </li><br/></>
-              })}
+              })}          
             </div>
-          </div>
-          <div className="column">
-            <div className="segment">
-              <div className="container">
-                <img src={image[2]} alt={name} width="100%" height="100%"/>
-              </div>
+            <div className="four wide column">
+              <img src={image[2]} alt={name} width="100%" height="100%"/>
             </div>
           </div>
         </div>
@@ -102,43 +96,41 @@ const ParkShow = ( { userData } ) => {
       <br/>
       <br/>
 
-      <div className="ui vertically divided horizontally padded grid">
-        <div className="two column row">
-          <div className="column">
-            <div className="segment">
-              <div className="container">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <img src={image[1]} alt={name} width="100%" height="100%"/>
-              </div>
+
+      <div className="ui raised very padded text segment">
+        <div className="ui celled stackable grid">
+          <div className="row">
+            <div className="eight wide column middle aligned">
+              <img src={image[1]} alt={name} width="100%" height="100%"/>
             </div>
-          </div>
-          <div className="column">
-            <ParkMap {...park}/>
+            <div className="eight wide column middle aligned center aligned">
+              <ParkMap {...park}/>
+            </div>
           </div>
         </div>
       </div>
+
       <br/>
       <br/>
 
-      <div className="ui vertically divided horizontally padded grid">
-        <div className="two column  row">
-          <div className="column">
-            <ParkWeather key={park.id} {...park}/>
-          </div>
-          <div className="column">
-            <div className="segment">
-              <div className="container">
-                <img src={image[0]} alt={name} width="100%" height="100%"/>
-              </div>
+
+      <div className="ui raised very padded text segment">
+        <div className="ui celled stackable grid">
+          <div className="row">
+            <div className="ten wide column middle aligned">
+              <ParkWeather key={park.id} {...park}/>
+            </div>
+            <div className="six wide column center aligned middle aligned">
+              <img src={image[0]} alt={name} width="80%" height="80%"/>
             </div>
           </div>
         </div>
       </div>
+
       <br/>
       <br/>
+
+
 
 
       <div className="ui segment very padded">
@@ -154,7 +146,9 @@ const ParkShow = ( { userData } ) => {
       <div className="navbar-item">
         { userIsAuthenticated() && 
           <Link to={`/addRecommendation/${params.id}`}>
+            <button className="ui primary button">
             Add a recommendation
+            </button>
           </Link> 
         }
       </div>
@@ -166,7 +160,7 @@ const ParkShow = ( { userData } ) => {
       <br/>
       <br/>
     
-      <div className="ui container">
+      <div className="ui segment">
         <div className="ui large comments">
           <h1 className="ui dividing header">Comments</h1>
           { comments.map(comment => (
@@ -182,6 +176,11 @@ const ParkShow = ( { userData } ) => {
           </>
           }
         </div>
+        { !userIsAuthenticated() && 
+          <Link to={'/login'}>
+            <h4>Want to add a comment? Log in first!</h4>
+          </Link> 
+        }
       </div>
     </div>
   )

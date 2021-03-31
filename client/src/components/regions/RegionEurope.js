@@ -8,16 +8,25 @@ const RegionEurope = () => {
   const params = useParams()
 
 
+
  
 
 
 
   return (
     <>
+      <br/>
       <div>
-        {params.region}
-        
+        <h1 className="margin-container">
+          {(params.region === 'NorthAmerica' || params.region === 'SouthAmerica')
+            ?
+            params.region.split('h').join('h ')
+            :
+            params.region
+          }
+        </h1>
       </div>
+      <br/>
       <ParkIndex />
     </>
   )

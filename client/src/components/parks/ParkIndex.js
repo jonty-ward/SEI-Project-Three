@@ -34,14 +34,14 @@ const ParkIndex = () => {
     <>
       
       <div className="section">
-        <div className="container">
+        <div className="margin-container">
           { parks &&
-          <div className="columns is-multiline">
-            { filteredArray.map( park => (
-              <ParkCard key={park._id} {...park}
-              />
-            ))}
-          </div>
+      <div className="ui three column relaxed grid">
+        { filteredArray.map( park => (
+          <ParkCard key={park._id} {...park}
+          />
+        ))}
+      </div>
           }
         </div>
       </div>

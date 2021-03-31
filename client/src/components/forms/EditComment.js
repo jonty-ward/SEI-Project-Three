@@ -49,7 +49,7 @@ const EditComment = () => {
         headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
       }
     )
-    history.push(`/api/parks/${id}`)
+    history.push(`/parks/${id}`)
   }
 
   if (!formData) return ''

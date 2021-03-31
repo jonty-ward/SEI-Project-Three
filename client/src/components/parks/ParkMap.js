@@ -27,7 +27,7 @@ const ParkMap = ({ longitude , latitude, name }) => {
         <ReactMapGL
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
           height='400px'
-          width='100%'
+          width='400px'
           mapStyle='mapbox://styles/mapbox/outdoors-v11'
           {...viewport}
           onViewportChange={(viewport) => setViewport(viewport)}
