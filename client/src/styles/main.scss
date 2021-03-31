@@ -28,6 +28,12 @@ h1.home {
   font-size: 50px;
 }
 
+h2.home {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+
 .container {
   height: 100vh;
   // display: flex;
@@ -36,15 +42,21 @@ h1.home {
 }
 
 .scroll-down {
-
     color: white;
     padding-left: 50vw;
     padding-top: 40vh
- 
 }
 
-i.angle.double.down.link.icon {
-  size: 30px;
+.ui.grid.home {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.ui.celled.grid {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
 .map-container {
@@ -372,4 +384,8 @@ a.delete:hover{
   padding: 70px;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
+}
+
+img {
+  object-fit: cover;
 }

@@ -62,10 +62,10 @@ const Home = () => {
         </div>
       </section>
 
-      <hr/>
-      <p> first option</p>
+      
+      <h2 className="home">Welcome!</h2>
       {/* ******** THIS IS THE FIRST GRID OPTION WITH TEXT  ************ */}
-      <div className="ui internally celled grid">
+      {/* <div className="ui internally celled grid">
         <div className="row">
           <div className="three wide column">
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
@@ -88,11 +88,11 @@ const Home = () => {
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      Fouth option
+      {/* Fouth option
 
       <div className="ui segment">
         <img className="ui medium left floated image" src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
@@ -100,18 +100,18 @@ const Home = () => {
         <img className="ui small right floated image" src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
         <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo vide phaedrum, vim vivendum maiestatis in.</p>
         <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
-      </div>
+      </div> */}
 
 
-      <hr/>
-      <p>seccond option</p>
+      {/* <hr/> */}
+      {/* <p>seccond option</p> */}
       {/* //SECCOND OPTION FOR GRID */}
       <div className="ui celled grid">
         <div className="row">
-          <div className="three wide column">
+          <div className="four wide column">
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>   
           </div>
-          <div className="thirteen wide column">
+          <div className="twelve wide column">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
      
@@ -120,27 +120,26 @@ const Home = () => {
           <div className="three wide column">
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
           </div>
-          <div className="ten wide column">
+          <div className="nine wide column">
             <p> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div className="three wide column">
+          <div className="four wide column">
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>
           </div>
         </div>
       </div>
 
-      <hr/>
-      <p>third option</p>
-      <div className="ui grid">
+      
+      <div className="ui grid center aligned home">
         <div className="three column row">
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px" width="350px"/>
           </div>
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px" width="350px"/>
           </div>
           <div className="column">
-            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px"/>
+            <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]} height="300px" width="350px"/>
           </div>
         </div>
       </div>
