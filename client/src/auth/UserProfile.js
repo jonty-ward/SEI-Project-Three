@@ -27,7 +27,8 @@ const UserProfile = () => {
   if (!userData || !parksData) return ''
   let arrayOfFilteredPark = []
   const { username, email, fullName, profilePic, wishList } = userData.data
-  // *for Each lopp to make array of parks in wishlist
+
+  // * for Each lopp to make array of parks in wishlist
   wishList.forEach((wishlist, index)=>{
     const filteredParks = parksData.data.filter((item) =>{
       return item._id === wishList[index].toString()    
@@ -46,9 +47,6 @@ const UserProfile = () => {
     setUpdateWishlist(newWishList)
     
   }
-  
-
-
   
   const handleConfirm = async () =>{
     console.log('updated wish list', wishlist)
@@ -71,55 +69,54 @@ const UserProfile = () => {
   )
   PopupExample()
 
-
-  
-  
-
-  
-
   return (
-    <div className="section">
-      <div className="container">
-        <h1>MY PROFILE</h1>
-        < img src={profilePic} alt="profile pic"/>
-        <hr/>
-        {fullName}
-        <hr/>
-        {username}
-        <hr/>
-        {email}
-        <hr/>
-        <hr/>
-        <div className="wishlist-items">
-          {arrayOfFilteredPark.map((item, i) =>(
-            <div className="parks-saved" key={i}>
-              <Link to={`/parks/${item[0]._id}`}>
-                <p>{item[0].name}</p>
-                <img src={item[0].image} alt={item[0].name} />
-              </Link>
-              {!confirm ?
-                <button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from wishlist </button>
-                :
-                <>
-                  <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
-                  <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
-                </>
-              }
+    <div className="container">
+      <h1 className="profile-title">{`Welcome back ${username}!`}</h1>
 
-              {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">
-                <div>
-                  <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
-                  <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
-                </div>
-              </Popup> */}
-
-            </div>
-            
-            
-          ))}
+      <div className="user-info-container">
+        <div className="profile-image-container">
+          <img src={profilePic} className="ui medium circular image ui medium bordered image"/>
         </div>
+        
+        <div className="text-container">
+          <h2>Full Name: {fullName}</h2>
+          <hr/>
+          <h2>Username (for display): {username}</h2>
+          <hr/>
+          <h2>Email: {email}</h2>
+        </div>
+      </div>
+
+      <h2>SAVED PARKS</h2>
+      <div className="wishlist-items">
+        {arrayOfFilteredPark.map((item, i) =>(
+          <div className="parks-saved" key={i}>
+            <Link to={`/parks/${item[0]._id}`}>
+              <h3>{item[0].name}</h3>
+              <img className="wishlist-img" src={item[0].image} alt={item[0].name} />
+            </Link>
+            {!confirm ?
+              <button className="ui red basic button" name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Remove {item[0].name} from your wishlist</button>
+              :
+              <>
+                <button className="ui green basic left floated button" value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                <button className="ui red basic right floated button" value={item[0]._id} onClick={handleCancel} > Cancel </button>
+              </>
+            }
+
+            {/* <Popup trigger={<button name="wishList" value={item[0]._id} onClick={removeFromWishlist} > Trigger</button>} position="right center">
+              <div>
+                <button value={item[0]._id} onClick={handleConfirm} > Confirm? </button>
+                <button value={item[0]._id} onClick={handleCancel} > Cancel </button>
+              </div>
+            </Popup> */}
+
+          </div>
+          
+        ))}
       </div>
     </div>
   )
 }
 export default UserProfile
+
