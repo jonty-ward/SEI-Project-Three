@@ -39,26 +39,25 @@ const ParkShow = ( { userData } ) => {
 
 
 
-
   if (!park ) return ''
   // console.log('USER DATA>>>>>>>',userData, setUserData)
 
- 
 
 
   const { name, image, region, description, facts, recommendations, comments, country } = park
  
   return (
     <div>
-
+  
    
 
-     
 
-      <ParkWeather key={park.id} {...park}/>
       <hr/>      
-      {name}
+      <div className="ui huge header center aligned">{name}</div>
+      <hr/>
 
+      <img src={image[0]} alt={name} width="100%"/>
+      <br/>
       {userIsAuthenticated 
         ?
         <ParkWishlist 
@@ -69,20 +68,81 @@ const ParkShow = ( { userData } ) => {
         <p>Login to save</p>
       }
 
-      <hr/>
-      {region}
-      <hr/>
-      {country}
+
+      <div className="ui raised very padded text segment">
+        <h2 className="ui header">{country}</h2>
+        <h3 className="ui header">{region}</h3>
+        <p>{description}</p>
+        <p></p>
+      </div>
       <br/>
-      <img src={image} alt={name}/>
-      <hr/>
-      {description}
-      <hr/>
-      {facts.map(fact=>{
-        return <li key={fact}> {fact} </li>
-      })}
-      <hr/>
-      <ParkMap {...park}/>
+      <br/>
+
+
+
+
+      <div className="ui vertically divided horizontally padded grid">
+        <div className="two column  row">
+          <div className="column">
+            <div className="ui segment">
+              <h3>{name} Facts</h3>
+              {facts.map(fact=>{
+                return <><li className="item" key={fact}> {fact} </li><br/></>
+              })}
+            </div>
+          </div>
+          <div className="column">
+            <div className="segment">
+              <div className="container">
+                <img src={image[2]} alt={name} width="100%" height="100%"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+      <div className="ui vertically divided horizontally padded grid">
+        <div className="two column row">
+          <div className="column">
+            <div className="segment">
+              <div className="container">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <img src={image[1]} alt={name} width="100%" height="100%"/>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <ParkMap {...park}/>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+      <div className="ui vertically divided horizontally padded grid">
+        <div className="two column  row">
+          <div className="column">
+            <ParkWeather key={park.id} {...park}/>
+          </div>
+          <div className="column">
+            <div className="segment">
+              <div className="container">
+                <img src={image[0]} alt={name} width="100%" height="100%"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+
+
+
       <h1> Recommendations</h1>
       <div className="box reccomendation-box">
         { recommendations.map(recommendation => (
@@ -93,30 +153,32 @@ const ParkShow = ( { userData } ) => {
       </div> 
       <div className="navbar-item">
         { userIsAuthenticated() && 
-            <Link to={`/addRecommendation/${params.id}`}>
-              Add a recommendation
-            </Link> 
+          <Link to={`/addRecommendation/${params.id}`}>
+            Add a recommendation
+          </Link> 
         }
       </div>
       <hr/>
-      <h1> Comments</h1>
-      <div className="box">
-        { comments.map(comment => (
-          <DisplayComments key={comment._id} {...comment}/>
-        ))}
-        <div className="navbar-item">
+    
+      <div className="container">
+        <div className="ui large comments">
+          <h1 className="ui dividing header">Comments</h1>
+          { comments.map(comment => (
+            <DisplayComments key={comment._id} {...comment}/>
+          ))}
+          <br/>
+          <br/>
+          <br/>
           { userIsAuthenticated() && 
 
-            <>
-              <AddParkCommentForm/>
-            </>
+          <>
+            <AddParkCommentForm/>
+          </>
           }
         </div>
-        
       </div>
     </div>
   )
 }
 
 export default ParkShow
-

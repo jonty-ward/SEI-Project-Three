@@ -1,4 +1,4 @@
-@import '~bulma/bulma.sass';
+// @import '~bulma/bulma.sass';
 
 body {
   height: 100vh;
@@ -15,8 +15,13 @@ h1.home {
 
 
 .map-container {
-  height: calc(100vh - 52px);
   margin: 30px;
+}
+.image-container {
+  width: 40%;
+}
+.image-segment {
+  width: 45%;
 }
 
 .app{
@@ -36,11 +41,9 @@ overflow-x: auto;
   display: flex;
   overflow-x: auto;
 }
-
 .parks-saved{
   margin: 10px;
   min-width: 50vw;
-
 }
 
 
@@ -115,3 +118,4 @@ overflow-x: auto;
   object-fit: contain;
   z-index: -1;
 }
+
