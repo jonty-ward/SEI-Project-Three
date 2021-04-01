@@ -767,7 +767,6 @@ export default [
   {
     name: 'Mount Olympus National Park',
     image: ['https://i.natgeofe.com/n/90ddbd94-9f33-40d3-a953-afb049818ba9/30924.jpg',
-      'https://lh3.googleusercontent.com/proxy/Wd-UOby-3LpIXF7l2uxQ5j8TeuWKSmmNYVfQliOxZAH2LIX3_YcjyJyb_CMO5QhnjHB8tkaL767agpE1_XSxhJUWMX8jrRmQZQTT8nj8tJprPWCBEaX6_t_Qylt0hUl96pOpQQ',
       'https://www.outdoorjournal.com/wp-content/uploads/Wooden-Bridge-Crossing-Enipeas-Gilbert-Kuhnert-.jpg',
       'https://i.pinimg.com/originals/16/96/37/1696378170a7cf570ce7dfd12927bc8d.jpg',
       'https://www.greece-is.com/wp-content/uploads/2017/09/shutter_olympus_bridge.jpg'],
