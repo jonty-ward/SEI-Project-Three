@@ -42,4 +42,5 @@ router.route('/profile/:id')
 
 router.route('/profile/:id/:username')
   .put(updateUserProfile)
+  
 export default router
