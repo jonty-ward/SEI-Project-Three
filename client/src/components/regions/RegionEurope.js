@@ -15,9 +15,9 @@ const RegionEurope = () => {
 
   return (
     <>
-      <br/>
-      <div>
-        <h1 className="margin-container">
+    
+      <div className="margin-container">
+        <h1 className="region">
           {(params.region === 'NorthAmerica' || params.region === 'SouthAmerica')
             ?
             params.region.split('h').join('h ')
