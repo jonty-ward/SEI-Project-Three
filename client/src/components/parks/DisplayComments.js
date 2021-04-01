@@ -29,8 +29,8 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
         <Link to={`/parks/${params.id}/comments/${_id}`} className="ui positive button tiny"> Edit</Link>
       </div> }          
           </div>
-          <a className="ui avatar image">
-            <img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" />
+          <a className="ui avatar circular huge image">
+            <img src={owner.profilePic} />
           </a>
           <div className="content">
             <a className="author">{owner.username}</a>
@@ -41,8 +41,8 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
             <div className="text">
               {text}
             </div>
+            <Rating icon='star' rating={rating} maxRating={5} disabled />
           </div>
-          <Rating icon='star' rating={rating} maxRating={5} disabled />
         </div>
 
       </div>

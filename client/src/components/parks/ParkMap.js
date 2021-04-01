@@ -22,7 +22,7 @@ const ParkMap = ({ longitude , latitude, name }) => {
   return (
     <div className="map-container"> 
     
-      <h2>Map of { name }</h2>
+      <h3 className="juliusFontCenter">Explore { name }</h3>
       {viewport ?
         <ReactMapGL
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}

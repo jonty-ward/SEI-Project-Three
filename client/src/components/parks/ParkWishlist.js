@@ -45,7 +45,6 @@ const parkWishlist = ({  park, userData }) => {
     <div className="ui labeled button" tabIndex="0">
       <button className="ui primary button" onClick={handleWishlist}><i className="heart icon"></i>Add to wishlist </button>
     </div>
-    
   )
 }
 

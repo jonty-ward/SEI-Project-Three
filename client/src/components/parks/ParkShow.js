@@ -51,26 +51,28 @@ const ParkShow = ( { userData } ) => {
    
 
 
-      <hr/>      
-      <div className="ui huge header center aligned">{name}</div>
-      <hr/>
-
-      <img src={image[0]} alt={name} width="100%"/>
+      <br/>      
+      <h1 className="juliusFontCenterBig">{name}</h1>
+      <div className="margin-container">
+        <img src={image[0]} alt={name} width="100%"/>
+      </div>
       <br/>
       {userIsAuthenticated 
         ?
-        <ParkWishlist 
-          userData = {userData}
-          park = {park}
-        />
+        <div className='centerButton'>
+          <ParkWishlist 
+            userData = {userData}
+            park = {park}
+          />
+        </div>
         :
         <p>Login to save</p>
       }
 
 
-      <div className="ui raised very padded text segment">
-        <h2 className="ui header">{name}</h2>
-        <h3 className="ui header">{region} - {country}</h3>
+      <div className="ui raised very padded text segment margin-container">
+        <h2 className="juliusFontLeft">{name}</h2>
+        <h4 className="juliusFontLeft">{region} - {country}</h4>
         <p>{description}</p>
         <br/>
         <a href={`${parkUrl}`} target="_blank" rel="noreferrer">{parkUrl}</a>
@@ -78,16 +80,16 @@ const ParkShow = ( { userData } ) => {
       <br/>
       <br/>
 
-      <div className="ui raised very padded text segment">
+      <div className="ui raised very padded text segment margin-container">
         <div className="ui celled stackable grid">
           <div className="row">
-            <div className="twelve wide column">
-              <h3>{name} Facts</h3>
+            <div className="eight wide column">
+              <h3 className="juliusFontLeft">{name} Facts</h3>
               {facts.map(fact=>{
                 return <><li className="item" key={fact}> {fact} </li><br/></>
               })}          
             </div>
-            <div className="four wide column">
+            <div className="eight wide column">
               <img src={image[2]} alt={name} width="100%" height="100%"/>
             </div>
           </div>
@@ -97,7 +99,7 @@ const ParkShow = ( { userData } ) => {
       <br/>
 
 
-      <div className="ui raised very padded text segment">
+      <div className="ui raised very padded text segment margin-container">
         <div className="ui celled stackable grid">
           <div className="row">
             <div className="eight wide column middle aligned">
@@ -114,14 +116,14 @@ const ParkShow = ( { userData } ) => {
       <br/>
 
 
-      <div className="ui raised very padded text segment">
+      <div className="ui raised very padded text segment margin-container">
         <div className="ui celled stackable grid">
           <div className="row">
             <div className="ten wide column middle aligned">
               <ParkWeather key={park.id} {...park}/>
             </div>
             <div className="six wide column center aligned middle aligned">
-              <img src={image[0]} alt={name} width="80%" height="80%"/>
+              <img src={image[3]} alt={name} width="80%" height="80%"/>
             </div>
           </div>
         </div>
@@ -133,8 +135,8 @@ const ParkShow = ( { userData } ) => {
 
 
 
-      <div className="ui segment very padded">
-        <h1> Recommendations</h1>
+      <div className="ui segment very padded raised margin-container">
+        <h1 className="juliusFontLeft"> Recommendations</h1>
         <div className="box reccomendation-box">
           { recommendations.map(recommendation => (
             <>
@@ -145,16 +147,18 @@ const ParkShow = ( { userData } ) => {
       </div>
       <div className="navbar-item">
         { userIsAuthenticated() && 
+        <div className="centerButton">
           <Link to={`/addRecommendation/${params.id}`}>
             <button className="ui primary button">
             Add a recommendation
             </button>
-          </Link> 
+          </Link>
+        </div>
         }
       </div>
       { !userIsAuthenticated() && 
           <Link to={'/login'}>
-            <h4>Want to add a recommendation? Log in first!</h4>
+            <h4 className="margin-container">Want to add a recommendation? Log in first!</h4>
           </Link> 
       }
       <br/>

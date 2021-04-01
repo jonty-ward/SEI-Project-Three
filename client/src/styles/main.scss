@@ -83,7 +83,7 @@ overflow-x: auto;
 .weather-day{
   margin: 5px;
   margin-left: 10px;
-  min-width: 33vw;
+  min-width: 40vw;
   padding: 10px;
 }
 
@@ -282,7 +282,7 @@ h2.user-info-title, h3.user-info-title {
 
 
 .margin-container {
-  margin: 10px 5% 10px 5%;
+  margin: 10px 5% 10px 5% !important;
 }
 // .image-index-container {
 //   object-fit: cover;
@@ -352,3 +352,21 @@ a.delete:hover{
   background-color: rgb(152, 172, 143) !important;
 }
 
+.juliusFontCenter {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+}
+.juliusFontCenterBig {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.juliusFontLeft {
+  text-align: left;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
+}
