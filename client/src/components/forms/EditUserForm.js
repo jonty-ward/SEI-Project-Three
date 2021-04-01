@@ -67,7 +67,7 @@ const EditUserForm = ({ handleChange, handleImageUrl, handleSubmit, formData }) 
                 onChange={handleChange}
               />
             </div>
-            <button className="ui button " type="submit">Submit</button>
+            <button className="ui basic button " type="submit">Submit</button>
           </form>
         </div>
       </div>

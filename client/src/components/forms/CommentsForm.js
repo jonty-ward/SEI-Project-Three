@@ -30,7 +30,7 @@ const CommentsForm = ({ handleChange, handleSubmit, formData }) => {
             onChange={handleChange}
           />
         </div>
-        <div className="ui basic labeled submit icon button" onClick={handleSubmit}>
+        <div className="ui blue basic labeled submit icon button" onClick={handleSubmit}>
           <i className="paper plane outline icon"></i> Submit
         </div>
       </form>

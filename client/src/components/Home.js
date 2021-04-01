@@ -55,8 +55,9 @@ const Home = () => {
       <section className="hero is-fullheight-with-navbar home-background">
         <div className="hero-body">
           <div className="container">
-            <h1 className="home">This is the homepage - TITLE TBC</h1>
-            <div className="scroll-down">
+            <h1 className="home">The Natural Wanderer</h1>
+            <h2 className="home">Travel within Nature is not reward for working, it’s education for living</h2>
+            <div className="animate__animated animate__shakeY scroll-down">
               <a className="down-link" href="#donations"><i aria-hidden="true" className="angle double down link huge icon" ></i></a>
             </div>
           </div>
@@ -113,7 +114,15 @@ const Home = () => {
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>   
           </div>
           <div className="twelve wide column">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Our mission is to encourage conservation by promoting travel and exploration of the world’s national parks to learn about the amazing beauty and natural resources they protect. Take a look through the parks we have listed by region (we have only selected a handful from each!)<br/>On each National Park page we have:<br/>
+              <ul>
+                <li>a short description with some interesting facts</li>
+                <li>location information</li>
+                <li>weather information</li>
+                <li>Recommendations and comments from registered users</li>
+                <li>an external link to the park for further information</li>
+              </ul>
+            </p>
           </div>
      
         </div>
@@ -126,7 +135,7 @@ const Home = () => {
             </div>
           </div>
           <div className="five wide column">
-            <p> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>If you register for an account with us today you will receive a 10% discount on purchases from The Best Outdoor Store to help you get all the right gear you will need for a trip to one of these stunning and precious parks.</p>
           </div>
           <div className="three wide column">
             <img src={mappedImages[Math.floor(Math.random() * mappedImages.length)][0]}/>

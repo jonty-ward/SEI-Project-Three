@@ -3,6 +3,7 @@
 // @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+
 #root{
   // background: #348F50;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
@@ -38,14 +39,17 @@ a:hover {
 h1.home {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
-  padding-top: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 10px;
   font-size: 50px;
+  color: #f8f9fa;
 }
 
 h2.home {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
+  color: #f8f9fa;
 }
 
 
@@ -53,7 +57,13 @@ h2.home {
 .scroll-down {
   color: white;
   padding-left: 50vw;
-  padding-top: 40vh
+  padding-top: 40vh;
+  :hover{
+    animation: animate__shakeY;
+    animation-duration: 3s;
+  }
+  
+  
 }
 
 .down-link {
@@ -124,7 +134,7 @@ h2.home {
 }
 
 div.container{
-  min-height: 95vh;
+  min-height: 100vh;
   background-position-y: bottom;
 }
 
@@ -354,6 +364,15 @@ h2.user-info-title, h3.user-info-title {
   margin-bottom: 40px;
 }
 
+.reccAddAvatar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+  .author {
+    margin-left: 5px;
+  }
+  
+}
 
 .home-background{
   background-image: url("https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg") ;
@@ -416,6 +435,7 @@ h2.user-info-title, h3.user-info-title {
   text-align: center;
   margin-bottom: -5vh;
   margin-top: 7vh !important;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .header-recc{
@@ -480,8 +500,11 @@ a.delete:hover{
 .navbar-menu{
   margin-bottom: 0px !important;
   border-radius: 0px !important;
-  background-color: rgb(152, 172, 143) !important;
-  
+  // background-color: rgb(152, 172, 143) !important;
+  // background: #076585;  /* fallback for old browsers */
+  background-color: #6c809a !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 // footer
@@ -495,15 +518,23 @@ a.delete:hover{
   // position: fixed;
   // bottom: 0;
   font-family: 'Julius Sans One', sans-serif;
+  color: #6c809a;
   a {
     text-decoration: none;
-    color: black;
+    color: #6c809a
   }
   a:hover {
     color:inherit;
   }
 }
 
+.ui.reply.form {
+  padding-left: 30px;
+}
+
+.ui.dividing.header {
+  font-family: 'Julius Sans One', sans-serif;
+}
 img {
   object-fit: cover;
 }
@@ -518,10 +549,17 @@ img {
   font-family: 'Julius Sans One', sans-serif;
 }
 .juliusFontLeft {
-  text-align: left;
+  text-align: center;
   font-family: 'Julius Sans One', sans-serif;
 }
 .centerButton {
   display: flex;
   justify-content: center;
+}
+
+.centerLoginToAddWishlist {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #6c809a;
+  text-decoration: none;
 }

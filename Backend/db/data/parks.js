@@ -29,7 +29,7 @@ export default [
   },
   {
     name: 'Serengetti National Park' ,
-    image: ['https://www.michaelbonocore.com/wp-content/uploads/2017/06/DSC09796-Edit-5.jpg',
+    image: ['https://awesomeplacestovisit.com/wp-content/uploads/2020/08/Africa-Tanzania-Serengeti-National-Park-1-1024x768-1.jpg',
       'https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/33/1471641800-hbz-jbf-tanzania-00-index.jpg',
       'https://www.porini.com/wp-content/uploads/2015/09/nairobi-national-park-gallery-image-9-1438798007.jpg',      
       'https://safariweb.com/wp-content/uploads/2020/09/serengeti-wildebeest-migration.jpg'
@@ -58,31 +58,56 @@ export default [
 
   },
   {
-    name: 'Maasai Mara' ,
-    image: ['https://4a422236596afd59d4f1-e53be9f6096b4f27f605917d7029c8ee.ssl.cf5.rackcdn.com/regions/mara-river/serengetin-marariver-1.jpg',
-      'https://www.discoverafrica.com/images/Cheetah_Masai_Mara_Kenya.jpg',
-      'https://www.shoortravel.com/image/masai-mara-kenya.jpg',
-      'https://www.fodors.com/assets/destinations/686230/masai-warriors-ceremony-masai-mara-national-park-masai-mara-kenya_main.jpg'
-  
+    name: 'Chréa National Park',
+    image: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
+      'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
+      'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
     ],
-    description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
-    latitude: -1.490000,
-    longitude: 35.143890,
-    region: 'Africa' ,
-    country: 'Kenya' ,
-    facts: [ 'Maasai Mara National Reserve is one of the largest game reserves in Kenya, widely considered to be Africa’s greatest wildlife reserve (also known as Masai Mara and by the locals as The Mara). ',
-      'Maasai Mara National Reserve stretches 1,510 square kilometers (580 square miles) and raises 1,500-2,170 meters (4920-7120 feet) above sea level.',
-      'The Mara Game Reserve is known all over the world for a wide range of wild animals such as the " big five " (lion, leopard, African elephant, cape buffalo, and black rhinoceros) and other popular species like zebra, giraffe, hyena, cheetah, wildebeest, eland and Thomson\'s gazelle.',
-      'It is named in honor of the Maasai people (the ancestral inhabitants of the area) and their description of the area when looked at from afar: "Mara" means "spotted" in the local Maasai language of Maa, due to the many trees which dot the landscape.',
-      'The Mara is home to the big five as well as the Big Nine African animals (lion, leopard, elephant, cape buffalo, and rhinoceros) along with more than 400 bird species identified in the park, many of which are migranting species and with almost 60 species being raptors.',
-      'Great Wildebeest migration has been selected as one of the seven natural wonders of the World and takes place every year between late July to end of September, though this timing can vary somewhat due to prevailing rainfall patterns.',
-      'There are currently estimated to be between 800 to 900 Lions ( including Lionesses) in the greater Masai Mara area, to include the conservancies surrounding the core reserve.',
-      'Arguably the single most iconic tribe in Africa, the Maasai are nomadic pastrolists who traditionally make a living out of herding cattle. Originally a Nilotic ethnic group which is said to have migrated centuries ago from the semi arid Nile valley north of Lake Turkana, the Maasai inhabit the region around Masai Mara as well as large portions of Great Rift Valley.'
-    
+    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
+    latitude: '36.4268',
+    longitude: '2.8765',
+    region: 'Africa',
+    country: 'Algeria',
+    facts: [
+      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
+      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
+      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://www.maasaimarakenyapark.com/'
+    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
+
+  },
+  {
+    name: 'Amboseli National Park' ,
+    image: ['https://www.primeugandasafaris.com/wp-content/uploads/amboseli-NP-582x393.jpg',
+      'https://i.pinimg.com/originals/99/fe/8c/99fe8ca6abb56a875a5caa3eec369fd2.jpg',
+      'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/139477_Kenya_Africa_Amboseli%20National%20Park_shutterstock_80475796.jpg',
+      'https://www.journeysdiscoveringafrica.com/wpblog/wp-content/uploads/2019/08/Elewana-2.jpg'
+    ] ,
+    description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
+    latitude: -2.6527,
+    longitude: 37.2606,
+    region: 'Africa' ,
+    country: 'Kenya' ,
+    facts: [ 'The word \'amboseli\' is derived from the Maasai language and it means \'salty dust.\'',
+      'Amboseli National Park is considered to be Africa\'s best spot for viewing free-range elephants.',
+      'The park is considered to be one of the most popular parks in Kenya due to its views of Mount Kilimanjaro and the huge elephant herds that live in its boundaries.',
+      'Amboseli National Park is made up of several distinct habitats. They include savannah, woodlands, wetlands, and the mostly dried up Lake Amboseli. 10,000 years ago the lake was a permanent lake at least 40 meters in depth. It is small and only seasonal today.',
+      'Visitors to Amboseli National Park can enjoy amazing views of the world\'s highest free-standing mountain - Mount Kilimanjaro, which is located in the distance.',
+      'Wildlife that can be seen in Amboseli National Park includes blue wildebeests, plains zebras, Maasai giraffes, elephants, Cape buffalos, Maasai lions, spotted hyenas, cheetahs, impalas, wild dogs, crocodiles, nocturnal porcupines, gazelles, rhinos, hippos, mongooses, hyraxes, dik-diks, lesser kudus, and many others',
+      'Amboseli National Park contains more than 600 bird species. Some of these species include cranes, at least 47 raptor species, water birds, pelicans, hammerkops, Madagascar pong herons, lesser flamingoes, shoebills, lesser kestrels, and kingfishers.',
+      'Temperatures in Amboseli National Park range from 20 to 30 degrees Celsius. Between March and April the region experiences longer rains and between November and December the region experiences shorter rains.',
+      'Amboseli National Park is located over a natural underground water system that filters water in the volcanic rock. This clean water is then fed into springs in the center of the park.',
+      'At times Amboseli National Park can experience drought, or too much water. In the 1990s the park almost became a swamp because of the rain that would not quit.',
+      'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
+      'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
   },
   {
     name: 'Virunga National Park ' ,
@@ -112,29 +137,7 @@ export default [
     recommendations: [],
     parkUrl: 'https://visit.virunga.org/'
   },
-  {
-    name: 'Chréa National Park',
-    image: [
-      'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
-      'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
-      'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
-    ],
-    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
-    latitude: '36.4268',
-    longitude: '2.8765',
-    region: 'Africa',
-    country: 'Algeria',
-    facts: [
-      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
-      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
-      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
-    ],
-    comments: [],
-    recommendations: [],
-    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
-
-  },
+  
   {
     name: 'Namaqua National Park',
     image: ['https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
@@ -189,7 +192,7 @@ export default [
   },
   {
     name: 'Kruger National Park' ,
-    image: ['https://e3.365dm.com/19/06/768x432/skynews-lions-lion_4688739.jpg?20190607134111',
+    image: ['https://1.bp.blogspot.com/-yyTZpeiGYqM/WrkMNiwHa6I/AAAAAAAAM6Y/Elp8UOLps144wjCz477OYI74y_zw4aLZwCLcBGAs/s1600/Giraffe.JPG',
       'https://www.tripsavvy.com/thmb/WpHoOwTDR4tMd9_ppf37LDqD3bQ=/1885x1414/smart/filters:no_upscale()/GettyImages-104329693-5a27e55e980207003656238e.jpg',
       'https://cdn.kimkim.com/files/a/content_articles/featured_photos/3e372c762146d6cce993606b7e3eb1b727a82b81/big-9d8ae682213f20283b345b12b553fcee.jpg',
       'https://oneworldtwofeetdotcom.files.wordpress.com/2016/07/africa.jpg?w=720&h=480'
@@ -237,55 +240,34 @@ export default [
     recommendations: [],
     parkUrl: 'https://www.ncaa.go.tz/'
   },
-
   {
-    name: 'Amboseli National Park' ,
-    image: ['https://theadventurousfeet.com/wp-content/uploads/2020/04/famous-landmarks-in-Africa-1.jpg',
-      'https://i.pinimg.com/originals/99/fe/8c/99fe8ca6abb56a875a5caa3eec369fd2.jpg',
-      'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/139477_Kenya_Africa_Amboseli%20National%20Park_shutterstock_80475796.jpg',
-      'https://www.journeysdiscoveringafrica.com/wpblog/wp-content/uploads/2019/08/Elewana-2.jpg'
-    ] ,
-    description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
-    latitude: -2.6527,
-    longitude: 37.2606,
+    name: 'Maasai Mara' ,
+    image: ['https://thumbs.dreamstime.com/b/cheetahs-masai-mara-national-reserve-kenya-three-cheetah-brothers-posing-savannah-36108085.jpg',
+      'https://www.discoverafrica.com/images/Cheetah_Masai_Mara_Kenya.jpg',
+      'https://www.shoortravel.com/image/masai-mara-kenya.jpg',
+      'https://www.fodors.com/assets/destinations/686230/masai-warriors-ceremony-masai-mara-national-park-masai-mara-kenya_main.jpg'
+  
+    ],
+    description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
+    latitude: -1.490000,
+    longitude: 35.143890,
     region: 'Africa' ,
     country: 'Kenya' ,
-    facts: [ 'The word \'amboseli\' is derived from the Maasai language and it means \'salty dust.\'',
-      'Amboseli National Park is considered to be Africa\'s best spot for viewing free-range elephants.',
-      'The park is considered to be one of the most popular parks in Kenya due to its views of Mount Kilimanjaro and the huge elephant herds that live in its boundaries.',
-      'Amboseli National Park is made up of several distinct habitats. They include savannah, woodlands, wetlands, and the mostly dried up Lake Amboseli. 10,000 years ago the lake was a permanent lake at least 40 meters in depth. It is small and only seasonal today.',
-      'Visitors to Amboseli National Park can enjoy amazing views of the world\'s highest free-standing mountain - Mount Kilimanjaro, which is located in the distance.',
-      'Wildlife that can be seen in Amboseli National Park includes blue wildebeests, plains zebras, Maasai giraffes, elephants, Cape buffalos, Maasai lions, spotted hyenas, cheetahs, impalas, wild dogs, crocodiles, nocturnal porcupines, gazelles, rhinos, hippos, mongooses, hyraxes, dik-diks, lesser kudus, and many others',
-      'Amboseli National Park contains more than 600 bird species. Some of these species include cranes, at least 47 raptor species, water birds, pelicans, hammerkops, Madagascar pong herons, lesser flamingoes, shoebills, lesser kestrels, and kingfishers.',
-      'Temperatures in Amboseli National Park range from 20 to 30 degrees Celsius. Between March and April the region experiences longer rains and between November and December the region experiences shorter rains.',
-      'Amboseli National Park is located over a natural underground water system that filters water in the volcanic rock. This clean water is then fed into springs in the center of the park.',
-      'At times Amboseli National Park can experience drought, or too much water. In the 1990s the park almost became a swamp because of the rain that would not quit.',
-      'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
-      'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
+    facts: [ 'Maasai Mara National Reserve is one of the largest game reserves in Kenya, widely considered to be Africa’s greatest wildlife reserve (also known as Masai Mara and by the locals as The Mara). ',
+      'Maasai Mara National Reserve stretches 1,510 square kilometers (580 square miles) and raises 1,500-2,170 meters (4920-7120 feet) above sea level.',
+      'The Mara Game Reserve is known all over the world for a wide range of wild animals such as the " big five " (lion, leopard, African elephant, cape buffalo, and black rhinoceros) and other popular species like zebra, giraffe, hyena, cheetah, wildebeest, eland and Thomson\'s gazelle.',
+      'It is named in honor of the Maasai people (the ancestral inhabitants of the area) and their description of the area when looked at from afar: "Mara" means "spotted" in the local Maasai language of Maa, due to the many trees which dot the landscape.',
+      'The Mara is home to the big five as well as the Big Nine African animals (lion, leopard, elephant, cape buffalo, and rhinoceros) along with more than 400 bird species identified in the park, many of which are migranting species and with almost 60 species being raptors.',
+      'Great Wildebeest migration has been selected as one of the seven natural wonders of the World and takes place every year between late July to end of September, though this timing can vary somewhat due to prevailing rainfall patterns.',
+      'There are currently estimated to be between 800 to 900 Lions ( including Lionesses) in the greater Masai Mara area, to include the conservancies surrounding the core reserve.',
+      'Arguably the single most iconic tribe in Africa, the Maasai are nomadic pastrolists who traditionally make a living out of herding cattle. Originally a Nilotic ethnic group which is said to have migrated centuries ago from the semi arid Nile valley north of Lake Turkana, the Maasai inhabit the region around Masai Mara as well as large portions of Great Rift Valley.'
+    
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
+    parkUrl: 'https://www.maasaimarakenyapark.com/'
   },
 
-  {
-    name: 'Komodo Island ',
-    image: [
-      'https://static.toiimg.com/thumb/71399979.cms?resizemode=75&width=1200&height=900',
-      'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
-      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',      
-      'https://youimg1.tripcdn.com/target/100h1f000001grv6jDFD5_C_750_500.jpg?proc=source%2Ftrip'],
-    description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
-    latitude: -8.543333,
-    longitude: 119.489441,
-    region: 'Asia',
-    country: 'Indonesia',
-    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
-      'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
-    comments: [],
-    recommendations: [],
-    parkUrl: 'https://www.komodonationalpark.org/'
-  },
   {
     name: 'Ranthambore',
     image: ['https://royalindiaexperience.com/wp-content/uploads/2020/08/ranthambore.jpg',  'https://drwyjmricaxm7.cloudfront.net/repository/1553141177-2228-8e_crop_flip_800_450_f2f2f2_center-center.jpg', 'https://www.ancient-origins.net/sites/default/files/field/image/Ranthambore-Fort.jpg', 'https://www.ampersandtravel.com/media/842665/ranthambore-rajasthan-north-india-12.jpg?mode=crop&quality=95&width=820&height=534'],
@@ -403,6 +385,24 @@ export default [
     recommendations: [],
     parkUrl: 'https://www.danumvalley.info/'
 
+  },
+  {
+    name: 'Komodo Island ',
+    image: [
+      'https://static.toiimg.com/thumb/71399979.cms?resizemode=75&width=1200&height=900',
+      'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
+      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',      
+      'https://youimg1.tripcdn.com/target/100h1f000001grv6jDFD5_C_750_500.jpg?proc=source%2Ftrip'],
+    description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
+    latitude: -8.543333,
+    longitude: 119.489441,
+    region: 'Asia',
+    country: 'Indonesia',
+    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
+      'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.komodonationalpark.org/'
   },
 
   {
@@ -724,25 +724,21 @@ export default [
     parkUrl: 'https://www.visitcostarica.com/en/costa-rica/where-to-go/protected-areas/piedras-blancas-national-park'
   },
   {
-    name: 'Tatra National Park',
-    image: ['https://www.telegraph.co.uk/content/dam/travel/Spark/untapped-destinations/Vodafone-Slovakia-main-xlarge.jpg',
-      'https://wallpapercave.com/wp/wp2584509.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/6/63/Lynx_lynx2.jpg',
-      'https://i.pinimg.com/originals/3d/c0/8f/3dc08f1e19cb43b007a0466c7f0f54b1.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/8/89/Tatra_Chamois.jpg'],
-    description: 'On the borders of Southern-Central Poland and Northern-Central Slovakia, is a beautiful park that boasts a mountain range, well over 300 caves and a variety of flora and fauna. The idyllic Tatra is perfect for trekkers, with its 600 kilometres (373 miles) of hiking trails and plenty of tranquil lakes to take in the scenery.',
-    latitude: 49.180278,
-    longitude: 19.919444,
+    name: 'Triglav National Park',
+    image: ['https://finestayslovenia.com/wp-content/uploads/2019/01/vintgar-gorge.jpg',
+      'https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/icb9e71698cafac67/version/1456317555/best-national-parks-in-europe-wild-taiga-copyright-arcalu-european-best-destinations.jpg',
+      'https://www.sloveniaholidays.com/img/Image/triglav-national-park.jpg',
+      'https://www.altitude-activities.com/wp-content/uploads/2019/02/Peri%C4%8Dnik-Waterfall.jpg'],
+    description: 'Named after the country\'s highest peak, Triglav National Park is a joy to behold. It is also Slovenia\'s only national park and it boasts the largest glacial lake in the country. The park encompasses the majority of the eastern part of the Julian Alps.',
+    latitude: 46.333333,
+    longitude: 13.766667,
     region: 'Europe',
-    country: 'Slovakia',
-    facts: ['There are more than 270 kilometres of hiking trails in Tatra National Park.',
-      'The National Park contains several endemic fauna species, and many endangered and protected ones. Animals include the Tatra chamois and marmot, both protected since the mid-19th century; brown bear, Eurasian lynx, grey wolf, European otter, lesser spotted eagle, and falcon.',
-      'The largest lakes is Morskie Oko with an area of 349,000 m² and the maximum depth of 50.8 metres, Wielki Staw with an area of 344,000 m² and the maximum depth of 79.3 metres.',
-      'The Tatra Mountains form a natural border between Poland to the north and Slovakia to the south, and the two countries have cooperated since the early 20th century on efforts to protect the area.',
-      'The chamois is the symbol of Tatras.'],
+    country: 'Slovenia',
+    facts: ['Triglav National Park covers a full four percent of Slovenia\'s territory.', 
+      'The majority of Slovenia\'s more than 400 two-thousand metre peaks lie within the boundaries of Triglav National Park.'],
     comments: [],
     recommendations: [],
-    parkUrl: 'http://tanap.sopsr.sk/'
+    parkUrl: 'https://www.mljettravel.com/national-park/'
   },
   {
     name: 'Gran Paradiso National Park',
@@ -765,26 +761,28 @@ export default [
     parkUrl: 'http://www.pngp.it/en/national-park'
   },
   {
-    name: 'Mount Olympus National Park',
-    image: ['https://i.natgeofe.com/n/90ddbd94-9f33-40d3-a953-afb049818ba9/30924.jpg',
-      'https://www.outdoorjournal.com/wp-content/uploads/Wooden-Bridge-Crossing-Enipeas-Gilbert-Kuhnert-.jpg',
-      'https://i.pinimg.com/originals/16/96/37/1696378170a7cf570ce7dfd12927bc8d.jpg',
-      'https://www.greece-is.com/wp-content/uploads/2017/09/shutter_olympus_bridge.jpg'],
-    description: 'Home to Greece\'s highest mountain, Olympus National Park is famous in Greek mythology for being the dwelling of the 12 Olympian gods. There are a ton of symbolic sites because of this, but also rocky peaks, deep gorges, lush forests and more. And whatever your skill level, it\'s a wonderful spot for hikes.',
-    latitude: 40.090549,
-    longitude: 22.361469,
+    name: 'Valbonë Valley National Park',
+    image: ['https://i.pinimg.com/originals/9c/20/18/9c201820b57ab859fd697dd30c668b69.jpg',
+      'http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/111832/SITours/explore-the-north-in-tirana-755424.jpg',
+      'https://invest-in-albania.org/wp-content/uploads/valbona1.jpg',
+      'https://cdn-assets.alltrails.com/uploads/photo/image/19314543/large_8a744cad7a273b280e0d93ee30f15440.jpg'],
+    description: 'The Valbonë Valley National Park is a national park inside the Albanian Alps in northern Albania. It is characterised by its very remote areas which have a large preserved ecosystem all of which is primarily untouched with pristine quality. This vast pristine ecosystem is the centrepiece of what has been referred to as the Albanian Miracle of the Alps.',
+    latitude: 42.453333,
+    longitude: 19.887778,
     region: 'Europe',
-    country: 'Greece',
-    facts: ['Greece\'s highest mountain, Olympus is also the legendary abode of the gods. The favor of the deities gave the mountain an honored place in Classical Greek culture and that mythical status has been passed down through the centuries, across Western civilization.', 
-      'The mountain\'s highest peak, Mytikas, tops out at 9,573 feet (2,918 meters). The ancients called Mytikas “Pantheon” and believed it was the meeting place of the deities. The 12 gods were believed to have lived in the alpine ravines, which Homer described as the mountain\'s “mysterious folds.”',
-      'More than 1,700 plants are found on Mount Olympus—representing 25 percent of all Greek flora. Diversity is high here because of the mountain\'s different elevation zones and its proximity to the sea.'],
+    country: 'Albania',
+    facts: [
+      'It is the largest river within the Albanian Alps and drains the entire eastern portion of the range.',
+      'Over the past few million years, glaciers have at times covered most of the park. During the Würm period, the glacier of Valbona reached a total length of 9.5 kilometres.',
+      'Most of the park consists of forest, covering 89% of the overall surface area.'
+    ],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://olympusfd.gr/en/'
+    parkUrl: 'https://thethi-guide.com/destinations/valbona-valley/'
   },
   {
     name: 'Lake Skadar National Park',
-    image: ['https://lp-cms-production.imgix.net/2019-06/154772332_full.jpg?auto=format&fit=crop&ixlib=react-8.6.4&h=520&w=1312',
+    image: ['https://img.ev.mu/images/attractions/4324/960x640/587.jpg',
       'https://d8ys5mrbqhmjx.cloudfront.net/montenegro/blog/lake-skadar-national-park/large/lake-skadar-national-park-84735.jpg',
       'https://cms.lonelyplanet.com/sites/default/files/brightcove/videos/images/posters/5104226627001_6010765362001_6010740786001-vs.jpg',
       'http://oceanpinktravel.com/wp-content/uploads/2015/12/skadarsko-jezero_10.jpg'],
@@ -800,23 +798,6 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://lake-skadar.com/'
-  },
-  {
-    name: 'Triglav National Park',
-    image: ['https://finestayslovenia.com/wp-content/uploads/2019/01/vintgar-gorge.jpg',
-      'https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/icb9e71698cafac67/version/1456317555/best-national-parks-in-europe-wild-taiga-copyright-arcalu-european-best-destinations.jpg',
-      'https://www.sloveniaholidays.com/img/Image/triglav-national-park.jpg',
-      'https://www.altitude-activities.com/wp-content/uploads/2019/02/Peri%C4%8Dnik-Waterfall.jpg'],
-    description: 'Named after the country\'s highest peak, Triglav National Park is a joy to behold. It is also Slovenia\'s only national park and it boasts the largest glacial lake in the country. The park encompasses the majority of the eastern part of the Julian Alps.',
-    latitude: 46.333333,
-    longitude: 13.766667,
-    region: 'Europe',
-    country: 'Slovenia',
-    facts: ['Triglav National Park covers a full four percent of Slovenia\'s territory.', 
-      'The majority of Slovenia\'s more than 400 two-thousand metre peaks lie within the boundaries of Triglav National Park.'],
-    comments: [],
-    recommendations: [],
-    parkUrl: 'https://www.mljettravel.com/national-park/'
   },
   {
     name: 'Hot Springs National Park',
@@ -1020,24 +1001,25 @@ export default [
     parkUrl: 'https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sydney-harbour-national-park'
   },
   {
-    name: 'The Black Forest National Park',
-    image: ['https://img.theculturetrip.com/450x/smart/wp-content/uploads/2018/03/2025020.jpg',
-      'https://i.pinimg.com/originals/2d/fd/87/2dfd87b5f9ae2f3470da81aeb4fad4c1.jpg',
-      'https://niche-destinations.com/wp-content/uploads/2019/07/Black-Forest-national-park-Germany-A-world-waiting-to-be-discovered-3.jpg',
-      'https://img.theculturetrip.com/450x/smart/wp-content/uploads/2018/03/2025022.jpg'],
-    description: 'The Black Forest National Park is the country\'s largest national park. It gets its namefrom the general dark colour of the numerous pine trees that grow in this region. The Romans were the first to use the name “Black Forest.” The Roman soldiers were walking through Germany and their path was blocked by a dark, dense forest. They called it “Silva Nigra”, which means “Black Forest” in their Latin language.',
-    latitude: 48.561111,
-    longitude: 8.221389,
+    name: 'The Lake District National Park',
+    image: ['https://lp-cms-production.imgix.net/news/2016/08/Lake-District-Graham-Norton-RF.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850',
+      'https://www.nationalparks.uk/app/uploads/2020/10/LakeDistrict-HJohnson-LDNP-2018-59-Langdales-LR-1920x1080.jpg',
+      'https://www.thebmc.co.uk/Handlers/ArticleImageHandler.ashx?id=8655&index=0&w=605&h=434',
+      'https://www.lakedistrict.gov.uk/__data/assets/image/0032/154697/lake-district-wildlife-park-Red-Panda.jpg'],
+    description: 'The area was designated a national park on 9 May 1951 (less than a month after the first UK national park designation — the Peak District). It is the most visited national park in the United Kingdom with 16.4 million visitors per year and more than 24 million visitor-days per year, the largest of the thirteen national parks in England and Wales, and the second largest in the UK after the Cairngorms National Park.',
+    latitude: 54.45,
+    longitude: -3.1,
     region: 'Europe',
-    country: 'Germany',
+    country: 'England',
     facts: [
-      'Blessed with a wonderfully mild climate and numerous hot springs, Baden-Baden has for centuries been one of the world’s most popular spa destinations.',
-      'Wood-carving is a traditional cottage industry in the region and carved ornaments now are produced in substantial numbers as souvenirs for tourists. Cuckoo clocks are a popular example; they have been made in the region since the mid-18th century and much of their development occurred there.',
-      'The rare breed of Black Forest Horses and Hinter Wald cattle originate from there.'
+      'England\'s deepest lake is in The Lake District. Although there are 8 bigger lakes in the Lake District in terms of square kilometres, Wastwater is the deepest lake in England with a staggering depth of 243 feet.',
+      'Although there are 16 listed names of bodies of water in the Lake District, only one could be technically classed as a lake. Bassenthwaite Lake, situated in the north of the region near Keswick, is the only one that is actually a lake.',
+      'There are four Michelin-starred restaurants in The Lake District',
+      'The graphite mine at Seathwaite, first discovered in the 1550s, provided the natural resource required to make the very first pencil and the history of this humble item of stationery is charted at the Pencil Museum in Keswick.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://www.nationalpark-schwarzwald.de/en'
+    parkUrl: 'https://www.lakedistrict.gov.uk/'
   },
   {
     name: 'Oulanka National Park',
@@ -1062,7 +1044,7 @@ export default [
   },
   {
     name: 'Jostedalsbreen National Park',
-    image: ['https://www.hollandamerica.com/content/dam/hal/inventory-assets/excursions/europe/jostedal-glacier-national-park-121218-93512-c037.jpg.image.750.563.low.jpg',
+    image: ['https://www.lifeinnorway.net/wp-content/uploads/2018/08/briksdal-glacier-arm.jpg',
       'https://cdn.theculturetrip.com/wp-content/uploads/2018/09/-frank-optun-smedegard.jpg',
       'https://images0.westend61.de/0001311292pw/aerial-panoramic-by-drone-of-waterfall-above-briksdalsbreen-glacier-loen-jostedalsbreen-national-park-sogn-og-fjordane-norway-scandinavia-europe-RHPLF13583.jpg',
       'https://norwaytravelguide.imgix.net/194598/x/0/5-most-beautiful-glaciers-in-norway-4?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883&s=b736c7caa569490fe7a83feb42fefc58'],
@@ -1081,45 +1063,63 @@ export default [
     parkUrl: 'https://www.jostedalsbreen.org/english'
   },
   {
-    name: 'The Lake District National Park',
-    image: ['https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F11a5c314-0300-11ea-95be-9565f1401aa3.jpg?crop=2667%2C1500%2C0%2C0&resize=1180',
-      'https://www.nationalparks.uk/app/uploads/2020/10/LakeDistrict-HJohnson-LDNP-2018-59-Langdales-LR-1920x1080.jpg',
-      'https://www.thebmc.co.uk/Handlers/ArticleImageHandler.ashx?id=8655&index=0&w=605&h=434',
-      'https://www.lakedistrict.gov.uk/__data/assets/image/0032/154697/lake-district-wildlife-park-Red-Panda.jpg'],
-    description: 'The area was designated a national park on 9 May 1951 (less than a month after the first UK national park designation — the Peak District). It is the most visited national park in the United Kingdom with 16.4 million visitors per year and more than 24 million visitor-days per year, the largest of the thirteen national parks in England and Wales, and the second largest in the UK after the Cairngorms National Park.',
-    latitude: 54.45,
-    longitude: -3.1,
+    name: 'The Black Forest National Park',
+    image: ['https://cdn.theculturetrip.com/wp-content/uploads/2017/10/germany-2494819_1280-1024x768.jpg',
+      'https://i.pinimg.com/originals/2d/fd/87/2dfd87b5f9ae2f3470da81aeb4fad4c1.jpg',
+      'https://niche-destinations.com/wp-content/uploads/2019/07/Black-Forest-national-park-Germany-A-world-waiting-to-be-discovered-3.jpg',
+      'https://img.theculturetrip.com/450x/smart/wp-content/uploads/2018/03/2025022.jpg'],
+    description: 'The Black Forest National Park is the country\'s largest national park. It gets its namefrom the general dark colour of the numerous pine trees that grow in this region. The Romans were the first to use the name “Black Forest.” The Roman soldiers were walking through Germany and their path was blocked by a dark, dense forest. They called it “Silva Nigra”, which means “Black Forest” in their Latin language.',
+    latitude: 48.561111,
+    longitude: 8.221389,
     region: 'Europe',
-    country: 'England',
+    country: 'Germany',
     facts: [
-      'England\'s deepest lake is in The Lake District. Although there are 8 bigger lakes in the Lake District in terms of square kilometres, Wastwater is the deepest lake in England with a staggering depth of 243 feet.',
-      'Although there are 16 listed names of bodies of water in the Lake District, only one could be technically classed as a lake. Bassenthwaite Lake, situated in the north of the region near Keswick, is the only one that is actually a lake.',
-      'There are four Michelin-starred restaurants in The Lake District',
-      'The graphite mine at Seathwaite, first discovered in the 1550s, provided the natural resource required to make the very first pencil and the history of this humble item of stationery is charted at the Pencil Museum in Keswick.'
+      'Blessed with a wonderfully mild climate and numerous hot springs, Baden-Baden has for centuries been one of the world’s most popular spa destinations.',
+      'Wood-carving is a traditional cottage industry in the region and carved ornaments now are produced in substantial numbers as souvenirs for tourists. Cuckoo clocks are a popular example; they have been made in the region since the mid-18th century and much of their development occurred there.',
+      'The rare breed of Black Forest Horses and Hinter Wald cattle originate from there.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://www.lakedistrict.gov.uk/'
+    parkUrl: 'https://www.nationalpark-schwarzwald.de/en'
   },
   {
-    name: 'Valbonë Valley National Park',
-    image: ['https://i.pinimg.com/originals/9c/20/18/9c201820b57ab859fd697dd30c668b69.jpg',
-      'http://cache-graphicslib.viator.com/graphicslib/thumbs674x446/111832/SITours/explore-the-north-in-tirana-755424.jpg',
-      'https://invest-in-albania.org/wp-content/uploads/valbona1.jpg',
-      'https://cdn-assets.alltrails.com/uploads/photo/image/19314543/large_8a744cad7a273b280e0d93ee30f15440.jpg'],
-    description: 'The Valbonë Valley National Park is a national park inside the Albanian Alps in northern Albania. It is characterised by its very remote areas which have a large preserved ecosystem all of which is primarily untouched with pristine quality. This vast pristine ecosystem is the centrepiece of what has been referred to as the Albanian Miracle of the Alps.',
-    latitude: 42.453333,
-    longitude: 19.887778,
+    name: 'Mount Olympus National Park',
+    image: ['https://searchsaltlake.com/wp-content/uploads/2016/01/olympus-cove-1.jpg',
+      'https://www.outdoorjournal.com/wp-content/uploads/Wooden-Bridge-Crossing-Enipeas-Gilbert-Kuhnert-.jpg',
+      'https://i.pinimg.com/originals/16/96/37/1696378170a7cf570ce7dfd12927bc8d.jpg',
+      'https://www.greece-is.com/wp-content/uploads/2017/09/shutter_olympus_bridge.jpg'],
+    description: 'Home to Greece\'s highest mountain, Olympus National Park is famous in Greek mythology for being the dwelling of the 12 Olympian gods. There are a ton of symbolic sites because of this, but also rocky peaks, deep gorges, lush forests and more. And whatever your skill level, it\'s a wonderful spot for hikes.',
+    latitude: 40.090549,
+    longitude: 22.361469,
     region: 'Europe',
-    country: 'Albania',
-    facts: [
-      'It is the largest river within the Albanian Alps and drains the entire eastern portion of the range.',
-      'Over the past few million years, glaciers have at times covered most of the park. During the Würm period, the glacier of Valbona reached a total length of 9.5 kilometres.',
-      'Most of the park consists of forest, covering 89% of the overall surface area.'
-    ],
+    country: 'Greece',
+    facts: ['Greece\'s highest mountain, Olympus is also the legendary abode of the gods. The favor of the deities gave the mountain an honored place in Classical Greek culture and that mythical status has been passed down through the centuries, across Western civilization.', 
+      'The mountain\'s highest peak, Mytikas, tops out at 9,573 feet (2,918 meters). The ancients called Mytikas “Pantheon” and believed it was the meeting place of the deities. The 12 gods were believed to have lived in the alpine ravines, which Homer described as the mountain\'s “mysterious folds.”',
+      'More than 1,700 plants are found on Mount Olympus—representing 25 percent of all Greek flora. Diversity is high here because of the mountain\'s different elevation zones and its proximity to the sea.'],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://thethi-guide.com/destinations/valbona-valley/'
+    parkUrl: 'https://olympusfd.gr/en/'
+  },
+  {
+    name: 'Tatra National Park',
+    image: ['https://www.telegraph.co.uk/content/dam/travel/Spark/untapped-destinations/Vodafone-Slovakia-main-xlarge.jpg',
+      'https://wallpapercave.com/wp/wp2584509.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/63/Lynx_lynx2.jpg',
+      'https://i.pinimg.com/originals/3d/c0/8f/3dc08f1e19cb43b007a0466c7f0f54b1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/89/Tatra_Chamois.jpg'],
+    description: 'On the borders of Southern-Central Poland and Northern-Central Slovakia, is a beautiful park that boasts a mountain range, well over 300 caves and a variety of flora and fauna. The idyllic Tatra is perfect for trekkers, with its 600 kilometres (373 miles) of hiking trails and plenty of tranquil lakes to take in the scenery.',
+    latitude: 49.180278,
+    longitude: 19.919444,
+    region: 'Europe',
+    country: 'Slovakia',
+    facts: ['There are more than 270 kilometres of hiking trails in Tatra National Park.',
+      'The National Park contains several endemic fauna species, and many endangered and protected ones. Animals include the Tatra chamois and marmot, both protected since the mid-19th century; brown bear, Eurasian lynx, grey wolf, European otter, lesser spotted eagle, and falcon.',
+      'The largest lakes is Morskie Oko with an area of 349,000 m² and the maximum depth of 50.8 metres, Wielki Staw with an area of 344,000 m² and the maximum depth of 79.3 metres.',
+      'The Tatra Mountains form a natural border between Poland to the north and Slovakia to the south, and the two countries have cooperated since the early 20th century on efforts to protect the area.',
+      'The chamois is the symbol of Tatras.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://tanap.sopsr.sk/'
   },
   {
     name: 'Chapada Diamantina National Park',

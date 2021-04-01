@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
-import ReactMapGL from 'react-map-gl'
+import ReactMapGL, { Marker } from 'react-map-gl'
+// import ReactMapboxGl from 'react-mapbox-gl'
+// import DrawControl from 'react-mapbox-gl-draw'
+// import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'
+
 
 const ParkMap = ({ longitude , latitude, name }) => {
-
 
 
   const [viewport, setViewport] = useState({
@@ -10,11 +13,21 @@ const ParkMap = ({ longitude , latitude, name }) => {
     longitude: longitude,
     zoom: 10
   })
+  console.log(latitude, longitude)
+
+  const permaLat = latitude
+  const permaLong = longitude
+  console.log(viewport.zoom)
 
 
-
-
-
+  // function App() {
+  //   const onDrawCreate = ({ features }) => {
+  //     console.log(features);
+  //   }
+  
+  //   const onDrawUpdate = ({ features }) => {
+  //     console.log(features);
+  //   }
 
 
 
@@ -32,11 +45,17 @@ const ParkMap = ({ longitude , latitude, name }) => {
           {...viewport}
           onViewportChange={(viewport) => setViewport(viewport)}
         >
+          {viewport.zoom < 7 &&
+          <Marker key={location.id} longitude={permaLong} latitude={permaLat}>
+            📍{name}
+          </Marker>
+          }
         </ReactMapGL>
         :
         <h1>Loading your location...</h1>
       }
     </div>
+    
   )
 }
 
