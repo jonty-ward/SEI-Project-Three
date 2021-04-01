@@ -56,7 +56,7 @@ const Home = () => {
         <div className="hero-body">
           <div className="container">
             <h1 className="home">This is the homepage - TITLE TBC</h1>
-            <div className="scroll-down">
+            <div className="animate__animated animate__shakeY scroll-down">
               <a className="down-link" href="#donations"><i aria-hidden="true" className="angle double down link huge icon" ></i></a>
             </div>
           </div>

@@ -58,7 +58,10 @@ h2.home {
 .scroll-down {
   color: white;
   padding-left: 50vw;
-  padding-top: 40vh
+  padding-top: 40vh;
+  animation: animate__shakeY;
+  animation-duration: 1s;
+  
 }
 
 .down-link {
