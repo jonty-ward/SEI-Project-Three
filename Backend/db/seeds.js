@@ -32,14 +32,14 @@ const seedDatabaase = async () => {
     // * Add comments to parks
     const parksWithComments = parkData.map(park => {
       park.comments = comments[Math.floor(Math.random() * comments.length)]
-      park.comments.owner = users[0]._id
+      park.comments.owner = users[Math.floor(Math.random() * users.length)]._id
       return park
     })
 
     // * Add recommendations to parks
     const parksWithRecommendations = parkData.map(park => {
       park.recommendations = recommendations[Math.floor(Math.random() * recommendations.length)]
-      park.recommendations.owner = users[0]._id
+      park.recommendations.owner = users[Math.floor(Math.random() * users.length)]._id
       return park
     })
 
