@@ -6,7 +6,8 @@ export default [
     passwordConfirmation: 'pass',
     fullName: 'Michael Edwards',
     profilePic: 'test',
-    wishList: 'test'
+    wishList: 'test',
+    _id: '6064ca989bc86161e7e63e20'
   },
   {
     username: 'jonty',
