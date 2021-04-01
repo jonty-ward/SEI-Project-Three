@@ -492,8 +492,11 @@ a.delete:hover{
 .navbar-menu{
   margin-bottom: 0px !important;
   border-radius: 0px !important;
-  background-color: rgb(152, 172, 143) !important;
-  
+  // background-color: rgb(152, 172, 143) !important;
+  // background: #076585;  /* fallback for old browsers */
+  background-color: #6c809a !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 // footer
@@ -507,15 +510,23 @@ a.delete:hover{
   // position: fixed;
   // bottom: 0;
   font-family: 'Julius Sans One', sans-serif;
+  color: #6c809a;
   a {
     text-decoration: none;
-    color: black;
+    color: #6c809a
   }
   a:hover {
     color:inherit;
   }
 }
 
+.ui.reply.form {
+  padding-left: 30px;
+}
+
+.ui.dividing.header {
+  font-family: 'Julius Sans One', sans-serif;
+}
 img {
   object-fit: cover;
 }
@@ -530,10 +541,17 @@ img {
   font-family: 'Julius Sans One', sans-serif;
 }
 .juliusFontLeft {
-  text-align: left;
+  text-align: center;
   font-family: 'Julius Sans One', sans-serif;
 }
 .centerButton {
   display: flex;
   justify-content: center;
+}
+
+.centerLoginToAddWishlist {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #6c809a;
+  text-decoration: none;
 }

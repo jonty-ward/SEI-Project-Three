@@ -18,7 +18,7 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner, c
           <a className="ui avatar circular image">
             <img src={owner.profilePic} />
           </a>
-          <a className="author">{owner.username}</a>
+          <p className="author">{owner.username}</p>
         </div>
         <div className="metadata">
           <span className="date">Added on {formattedTime}</span>

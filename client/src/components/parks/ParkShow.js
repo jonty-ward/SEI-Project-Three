@@ -56,16 +56,20 @@ const ParkShow = ( { userData } ) => {
         <img src={image[0]} alt={name} width="100%"/>
       </div>
       <br/>
-      {userIsAuthenticated 
-        ?
+      {userIsAuthenticated &&
         <div className='centerButton'>
           <ParkWishlist 
             userData = {userData}
             park = {park}
           />
         </div>
-        :
-        <p>Login to save</p>
+      }
+      { !userIsAuthenticated() && 
+        <div className="centerLoginToAddWishlist">
+          <Link to={'/login'}>
+            <h4 className="margin-container">Log in to save to your wishlist!</h4>
+          </Link> 
+        </div>
       }
       <div className="ui raised very padded text segment margin-container">
         <h2 className="ui header">{name}</h2>
@@ -144,7 +148,7 @@ const ParkShow = ( { userData } ) => {
         { userIsAuthenticated() && 
         <div className="centerButton">
           <Link to={`/addRecommendation/${params.id}`}>
-            <button className="ui basic icon left labeled button"><i aria-hidden="true" className="add icon"></i>
+            <button className="ui blue basic icon left labeled button"><i aria-hidden="true" className="add icon"></i>
             Add a recommendation
             </button>
           </Link>
@@ -159,7 +163,7 @@ const ParkShow = ( { userData } ) => {
       <br/>
       <br/>
     
-      <div className="ui segment">
+      <div className="ui segment padded raised margin-container">
         <div className="ui large comments">
           <h1 className="ui dividing header">Comments</h1>
           { comments.map(comment => (
