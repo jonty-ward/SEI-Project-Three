@@ -144,7 +144,7 @@ const ParkShow = ( { userData } ) => {
         { userIsAuthenticated() && 
         <div className="centerButton">
           <Link to={`/addRecommendation/${params.id}`}>
-            <button className="ui primary button">
+            <button className="ui basic icon left labeled button"><i aria-hidden="true" className="add icon"></i>
             Add a recommendation
             </button>
           </Link>

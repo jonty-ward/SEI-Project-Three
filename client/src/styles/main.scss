@@ -357,6 +357,15 @@ h2.user-info-title, h3.user-info-title {
   margin-bottom: 40px;
 }
 
+.reccAddAvatar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+  .author {
+    margin-left: 5px;
+  }
+  
+}
 
 .home-background{
   background-image: url("https://media.tacdn.com/media/attractions-content--1x-1/0b/17/2e/77.jpg") ;
