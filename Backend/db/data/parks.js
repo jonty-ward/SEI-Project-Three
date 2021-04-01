@@ -270,9 +270,10 @@ export default [
 
   {
     name: 'Komodo Island ',
-    image: ['http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
-      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',
+    image: [
       'https://static.toiimg.com/thumb/71399979.cms?resizemode=75&width=1200&height=900',
+      'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
+      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',      
       'https://youimg1.tripcdn.com/target/100h1f000001grv6jDFD5_C_750_500.jpg?proc=source%2Ftrip'],
     description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
     latitude: -8.543333,
