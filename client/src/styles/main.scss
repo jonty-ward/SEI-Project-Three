@@ -1,6 +1,16 @@
 // @import '~bulma/bulma.sass';
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 // @import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+#root{
+  // background: #348F50;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Julius Sans One', sans-serif ;
+
+}
+
 
 
 body {
@@ -10,6 +20,10 @@ body {
   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.wholePage-login{
+  height: 100vh !important;
 }
 
 a {
@@ -153,7 +167,7 @@ overflow-x: auto;
 .weather-day{
   margin: 5px;
   margin-left: 10px;
-  min-width: 33vw;
+  min-width: 40vw;
   padding: 10px;
 }
 
@@ -376,16 +390,23 @@ h2.user-info-title, h3.user-info-title {
 // object-fit: contain;
 // }
 // styling for the register form
-.register-component{
-  padding: 15px;
+  // padding: 15px;
 //  border: 1px solid grey ;
-}
+// }
   div.container.registerFrom {
     min-height: 70vh;
 }
 .container.registerFrom {
   height: 60vh !important;
   width: 45vw !important;
+  margin-top: 10vh !important;
+}
+  div.container.editComment {
+    min-height: 40vh;
+}
+.container.editComment {
+  height: 20vh !important;
+  width: 35vw !important;
   margin-top: 10vh !important;
 }
 
@@ -400,10 +421,19 @@ h2.user-info-title, h3.user-info-title {
 .register-form-header{
   text-align: center;
   margin-bottom: -5vh;
-  margin-top: 7vh;
+  margin-top: 7vh !important;
 }
 
 .header-recc{
+  text-align: center;
+  
+}
+
+
+
+.header-comment{
+  margin-top: 5vh ;
+  // margin-right: -15vw;
   text-align: center;
 }
 .header-recc-top{
@@ -482,4 +512,22 @@ a.delete:hover{
 
 img {
   object-fit: cover;
+}
+.juliusFontCenter {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+}
+.juliusFontCenterBig {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.juliusFontLeft {
+  text-align: left;
+  font-family: 'Julius Sans One', sans-serif;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
 }

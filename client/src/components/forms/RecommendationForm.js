@@ -23,6 +23,8 @@ const recommendationForm = ({ handleChange, handleImageUrl, handleSubmit, formDa
   
   return (
     <>
+
+      <div className="ui star rating" data-rating="3"></div>
       <div className="ui container raised  segment registerFrom">
         <form onSubmit={handleSubmit} className="ui form">
           <h2 className="label">{parkData.name}</h2>

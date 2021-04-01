@@ -43,7 +43,7 @@ const Register = () => {
       const response = await axios.post('/api/register', formData)
       window.localStorage.setItem('token', response.data.token)
       setTimeout(() => {
-        history.push('/')
+        history.push('/login')
       }, 3000)
       
     } catch (err) {
@@ -62,10 +62,8 @@ const Register = () => {
     <>
 
       <h1 className="register-form-header">Register for an Account</h1>
-      
       <div className="ui container raised  segment registerFrom">
         <div className="register-component">
-        
           <form onSubmit={handleSubmit} className="ui form">
             <div className="field">
               <label>Full Name</label>
@@ -82,6 +80,7 @@ const Register = () => {
               <label>Email</label>
               <input
                 className={`input ${errors.email ? 'is-danger' : ''}`}
+                type="email"
                 placeholder="email@example.com"
                 name="email"
                 value={formData.email}
