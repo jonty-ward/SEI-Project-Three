@@ -19,6 +19,7 @@ const parkWishlist = ({  park, userData }) => {
   //   getData()
   // }, [])
 
+  // const [confirmMessage, setConfirmMessage] = useState('')
 
   if (!userData) return ''
   const [wishlist] =  useState({
@@ -41,22 +42,20 @@ const parkWishlist = ({  park, userData }) => {
     )
   }
 
+  // const handleWishlistConfirm = (event) => {
+  //   const confirm = event.target.value
+  //   setConfirmMessage(confirm)
+  // }
+
   return (
     <>
       <div className="ui labeled button" tabIndex="0">
-        <button className="ui basic button" onClick={handleWishlist}><i className="heart icon"></i>Add to wishlist 
-          {/* <>
-            { onClick = {handleWishlist} ?
-              <div className="ui success left pointing label">
-                <div className="content">
-                  <p>Added to your profile</p>
-                </div>
-              </div>
-              :
-              ''
-            }
-          </> */}
-        </button>
+        <button className="ui basic button" onClick={ handleWishlist} value="Added to your wishlist!"><i className="heart icon"></i>Add to wishlist</button>
+        {/* <div className="ui success left pointing label">
+          <div className="content">
+            <p>{confirmMessage}</p>
+          </div>
+        </div> */}
       </div>
       
     </>

@@ -70,7 +70,7 @@ const Login = () => {
                   <i className="lock icon"></i>
                 </div>
               </div>
-              <button type="submit" className="ui blue submit button">Login</button>
+              <button type="submit" className="ui basic submit button">Login</button>
               <div className="field">
                 { errors && 
                 <div className="subtitle is-6">Access Unauthorised. Please try re-entering your credentials.</div>
