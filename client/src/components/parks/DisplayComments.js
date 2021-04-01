@@ -12,7 +12,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   
   const formattedTime = date.toUTCString()
 
-  
+  console.log('OWNER', owner.profilePic)
  
 
   if (!userIsOwner) return ''
@@ -21,6 +21,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   return (
     
     <div className="comment">
+      
       <div className="ui list">
         <div className="item">
           <div className="right floated content">
@@ -30,7 +31,8 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
       </div> }          
           </div>
           <a className="ui avatar image">
-            <img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" />
+            
+            <img src={owner.profilePic} />
           </a>
           <div className="content">
             <a className="author">{owner.username}</a>

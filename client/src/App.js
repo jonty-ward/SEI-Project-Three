@@ -30,7 +30,7 @@ const App = () => {
         <Route  path="/login">
       	  <Login />
         </Route>
-        <Route  path="/profile/:id">
+        <Route  exact path="/profile/:id">
       	  <UserProfile />
         </Route>
         <Route  path="/profile/:id/:username">

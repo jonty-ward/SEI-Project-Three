@@ -37,7 +37,7 @@ const Login = () => {
 
 
     <>
-      <div>
+      <div className="wholePage-login">
         <div className="ui container placeholder segment loginForm">
           <div className="ui two column very relaxed stackable grid">
             <div className="column">
@@ -47,6 +47,7 @@ const Login = () => {
                   <div className="ui left icon input">
                     <input
                       className="input "
+                      type="email"
                       placeholder="Email"
                       name="email"
                       onChange={handleChange}

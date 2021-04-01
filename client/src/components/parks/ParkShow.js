@@ -44,17 +44,15 @@ const ParkShow = ( { userData } ) => {
 
 
   const { name, image, region, description, facts, recommendations, comments, country, parkUrl } = park
+
+  const lowerCaseCountry = country.toLowerCase()
  
   return (
     <div>
-  
-   
-
 
       <hr/>      
       <div className="ui huge header center aligned">{name}</div>
       <hr/>
-
       <img src={image[0]} alt={name} width="100%"/>
       <br/>
       {userIsAuthenticated 
@@ -66,18 +64,15 @@ const ParkShow = ( { userData } ) => {
         :
         <p>Login to save</p>
       }
-
-
       <div className="ui raised very padded text segment">
         <h2 className="ui header">{name}</h2>
-        <h3 className="ui header">{region} - {country}</h3>
+        <h3 className="ui header">{region} - {country} <i className={`${lowerCaseCountry} flag`}></i></h3>
         <p>{description}</p>
         <br/>
         <a href={`${parkUrl}`} target="_blank" rel="noreferrer">{parkUrl}</a>
       </div>
       <br/>
       <br/>
-
       <div className="ui raised very padded text segment">
         <div className="ui celled stackable grid">
           <div className="row">
@@ -95,8 +90,6 @@ const ParkShow = ( { userData } ) => {
       </div>
       <br/>
       <br/>
-
-
       <div className="ui raised very padded text segment">
         <div className="ui celled stackable grid">
           <div className="row">
@@ -109,11 +102,8 @@ const ParkShow = ( { userData } ) => {
           </div>
         </div>
       </div>
-
       <br/>
       <br/>
-
-
       <div className="ui raised very padded text segment">
         <div className="ui celled stackable grid">
           <div className="row">
@@ -126,13 +116,8 @@ const ParkShow = ( { userData } ) => {
           </div>
         </div>
       </div>
-
       <br/>
       <br/>
-
-
-
-
       <div className="ui segment very padded">
         <h1> Recommendations</h1>
         <div className="box reccomendation-box">

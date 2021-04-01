@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 #root{
-  background: #348F50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #348F50;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: 'Julius Sans One', sans-serif ;
 
 }
@@ -130,7 +130,6 @@ p.single-region-title {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100vh;
   width: 100vw;
   margin: 20px;
   padding: 50px;
@@ -221,6 +220,7 @@ p.single-region-title {
   object-fit: cover;
   z-index: -1;
 }
+
 
 h1.profile-title {
   text-align: center;
@@ -319,6 +319,14 @@ h2.user-info-title, h3.user-info-title {
   width: 45vw !important;
   margin-top: 10vh !important;
 }
+  div.container.editComment {
+    min-height: 40vh;
+}
+.container.editComment {
+  height: 20vh !important;
+  width: 35vw !important;
+  margin-top: 10vh !important;
+}
 
 //styling for loging form 
 
@@ -331,10 +339,19 @@ h2.user-info-title, h3.user-info-title {
 .register-form-header{
   text-align: center;
   margin-bottom: -5vh;
-  margin-top: 7vh;
+  margin-top: 7vh !important;
 }
 
 .header-recc{
+  text-align: center;
+  
+}
+
+
+
+.header-comment{
+  margin-top: 5vh ;
+  // margin-right: -15vw;
   text-align: center;
 }
 .header-recc-top{
@@ -360,4 +377,6 @@ a.delete:hover{
   border-radius: 0px !important;
   background-color: rgb(152, 172, 143) !important;
 }
+
+
 

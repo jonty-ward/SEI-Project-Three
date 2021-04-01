@@ -22,6 +22,8 @@ export default [
       'It was the first park to be gazetted in Kenya on December 16, 1946',
       'It is a major rhino sanctuary for breeding and restocking other parks'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'http://www.kws.go.ke/parks/nairobi-national-park'
 
   },
@@ -50,6 +52,8 @@ export default [
       'Spread throughout the south central Serengeti, kopjes (pronounced like “copy”) are geologic wonders comprised of exposed gneiss and granite shaped by the wind and temperature fluctuations. With sun-warmed rocks, vegetation for shade, and their elevation several meters above the plains, kopjes are a favorite resting spot for lions. It seems that one particular Serengeti kopje, known as Simba Kopje, was the inspiration for Pride Rock in Disney’s The Lion King.'
       
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.serengetiparktanzania.com/'
 
   },
@@ -76,6 +80,8 @@ export default [
       'Arguably the single most iconic tribe in Africa, the Maasai are nomadic pastrolists who traditionally make a living out of herding cattle. Originally a Nilotic ethnic group which is said to have migrated centuries ago from the semi arid Nile valley north of Lake Turkana, the Maasai inhabit the region around Masai Mara as well as large portions of Great Rift Valley.'
     
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.maasaimarakenyapark.com/'
   },
   {
@@ -102,13 +108,16 @@ export default [
       '2000 rangers have lost their lives in the line of duty since 1925',
       'Every year, foot patrols cover a distance larger than the circumference of the Earth.'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://visit.virunga.org/'
   },
   {
     name: 'Chréa National Park',
-    image: ['https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+    image: [
       'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
       'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
+      'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
       'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
     ],
     description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
@@ -121,6 +130,8 @@ export default [
       'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
       'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
 
   },
@@ -143,6 +154,8 @@ export default [
       'Birds include Verreaux’s eagle, Kori bustard, Namaqua sandgrouse, southern black korhaan and spotted eagle-owl.'
       
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.sanparks.org/parks/namaqua/'
 
   },
@@ -170,6 +183,8 @@ export default [
       'Most of the park\'s pans have no vegetation growing while the majority of the park\'s landscape is otherwise savanna woodlands. With only 23% of the park made up of salt pans, the majority of it does have plenty of vegetation to support wildlife.',
       'There is a very large and diverse bird population in Etosha National Park and species include vultures, storks, hornbills, waterfowl, falcons, bustards, herons, owls, and many more.'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.etoshanationalpark.org/'
   },
   {
@@ -190,6 +205,8 @@ export default [
       'Wildlife can move in and out of neighbouring game reserves. This wasn’t always the case – the fences were only removed in the last few years – but means there is more movement now. ',
       'The average daily maximum temperature in summer is 32.3 degrees and the winter average low is 9.1 degrees. Make sure you’re equipped for all weather.'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.sanparks.org/parks/kruger/default.php/'
   },
   {
@@ -216,6 +233,8 @@ export default [
       'The Ngorongoro Crater is also referred to as ‘the Garden of Eden’ due to its dazzling beauty and being a paradise for animals.'
 
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'https://www.ncaa.go.tz/'
   },
 
@@ -244,12 +263,14 @@ export default [
       'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
       'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
     ],
+    comments: [],
+    recommendations: [],
     parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
   },
 
   {
     name: 'Komodo Island ',
-    image: 'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
+    image: 'https://www.sailbali.com/wp-content/uploads/2018/04/komodo-island-2.jpg',
     description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
     latitude: -8.543333,
     longitude: 119.489441,
@@ -260,6 +281,32 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://www.komodonationalpark.org/'
+  },
+  {
+    name: 'Ranthambore',
+    image: ['https://royalindiaexperience.com/wp-content/uploads/2020/08/ranthambore.jpg',  'https://drwyjmricaxm7.cloudfront.net/repository/1553141177-2228-8e_crop_flip_800_450_f2f2f2_center-center.jpg', 'https://www.ancient-origins.net/sites/default/files/field/image/Ranthambore-Fort.jpg', 'https://www.ampersandtravel.com/media/842665/ranthambore-rajasthan-north-india-12.jpg?mode=crop&quality=95&width=820&height=534'],
+    description: 'Ranthambore National Park is one of the biggest and most renowned national parks in Northern India. The park is located in the Sawai Madhopur district of southeastern Rajasthan, which is about 130 km from Jaipur. Once considered as one of the famous and former hunting grounds of the Maharajas of Jaipur, today the Ranthambore National Park terrain is a major wildlife tourist attraction that has drawn the attention of many wildlife photographers and lovers.',
+    latitude: 26.0173 ,
+    longitude: 76.5026 ,
+    region: 'Asia',
+    country: 'India',
+    facts: ['Ranthambore National Park has a large tiger population. The park was established as a sanctuary for the tigers and to help decrease the fatal interactions that were increasing between humans and tigers. Project Tiger, established in 1973 was the result.', 'Animals that can be seen in Ranthambore National Park include tigers, leopards, sloth bears, black bucks, flying foxes, Indian porcupines, striped hyenas, jackals, jungle cats, wild boar, civets, desert cats, macaques, mole rats, and many more species.', 'Ranthambore National Park has a combination of dry tropical forests, rocky terrain, lakes, streams, and grassy meadows, with more than 539 flowering plant species.','Visitors to Ranthambore National Park can take three hour long safaris in which they can hope to spot a tiger in its natural habitat.','Ranthambore Fortress, for which the park is named, is a fort that was built in the 10th century. There are three stone temples inside its walls, built in the 1100s and 1200s to honor Ganesh, Ramlalaji, and Shiva. The fortress stands at a height of 700 feet.', 'The second largest banyan tree in India is located in Ranthambore National Park, near Padam Talao, one of the park\'s largest lakes.', 'Reptiles found in Ranthambore National Park include marsh crocodiles, monitor lizards, cobras, Indian pythons, vipers, tortoises, and the Indian Chameleon.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.ranthamborenationalpark.com/'
+  },
+  {
+    name: 'Great Himalayan National Park',
+    image: ['https://www.greathimalayannationalpark.org/wp-content/themes/ghnp/images/slider-2.jpg', 'https://greathimalayannationalpark.com/wp-content/uploads/2015/01/GHNP-Near-the-Origin-of-Tirthan-River.jpg', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bos_grunniens_at_Letdar_on_Annapurna_Circuit.jpg/1280px-Bos_grunniens_at_Letdar_on_Annapurna_Circuit.jpg','http://media.natgeotraveller.in/wp-content/uploads/2016/11/leopard-upload.jpg'],
+    description: 'Great Himalayan National Park was constituted in 1984 and was formally notified as a national park in 1999. It is located in Banjaar Sub-Division of Kullu District of Himachal Pradesh, India, in the far Western Himalayas. GHNP is one of the most recent additions to a huge network of wildlife reserves found in Himalayan region in India and adjoining countries. GHNP was awarded UNESCO World Heritage Site status in 2014, in recognition of its outstanding significance for biodiversity conservation. The park protects over 1,000 plant species, including many medicinal herbs, 31 mammal species and 209 bird species, as well as amphibians, reptiles and insects. Four of GHNP’s mammal species and three of its bird species are globally threatened, including the musk deer and the western horned tragopan.',
+    latitude: 31.8903,
+    longitude: 77.1410 ,
+    region: 'Asia',
+    country: 'India',
+    facts: ['Confirmed sighting of rare and elusive “Serow” made in GHNP, in the month of May 2015','GHNP provides sanctuary for four globally threatened mammals (Snow leopard, serow, himalayan tahr, musk deer), three globally threatened birds (Western tragopan, koklas, cheer pheasants) and a large number of medicinal plants.', 'GHNP is home to 209 confirmed bird species, which attract birdwatchers from across the globe. These include the endangered western tragopan and four other pheasant species.', 'The rocks of the Great Himalayan range were emplaced in their current locations 19 to 21 million years ago.', 'The upper part of GHNP’s forest zone holds the world’s largest known population of the western tragopan.', 'The park’s high altitudes, above 3,500m, are home to the bharal (blue sheep), snow leopard, and Himalayan brown bear, tahr and musk deer.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.greathimalayannationalpark.org/'
   },
   {
     name: 'Gunung Mulu National Park',
@@ -273,6 +320,19 @@ export default [
     comments: [],
     recommendations: [],
     parkUrl: 'https://mulupark.com/'
+  },
+  {
+    name: 'Jiuzhai Valley National Park',
+    image: ['https://winapay.com/img/games/september-2019/30ae29d891985afc8311d4840476172ac3bef4fed4-valley-lake.jpg', 'https://media.shermanstravel.com/Advice/952x460_jiuzhainatparkchina_istock.jpg', 'https://images.chinahighlights.com/allpicture/2019/01/8130004618fc478ab4e98ab9_cut_800x500_10.jpg', 'https://pbs.twimg.com/media/C0JjR8JW8AA2Xxp.jpg'],
+    description: 'Called Dzitsa Degu in Tibetan, Jiuzhai Valley or Jiuzhaigou National Park is located in the Aba Tibetan and Qiang Autonomous Prefecture of Sichuan Province, South Western China. It was declared a UNESCO World Heritage Site in 1992 and it belongs to the category 5 in the IUCN system of protected area categorization. Jiuzhai Valley literally means “Nine Village Valley” and is named after the nine Tibetan villages scattered throughout the park. There is evidence of people living in the national park up to 3,000 years and the local people still hold onto many of their traditional ways of life. The human population of the park is just over 1,000 which comprises of over 110 families.',
+    latitude: 33.2600 ,
+    longitude: 103.9186,
+    region: 'Asia',
+    country: 'China',
+    facts: ['It is officially known as Jiuzhai Valley in English, but commonly translated as Jiuzhaigou Valley. Jiuzhai Valley, literally means "the nine villages\' valley." In Chinese Jiu means nine, Zhai (Cun also means village) means village, and Gou means valley.', 'It is part of the Jiuzhaigou County in the Aba Tibetan Qiang Autonomous Prefecture of northwestern Sichuan province, near the Gansu border.', 'The climate of Jiuzhaigou Valley is subtropical to temperate monsoon with a mean annual temperature of 7.8 ℃, with means of -3.7 ℃ in January and 16.8 ℃ in July.', 'Total annual rainfall is 761 mm but in the cloud forest it is at least 1,000 mm. 80% of rainfall occurs between May and October.', 'The Tibetan in Jiuzhaigou Valley believe in Bon religion. Bon religion is a primitive religion which was popular with the Tibetan people in ancient times.', 'The locals people of Jiuzhai Valley are Tibetan and thus speak the Tibetan language. The local Jiuzhai Valley Tibetan dialect is different to the Lhasa and Amdo Tibetan dialect of the grasslands.'],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://en.jiuzhai.com/'
   },
   {
     name: 'Phong Nha Ke Bang National Park',
@@ -338,7 +398,7 @@ export default [
     latitude: 41.2132,
     longitude: -124.0046,
     region: 'North America',
-    country: 'USA',
+    country: 'United States of America',
     facts: [
       'The redwood trees here are the tallest, among the oldest and one of the most massive tree species on Earth',
       'Threatened and endangered species found in Redwood National Park include Chinook salmon, Steller\'s sea lion, northern spotted owl, tidewater goby, and the bald eagle',
@@ -378,7 +438,7 @@ export default [
     latitude: 44.4280,
     longitude: -110.5885,
     region: 'North America',
-    country: 'USA',
+    country: 'United States of America',
     facts: [
       'The Yellowstone region is also extremely active seismically and experiences hundreds of small earthquakes each year',
       'Yellowstone’s relief is the result of tectonic activity (volcanism and earthquakes) combined with the erosional actions of ice and water',
@@ -398,7 +458,7 @@ export default [
     latitude: 20.7204,
     longitude: -156.1552,
     region: 'North America',
-    country: 'USA',
+    country: 'United States of America',
     facts: [
       'The name Haleakalā is Hawaiian for "house of the sun."',
       'According to a local legend, the demigod Maui imprisoned the sun here in order to lengthen the day.',
@@ -700,7 +760,7 @@ export default [
     latitude: 34.5217,
     longitude: -93.0424,
     region: 'North America',
-    country: 'USA',
+    country: 'United States of America',
     facts: [
       'Established before the concept of a national park existed, it was the first time that land had been set aside by the federal government to preserve its use as an area for recreation',
       'The spring water flowing from Hot Springs Mountain is quite safe to drink. The National Park Service has several places where visitors can fill their own bottles with the water.', 

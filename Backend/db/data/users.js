@@ -5,7 +5,7 @@ export default [
     password: 'pass',
     passwordConfirmation: 'pass',
     fullName: 'Michael Edwards',
-    profilePic: 'test',
+    profilePic: 'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg',
     wishList: 'test'
   },
   {
