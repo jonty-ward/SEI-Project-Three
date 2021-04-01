@@ -38,14 +38,17 @@ a:hover {
 h1.home {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
-  padding-top: 25vh;
+  padding-top: 20vh;
+  padding-bottom: 10px;
   font-size: 50px;
+  color: #f8f9fa;
 }
 
 h2.home {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
+  color: #f8f9fa;
 }
 
 
@@ -54,8 +57,11 @@ h2.home {
   color: white;
   padding-left: 50vw;
   padding-top: 40vh;
-  animation: animate__shakeY;
-  animation-duration: 1s;
+  :hover{
+    animation: animate__shakeY;
+    animation-duration: 3s;
+  }
+  
   
 }
 
@@ -127,7 +133,7 @@ h2.home {
 }
 
 div.container{
-  min-height: 95vh;
+  min-height: 100vh;
   background-position-y: bottom;
 }
 
@@ -428,6 +434,7 @@ h2.user-info-title, h3.user-info-title {
   text-align: center;
   margin-bottom: -5vh;
   margin-top: 7vh !important;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .header-recc{

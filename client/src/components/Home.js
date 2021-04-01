@@ -55,7 +55,8 @@ const Home = () => {
       <section className="hero is-fullheight-with-navbar home-background">
         <div className="hero-body">
           <div className="container">
-            <h1 className="home">This is the homepage - TITLE TBC</h1>
+            <h1 className="home">The Natural Wanderer</h1>
+            <h2 className="home">Travel within Nature is not reward for working, it’s education for living</h2>
             <div className="animate__animated animate__shakeY scroll-down">
               <a className="down-link" href="#donations"><i aria-hidden="true" className="angle double down link huge icon" ></i></a>
             </div>

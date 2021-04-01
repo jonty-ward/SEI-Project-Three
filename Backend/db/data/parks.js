@@ -58,31 +58,56 @@ export default [
 
   },
   {
-    name: 'Maasai Mara' ,
-    image: ['https://thumbs.dreamstime.com/b/cheetahs-masai-mara-national-reserve-kenya-three-cheetah-brothers-posing-savannah-36108085.jpg',
-      'https://www.discoverafrica.com/images/Cheetah_Masai_Mara_Kenya.jpg',
-      'https://www.shoortravel.com/image/masai-mara-kenya.jpg',
-      'https://www.fodors.com/assets/destinations/686230/masai-warriors-ceremony-masai-mara-national-park-masai-mara-kenya_main.jpg'
-  
+    name: 'Chréa National Park',
+    image: [
+      'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
+      'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
+      'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
     ],
-    description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
-    latitude: -1.490000,
-    longitude: 35.143890,
-    region: 'Africa' ,
-    country: 'Kenya' ,
-    facts: [ 'Maasai Mara National Reserve is one of the largest game reserves in Kenya, widely considered to be Africa’s greatest wildlife reserve (also known as Masai Mara and by the locals as The Mara). ',
-      'Maasai Mara National Reserve stretches 1,510 square kilometers (580 square miles) and raises 1,500-2,170 meters (4920-7120 feet) above sea level.',
-      'The Mara Game Reserve is known all over the world for a wide range of wild animals such as the " big five " (lion, leopard, African elephant, cape buffalo, and black rhinoceros) and other popular species like zebra, giraffe, hyena, cheetah, wildebeest, eland and Thomson\'s gazelle.',
-      'It is named in honor of the Maasai people (the ancestral inhabitants of the area) and their description of the area when looked at from afar: "Mara" means "spotted" in the local Maasai language of Maa, due to the many trees which dot the landscape.',
-      'The Mara is home to the big five as well as the Big Nine African animals (lion, leopard, elephant, cape buffalo, and rhinoceros) along with more than 400 bird species identified in the park, many of which are migranting species and with almost 60 species being raptors.',
-      'Great Wildebeest migration has been selected as one of the seven natural wonders of the World and takes place every year between late July to end of September, though this timing can vary somewhat due to prevailing rainfall patterns.',
-      'There are currently estimated to be between 800 to 900 Lions ( including Lionesses) in the greater Masai Mara area, to include the conservancies surrounding the core reserve.',
-      'Arguably the single most iconic tribe in Africa, the Maasai are nomadic pastrolists who traditionally make a living out of herding cattle. Originally a Nilotic ethnic group which is said to have migrated centuries ago from the semi arid Nile valley north of Lake Turkana, the Maasai inhabit the region around Masai Mara as well as large portions of Great Rift Valley.'
-    
+    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
+    latitude: '36.4268',
+    longitude: '2.8765',
+    region: 'Africa',
+    country: 'Algeria',
+    facts: [
+      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
+      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
+      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'https://www.maasaimarakenyapark.com/'
+    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
+
+  },
+  {
+    name: 'Amboseli National Park' ,
+    image: ['https://www.primeugandasafaris.com/wp-content/uploads/amboseli-NP-582x393.jpg',
+      'https://i.pinimg.com/originals/99/fe/8c/99fe8ca6abb56a875a5caa3eec369fd2.jpg',
+      'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/139477_Kenya_Africa_Amboseli%20National%20Park_shutterstock_80475796.jpg',
+      'https://www.journeysdiscoveringafrica.com/wpblog/wp-content/uploads/2019/08/Elewana-2.jpg'
+    ] ,
+    description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
+    latitude: -2.6527,
+    longitude: 37.2606,
+    region: 'Africa' ,
+    country: 'Kenya' ,
+    facts: [ 'The word \'amboseli\' is derived from the Maasai language and it means \'salty dust.\'',
+      'Amboseli National Park is considered to be Africa\'s best spot for viewing free-range elephants.',
+      'The park is considered to be one of the most popular parks in Kenya due to its views of Mount Kilimanjaro and the huge elephant herds that live in its boundaries.',
+      'Amboseli National Park is made up of several distinct habitats. They include savannah, woodlands, wetlands, and the mostly dried up Lake Amboseli. 10,000 years ago the lake was a permanent lake at least 40 meters in depth. It is small and only seasonal today.',
+      'Visitors to Amboseli National Park can enjoy amazing views of the world\'s highest free-standing mountain - Mount Kilimanjaro, which is located in the distance.',
+      'Wildlife that can be seen in Amboseli National Park includes blue wildebeests, plains zebras, Maasai giraffes, elephants, Cape buffalos, Maasai lions, spotted hyenas, cheetahs, impalas, wild dogs, crocodiles, nocturnal porcupines, gazelles, rhinos, hippos, mongooses, hyraxes, dik-diks, lesser kudus, and many others',
+      'Amboseli National Park contains more than 600 bird species. Some of these species include cranes, at least 47 raptor species, water birds, pelicans, hammerkops, Madagascar pong herons, lesser flamingoes, shoebills, lesser kestrels, and kingfishers.',
+      'Temperatures in Amboseli National Park range from 20 to 30 degrees Celsius. Between March and April the region experiences longer rains and between November and December the region experiences shorter rains.',
+      'Amboseli National Park is located over a natural underground water system that filters water in the volcanic rock. This clean water is then fed into springs in the center of the park.',
+      'At times Amboseli National Park can experience drought, or too much water. In the 1990s the park almost became a swamp because of the rain that would not quit.',
+      'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
+      'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
+    ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
   },
   {
     name: 'Virunga National Park ' ,
@@ -112,29 +137,7 @@ export default [
     recommendations: [],
     parkUrl: 'https://visit.virunga.org/'
   },
-  {
-    name: 'Chréa National Park',
-    image: [
-      'https://media-cdn.tripadvisor.com/media/photo-s/08/eb/d9/57/parc-national-de-chrea.jpg',
-      'http://traveltoalgeria.weebly.com/uploads/1/0/0/7/10074251/4351118_orig.jpg',
-      'https://en.unesco.org/sites/default/files/cover_chrea_biosphere_reserve_algeria_unesco_wikipedia.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/4/40/Parc_national_de_chelia_2.jpg'
-    ],
-    description: 'Taking its name from a nearby town, the Chréa National Park is located in the Blida Province of the North West Region of Algeria. The park incorporates the mountainous area of the Blidean Atlas, part of the Tell Atlas range, where the grotto of Chiffa and the snow skiing station of Chréa are situated. The Chréa skiing station is one of the few in Africa that can offer skiing on natural snow.Although the Chréa National Park is one of Algeria’s smallest protected areas, it has varied terrain and abundant flora, providing suitable habitats for a variety of animals and birds, including a number of magnificent raptor species. The ancient Atlas Cedar forests of the park are home to a population of Barbary Macaque (commonly, and mistakenly, referred to as Barbary Apes), an Old World monkey species that is rated as endangered on the IUCN Red List (International Union for the Conservation of Nature and Natural Resources). A distinguishing feature of the Barbary Macaque is its short stump of a tail, which is believed to have come about as a result of centuries of disuse.', 
-    latitude: '36.4268',
-    longitude: '2.8765',
-    region: 'Africa',
-    country: 'Algeria',
-    facts: [
-      'This site plays a vital role in the area, notably as a water reservoir for large cities like Algiers, Blida and Médéa. ',
-      'It is also important from a conservation perspective with rare and endangered ecosystems specific to the northern Atlas Mountains. The national park hosts 1,210 plant and animal species, such as the Atlas ceder (Cedrus atlantica) and the monkey (Macaca sylvanus).',
-      'The park is mainly comprised of undulating rugged hills and mountains of the Blidean atlas that stretch from the Tell Atlas mountain ranges of northern Algeria.'
-    ],
-    comments: [],
-    recommendations: [],
-    parkUrl: 'https://www.algeria.com/attractions/national-parks/chrea-national-park/'
-
-  },
+  
   {
     name: 'Namaqua National Park',
     image: ['https://www.sa-venues.com/attractions/gallery/northerncape/585/1b.jpg',
@@ -237,55 +240,34 @@ export default [
     recommendations: [],
     parkUrl: 'https://www.ncaa.go.tz/'
   },
-
   {
-    name: 'Amboseli National Park' ,
-    image: ['https://www.primeugandasafaris.com/wp-content/uploads/amboseli-NP-582x393.jpg',
-      'https://i.pinimg.com/originals/99/fe/8c/99fe8ca6abb56a875a5caa3eec369fd2.jpg',
-      'https://cache-graphicslib.viator.com/graphicslib/page-images/742x525/139477_Kenya_Africa_Amboseli%20National%20Park_shutterstock_80475796.jpg',
-      'https://www.journeysdiscoveringafrica.com/wpblog/wp-content/uploads/2019/08/Elewana-2.jpg'
-    ] ,
-    description: 'Amboseli National Park contains over 400 species of birds and 47 species of raptors thanks to the presence of a large system of swamps. It is said to be one of the best places in the world for viewing birds and other wildlife. Come and marvel at parades of elephants as they pass by against the backdrop of Mount Kilimanjaro, which makes up a large portion of the horizon. In fact, this is also one of the best places in Africa to get up close and personal with these majestic creatures. The park originally began as a reservation for the Maasai peoples, and there is legislation in the works to afford them more control over park activities and upkeep.' ,
-    latitude: -2.6527,
-    longitude: 37.2606,
+    name: 'Maasai Mara' ,
+    image: ['https://thumbs.dreamstime.com/b/cheetahs-masai-mara-national-reserve-kenya-three-cheetah-brothers-posing-savannah-36108085.jpg',
+      'https://www.discoverafrica.com/images/Cheetah_Masai_Mara_Kenya.jpg',
+      'https://www.shoortravel.com/image/masai-mara-kenya.jpg',
+      'https://www.fodors.com/assets/destinations/686230/masai-warriors-ceremony-masai-mara-national-park-masai-mara-kenya_main.jpg'
+  
+    ],
+    description: 'Masai Mara National Reserve located in south west Kenya is a vast scenic expanse of gently rolling African savannah plains measuring 1510 square kilometers in area and bordering the Serengeti National Park in Tanzania to the south. Masai Mara is a unique wildlife conservation haven, famous for its spectacular natural diversity of wildlife and happens to be a premier Kenya Safari location in East Africa, offering visitors many reasons to visit this animal paradise. Large numbers of Lions, Cheetah, Elephant, Rhino, African Buffalo, Wildebeest, Giraffe, Zebra and many more animals are found here in their natural habitat, unconfined and free to roam the vast wilderness stretching for miles on end. It is no surprise then that tourists from the world over travel here not least because the reserve has been voted one of the new Seven Wonders of the World. Regarding the origin of the name, the word \'Masai\' comes from the Maasai tribe, nomadic inhabitants of the area and the word \'Mara\' is their word for \'spotted\', referring to the ubiquitous unique flat topped acacia trees, shrubs and bushes that dot the landscape across most of the reserve.' ,
+    latitude: -1.490000,
+    longitude: 35.143890,
     region: 'Africa' ,
     country: 'Kenya' ,
-    facts: [ 'The word \'amboseli\' is derived from the Maasai language and it means \'salty dust.\'',
-      'Amboseli National Park is considered to be Africa\'s best spot for viewing free-range elephants.',
-      'The park is considered to be one of the most popular parks in Kenya due to its views of Mount Kilimanjaro and the huge elephant herds that live in its boundaries.',
-      'Amboseli National Park is made up of several distinct habitats. They include savannah, woodlands, wetlands, and the mostly dried up Lake Amboseli. 10,000 years ago the lake was a permanent lake at least 40 meters in depth. It is small and only seasonal today.',
-      'Visitors to Amboseli National Park can enjoy amazing views of the world\'s highest free-standing mountain - Mount Kilimanjaro, which is located in the distance.',
-      'Wildlife that can be seen in Amboseli National Park includes blue wildebeests, plains zebras, Maasai giraffes, elephants, Cape buffalos, Maasai lions, spotted hyenas, cheetahs, impalas, wild dogs, crocodiles, nocturnal porcupines, gazelles, rhinos, hippos, mongooses, hyraxes, dik-diks, lesser kudus, and many others',
-      'Amboseli National Park contains more than 600 bird species. Some of these species include cranes, at least 47 raptor species, water birds, pelicans, hammerkops, Madagascar pong herons, lesser flamingoes, shoebills, lesser kestrels, and kingfishers.',
-      'Temperatures in Amboseli National Park range from 20 to 30 degrees Celsius. Between March and April the region experiences longer rains and between November and December the region experiences shorter rains.',
-      'Amboseli National Park is located over a natural underground water system that filters water in the volcanic rock. This clean water is then fed into springs in the center of the park.',
-      'At times Amboseli National Park can experience drought, or too much water. In the 1990s the park almost became a swamp because of the rain that would not quit.',
-      'The best time to view elephants is in the evening or in the early morning, when they tend to graze.',
-      'While visitors to Amboseli National Park are usually not permitted to leave their vehicle because of the dangers associated with the wildlife, they can get out at Observation Hill - which is a pyramid shaped hill that provides an excellent view of the surroundings.'
+    facts: [ 'Maasai Mara National Reserve is one of the largest game reserves in Kenya, widely considered to be Africa’s greatest wildlife reserve (also known as Masai Mara and by the locals as The Mara). ',
+      'Maasai Mara National Reserve stretches 1,510 square kilometers (580 square miles) and raises 1,500-2,170 meters (4920-7120 feet) above sea level.',
+      'The Mara Game Reserve is known all over the world for a wide range of wild animals such as the " big five " (lion, leopard, African elephant, cape buffalo, and black rhinoceros) and other popular species like zebra, giraffe, hyena, cheetah, wildebeest, eland and Thomson\'s gazelle.',
+      'It is named in honor of the Maasai people (the ancestral inhabitants of the area) and their description of the area when looked at from afar: "Mara" means "spotted" in the local Maasai language of Maa, due to the many trees which dot the landscape.',
+      'The Mara is home to the big five as well as the Big Nine African animals (lion, leopard, elephant, cape buffalo, and rhinoceros) along with more than 400 bird species identified in the park, many of which are migranting species and with almost 60 species being raptors.',
+      'Great Wildebeest migration has been selected as one of the seven natural wonders of the World and takes place every year between late July to end of September, though this timing can vary somewhat due to prevailing rainfall patterns.',
+      'There are currently estimated to be between 800 to 900 Lions ( including Lionesses) in the greater Masai Mara area, to include the conservancies surrounding the core reserve.',
+      'Arguably the single most iconic tribe in Africa, the Maasai are nomadic pastrolists who traditionally make a living out of herding cattle. Originally a Nilotic ethnic group which is said to have migrated centuries ago from the semi arid Nile valley north of Lake Turkana, the Maasai inhabit the region around Masai Mara as well as large portions of Great Rift Valley.'
+    
     ],
     comments: [],
     recommendations: [],
-    parkUrl: 'http://www.kws.go.ke/amboseli-national-park'
+    parkUrl: 'https://www.maasaimarakenyapark.com/'
   },
 
-  {
-    name: 'Komodo Island ',
-    image: [
-      'https://static.toiimg.com/thumb/71399979.cms?resizemode=75&width=1200&height=900',
-      'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
-      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',      
-      'https://youimg1.tripcdn.com/target/100h1f000001grv6jDFD5_C_750_500.jpg?proc=source%2Ftrip'],
-    description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
-    latitude: -8.543333,
-    longitude: 119.489441,
-    region: 'Asia',
-    country: 'Indonesia',
-    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
-      'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
-    comments: [],
-    recommendations: [],
-    parkUrl: 'https://www.komodonationalpark.org/'
-  },
   {
     name: 'Ranthambore',
     image: ['https://royalindiaexperience.com/wp-content/uploads/2020/08/ranthambore.jpg',  'https://drwyjmricaxm7.cloudfront.net/repository/1553141177-2228-8e_crop_flip_800_450_f2f2f2_center-center.jpg', 'https://www.ancient-origins.net/sites/default/files/field/image/Ranthambore-Fort.jpg', 'https://www.ampersandtravel.com/media/842665/ranthambore-rajasthan-north-india-12.jpg?mode=crop&quality=95&width=820&height=534'],
@@ -403,6 +385,24 @@ export default [
     recommendations: [],
     parkUrl: 'https://www.danumvalley.info/'
 
+  },
+  {
+    name: 'Komodo Island ',
+    image: [
+      'https://static.toiimg.com/thumb/71399979.cms?resizemode=75&width=1200&height=900',
+      'http://www.floresplus.net/wp-content/uploads/2017/04/unnamed-1.jpg',
+      'https://media.cntraveler.com/photos/5da4e49d4b1e400008203733/master/pass/Komodo-Island_GettyImages-919467902.jpg',      
+      'https://youimg1.tripcdn.com/target/100h1f000001grv6jDFD5_C_750_500.jpg?proc=source%2Ftrip'],
+    description: 'Known for its giant lizards that bear the same name, Komodo Island is also home to gorgeous tropical forests, renowned diving sites, and gorgeous beaches — one of which boasts pink sand and teal blue waters.',
+    latitude: -8.543333,
+    longitude: 119.489441,
+    region: 'Asia',
+    country: 'Indonesia',
+    facts: ['Komodo Island is home to the world\'s largest lizard the Komodo Monitor (or Komodo Dragon.)', 
+      'Approximately 2,000 people live on the island; many are descendants of exiled convicts.', 'The island of Komodo has a beach with a mixture of red and white sand, which causes it to look pink. It is only one of seven on earth.', 'According to a field study, Komodo Island is believed to have been formed over 1 million years ago–and there are remnants of rainforests and bamboo forests.', 'There are less than 4000 wild birds on Komodo Island, and it is also home to many endangered species. There are approximately 25 different endangered species on Komodo Island.', 'It\'s possible to go diving in Komodo all year long.' ],
+    comments: [],
+    recommendations: [],
+    parkUrl: 'https://www.komodonationalpark.org/'
   },
 
   {
