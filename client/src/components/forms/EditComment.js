@@ -57,22 +57,20 @@ const EditComment = () => {
 
   return (
     <section className="section">
-      <div className="container">
-        <div className="columns">
-          <CommentsForm
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-            formData={formData}
-          />
-          <hr/>
-          <br/>
-          <div className="buttons">
-            <button onClick={handleDelete} className="button is-danger">Delete</button>
-          </div>
-
-         
-        </div>
+      <h1 className="header-recc-top">Edit your Recommendation</h1>
+      <div className="ui container raised  segment editComment">
+        <CommentsForm
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          formData={formData}
+        />
+        <br/>
+    
+        <p className="header-comment"> <button onClick={handleDelete} className="ui red button"> <i className="trash alternate icon"/>Delete Comment </button> </p>
+   
       </div>
+
+
     </section>
   )
 }

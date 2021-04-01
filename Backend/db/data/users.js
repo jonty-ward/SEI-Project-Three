@@ -5,9 +5,8 @@ export default [
     password: 'pass',
     passwordConfirmation: 'pass',
     fullName: 'Michael Edwards',
-    profilePic: 'https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg',
-    wishList: 'test',
-    _id: '6064ca989bc86161e7e63e20'
+    profilePic: 'https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg',
+    wishList: 'test'
   },
   {
     username: 'jonty',

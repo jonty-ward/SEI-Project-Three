@@ -4,6 +4,8 @@ import user from '../models/user.js'
 import Park from '../models/parks.js'
 import userData from './data/users.js'
 import parkData from './data/parks.js'
+import comments from './data/comments.js'
+import recommendations from './data/recommendations.js'
 
 const seedDatabaase = async () => {
   try {
@@ -25,8 +27,33 @@ const seedDatabaase = async () => {
       return park
     })
 
+  
+
+    // * Add comments to parks
+    const parksWithComments = parkData.map(park => {
+      park.comments = comments[Math.floor(Math.random() * comments.length)]
+      park.comments.owner = users[0]._id
+      return park
+    })
+
+    // * Add recommendations to parks
+    const parksWithRecommendations = parkData.map(park => {
+      park.recommendations = recommendations[Math.floor(Math.random() * recommendations.length)]
+      park.recommendations.owner = users[0]._id
+      return park
+    })
+
+
+
+    // // * Add owners to comments 
+    // const commnetsWithUsers = parkData.map(park => {
+    //   park.comments.owner = users[0]._id
+    //   return park
+    // })
+  
+
     // * add parks to db
-    const parks = await Park.create(parksWithUsers)
+    const parks = await Park.create(parksWithUsers, parksWithComments, parksWithRecommendations)
     console.log('Parks >', parks)
     console.log(`DB seeded with ${parks.length} parks`)
 

@@ -72,8 +72,9 @@ const EditRecommendation = () => {
           handleSubmit={handleSubmit}
           formData={formData}
         />
-        <p className="header-recc">  <button onClick={handleDelete} className="ui red button"> <i className="trash alternate icon"/>Delete Your Reccomendation</button> </p>
-        <div className="buttons">
+        
+        <div className="buttons header-recc">
+          <p className="header-recc">  <button onClick={handleDelete} className="ui red button"> <i className="trash alternate icon"/>Delete Your Reccomendation</button> </p>
           
         </div>
   

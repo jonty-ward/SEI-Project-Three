@@ -12,8 +12,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   
   const formattedTime = date.toUTCString()
 
-  
-
+ 
 
   if (!userIsOwner) return ''
   // console.log('owner>>>>>>', owner._id)
@@ -21,6 +20,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   return (
     
     <div className="comment">
+      
       <div className="ui list">
         <div className="item">
           <div className="right floated content">

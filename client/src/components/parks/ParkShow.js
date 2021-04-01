@@ -44,12 +44,11 @@ const ParkShow = ( { userData } ) => {
 
 
   const { name, image, region, description, facts, recommendations, comments, country, parkUrl } = park
+
+  const lowerCaseCountry = country.toLowerCase()
  
   return (
     <div>
-  
-   
-
 
       <br/>      
       <h1 className="juliusFontCenterBig">{name}</h1>
@@ -111,7 +110,6 @@ const ParkShow = ( { userData } ) => {
           </div>
         </div>
       </div>
-
       <br/>
       <br/>
 
@@ -128,7 +126,6 @@ const ParkShow = ( { userData } ) => {
           </div>
         </div>
       </div>
-
       <br/>
       <br/>
 
