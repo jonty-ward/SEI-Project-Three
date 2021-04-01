@@ -13,7 +13,7 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
   const formattedTime = date.toUTCString()
 
   
- 
+
 
   if (!userIsOwner) return ''
   // console.log('owner>>>>>>', owner._id)
@@ -25,9 +25,9 @@ const DisplayComments = ({ text, rating, createdAt, _id, owner }) => {
         <div className="item">
           <div className="right floated content">
             { userIsOwner(owner._id) && 
-      <div className="buttons">
-        <Link to={`/parks/${params.id}/comments/${_id}`} className="ui positive button tiny"> Edit</Link>
-      </div> }          
+              <div className="buttons">
+                <Link to={`/parks/${params.id}/comments/${_id}`} className="ui positive button tiny"> Edit</Link>
+              </div> }          
           </div>
           <a className="ui avatar circular huge image">
             <img src={owner.profilePic} />

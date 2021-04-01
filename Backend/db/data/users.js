@@ -5,7 +5,7 @@ export default [
     password: 'pass',
     passwordConfirmation: 'pass',
     fullName: 'Michael Edwards',
-    profilePic: 'test',
+    profilePic: 'https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg',
     wishList: 'test',
     _id: '6064ca989bc86161e7e63e20'
   },
