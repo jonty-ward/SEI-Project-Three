@@ -9,11 +9,7 @@ const ParkCard = ({ _id, name, image }) => {
       <Link to={`/parks/${_id}`}>
         <div className="ui fluid raised link card eq-card">
           <div className="content content-height">
-<<<<<<< HEAD
-            <h3>{name}</h3>
-=======
             <h5 className='juliusFontCenter'>{name}</h5>
->>>>>>> development
           </div>
           <div className="image image-index-container">
             <img className="cardImage" src={image[0]} alt={`${name}`} height="100%" />

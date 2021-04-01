@@ -71,7 +71,7 @@ const ParkShow = ( { userData } ) => {
 
       <div className="ui raised very padded text segment margin-container">
         <h2 className="juliusFontLeft">{name}</h2>
-        <h4 className="juliusFontLeft">{region} - {country}</h4>
+        <h4 className="juliusFontLeft">{region} - {country} <i className={`${lowerCaseCountry} flag`}></i></h4>
         <p>{description}</p>
         <br/>
         <a href={`${parkUrl}`} target="_blank" rel="noreferrer">{parkUrl}</a>
