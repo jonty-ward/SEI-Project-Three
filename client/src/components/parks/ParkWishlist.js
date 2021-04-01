@@ -50,7 +50,7 @@ const parkWishlist = ({  park, userData }) => {
   return (
     <>
       <div className="ui labeled button" tabIndex="0">
-        <button className="ui basic button" onClick={ handleWishlist} value="Added to your wishlist!"><i className="heart icon"></i>Add to wishlist</button>
+        <button className="ui basic blue button" onClick={ handleWishlist} value="Added to your wishlist!"><i className="heart icon"></i>Add to wishlist</button>
         {/* <div className="ui success left pointing label">
           <div className="content">
             <p>{confirmMessage}</p>

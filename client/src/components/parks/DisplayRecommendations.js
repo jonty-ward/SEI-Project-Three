@@ -14,7 +14,12 @@ const DisplayRecommendations = ({ parkName, activity, text, image, _id, owner, c
   return (
     <div className="box card-box">
       <div className="content">
-        <a className="author">{owner.username}</a>
+        <div className="reccAddAvatar">
+          <a className="ui avatar circular image">
+            <img src={owner.profilePic} />
+          </a>
+          <p className="author">{owner.username}</p>
+        </div>
         <div className="metadata">
           <span className="date">Added on {formattedTime}</span>
         </div>

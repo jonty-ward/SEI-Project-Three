@@ -69,11 +69,31 @@ const ParkShow = ( { userData } ) => {
     <>
       <div>
 
-        <br/>      
-        <h1 className="juliusFontCenterBig">{name}</h1>
-        <div className="margin-container">
-          <img src={image[0]} alt={name} width="100%"/>
+      <br/>      
+      <h1 className="juliusFontCenterBig">{name}</h1>
+      <div className="margin-container">
+        <img src={image[0]} alt={name} width="100%"/>
+      </div>
+      <br/>
+      {userIsAuthenticated &&
+        <div className='centerButton'>
+          <ParkWishlist 
+            userData = {userData}
+            park = {park}
+          />
         </div>
+      }
+      { !userIsAuthenticated() && 
+        <div className="centerLoginToAddWishlist">
+          <Link to={'/login'}>
+            <h4 className="margin-container">Log in to save to your wishlist!</h4>
+          </Link> 
+        </div>
+      }
+      <div className="ui raised very padded text segment margin-container">
+        <h2 className="ui header">{name}</h2>
+        <h3 className="ui header">{region} - {country} <i className={`${lowerCaseCountry} flag`}></i></h3>
+        <p>{description}</p>
         <br/>
         {userIsAuthenticated 
           ?
@@ -176,7 +196,7 @@ const ParkShow = ( { userData } ) => {
           { userIsAuthenticated() && 
         <div className="centerButton">
           <Link to={`/addRecommendation/${params.id}`}>
-            <button className="ui primary button">
+            <button className="ui blue basic icon left labeled button"><i aria-hidden="true" className="add icon"></i>
             Add a recommendation
             </button>
           </Link>
@@ -191,16 +211,16 @@ const ParkShow = ( { userData } ) => {
         <br/>
         <br/>
     
-        <div className="ui segment">
-          <div className="ui large comments">
-            <h1 className="ui dividing header">Comments</h1>
-            { comments.map(comment => (
-              <DisplayComments key={comment._id} {...comment}/>
-            ))}
-            <br/>
-            <br/>
-            <br/>
-            { userIsAuthenticated() && 
+      <div className="ui segment padded raised margin-container">
+        <div className="ui large comments">
+          <h1 className="ui dividing header">Comments</h1>
+          { comments.map(comment => (
+            <DisplayComments key={comment._id} {...comment}/>
+          ))}
+          <br/>
+          <br/>
+          <br/>
+          { userIsAuthenticated() && 
 
           <>
             <AddParkCommentForm/>

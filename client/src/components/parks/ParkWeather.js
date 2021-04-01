@@ -46,7 +46,7 @@ const ParkWeather = (props) => {
       <div className="ui buttons">
         <button className="ui button" value="current" onClick={handleWeather}>Todays Weather</button>
         <div className="or"></div>
-        <button className="ui olive button" value="week" onClick={handleWeather}>7 Day Forecast</button>
+        <button className="ui blue button" value="week" onClick={handleWeather}>7 Day Forecast</button>
       </div>
 
       
