@@ -67,11 +67,9 @@ const ParkShow = ( { userData } ) => {
         :
         <p>Login to save</p>
       }
-
-
       <div className="ui raised very padded text segment margin-container">
-        <h2 className="juliusFontLeft">{name}</h2>
-        <h4 className="juliusFontLeft">{region} - {country} <i className={`${lowerCaseCountry} flag`}></i></h4>
+        <h2 className="ui header">{name}</h2>
+        <h3 className="ui header">{region} - {country} <i className={`${lowerCaseCountry} flag`}></i></h3>
         <p>{description}</p>
         <br/>
         <a href={`${parkUrl}`} target="_blank" rel="noreferrer">{parkUrl}</a>
@@ -146,7 +144,7 @@ const ParkShow = ( { userData } ) => {
         { userIsAuthenticated() && 
         <div className="centerButton">
           <Link to={`/addRecommendation/${params.id}`}>
-            <button className="ui icon left labeled basic button"><i aria-hidden="true" className="add icon"></i>
+            <button className="ui primary button">
             Add a recommendation
             </button>
           </Link>
