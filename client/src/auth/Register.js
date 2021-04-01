@@ -5,7 +5,8 @@ import { ImageUploadField } from '../components/forms/ImageUploadField'
 
 const Register = () => {
 
- 
+
+  const [confirmMessage, setConfirmMessage] = useState('')
 
   const [formData, setFormData] = useState({
     fullName: '',
@@ -41,11 +42,19 @@ const Register = () => {
     try {
       const response = await axios.post('/api/register', formData)
       window.localStorage.setItem('token', response.data.token)
-      history.push('/')
+      setTimeout(() => {
+        history.push('/')
+      }, 3000)
+      
     } catch (err) {
       console.log(err.response)
       setErrors(err.response.data.errors)
     }
+  }
+
+  const handleRegisterConfirmation = (event) => {
+    const confirm = event.target.value
+    setConfirmMessage(confirm)
   }
 
   return (
@@ -125,7 +134,8 @@ const Register = () => {
             </div>
             <div className="field">
             </div>
-            <button className="ui button" type="submit"> <i className="paper plane outline icon"/>Submit</button>
+            <button onClick={handleRegisterConfirmation} className="ui basic button" type="submit" value="Registration successful!"> <i className="paper plane outline icon"/>Submit</button><br/>
+            <span className="registerConfirmBox"><p>{confirmMessage}</p></span>
           </form>
         </div>
       </div>
