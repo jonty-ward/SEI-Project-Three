@@ -35,5 +35,9 @@ As soon as we had finished our planning we decided to tackle elements of the pro
 Once the backend was done, there were a few sections that I became responsible for, and these are the areas that I would work on during the day and in the evening when not adding to our seeds file, which ended up being a monumental job! 
 
 The first page that I worked on was the park show page. This is where the information for an individual park was displayed. This page has several key pieces of functionality. Before I started working on the functionality of the page however it was important to get the information rendering for the correct parks. This was done by pulling information about the specific park from the database. In order to do this, I used params from ‘react-router-dom’ to access the ID of the park from the URL. This allowed me to make a get request using the park's unique ID so that the information populated related to the correct park. Once the information was pulled in, it was just a case of displaying the data on the page in the JSX, most of it did not even need to be mapped through before it could be displayed. 
+![get request screenshot](readme-items/GetRequest.png)
+
+We also wanted to be able to save parks to our profile  In order to be able to save a park to the wishlist, it was necessary to be able to send information to the wishlist, while not deleting what was already in the users wishlist. This involved spreading in the users current wishlist (passed through props to the wishlist component), adding in the current parks ID to the array of wishlist park ID’s, and then sending this data containing the old wishlist plus the new park back to the database using a ‘put’ request. There is also some conditional rendering on the save to wishlist button prompting the user to login if the are not logged in. 
+![park wish list](readme-items/parkwishlist.png)
 
 
