@@ -55,7 +55,7 @@ The final piece to the puzzle for the page was the comments and recommendations.
 
 The comments and recommendations forms have the ability to be edited and deleted, however only the owner of the comments and recommendations have the permissions to edit and delete their own comments. This option is hidden if the user does not own the comment or recommendation. 
 
-There is one component on the show page that I was not responsible for. This is the map. The integration of the map to show the users location was added by Mike, and he and I worked together on implementing a map which allows you to plot a route on. The map feature adds a nice visualization of the location of the park, and allows users to visualise when each park is located. The plot a route function allows the user to plan a route using the draw feature, however there is not an option to export or save this route, as we ran out of time on the build. 
+There is one component on the show page that I was not responsible for - the map. The integration of the map to show the users location was added by Mike, and he and I worked together on implementing a map which allows you to plot a route on. The map feature adds a nice visualization of the location of the park, and allows users to visualise when each park is located. The plot a route function allows the user to plan a route using the draw feature, however there is not an option to export or save this route, as we ran out of time on the build. 
 ![map gif](readme-items/map.gif)
 
 ### The profile page 
@@ -79,7 +79,7 @@ The final component that I worked on were the forms for comments and recommendat
 On the edit profile and recommendations forms, it is not possible to edit the images. 
 The users that were added via the seeds file cannot login, only users who create their account though the site. 
 ### Blockers
-Deployment. The majority of bugs we came across in the project, we were able to solve together with relatively little hassle. Deployment was a different story. We wanted to deploy the project through heroku for the front and backend, however after two days of trying, we scrapped this idea, and deployed the frontend with Netflify, and the backend with Heroku. This was a real struggle, and probably the hardest problem from the whole project 
+Deployment. The majority of bugs we came across in the project, we were able to solve together with relatively little hassle. Deployment was a different story. We wanted to deploy the project through heroku for the front and backend, however after two days of trying, we scrapped this idea, and deployed the frontend with Netflify, and the backend with Heroku. This was a real struggle, and probably the hardest problem from the whole project.
 ### Wins
 This was the first full stack application I had built, and the project was on a much larger scale that anything I have built before. Having a fantastic team who worked so well together was incredible, and truly rewarding. 
 The project has turned out on the whole exactly how we had pictured it. The project works well, and all the features have turned out exactly as we wanted them. 
@@ -90,7 +90,7 @@ Learning-wise, my biggest takeaway is the power of teamwork. Without Hannah and 
 
 In terms of future features, on the whole the three of us are extremely happy with the end result; however, some additions could include:
 
-* A social media aspect where users could comment on eachothers recommendations, follow each other and form an outdoors community 
+* A social media aspect where users could comment on each others recommendations, follow each other and form an outdoors community 
 * We wanted to add in a translation API for the different regions 
 * More complete maps- so people can plot and save their routes
 * PayPal integration with the donations on the homepage
